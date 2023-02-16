@@ -26,7 +26,6 @@ const Page = () => {
             <img src={connect} alt="connect" />
           </div>
         </div>
-
     </div>
   )
 }
