@@ -1,0 +1,9 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header h2{
+    font-size: 32px;
+    margin: 0 0 48px 0;
+}

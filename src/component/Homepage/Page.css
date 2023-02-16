@@ -1,0 +1,41 @@
+
+/* .background{
+    background-image: url(./../../Assets/Background/BG\ Miring.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E49800;
+}
+
+.navbar-heading {
+    display: flex;
+    margin: 25px 80px 25px 80px;
+}
+
+
+.navbar-list {
+    margin: 25px 80px 25px 80px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.navbar-list li {
+    font-size: 14px;
+    list-style: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+}
+

@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header h2{
+    font-size: 32px;
+    margin: 0 0 48px 0;
+}
+
+.ilkommunity{
+    display: grid;
+    margin: 0 81px 64px 81px;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 48px;
+    justify-items: center;
+}
+
+.ilkommunity li{
+    list-style: none;
+    font-size: 30px;
+}
