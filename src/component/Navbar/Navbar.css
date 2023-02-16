@@ -1,4 +1,6 @@
 .navbar {
+    font-family: Changa One;
+    font-weight: normal;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

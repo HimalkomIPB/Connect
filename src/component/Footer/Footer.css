@@ -1,0 +1,28 @@
+.Footer-background{
+    background-color: #F3E9DD;
+}
+
+.Footer{
+    font-family: montserrat;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.Footer-Logos{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    padding: 127px 343px 54px 354px ;
+}
+
+.Footer-address{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 62px 30px 70px;
+}
+
+.Footer-copyright{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
