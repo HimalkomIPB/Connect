@@ -8,7 +8,7 @@
 }
 
 .navbar-heading {
-    display: flex;
+    display: block;
     margin: 25px 80px 25px 80px;
 }
 
@@ -18,10 +18,28 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    
+
 }
 
 .navbar-list li {
-    font-size: 14px;
+    font-size: 18px;
     list-style: none;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar-list li:hover a {
+    font-family: 'Changa One';
+    font-style: italic;
+    font-weight: 350;
+    font-size: 28px;
+    line-height: 36px;
+    color: #F0E4D4;
+    text-shadow: 2.5px 1.5px 0px #040404;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #040404;
 }
