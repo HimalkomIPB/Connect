@@ -17,6 +17,7 @@ const Page = () => {
           <div className="hero-img">
             <img src={connect} alt="connect" />
           </div>
+          <p>ini push ke branch</p>
         </div>
         <Ilkommunity />
         <Megaproker />
