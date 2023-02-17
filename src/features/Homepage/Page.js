@@ -16,6 +16,7 @@ const Page = () => {
         <div className="hero">
           <div className="hero-img">
             <img src={connect} alt="connect" />
+            <p>test</p>
           </div>
         </div>
         <Ilkommunity />
