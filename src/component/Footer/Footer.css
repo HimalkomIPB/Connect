@@ -1,28 +1,48 @@
-.Footer-background{
+.Footer-background {
     background-color: #F3E9DD;
 }
 
-.Footer{
+.Footer {
     font-family: montserrat;
     font-size: 14px;
     line-height: 20px;
 }
 
-.Footer-Logos{
+.Footer-Logos {
     display: flex;
     justify-content: center;
     gap: 64px;
-    padding: 127px 343px 54px 354px ;
+    padding-top: 127px;
+    margin: 0 343px 54px 354px;
 }
 
-.Footer-address{
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 62px 30px 70px;
-}
-
-.Footer-copyright{
+.Footer-social {
     display: flex;
     justify-content: center;
+    gap: 40px;
+    margin: 54px 0 47px 0;
+}
+
+.Footer-divider p {
+    border: 1.5px dashed #9CA3AF;
+    margin: 0 70px 24px 70px;
+}
+
+
+.Footer-address {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 62px 0 70px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.Footer-copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
     padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 24px;
 }
