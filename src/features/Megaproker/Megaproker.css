@@ -1,3 +1,7 @@
+.bold {
+    font-weight: bold;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -14,14 +18,59 @@
     margin: 0 80.5px 64px 80.5px;
 }
 
-.main-ittoday {
+.main>div {
+    display: flex;
 }
 
-.main-ittoday .button{
-    border-width: 1px;
-    border-style: solid;
+.proker--container {
+    display: flex;
+
+    flex-direction: column;
 }
 
-.main-ristek {
+.proker--container,
+.proker--logo--container {
+    flex: 75%;
+    /* justify-content: center; */
+    align-self: center;
+}
 
+.proker--logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.proker--desc {
+    width: 75%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #111827;
+    margin-top: 20px;
+}
+
+.proker--judul {
+    margin-top: 10px;
+}
+
+.main-riset {
+    flex-direction: row-reverse;
+}
+
+.proker--container .button {
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    padding: 8px 14px 8px 16px;
+    width: 156px;
+    height: 36px;
+    background: #E49800;
+    border: 1px solid #111827;
+    box-shadow: 3px 4px 0px #000000;
+    color: white;
 }
