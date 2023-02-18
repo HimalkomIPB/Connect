@@ -23,11 +23,15 @@
     justify-items: center;
 }
 
+
+
 .ilkommunity li {
     list-style: none;
     font-size: 30px;
     margin-top: 30px;
+    margin-bottom: 29px;
 }
+
 
 
 .ilkommunity-agriux {
