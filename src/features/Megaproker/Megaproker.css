@@ -74,3 +74,8 @@
     box-shadow: 3px 4px 0px #000000;
     color: white;
 }
+.proker--container > button:active {
+   transform: translateY(2px);
+   transform: translateX(3px);
+   box-shadow: 1px 1px 0px #000000;
+}

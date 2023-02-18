@@ -13,10 +13,13 @@ const Page = () => {
   return (
     <div className='background'>
       <Navbar />
-        <div className="hero">
+        <div className="hero" >
           <div className="hero-img">
-            <img src={connect} alt="connect" />
+            <img src={connect} alt="connect" className="hero-image" />
           </div>
+          <h1>CONNECT</h1>
+          <h3>Together We Connect Each Other</h3>
+          <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
         </div>
         <Ilkommunity />
         <Megaproker />

@@ -6,36 +6,101 @@
     background-attachment: fixed;
 } */
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #E49800;
-}
-
-.navbar-heading {
-    display: flex;
-    margin: 25px 80px 25px 80px;
-}
-
-
-.navbar-list {
-    margin: 25px 80px 25px 80px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    
-}
-
-.navbar-list li {
-    font-size: 14px;
-    list-style: none;
-}
-
 .hero {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 84vh;
+    background-image:url(./../../Assets/Background/bghimal.jpg);
+    background-size: cover;
+    margin-top: 5px;
+    border-top: 4px solid ;
 }
 
+.hero > h1 {
+    /* yang sport world gk bisa, harus fetch fontnya kah? */
+    font-family: "Changa One"; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 64px;
+    letter-spacing: -0.25px;
+    color: #F0E4D4;
+    text-shadow: 4.5px 2.5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    transition: 0.2s;
+}
+
+.hero > h3 {
+    margin-top: 7px;
+    font-family: 'Changa One';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+    text-shadow: 1.5px 2.7px 1px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Cream/06 */
+    color: #F0E4D4;
+    transition: 0.2s;
+}
+
+.hero > p {
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    color: #F0E4D4;
+    text-shadow: 2px 2.5px 0px #040404;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #040404;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s;
+    
+
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40.5px 40px;
+    margin-top: 80px;
+}
+
+.hero-image {
+    width: 400px;
+    height: 200px;
+    transition: 0.2s;
+}
+.hero-image:hover {
+    width: 440px;
+    height: 220px;
+}
+
+.hero > h3:hover {
+    font-weight: 440;
+    font-size: 34px;
+}
+
+.hero > p:hover {
+    font-weight: 520;
+    font-size: 31px;
+}
+
+.hero > h1:hover {
+    font-weight: 480;
+    font-size: 96px;
+}

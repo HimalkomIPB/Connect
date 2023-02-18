@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #E49800;
+    border-bottom: 4px solid #040404;
 }
 
 .navbar-heading {
