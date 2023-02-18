@@ -19,7 +19,7 @@ const Megaproker = () => {
                         <p className='proker--desc'><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.
                         </p>
                         {/* ini ntar dijadiin button yah */}
-                        <button className='button'>Selengkapnya</button>
+                        <button className='button'><span className='bold'>Selengkapnya</span></button>
                     </div>
                 </div>
                 <div className="main-riset">
@@ -31,7 +31,7 @@ const Megaproker = () => {
                         <p className='proker--desc'> <span className='bold'>Riset Ilkomerz</span> merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.
                         </p>
                         {/* ini ntar dijadiin button yah */}
-                        <button className='button'>Selengkapnya</button>
+                        <button className='button'><span className='bold'>Selengkapnya</span></button>
                     </div>
                 </div>
             </div>
