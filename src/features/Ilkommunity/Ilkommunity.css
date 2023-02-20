@@ -35,9 +35,13 @@
 
 
 .ilkommunity-agriux {
-    border: 4px solid #111827;
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 4px solid #111827; */
     display: grid;
     width: 304px;
+    height: 253px;
     justify-items: center;
 }
 
