@@ -1,25 +1,17 @@
-
-/* .background{
-    background-image: url(./../../Assets/Background/BG\ Miring.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-} */
-
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 84vh;
-    background-image:url(./../../Assets/Background/bghimal.jpg);
+    background-image: url(./../../Assets/Background/bghimal.jpg);
     background-size: cover;
     margin-top: 5px;
-    border-top: 4px solid ;
+    border-top: 4px solid;
 }
 
-.hero > h1 {
+.hero>h1 {
     /* yang sport world gk bisa, harus fetch fontnya kah? */
-    font-family: "Changa One"; 
+    font-family: "Changa One";
     font-style: normal;
     font-weight: 400;
     font-size: 80px;
@@ -32,7 +24,7 @@
     transition: 0.2s;
 }
 
-.hero > h3 {
+.hero>h3 {
     margin-top: 7px;
     font-family: 'Changa One';
     font-style: italic;
@@ -51,7 +43,7 @@
     transition: 0.2s;
 }
 
-.hero > p {
+.hero>p {
     font-family: 'Changa One';
     font-style: normal;
     font-weight: 400;
@@ -67,7 +59,7 @@
     align-items: center;
     text-align: center;
     transition: 0.2s;
-    
+
 
 }
 
@@ -85,22 +77,277 @@
     height: 200px;
     transition: 0.2s;
 }
+
 .hero-image:hover {
     width: 440px;
     height: 220px;
 }
 
-.hero > h3:hover {
+.hero>h3:hover {
     font-weight: 440;
     font-size: 34px;
 }
 
-.hero > p:hover {
+.hero>p:hover {
     font-weight: 520;
     font-size: 31px;
 }
 
-.hero > h1:hover {
+.hero>h1:hover {
     font-weight: 480;
     font-size: 96px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header h2 {
+    font-size: 32px;
+    margin: 0 0 48px 0;
+}
+
+.header {
+    font-family: Changa One;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.ilkommunity {
+    display: grid;
+    margin: 0 81px 64px 81px;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 48px;
+    justify-items: center;
+}
+
+
+
+.ilkommunity li {
+    list-style: none;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 29px;
+}
+
+
+
+.ilkommunity-agriux {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 304px;
+    height: 253px;
+    justify-items: center;
+}
+
+.ilkommunity-agriux img {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 122px;
+    width: 122px;
+    height: 122px;
+}
+
+.ilkommunity-csi {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 304px;
+    height: 253px;
+    justify-items: center;
+}
+
+.ilkommunity-csi img {
+    margin-top: 35px;
+    border-radius: 122px;
+    border: 2px solid;
+    width: 122px;
+    height: 122px;
+}
+
+.ilkommunity-agribot {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 304px;
+    height: 253px;
+    justify-items: center;
+}
+
+.ilkommunity-agribot img {
+    margin-top: 35px;
+    border-radius: 122px;
+    border: 2px solid;
+    width: 122px;
+    height: 122px;
+}
+
+.ilkommunity-cp {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 304px;
+    height: 253px;
+    justify-items: center;
+}
+
+.ilkommunity-cp img {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 122px;
+    width: 122px;
+    height: 122px;
+}
+
+.ilkommunity-daming {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 304px;
+    height: 253px;
+    justify-items: center;
+}
+
+.ilkommunity-daming img {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 122px;
+    width: 122px;
+    height: 122px;
+}
+
+.ilkommunity-iwdc {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 304px;
+    height: 253px;
+    justify-items: center;
+}
+
+.ilkommunity-iwdc img {
+    margin-top: 35px;
+    width: 122px;
+    border: 2px solid;
+    border-radius: 122px;
+    height: 122px;
+}
+
+.ilkommunity-gary {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 304px;
+    height: 253px;
+    justify-items: center;
+}
+
+.ilkommunity-gary img {
+    margin-top: 35px;
+    border-radius: 122px;
+    border: 2px solid;
+    width: 122px;
+    height: 122px;
+}
+
+.ilkommunity-mad {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 304px;
+    height: 253px;
+    justify-items: center;
+}
+
+.ilkommunity-mad img {
+    border: 2px solid;
+    border-radius: 122px;
+    margin-top: 35px;
+    width: 122px;
+    height: 122px;
+}
+
+.header h3 {
+    font-size: 32px;
+    margin: 0 0 48px 0;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    margin: 0 80.5px 64px 80.5px;
+}
+
+.main>div {
+    display: flex;
+}
+
+.proker--container {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.proker--container,
+.proker--logo--container {
+    flex: 75%;
+    /* justify-content: center; */
+    align-self: center;
+}
+
+.proker--logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.proker--desc {
+    width: 75%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #111827;
+    margin-top: 20px;
+}
+
+.proker--judul {
+    margin-top: 10px;
+}
+
+.main-riset {
+    flex-direction: row-reverse;
+}
+
+.proker--container .button {
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    padding: 8px 14px 8px 16px;
+    width: 156px;
+    height: 36px;
+    background: #E49800;
+    border: 1px solid #111827;
+    box-shadow: 3px 4px 0px #000000;
+    color: white;
+}
+
+.proker--container>button:active {
+    transform: translateY(2px);
+    transform: translateX(3px);
+    box-shadow: 1px 1px 0px #000000;
 }
