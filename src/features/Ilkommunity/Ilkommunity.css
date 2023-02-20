@@ -38,60 +38,142 @@
     background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* border: 4px solid #111827; */
     display: grid;
     width: 304px;
     height: 253px;
     justify-items: center;
 }
 
+.ilkommunity-agriux img {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 122px;
+    width: 122px;
+    height: 122px;
+}
+
 .ilkommunity-csi {
-    border: 4px solid #111827;
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     width: 304px;
+    height: 253px;
     justify-items: center;
+}
+
+.ilkommunity-csi img {
+    margin-top: 35px;
+    border-radius: 122px;
+    border: 2px solid;
+    width: 122px;
+    height: 122px;
 }
 
 .ilkommunity-agribot {
-    border: 4px solid #111827;
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     width: 304px;
+    height: 253px;
     justify-items: center;
+}
+
+.ilkommunity-agribot img {
+    margin-top: 35px;
+    border-radius: 122px;
+    border: 2px solid;
+    width: 122px;
+    height: 122px;
 }
 
 .ilkommunity-cp {
-    border: 4px solid #111827;
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     width: 304px;
+    height: 253px;
     justify-items: center;
+}
+
+.ilkommunity-cp img {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 122px;
+    width: 122px;
+    height: 122px;
 }
 
 .ilkommunity-daming {
-    border: 4px solid #111827;
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     width: 304px;
+    height: 253px;
     justify-items: center;
+}
+
+.ilkommunity-daming img {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 122px;
+    width: 122px;
+    height: 122px;
 }
 
 .ilkommunity-iwdc {
-    border: 4px solid #111827;
-    width: 304px;
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
+    width: 304px;
+    height: 253px;
     justify-items: center;
+}
+
+.ilkommunity-iwdc img {
+    margin-top: 35px;
+    width: 122px;
+    border: 2px solid;
+    border-radius: 122px;
+    height: 122px;
 }
 
 .ilkommunity-gary {
-    border: 4px solid #111827;
-
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     width: 304px;
+    height: 253px;
     justify-items: center;
 }
 
-.ilkommunity-mad {
-    border: 4px solid #111827;
+.ilkommunity-gary img {
+    margin-top: 35px;
+    border-radius: 122px;
+    border: 2px solid;
+    width: 122px;
+    height: 122px;
+}
 
+.ilkommunity-mad {
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     width: 304px;
+    height: 253px;
     justify-items: center;
+}
+
+.ilkommunity-mad img {
+    border: 2px solid;
+    border-radius: 122px;
+    margin-top: 35px;
+    width: 122px;
+    height: 122px;
 }
