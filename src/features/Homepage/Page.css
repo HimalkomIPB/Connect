@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 84vh;
+    height: 110vh;
     background-image: url(./../../Assets/Background/bghimal.jpg);
     background-size: cover;
+    background-position: center center;
     margin-top: 5px;
     border-top: 4px solid;
 }
@@ -114,6 +115,21 @@
     font-size: 36px;
 }
 
+.ilkommunity-bg{
+    background-image: url(./../../Assets/Background/bgilkomunity.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 110vh;
+}
+
+.header .ilkommunity-header {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
 .ilkommunity {
     display: grid;
     margin: 0 81px 64px 81px;
@@ -123,16 +139,13 @@
     justify-items: center;
 }
 
-
-
 .ilkommunity li {
     list-style: none;
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 29px;
+    
 }
-
-
 
 .ilkommunity-agriux {
     background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
@@ -283,23 +296,37 @@
     margin: 0 0 48px 0;
 }
 
-.main {
-    display: grid;
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+
+
+/* Proker CSS */
+.megaproker .container{
+    background-image: url(./../../Assets/Background/bgproker.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.proker-container {
+    /* display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr)); */
+    display:flex ;
+    flex-direction: column;
     margin: 0 80.5px 64px 80.5px;
 }
 
-.main>div {
+.proker-container > div {
     display: flex;
 }
 
-.proker--container {
-    display: flex;
+/* Masih bingung cara ngebuat backgroundnya */
 
+
+.proker--info {
+    display: flex;
     flex-direction: column;
 }
 
-.proker--container,
+.proker--info,
 .proker--logo--container {
     flex: 75%;
     /* justify-content: center; */
@@ -313,7 +340,7 @@
     width: 60%;
 }
 
-.proker--desc {
+.proker--info .desc {
     width: 75%;
     font-family: 'Montserrat';
     font-weight: 400;
@@ -325,15 +352,15 @@
     margin-top: 20px;
 }
 
-.proker--judul {
+.proker--info .judul {
     margin-top: 10px;
 }
 
-.main-riset {
+.proker-riset {
     flex-direction: row-reverse;
 }
 
-.proker--container .button {
+.proker--info .button {
     margin-top: 20px;
     box-sizing: border-box;
     font-family: 'Montserrat';

@@ -30,74 +30,90 @@ const Page = () => {
       </div>
 
       {/* Ilkommunity */}
-      <div className="header">
-        <h2>ILKOMMUNITY</h2>
-      </div>
-      <div className="ilkommunity">
-        <div className="ilkommunity-agriux">
-          <img src={agriux} alt="AgriUX" />
-          <li>AGRIUX</li>
+      <div className='ilkommunity-bg'>
+        <div className="header">
+          <h2 className='ilkommunity-header'>ILKOMMUNITY</h2>
         </div>
-        <div className="ilkommunity-csi">
-          <img src={CSI} alt="CSI" />
-          <li>CSI</li>
-        </div>
-        <div className="ilkommunity-agribot">
-          <img src={agribot} alt="Agribot" />
-          <li>AGRIBOT</li>
-        </div>
-        <div className="ilkommunity-cp">
-          <img src={CP} alt="CP" />
-          <li>CP</li>
-        </div>
-        <div className="ilkommunity-daming">
-          <img src={daming} alt="Daming" />
-          <li>DAMING</li>
-        </div>
-        <div className="ilkommunity-iwdc">
-          <img src={iwdc} alt="IWDC" />
-          <li>IWDC</li>
-        </div>
-        <div className="ilkommunity-gary">
-          <img src={gary} alt="GARY" />
-          <li>GARY</li>
-        </div>
-        <div className="ilkommunity-mad">
-          <img src={mad} alt="MAD" />
-          <li>MAD</li>
-        </div>
+        <div className="ilkommunity">
+          <div className="ilkommunity-agriux">
+            <img src={agriux} alt="AgriUX" />
+            <li>AGRIUX</li>
+          </div>
+          <div className="ilkommunity-csi">
+            <img src={CSI} alt="CSI" />
+            <li>CSI</li>
+          </div>
+          <div className="ilkommunity-agribot">
+            <img src={agribot} alt="Agribot" />
+            <li>AGRIBOT</li>
+          </div>
+          <div className="ilkommunity-cp">
+            <img src={CP} alt="CP" />
+            <li>CP</li>
+          </div>
+          <div className="ilkommunity-daming">
+            <img src={daming} alt="Daming" />
+            <li>DAMING</li>
+          </div>
+          <div className="ilkommunity-iwdc">
+            <img src={iwdc} alt="IWDC" />
+            <li>IWDC</li>
+          </div>
+          <div className="ilkommunity-gary">
+            <img src={gary} alt="GARY" />
+            <li>GARY</li>
+          </div>
+          <div className="ilkommunity-mad">
+            <img src={mad} alt="MAD" />
+            <li>MAD</li>
+          </div>
       </div>
 
+      </div>
+      
       {/* Megaproker */}
-      <div className="header">
-        <h3>MEGAPROKER</h3>
-      </div>
-      <div className="main">
-        <div className="main-ittoday">
-          <div className='proker--logo--container'>
-            <img src={ittoday} alt="ittoday" className='proker--logo' />
+      <section className="megaproker">
+        <div className="container">
+
+          <div className="header">
+            <h3 className='proker-header'>MEGAPROKER</h3>
           </div>
-          <div className='proker--container'>
-            <h1>IT TODAY</h1>
-            <p className='proker--desc'><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.
-            </p>
-            {/* ini ntar dijadiin button yah */}
-            <button className='button'><span className='bold'>Selengkapnya</span></button>
+
+          <div className="proker-container">
+
+            <div className="proker-ittoday">
+              <div className='proker--logo--container'>
+                <img src={ittoday} alt="ittoday" className='proker--logo' />
+              </div>
+              <div className='proker--info'>
+                <h1 className='judul'>IT TODAY</h1>
+                <p className='desc'><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.
+                </p>
+                {/* ini ntar dijadiin button yah */}
+                <button className='button'><span className='bold'>Selengkapnya</span></button>
+              </div>
+            </div>
+
+            <div className="proker-riset">
+              <div className='proker--logo--container'>
+                <img src={riset} alt="riset ilkomerz" className='proker--logo' />
+              </div>
+              <div className='proker--info'>
+                <h1 className='judul'>RISET ILKOMERZ</h1>
+                <p className='desc'> <span className='bold'>Riset Ilkomerz</span> merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.
+                </p>
+                {/* ini ntar dijadiin button yah */}
+                <button className='button'><span className='bold'>Selengkapnya</span></button>
+              </div>
+            </div>
+            
           </div>
         </div>
-        <div className="main-riset">
-          <div className='proker--logo--container'>
-            <img src={riset} alt="riset ilkomerz" className='proker--logo' />
-          </div>
-          <div className='proker--container'>
-            <h1 className='proker--judul'>RISET ILKOMERZ</h1>
-            <p className='proker--desc'> <span className='bold'>Riset Ilkomerz</span> merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.
-            </p>
-            {/* ini ntar dijadiin button yah */}
-            <button className='button'><span className='bold'>Selengkapnya</span></button>
-          </div>
-        </div>
-      </div>
+
+
+      </section>
+      
+      
 
 
       {/* Komnews */}
