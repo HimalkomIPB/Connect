@@ -302,8 +302,8 @@
 .megaproker .container{
     background-image: url(./../../Assets/Background/bgproker.png);
     background-size: cover;
-    background-position: center center;
-    height: 100vh;
+    background-position: center top;
+    height: 1200px;
 }
 
 .proker-container {
@@ -319,7 +319,20 @@
 }
 
 /* Masih bingung cara ngebuat backgroundnya */
-
+.proker-ittoday{
+    background-image: url(./../../Assets/Background/cardproker1.png);
+    background-size: cover;
+    background-position: center top;
+    height: 580px;
+    width: 100%;
+}
+.proker-riset{
+    background-image: url(./../../Assets/Background/cardproker2.png);
+    background-size: cover;
+    background-position: center top;
+    height: 475px;
+    width: 100%;
+}
 
 .proker--info {
     display: flex;
@@ -359,6 +372,9 @@
 .proker-riset {
     flex-direction: row-reverse;
 }
+.proker-riset .proker--info{
+    margin-left: 10%;
+}
 
 .proker--info .button {
     margin-top: 20px;
@@ -373,7 +389,7 @@
     color: white;
 }
 
-.proker--container>button:active {
+.proker--info > button:active {
     transform: translateY(2px);
     transform: translateX(3px);
     box-shadow: 1px 1px 0px #000000;
