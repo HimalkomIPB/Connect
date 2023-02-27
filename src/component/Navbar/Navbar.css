@@ -23,14 +23,18 @@
 }
 
 .navbar-list li {
-    font-size: 18px;
+    font-size: 22px;
     list-style: none;
+    letter-spacing: 0.1px;
 }
 
 .navbar-list li a {
     text-decoration: none;
     color: black;
     transition: 0.3s;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffffff;
+    letter-spacing: 0.1px;
 }
 
 .navbar-list li:hover a {

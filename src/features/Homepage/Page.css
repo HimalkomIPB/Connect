@@ -155,6 +155,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-agriux:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-agriux img {
@@ -173,6 +180,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-csi:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-csi img {
@@ -191,6 +205,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-agribot:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-agribot img {
@@ -209,6 +230,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-cp:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-cp img {
@@ -227,6 +255,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-daming:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-daming img {
@@ -245,8 +280,14 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
 }
 
+.ilkommunity-iwdc:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+}
 .ilkommunity-iwdc img {
     margin-top: 35px;
     width: 122px;
@@ -263,8 +304,14 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
 }
 
+.ilkommunity-gary:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+}
 .ilkommunity-gary img {
     margin-top: 35px;
     border-radius: 122px;
@@ -281,6 +328,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-mad:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-mad img {
