@@ -127,8 +127,18 @@
 .header .ilkommunity-header {
     margin-top: 100px;
     margin-bottom: 100px;
-}
 
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F0E4D4;
+}
 
 .ilkommunity {
     display: grid;
@@ -367,7 +377,21 @@
     flex-direction: column;
     margin: 0 80.5px 64px 80.5px;
 }
+.header .proker-header {
+    margin-top: 100px;
+    margin-bottom: 100px;
 
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F0E4D4;
+}
 .proker-container > div {
     display: flex;
 }
