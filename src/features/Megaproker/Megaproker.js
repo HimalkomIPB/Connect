@@ -2,10 +2,13 @@ import React from 'react'
 import './Megaproker.css'
 import ittoday from '../../Assets/Logo IT Today.png'
 import riset from '../../Assets/Logo Riset.png'
+import Navbar from '../../component/Navbar/Navbar'
+import Footer from '../../component/Footer/Footer'
 
 const Megaproker = () => {
     return (
         <div>
+            <Navbar />
             <div className="header">
                 <h3>MEGAPROKER</h3>
             </div>
@@ -35,6 +38,7 @@ const Megaproker = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

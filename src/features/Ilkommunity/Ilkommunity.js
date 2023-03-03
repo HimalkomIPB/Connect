@@ -8,10 +8,13 @@ import daming from '../../Assets/Ilkommunity/Daming 200 x 200.png'
 import iwdc from '../../Assets/Ilkommunity/IWDC 200 x 200.png'
 import gary from '../../Assets/Ilkommunity/Gary 200 x 200.png'
 import mad from '../../Assets/Ilkommunity/MAD 200 x 200.png'
+import Navbar from '../../component/Navbar/Navbar'
+import Footer from '../../component/Footer/Footer'
 
 const Ilkommunity = () => {
     return (
         <div>
+            <Navbar />
             <div className="header">
                 <h2>ILKOMMUNITY</h2>
             </div>
@@ -49,6 +52,7 @@ const Ilkommunity = () => {
                     <li>MAD</li>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
