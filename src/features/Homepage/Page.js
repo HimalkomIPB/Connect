@@ -29,6 +29,9 @@ const Page = () => {
         <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
       </div>
 
+
+
+{/* contoh */}
       {/* Ilkommunity */}
       <div className='ilkommunity-bg'>
         <div className="header">
