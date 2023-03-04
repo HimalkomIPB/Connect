@@ -1,17 +1,27 @@
-.header {
-    display: flex;
-    justify-content: center;
+
+.ilkommunity-bg{
+    background-image: url(./../../Assets/Background/bgilkomunity.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 110vh;
 }
 
-.header h2 {
-    font-size: 32px;
-    margin: 0 0 48px 0;
-}
+.header .ilkommunity-header {
+    margin-top: 100px;
+    margin-bottom: 100px;
 
-.header {
-    font-family: Changa One;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 36px;
+    line-height: 44px;
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F0E4D4;
 }
 
 .ilkommunity {
@@ -23,16 +33,13 @@
     justify-items: center;
 }
 
-
-
 .ilkommunity li {
     list-style: none;
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 29px;
+    
 }
-
-
 
 .ilkommunity-agriux {
     background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
@@ -42,6 +49,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-agriux:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-agriux img {
@@ -60,6 +74,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-csi:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-csi img {
@@ -78,6 +99,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-agribot:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-agribot img {
@@ -96,6 +124,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-cp:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-cp img {
@@ -114,6 +149,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-daming:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-daming img {
@@ -132,8 +174,14 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
 }
 
+.ilkommunity-iwdc:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+}
 .ilkommunity-iwdc img {
     margin-top: 35px;
     width: 122px;
@@ -150,8 +198,14 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
 }
 
+.ilkommunity-gary:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+}
 .ilkommunity-gary img {
     margin-top: 35px;
     border-radius: 122px;
@@ -168,6 +222,13 @@
     width: 304px;
     height: 253px;
     justify-items: center;
+    transition: 0.3s;
+}
+
+.ilkommunity-mad:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
 }
 
 .ilkommunity-mad img {
@@ -176,4 +237,9 @@
     margin-top: 35px;
     width: 122px;
     height: 122px;
+}
+
+.header h3 {
+    font-size: 32px;
+    margin: 0 0 48px 0;
 }

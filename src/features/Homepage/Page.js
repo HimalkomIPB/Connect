@@ -30,8 +30,6 @@ const Page = () => {
       </div>
 
 
-
-{/* contoh */}
       {/* Ilkommunity */}
       <div className='ilkommunity-bg'>
         <div className="header">
@@ -70,10 +68,10 @@ const Page = () => {
             <img src={mad} alt="MAD" />
             <li>MAD</li>
           </div>
-      </div>
+        </div>
 
       </div>
-      
+
       {/* Megaproker */}
       <section className="megaproker">
         <div className="container">
@@ -83,7 +81,6 @@ const Page = () => {
           </div>
 
           <div className="proker-container">
-
             <div className="proker-ittoday">
               <div className='proker--logo--container'>
                 <img src={ittoday} alt="ittoday" className='proker--logo' />
@@ -109,14 +106,14 @@ const Page = () => {
                 <button className='button'><span className='bold'>Selengkapnya</span></button>
               </div>
             </div>
-            
+
           </div>
         </div>
 
 
       </section>
-      
-      
+
+
 
 
       {/* Komnews */}

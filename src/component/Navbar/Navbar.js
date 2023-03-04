@@ -16,6 +16,7 @@ const Navbar = () => {
                     <li><a href="/Megaproker">Program Kerja</a></li>
                     <li><a href="/Ilkommunity">Komunitas</a></li>
                     <li><a href="/Riset">Riset</a></li>
+                    <li><a href="/Placeholder">Placeholder</a></li>
                 </div>
             </div>
         </div>

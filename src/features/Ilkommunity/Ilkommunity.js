@@ -15,43 +15,46 @@ const Ilkommunity = () => {
     return (
         <div>
             <Navbar />
-            <div className="header">
-                <h2>ILKOMMUNITY</h2>
-            </div>
-            <div className="ilkommunity">
-                <div className="ilkommunity-agriux">
-                    <img src={agriux} alt="AgriUX" />
-                    <li>AGRIUX</li>
-                </div>
-                <div className="ilkommunity-csi">
-                    <img src={CSI} alt="CSI" />
-                    <li>CSI</li>
-                </div>
-                <div className="ilkommunity-agribot">
-                    <img src={agribot} alt="Agribot" />
-                    <li>AGRIBOT</li>
-                </div>
-                <div className="ilkommunity-cp">
-                    <img src={CP} alt="CP" />
-                    <li>CP</li>
-                </div>
-                <div className="ilkommunity-daming">
-                    <img src={daming} alt="Daming" />
-                    <li>DAMING</li>
-                </div>
-                <div className="ilkommunity-iwdc">
-                    <img src={iwdc} alt="IWDC" />
-                    <li>IWDC</li>
-                </div>
-                <div className="ilkommunity-gary">
-                    <img src={gary} alt="GARY" />
-                    <li>GARY</li>
-                </div>
-                <div className="ilkommunity-mad">
-                    <img src={mad} alt="MAD" />
-                    <li>MAD</li>
-                </div>
-            </div>
+            <div className='ilkommunity-bg'>
+        <div className="header">
+          <h2 className='ilkommunity-header'>ILKOMMUNITY</h2>
+        </div>
+        <div className="ilkommunity">
+          <div className="ilkommunity-agriux">
+            <img src={agriux} alt="AgriUX" />
+            <li>AGRIUX</li>
+          </div>
+          <div className="ilkommunity-csi">
+            <img src={CSI} alt="CSI" />
+            <li>CSI</li>
+          </div>
+          <div className="ilkommunity-agribot">
+            <img src={agribot} alt="Agribot" />
+            <li>AGRIBOT</li>
+          </div>
+          <div className="ilkommunity-cp">
+            <img src={CP} alt="CP" />
+            <li>CP</li>
+          </div>
+          <div className="ilkommunity-daming">
+            <img src={daming} alt="Daming" />
+            <li>DAMING</li>
+          </div>
+          <div className="ilkommunity-iwdc">
+            <img src={iwdc} alt="IWDC" />
+            <li>IWDC</li>
+          </div>
+          <div className="ilkommunity-gary">
+            <img src={gary} alt="GARY" />
+            <li>GARY</li>
+          </div>
+          <div className="ilkommunity-mad">
+            <img src={mad} alt="MAD" />
+            <li>MAD</li>
+          </div>
+        </div>
+
+      </div>
             <Footer />
         </div>
     )
