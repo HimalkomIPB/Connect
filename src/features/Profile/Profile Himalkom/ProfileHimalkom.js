@@ -2,12 +2,26 @@ import React from 'react'
 import Footer from '../../../component/Footer/Footer'
 import Navbar from '../../../component/Navbar/Navbar'
 import './ProfileHimalkom.css'
+import connect from '../../../Assets/Connect/Logo Connect.png'
 
 const ProfileHimalkom = () => {
   return (
     <div>
       <Navbar />
-
+      <div className="hero" >
+        <div className="hero-img">
+          <img src={connect} alt="connect" className="hero-image" />
+        </div>
+        <h1>CONNECT</h1>
+        <h3>Together We Connect Each Other</h3>
+        <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
+      </div>
+      <div className="filop">
+        <div className="filop-atas"></div>
+        <div className="filop-tengah"></div>
+        <div className="filop-kiri"></div>
+        <div className="filop-kanan"></div>
+      </div>
       <span className='divisi-container'> {/* Divisi Himalkom*/}
         <div className="punchline">
           <h2>TOGETHER WE CONNECT EACH OTHER</h2>
