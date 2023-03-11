@@ -1,13 +1,12 @@
 import React from 'react'
 import './Footer.css'
-import himalkom from '../../Assets/Himalkom/himalkom 96x96.png'
-import logo from '../../Assets/IPB/Logo IPB university 366px.png'
-import connect from '../../Assets/Connect/Logo Connect 160x83.png'
-import facebook from '../../Assets/Footer/facebook 24x24.png'
-import instagram from '../../Assets/Footer/instagram 24x24.png'
-import twitter from '../../Assets/Footer/twitter 24x24.png'
-import youtube from '../../Assets/Footer/youtube 24x24.png'
-
+import himalkom from '../../Assets/Footer/himalkom 96x96.svg'
+import logo from '../../Assets/Footer/IPB University 366px.svg'
+import connect from '../../Assets/Footer/Logo Connect 160x83.svg'
+import facebook from '../../Assets/Footer/facebook 24x24.svg'
+import instagram from '../../Assets/Footer/instagram 24x24.svg'
+import twitter from '../../Assets/Footer/twitter 24x24.svg'
+import youtube from '../../Assets/Footer/youtube 24x24.svg'
 
 
 
@@ -29,7 +28,6 @@ const Footer = () => {
         </div>
 
         <div className="Footer-divider">
-          {/* ceritanya buat divider awkwkwkwkkw */}
           <p></p>
         </div>
 

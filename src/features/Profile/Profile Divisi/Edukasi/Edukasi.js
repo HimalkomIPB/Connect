@@ -43,50 +43,62 @@ const Edukasi = () => {
                     <h2>STAFF</h2>
                     <img src={line} />
                 </div>
-                    <div className="edukasi-anggota">
-                        <div className="anggota-1">
-                            <img src={anggota1} alt="Faiz Byputra" />
-                        </div>
-                        <div className="anggota-2">
-                            <img src={anggota2} alt="Andika Risky Sururi" />
-                        </div>
-                        <div className="anggota-3">
-                            <img src={anggota3} alt="Dhianita Shafa" />
-                        </div>
-                        <div className="anggota-4">
-                            <img src={anggota4} alt="Ester Bina br Damanik" />
-                        </div>
-                        <div className="anggota-5">
-                            <img src={anggota5} alt="Farhan Nurohman" />
-                        </div>
-                        <div className="anggota-6">
-                            <img src={anggota6} alt="Halida Fiadnin" />
-                        </div>
-                        <div className="anggota-7">
-                            <img src={anggota7} alt="M Giyas Wisnu" />
-                        </div>
-                        <div className="anggota-8">
-                            <img src={anggota8} alt="Khansa Nabila" />
-                        </div>
-                        <div className="anggota-9">
-                            <img src={anggota9} alt="Muhammad Zahran" />
-                        </div>
-                        <div className="anggota-10">
-                            <img src={anggota10} alt="Raisya Shinta Siregar" />
-                        </div>
-                        <div className="anggota-11">
-                            <img src={anggota11} alt="Syifa Adawaiyah" />
-                        </div>
+                <div className="edukasi-anggota">
+                    <div className="anggota">
+                        <h2>KADIV</h2>
+                        <img src={anggota1} alt="Faiz Byputra" />
+                        <h2>FAIZ BYPUTRA</h2>
                     </div>
-            </section>
-
-
+                    <div className="anggota">
+                        <img src={anggota2} alt="Andika Risky Sururi" />
+                        <h2>ANDIKA RISKY SURURI</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota3} alt="Dhianita Shafa" />
+                        <h2>DHIANITA SHAFA</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota4} alt="Ester Bina br Damanik" />
+                        <h2>ESTER BINA BR DAMANIK</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota5} alt="Farhan Nurohman" />
+                        <h2>FARHAN NUROHMAN</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota6} alt="Halida Fiadnin" />
+                        <h2>HALIDA FIADNIN</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota7} alt="M Giyas Wisnu" />
+                        <h2>M GIYAS WISNU RIZQI</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota8} alt="Khansa Nabila" />
+                        <h2>KHANSA NABILA</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota9} alt="Muhammad Zahran" />
+                        <h2>MUHAMMAD ZAHRAN</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota10} alt="Raisya Shinta Siregar" />
+                        <h2>RAISYA SHINTA SIREGAR</h2>
+                    </div>
+                    <div className="anggota">
+                        <img src={anggota11} alt="Syifa Adawiyah" />
+                        <h2>SYIFA ADAWIYAH</h2>
+                    </div>
+                </div>
+                
             {/* Program Kerja */}
-
-
-
-
-
+                <div className="edukasi-program">
+                    <div className="program-header">
+                        <h2>PROGRAM KERJA</h2>
+                        <img src={line} />
+                    </div>
+                </div>
+            </section>
 
 
             <Footer />

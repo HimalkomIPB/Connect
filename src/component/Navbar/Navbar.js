@@ -1,5 +1,5 @@
 import React from 'react'
-import himalkom from '../../Assets/Himalkom/Logo Himalkom.png'
+import himalkom from '../../Assets/Himalkom/Logo HIMALKOM.svg'
 import './Navbar.css'
 const Navbar = () => {
     return (
