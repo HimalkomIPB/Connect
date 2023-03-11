@@ -1,0 +1,81 @@
+.edukasi-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 737px;
+    background-image: url("./../../../../Assets/Divisi/Edukasi/edukasi_background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    margin-top: 13px
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+}
+
+
+.info-edukasi {
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-edukasi h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    margin: 0 0 29px 0;
+}
+
+.info-edukasi p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    width: 75%;
+}
+
+.staff-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 0 0;
+}
+
+.staff-header h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    padding-bottom: 14px;
+}
+
+.staff {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./../../../../Assets/Divisi/Edukasi/Pattern.svg')
+
+}
+
+.edukasi-anggota {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+    justify-items: center;
+    gap: 80px 120px;
+    padding: 76px 116px 160px 106px;
+}
