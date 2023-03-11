@@ -17,8 +17,12 @@ const ProfileHimalkom = () => {
         <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
       </div>
       <div className="filop">
-        <div className="filop-atas"></div>
-        <div className="filop-tengah"></div>
+        <div className="filop-tengah">
+          <h3>FILOSOFI LOGO</h3>
+          <h1 className="c1">CONNECT</h1>
+          <img src={connect} alt="connect" className="c-image" />
+          <h1 className="c2">CONNECT</h1>
+        </div>
         <div className="filop-kiri"></div>
         <div className="filop-kanan"></div>
       </div>
