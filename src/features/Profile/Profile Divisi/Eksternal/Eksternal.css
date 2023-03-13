@@ -1,9 +1,9 @@
-.edukasi-container {
+.eksternal-container {
     display: flex;
     flex-direction: row;
     width: auto;
     height: 737px;
-    background-image: url("./../../../../Assets/Divisi/Edukasi/edukasi_background.svg");
+    background-image: url("./../../../../Assets/Divisi/Eksternal/Eksternal_background.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -13,7 +13,7 @@
     margin-top: 13px
 }
 
-.logo-container {
+.eksternal-logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,15 +21,14 @@
     flex: 50%;
 }
 
-
-.info-edukasi {
+.eksternal-desc {
     flex: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.info-edukasi h2 {
+.eksternal-desc h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -43,7 +42,7 @@
     color: #F0E4D4;
 }
 
-.info-edukasi p {
+.eksternal-desc p{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -52,15 +51,14 @@
     text-align: justify;
     width: 75%;
 }
-
-.staff-header {
+.eksternal-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 70px 0 0 0;
 }
 
-.staff-header h2 {
+.eksternal-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -74,73 +72,15 @@
     color: #F0E4D4;
 }
 
-.staff {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('./../../../../Assets/Divisi/Edukasi/Pattern.svg')
+.eksternal-header img{
+    padding: 0 0 76px 0;
 }
 
-.edukasi-anggota {
+.eksternal-staff{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
     justify-items: center;
     gap: 80px 120px;
     padding: 76px 116px 160px 106px;
-}
-
-.anggota-edukasi:first-child {
-    grid-column: span 3;
-}
-
-.anggota-edukasi:last-child {
-    grid-column: span 3;
-}
-
-.anggota-edukasi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.anggota-edukasi h2 {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 52px;
-    text-align: center;
-    width: 368px;
-
-    /* text-shadow: px 5px 0px #040404;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #040404;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: #F0073F; */
-}
-
-.program-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 160px 0 40px 0;
-}
-
-.program-header h2 {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 57px;
-    line-height: 64px;
-    padding-bottom: 14px;
-
-
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #F0E4D4;
-}
-
-.program-header img {
-    width: 572px;
 }

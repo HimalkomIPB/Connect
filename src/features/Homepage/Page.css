@@ -115,7 +115,7 @@
     font-size: 36px;
 }
 
-.ilkommunity-bg{
+.ilkommunity-bg {
     background-image: url(./../../Assets/Background/bgilkomunity.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -154,7 +154,7 @@
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 29px;
-    
+
 }
 
 .ilkommunity-agriux {
@@ -167,6 +167,20 @@
     justify-items: center;
     transition: 0.3s;
 }
+
+.ilkommunity-agriux li {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
+}
+
 
 .ilkommunity-agriux:hover {
     box-shadow: 10px 10px 0px #000000;
@@ -207,6 +221,20 @@
     height: 122px;
 }
 
+.ilkommunity-csi li {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
+}
+
+
 .ilkommunity-agribot {
     background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
     background-repeat: no-repeat;
@@ -230,6 +258,20 @@
     border: 2px solid;
     width: 122px;
     height: 122px;
+}
+
+
+.ilkommunity-agribot li {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
 }
 
 .ilkommunity-cp {
@@ -257,6 +299,19 @@
     height: 122px;
 }
 
+.ilkommunity-cp li {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
+}
+
 .ilkommunity-daming {
     background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
     background-repeat: no-repeat;
@@ -266,6 +321,19 @@
     height: 253px;
     justify-items: center;
     transition: 0.3s;
+}
+
+.ilkommunity-daming li {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
 }
 
 .ilkommunity-daming:hover {
@@ -293,11 +361,25 @@
     transition: 0.3s;
 }
 
+.ilkommunity-iwdc li {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
+}
+
 .ilkommunity-iwdc:hover {
     box-shadow: 10px 10px 0px #000000;
     transform: translateY(-10px);
     transform: translateX(-10px);
 }
+
 .ilkommunity-iwdc img {
     margin-top: 35px;
     width: 122px;
@@ -322,12 +404,26 @@
     transform: translateY(-10px);
     transform: translateX(-10px);
 }
+
 .ilkommunity-gary img {
     margin-top: 35px;
     border-radius: 122px;
     border: 2px solid;
     width: 122px;
     height: 122px;
+}
+
+.ilkommunity-gary li {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
 }
 
 .ilkommunity-mad {
@@ -355,6 +451,19 @@
     height: 122px;
 }
 
+.ilkommunity-mad li {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
+}
+
 .header h3 {
     font-size: 32px;
     margin: 0 0 48px 0;
@@ -363,7 +472,7 @@
 
 
 /* Proker CSS */
-.megaproker .container{
+.megaproker .container {
     background-image: url(./../../Assets/Background/bgproker.png);
     background-size: cover;
     background-position: center top;
@@ -373,10 +482,11 @@
 .proker-container {
     /* display: grid;
     grid-template-rows: repeat(2, minmax(0, 1fr)); */
-    display:flex ;
+    display: flex;
     flex-direction: column;
     margin: 0 80.5px 64px 80.5px;
 }
+
 .header .proker-header {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -392,19 +502,21 @@
     text-align: center;
     color: #F0E4D4;
 }
-.proker-container > div {
+
+.proker-container>div {
     display: flex;
 }
 
 /* Masih bingung cara ngebuat backgroundnya */
-.proker-ittoday{
+.proker-ittoday {
     background-image: url(./../../Assets/Background/cardproker1.png);
     background-size: cover;
     background-position: center top;
     height: 580px;
     width: 100%;
 }
-.proker-riset{
+
+.proker-riset {
     background-image: url(./../../Assets/Background/cardproker2.png);
     background-size: cover;
     background-position: center top;
@@ -450,7 +562,8 @@
 .proker-riset {
     flex-direction: row-reverse;
 }
-.proker-riset .proker--info{
+
+.proker-riset .proker--info {
     margin-left: 10%;
 }
 
@@ -467,7 +580,7 @@
     color: white;
 }
 
-.proker--info > button:active {
+.proker--info>button:active {
     transform: translateY(2px);
     transform: translateX(3px);
     box-shadow: 1px 1px 0px #000000;

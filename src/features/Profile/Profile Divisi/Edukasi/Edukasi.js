@@ -44,48 +44,48 @@ const Edukasi = () => {
                     <img src={line} />
                 </div>
                 <div className="edukasi-anggota">
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <h2>KADIV</h2>
                         <img src={anggota1} alt="Faiz Byputra" />
                         <h2>FAIZ BYPUTRA</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota2} alt="Andika Risky Sururi" />
                         <h2>ANDIKA RISKY SURURI</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota3} alt="Dhianita Shafa" />
                         <h2>DHIANITA SHAFA</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota4} alt="Ester Bina br Damanik" />
                         <h2>ESTER BINA BR DAMANIK</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota5} alt="Farhan Nurohman" />
                         <h2>FARHAN NUROHMAN</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota6} alt="Halida Fiadnin" />
                         <h2>HALIDA FIADNIN</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota7} alt="M Giyas Wisnu" />
                         <h2>M GIYAS WISNU RIZQI</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota8} alt="Khansa Nabila" />
                         <h2>KHANSA NABILA</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota9} alt="Muhammad Zahran" />
                         <h2>MUHAMMAD ZAHRAN</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota10} alt="Raisya Shinta Siregar" />
                         <h2>RAISYA SHINTA SIREGAR</h2>
                     </div>
-                    <div className="anggota">
+                    <div className="anggota-edukasi">
                         <img src={anggota11} alt="Syifa Adawiyah" />
                         <h2>SYIFA ADAWIYAH</h2>
                     </div>
