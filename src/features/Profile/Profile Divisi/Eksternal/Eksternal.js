@@ -3,6 +3,17 @@ import Footer from '../../../../component/Footer/Footer'
 import Navbar from '../../../../component/Navbar/Navbar'
 import line from '../../../../Assets/Divisi/Eksternal/line.svg'
 import './Eksternal.css'
+import anggota1 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Octa.svg'
+import anggota2 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Made.svg'
+import anggota3 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Antonio.svg'
+import anggota4 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Eva.svg'
+import anggota5 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Jesselyn.svg'
+import anggota6 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Jihan.svg'
+import anggota7 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Ilham.svg'
+import anggota8 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Cilla.svg'
+import anggota9 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Tan Maria.svg'
+import anggota10 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Tita.svg'
+
 
 const Eksternal = () => {
     return (
@@ -27,16 +38,55 @@ const Eksternal = () => {
                     <img src={line} />
                 </div>
                 <div className="eksternal-staff">
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
-                    <div className="anggota-eksternal"></div>
+                    <div className="anggota-eksternal">
+                        <h2>KADIV</h2>
+                        <img src={anggota1} alt="Christy Octaviani H" />
+                        <h2>CHRISTY OCTAVIANI H</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota2} alt="" />
+                        <h2>MADE ALTHAAF NAUFAL G</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota3} alt="" />
+                        <h2>ANTONIO</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota4} alt="" />
+                        <h2>EVA FITRIYANINGSIH</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota5} alt="" />
+                        <h2>JESSELYN GOWIN</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota6} alt="" />
+                        <h2>JIHAN FEBRIHARVIANTI</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota7} alt="" />
+                        <h2>M ILHAM HAKIM S</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota8} alt="" />
+                        <h2>PRISCILLA NUR ELIA P.G</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota9} alt="" />
+                        <h2>TAN MARIA PUTRI A</h2>
+                    </div>
+                    <div className="anggota-eksternal">
+                        <img src={anggota10} alt="" />
+                        <h2>TITA MADRIYANTI</h2>
+                    </div>
+                </div>
+
+                {/* Program Kerja */}
+                <div className="eksternal-program">
+                    <div className="program-header">
+                        <h2>PROGRAM KERJA</h2>
+                        <img src={line} />
+                    </div>
                 </div>
             </section>
             <Footer />
