@@ -35,7 +35,7 @@ const Eksternal = () => {
             <section className='staff'>
                 <div className="eksternal-header">
                     <h2>STAFF</h2>
-                    <img src={line} />
+                    <img src={line} alt="line"/>
                 </div>
                 <div className="eksternal-staff">
                     <div className="anggota-eksternal">
@@ -44,39 +44,39 @@ const Eksternal = () => {
                         <h2>CHRISTY OCTAVIANI H</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota2} alt="" />
+                        <img src={anggota2} alt="Made Althaaf" />
                         <h2>MADE ALTHAAF NAUFAL G</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota3} alt="" />
+                        <img src={anggota3} alt="Antonio" />
                         <h2>ANTONIO</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota4} alt="" />
+                        <img src={anggota4} alt="Eva Fitriyaningsih" />
                         <h2>EVA FITRIYANINGSIH</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota5} alt="" />
+                        <img src={anggota5} alt="Jesslyn Gowin" />
                         <h2>JESSELYN GOWIN</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota6} alt="" />
+                        <img src={anggota6} alt="Jihan Febriharvianti" />
                         <h2>JIHAN FEBRIHARVIANTI</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota7} alt="" />
+                        <img src={anggota7} alt="Ilham Hakim S" />
                         <h2>M ILHAM HAKIM S</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota8} alt="" />
+                        <img src={anggota8} alt="Priscilla Nur Elia P.G" />
                         <h2>PRISCILLA NUR ELIA P.G</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota9} alt="" />
+                        <img src={anggota9} alt="Tan Maria Putri" />
                         <h2>TAN MARIA PUTRI A</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota10} alt="" />
+                        <img src={anggota10} alt="Tita Madriyanti" />
                         <h2>TITA MADRIYANTI</h2>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const Eksternal = () => {
                 <div className="eksternal-program">
                     <div className="program-header">
                         <h2>PROGRAM KERJA</h2>
-                        <img src={line} />
+                        <img src={line} alt="line"/>
                     </div>
                 </div>
             </section>
