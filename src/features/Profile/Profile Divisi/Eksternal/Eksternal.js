@@ -36,7 +36,6 @@ const Eksternal = () => {
                 <div className="eksternal-header">
                     <h2>STAFF</h2>
                     <img src={line} alt="line"/>
-                    <img src={line} alt="line"/>
                 </div>
                 <div className="eksternal-staff">
                     <div className="anggota-eksternal">
