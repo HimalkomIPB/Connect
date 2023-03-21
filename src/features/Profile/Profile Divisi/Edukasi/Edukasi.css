@@ -103,22 +103,6 @@
     align-items: center;
 }
 
-.anggota-edukasi h2 {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 52px;
-    text-align: center;
-    width: 368px;
-
-    /* text-shadow: px 5px 0px #040404;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #040404;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: #F0073F; */
-}
-
 .program-header {
     display: flex;
     flex-direction: column;

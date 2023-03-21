@@ -3,17 +3,17 @@ import Navbar from "../../../../component/Navbar/Navbar";
 import Footer from "../../../../component/Footer/Footer";
 import './Edukasi.css'
 import line from './../../../.././Assets/Divisi/Edukasi/line.svg'
-import anggota1 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Faiz.svg'
-import anggota2 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Andika.svg'
-import anggota3 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Shafa.svg'
-import anggota4 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Ester.svg'
-import anggota5 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Farhan.svg'
-import anggota6 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Halida.svg'
-import anggota7 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Giyas.svg'
-import anggota8 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Khansa.svg'
-import anggota9 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Zahran.svg'
-import anggota10 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Raisya.svg'
-import anggota11 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Syifa.svg'
+import anggota1 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Faiz.png'
+import anggota2 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Andika.png'
+import anggota3 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Shafa.png'
+import anggota4 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Ester.png'
+import anggota5 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Farhan.png'
+import anggota6 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Halida.png'
+import anggota7 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Giyas.png'
+import anggota8 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Khansa.png'
+import anggota9 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Zahran.png'
+import anggota10 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Raisya.png'
+import anggota11 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Syifa.png'
 
 
 
@@ -41,61 +41,49 @@ const Edukasi = () => {
             <section className="staff">
                 <div className="staff-header">
                     <h2>STAFF</h2>
-                    <img src={line} />
+                    <img src={line} alt="line" />
                 </div>
                 <div className="edukasi-anggota">
                     <div className="anggota-edukasi">
-                        <h2>KADIV</h2>
                         <img src={anggota1} alt="Faiz Byputra" />
-                        <h2>FAIZ BYPUTRA</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota2} alt="Andika Risky Sururi" />
-                        <h2>ANDIKA RISKY SURURI</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota3} alt="Dhianita Shafa" />
-                        <h2>DHIANITA SHAFA</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota4} alt="Ester Bina br Damanik" />
-                        <h2>ESTER BINA BR DAMANIK</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota5} alt="Farhan Nurohman" />
-                        <h2>FARHAN NUROHMAN</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota6} alt="Halida Fiadnin" />
-                        <h2>HALIDA FIADNIN</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota7} alt="M Giyas Wisnu" />
-                        <h2>M GIYAS WISNU RIZQI</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota8} alt="Khansa Nabila" />
-                        <h2>KHANSA NABILA</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota9} alt="Muhammad Zahran" />
-                        <h2>MUHAMMAD ZAHRAN</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota10} alt="Raisya Shinta Siregar" />
-                        <h2>RAISYA SHINTA SIREGAR</h2>
                     </div>
                     <div className="anggota-edukasi">
                         <img src={anggota11} alt="Syifa Adawiyah" />
-                        <h2>SYIFA ADAWIYAH</h2>
                     </div>
                 </div>
-                
-            {/* Program Kerja */}
+
+                {/* Program Kerja */}
                 <div className="edukasi-program">
                     <div className="program-header">
                         <h2>PROGRAM KERJA</h2>
-                        <img src={line} />
+                        <img src={line} alt="line"/>
                     </div>
                 </div>
             </section>

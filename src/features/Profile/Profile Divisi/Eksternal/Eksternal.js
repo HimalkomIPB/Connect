@@ -3,16 +3,16 @@ import Footer from '../../../../component/Footer/Footer'
 import Navbar from '../../../../component/Navbar/Navbar'
 import line from '../../../../Assets/Divisi/Eksternal/line.svg'
 import './Eksternal.css'
-import anggota1 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Octa.svg'
-import anggota2 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Made.svg'
-import anggota3 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Antonio.svg'
-import anggota4 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Eva.svg'
-import anggota5 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Jesselyn.svg'
-import anggota6 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Jihan.svg'
-import anggota7 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Ilham.svg'
-import anggota8 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Cilla.svg'
-import anggota9 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Tan Maria.svg'
-import anggota10 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Tita.svg'
+import anggota1 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Octa.png'
+import anggota2 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Made.png'
+import anggota3 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Antonio.png'
+import anggota4 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Eva.png'
+import anggota5 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Jesslyn.png'
+import anggota6 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Jihan.png'
+import anggota7 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Ilham.png'
+import anggota8 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Cilla.png'
+import anggota9 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Maria.png'
+import anggota10 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Tita.png'
 
 
 const Eksternal = () => {
@@ -35,49 +35,38 @@ const Eksternal = () => {
             <section className='staff'>
                 <div className="eksternal-header">
                     <h2>STAFF</h2>
-                    <img src={line} />
+                    <img src={line} alt="line"/>
                 </div>
                 <div className="eksternal-staff">
                     <div className="anggota-eksternal">
-                        <h2>KADIV</h2>
                         <img src={anggota1} alt="Christy Octaviani H" />
-                        <h2>CHRISTY OCTAVIANI H</h2>
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota2} alt="" />
-                        <h2>MADE ALTHAAF NAUFAL G</h2>
+                        <img src={anggota2} alt="Made Althaaf" />
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota3} alt="" />
-                        <h2>ANTONIO</h2>
+                        <img src={anggota3} alt="Antonio" />
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota4} alt="" />
-                        <h2>EVA FITRIYANINGSIH</h2>
+                        <img src={anggota4} alt="Eva Fitriyaningsih" />
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota5} alt="" />
-                        <h2>JESSELYN GOWIN</h2>
+                        <img src={anggota5} alt="Jesselyn Gowin" />
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota6} alt="" />
-                        <h2>JIHAN FEBRIHARVIANTI</h2>
+                        <img src={anggota6} alt="Jihan Febriharvianti" />
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota7} alt="" />
-                        <h2>M ILHAM HAKIM S</h2>
+                        <img src={anggota7} alt="Ilham Hakim S" />
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota8} alt="" />
-                        <h2>PRISCILLA NUR ELIA P.G</h2>
+                        <img src={anggota8} alt="Priscilla Nur Elia P.G" />
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota9} alt="" />
-                        <h2>TAN MARIA PUTRI A</h2>
+                        <img src={anggota9} alt="Tan Maria Putri" />
                     </div>
                     <div className="anggota-eksternal">
-                        <img src={anggota10} alt="" />
-                        <h2>TITA MADRIYANTI</h2>
+                        <img src={anggota10} alt="Tita Madriyanti" />
                     </div>
                 </div>
 
@@ -85,7 +74,7 @@ const Eksternal = () => {
                 <div className="eksternal-program">
                     <div className="program-header">
                         <h2>PROGRAM KERJA</h2>
-                        <img src={line} />
+                        <img src={line} alt="line"/>
                     </div>
                 </div>
             </section>
