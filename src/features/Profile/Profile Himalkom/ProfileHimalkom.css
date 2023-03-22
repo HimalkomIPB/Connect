@@ -2,26 +2,97 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr));
+    justify-items: center;
+    padding: 0 79px 120px 87px;
+    row-gap: 50px;
+    column-gap: 26px;
 }
 
 .divisi-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 114px 0 0 0;
+    padding: 42px 0 82px 0 ;
+}
+
+.divisi-header p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.divisi-header h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    color: #F0E4D4;
+    text-shadow: 3px 2px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    padding-bottom: 14px;
 }
 
 .divisi-container {
     border-width: 5px 0px;
     border-style: solid;
     border-color: #111827;
-    background: url('./../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 24px 0;
+}
+
+.divisi-container {
+    background-color: #E49800;
+}
+
+/* .divisi-background{
+    background-image: url('./../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Background1.png');
+    opacity: 0.3;
+} */
+
+
+.divisi{
+    border: 5px solid #16052B;
+    transition: 0.5s;
+}
+
+.divisi img{
+    width: 350px;
+    height: 350px;
+}
+
+.divisi:hover{
+    box-shadow: 5px 5px 0px #16052B;;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+    background-image: url("../../../Assets/Profil Himalkom/Aset Divisi/Hover-Background.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.divisi-background{
-    background-color: #E49800;
+
+
+.punchline {
+    display: flex;
+    justify-content: center;
+    margin: 58px 0 72px 0;
 }
+
+.punchline h2 {
+    font-family: 'Changa One';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #E49800;
+    text-shadow: 3px 2px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+}
+
 
 .filop {
     display: block;
