@@ -4,7 +4,6 @@ const Placeholder = () => {
     return (
         <div>
             <div className="temp">
-
                 <li><a href='/Badan-Pengawas'>BP</a></li>
                 <li><a href='/BPH'>BPH</a></li>
                 <li><a href='/Edukasi'>Edukasi</a></li>

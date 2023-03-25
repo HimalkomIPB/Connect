@@ -1,3 +1,7 @@
+li {
+    cursor: default;
+}
+
 .navbar {
     font-family: Changa One;
     font-weight: normal;
@@ -23,7 +27,7 @@
 }
 
 .navbar-list li {
-    font-size: 22px;
+    font-size: 18px;
     list-style: none;
     letter-spacing: 0.1px;
 }
@@ -32,8 +36,6 @@
     text-decoration: none;
     color: black;
     transition: 0.3s;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #ffffff;
     letter-spacing: 0.1px;
 }
 
@@ -47,4 +49,59 @@
     text-shadow: 2.5px 1.5px 0px #040404;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #040404;
+}
+
+.navbar-list li:hover {
+    font-family: 'Changa One';
+    font-style: italic;
+    font-weight: 350;
+    font-size: 28px;
+    line-height: 36px;
+    color: #F0E4D4;
+    text-shadow: 2.5px 1.5px 0px #040404;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #040404;
+}
+
+.sub-menu-1 {
+    display: none;
+    width: 330px;
+    height: 110px;
+}
+
+.profil-dropdown:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: #E49800;
+    padding: 10px;
+    border-bottom: 4px solid #111827;
+}
+
+.divisi-dropdown li {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    letter-spacing: 0.1px;
+}
+
+.sub-menu-1 li {
+    padding: 0 0 22px 28px;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.divisi-dropdown:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background-color: #E49800;
+    padding: 10px;
+    border-bottom: 4px solid #111827;
+    width: 320px;
+    height: 404px;
+}
+
+.sub-menu-2 li {
+    padding: 0 0 22px 28px;
 }

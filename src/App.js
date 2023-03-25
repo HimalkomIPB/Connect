@@ -23,7 +23,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<Page />} />
-          <Route path='/Placeholder' element={<Placeholder />} />
+          {/* <Route path='/Placeholder' element={<Placeholder />} /> */}
           <Route path='/ProfilHimalkom' element={<ProfileHimalkom />} />
           <Route path='/Megaproker' element={<Megaproker />} />
           <Route path='/Ilkommunity' element={<Ilkommunity />} />
