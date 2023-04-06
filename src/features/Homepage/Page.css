@@ -473,24 +473,17 @@
 
 /* Proker CSS */
 .megaproker .container {
-    background-image: url(./../../Assets/Background/bgproker.png);
+    background-image: url(./../../Assets/Background/bgproker.svg);
     background-size: cover;
-    background-position: center top;
-    height: 1200px;
-}
-
-.proker-container {
-    /* display: grid;
-    grid-template-rows: repeat(2, minmax(0, 1fr)); */
-    display: flex;
-    flex-direction: column;
-    margin: 0 80.5px 64px 80.5px;
+    background-position: center bottom;
+    height: 1160px;
+    border: 5px solid black;
+    width: 100%;
 }
 
 .header .proker-header {
-    margin-top: 100px;
-    margin-bottom: 100px;
-
+    margin-top: 25px;
+    margin-bottom: 0;
     font-weight: 400;
     font-size: 36px;
     line-height: 44px;
@@ -503,39 +496,35 @@
     color: #F0E4D4;
 }
 
-.proker-container>div {
-    display: flex;
-}
-
-/* Masih bingung cara ngebuat backgroundnya */
-.proker-ittoday {
-    background-image: url(./../../Assets/Background/cardproker1.png);
-    background-size: cover;
-    background-position: center top;
-    height: 580px;
-    width: 100%;
-}
-
-.proker-riset {
-    background-image: url(./../../Assets/Background/cardproker2.png);
-    background-size: cover;
-    background-position: center top;
-    height: 475px;
-    width: 100%;
-}
-
-.proker--info {
+/* Proker Proker Himalkom */
+.proker-container {
     display: flex;
     flex-direction: column;
+    padding: 0 80.25px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.proker{
+    border: 2px solid rgb(160, 44, 44);
+    display: flex;
+    /* margin: 0 80.5px 0 80.5px; */
+    width: 90%;
 }
 
 .proker--info,
 .proker--logo--container {
+    height: 100%;
     flex: 75%;
-    /* justify-content: center; */
     align-self: center;
 }
 
+
+.proker--info,
+.proker--logo--container {
+ z-index: 2;
+}
 .proker--logo {
     display: block;
     margin-left: auto;
@@ -543,7 +532,23 @@
     width: 60%;
 }
 
+.proker--info .judul {
+    margin-top:66px;
+    margin-bottom: 0px;
+    font-family: "Sports World";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 64px;
+    color: #f0e4d4;
+    text-shadow: 3px 2px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    
+}
+
 .proker--info .desc {
+    border: 1px solid black;
     width: 75%;
     font-family: 'Montserrat';
     font-weight: 400;
@@ -552,19 +557,51 @@
     line-height: 24px;
     text-align: justify;
     color: #111827;
-    margin-top: 20px;
-}
-
-.proker--info .judul {
     margin-top: 10px;
 }
 
-.proker-riset {
+.bgproker1{
+    z-index: 1;
+    position: absolute;
+    margin-top: 50px;
+    width: 89.5%;
+}
+.proker1 {
+    margin-top: 50px;
+    /* background-image: url(./../../Assets/Background/cardproker1.svg); */
+    background-size: cover;
+    background-position: center top;
+    height: 542px;
+    width: 100%;
+}
+
+.proker1 .proker--logo--container .proker--logo {
+    margin-top: 112px;
+}
+
+.bgproker2{
+    z-index: 1;
+    position: absolute;
+    margin-top: 490px;
+    width: 89.5%;
+}
+
+.proker2{
+    background-size: cover;
+    background-position: center top;
+    height: 450px;
+    width: 100%;
+}
+
+.proker2 {
     flex-direction: row-reverse;
 }
 
-.proker-riset .proker--info {
+.proker2 .proker--info {
     margin-left: 10%;
+}
+.proker2 .proker .proker--info .judul {
+    margin-top: 105px;
 }
 
 .proker--info .button {
