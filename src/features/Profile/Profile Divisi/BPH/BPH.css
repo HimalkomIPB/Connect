@@ -1,9 +1,9 @@
-.bp-container {
+.bph-container {
     display: flex;
     flex-direction: row;
     width: auto;
     height: 737px;
-    background-image: url("./../../../../Assets/Divisi/BP/BP_background.svg");
+    background-image: url("./../../../../Assets/Divisi/BPH/BPH_background.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,14 +22,14 @@
 }
 
 
-.info-bp {
+.info-bph {
     flex: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.info-bp h2 {
+.info-bph h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -43,7 +43,7 @@
     color: #F0E4D4;
 }
 
-.info-bp p {
+.info-bph p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -80,24 +80,16 @@
     background-image: url('./../../../../Assets/Divisi/Edukasi/Pattern.svg')
 }
 
-.BP-anggota {
+.BPH-anggota {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: repeat(5, minmax(0, 1fr));
     justify-items: center;
-    gap: 80px 120px;
+    gap: 80px 80px;
     padding: 76px 116px 160px 106px;
 }
 
-.anggota-BP:first-child {
-    grid-column: span 3;
-}
-
-.anggota-BP:last-child {
-    grid-column: 3;
-}
-
-.anggota-BP {
+.anggota-BPH {
     display: flex;
     flex-direction: column;
     align-items: center;
