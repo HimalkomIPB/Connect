@@ -1,52 +1,52 @@
 .divisi-card {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-    justify-items: center;
-    padding: 0 79px 120px 87px;
-    row-gap: 50px;
-    column-gap: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  justify-items: center;
+  padding: 0 79px 120px 87px;
+  row-gap: 50px;
+  column-gap: 26px;
 }
 
 .divisi-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 42px 0 82px 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 42px 0 82px 0;
 }
 
 .divisi-header p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .divisi-header h2 {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 57px;
-    line-height: 64px;
-    color: #F0E4D4;
-    text-shadow: 3px 2px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    padding-bottom: 14px;
+  font-family: "Sports World";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 64px;
+  color: #f0e4d4;
+  text-shadow: 3px 2px 0px #040404;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #040404;
+  padding-bottom: 14px;
 }
 
 .divisi-container {
-    border-width: 5px 0px;
-    border-style: solid;
-    border-color: #111827;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 0 24px 0;
+  border-width: 5px 0px;
+  border-style: solid;
+  border-color: #111827;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 0 24px 0;
 }
 
 .divisi-container {
-    background-color: #E49800;
+  background-color: #e49800;
 }
 
 /* .divisi-background{
@@ -54,97 +54,153 @@
     opacity: 0.3;
 } */
 
-
-.divisi{
-    border: 5px solid #16052B;
-    transition: 0.5s;
+.divisi {
+  border: 5px solid #16052b;
+  transition: 0.5s;
 }
 
-.divisi img{
-    width: 350px;
-    height: 350px;
+.divisi img {
+  width: 350px;
+  height: 350px;
 }
 
-.divisi:hover{
-    box-shadow: 5px 5px 0px #16052B;;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-    background-image: url("../../../Assets/Profil Himalkom/Aset Divisi/Hover-Background.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+.divisi:hover {
+  box-shadow: 5px 5px 0px #16052b;
+  transform: translateY(-10px);
+  transform: translateX(-10px);
+  background-image: url("../../../Assets/Profil Himalkom/Aset Divisi/Hover-Background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 
 .punchline {
-    display: flex;
-    justify-content: center;
-    margin: 58px 0 72px 0;
+  display: flex;
+  justify-content: center;
+  margin: 58px 0 72px 0;
 }
 
 .punchline h2 {
-    font-family: 'Changa One';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    color: #E49800;
-    text-shadow: 3px 2px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
+  font-family: "Changa One";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #e49800;
+  text-shadow: 3px 2px 0px #040404;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #040404;
 }
 
-
 .filop {
-    display: block;
-    background: #F7C5A1;
-    height: 784px;
-    border-bottom: 4px solid;
+  display: block;
+  background: #f7c5a1;
+  height: 784px;
+  border-bottom: 4px solid;
 }
 
 .filop-tengah {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.filop-tengah>h3 {
-    display: block;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 24px;
-    line-height: 32px;
-    margin-top: 29px;
+.filop-tengah > h3 {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 29px;
 }
 
 .c1 {
-    font-family: "Changa One";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 57px;
-    line-height: 64px;
-    letter-spacing: -0.25px;
-    color: #F0E4D4;
-    text-shadow: 4.5px 2.5px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
+  font-family: "Changa One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+  color: #f0e4d4;
+  text-shadow: 4.5px 2.5px 0px #040404;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #040404;
 }
 
 .c-image {
-    align-items: center;
-    margin-top: 100px;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .c2 {
-    font-family: "Changa One";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 57px;
-    line-height: 64px;
-    letter-spacing: -0.25px;
-    color: #F0E4D4;
-    text-shadow: 4.5px 2.5px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    margin-top: 24px;
+  font-family: "Changa One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+  color: #f0e4d4;
+  text-shadow: 4.5px 2.5px 0px #040404;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #040404;
+  margin-top: 24px;
+}
+
+/* Tujuan himalkom */
+.tujuan-himalkom {
+  height: 464px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  background-color: #e5e7eb ;
+  border-bottom: 5px solid #040404;
+  border-top: 5px solid #040404;
+  background-image: url("../../../Assets/Profil Himalkom/logohima_cropped.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+}
+
+.tujuan-himalkom .txt-container {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 80px 110px 80px;
+}
+
+.txt-container h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: right;
+  color: #111827;
+}
+
+.txt-container h2 {
+  font-family: "Sports World";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 64px;
+  text-align: right;
+  letter-spacing: -0.25px;
+  color: #f0e4d4;
+  text-shadow: 3px 2px 0px #040404;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #040404;
+  margin-top: 10px;
+}
+
+.txt-container p {
+  display: flex;
+  margin-left: auto;
+  margin-top: 70px;
+  width: 70%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: right;
+  color: #170f00;
 }

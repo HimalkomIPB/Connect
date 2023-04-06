@@ -1,27 +1,24 @@
-import React from 'react'
-import Footer from '../../../component/Footer/Footer'
-import Navbar from '../../../component/Navbar/Navbar'
-import './ProfileHimalkom.css'
-import connect from '../../../Assets/Connect/Logo Connect.png'
-import line from './../../../Assets/Profil Himalkom/line.svg'
-import BPH from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-BPH.png'
-import BP from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-BP.png'
-import Edukasi from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Edukasi.png'
-import Eksternal from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Eksternal.png'
-import Entrepreneur from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Entre.png'
-import HRD from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-HRD.png'
-import Medbrand from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Medbrand.png'
-import Ristek from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Ristek.png'
-import Internal from '../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Internal.png'
-
-
-
+import React from "react";
+import Footer from "../../../component/Footer/Footer";
+import Navbar from "../../../component/Navbar/Navbar";
+import "./ProfileHimalkom.css";
+import connect from "../../../Assets/Connect/Logo Connect.png";
+import line from "./../../../Assets/Profil Himalkom/line.svg";
+import BPH from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-BPH.png";
+import BP from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-BP.png";
+import Edukasi from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Edukasi.png";
+import Eksternal from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Eksternal.png";
+import Entrepreneur from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Entre.png";
+import HRD from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-HRD.png";
+import Medbrand from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Medbrand.png";
+import Ristek from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Ristek.png";
+import Internal from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Internal.png";
 
 const ProfileHimalkom = () => {
   return (
     <div>
       <Navbar />
-      <div className="hero" >
+      <div className="hero">
         <div className="hero-img">
           <img src={connect} alt="connect" className="hero-image" />
         </div>
@@ -29,6 +26,15 @@ const ProfileHimalkom = () => {
         <h3>Together We Connect Each Other</h3>
         <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
       </div>
+
+      <div className="tujuan-himalkom">
+          <div className="txt-container">
+              <h3>Tujuan</h3>
+              <h2>HIMALKOM</h2>
+              <p>Mencerdaskan ilkomerz agar siap dan semangat untuk menjadi professional, memperkuat internalisasi, meningkatkan eksistensi, dan membangun Ilmu Komputer IPB berdasarkan aspirasi Ilkomerz sehingga tercipta hasil yang dahsyat.</p>
+          </div>
+      </div>
+
       <div className="filop">
         <div className="filop-tengah">
           <h3>FILOSOFI LOGO</h3>
@@ -39,15 +45,14 @@ const ProfileHimalkom = () => {
         <div className="filop-kiri"></div>
         <div className="filop-kanan"></div>
       </div>
+
       <div className="punchline">
         <h2>“TOGETHER WE CONNECT EACH OTHER”</h2>
       </div>
 
       {/* Divisi Himalkom*/}
       <div className="divisi-container">
-
         <div className="divisi-background">
-
           <div className="divisi-header">
             <p>DIVISI</p>
             <h2>HIMALKOM</h2>
@@ -71,9 +76,9 @@ const ProfileHimalkom = () => {
             </div>
 
             {/* EKSTERNAL */}
-              <div className="divisi">
-                <img src={Eksternal} alt="Eksternal" />
-              </div>
+            <div className="divisi">
+              <img src={Eksternal} alt="Eksternal" />
+            </div>
 
             {/* HRD */}
             <div className="divisi">
@@ -100,12 +105,11 @@ const ProfileHimalkom = () => {
               <img src={Entrepreneur} alt="Entrepreneur" />
             </div>
           </div>
-
         </div>
       </div>
       <Footer />
-    </div >
-  )
-}
+    </div>
+  );
+};
 
-export default ProfileHimalkom
+export default ProfileHimalkom;
