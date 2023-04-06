@@ -14,6 +14,9 @@ import mad from '../../Assets/Ilkommunity/MAD 200 x 200.png'
 import ittoday from '../../Assets/Logo IT Today.png'
 import riset from '../../Assets/Logo Riset.png'
 
+import bgproker1 from './../../Assets/Background/cardproker1.svg'
+import bgproker2 from './../../Assets/Background/cardproker2.svg'
+
 const Page = () => {
   return (
     <div className='background'>
@@ -81,10 +84,13 @@ const Page = () => {
           </div>
 
           <div className="proker-container">
-            <div className="proker-ittoday">
+            
+            <img src={bgproker1} alt="bgproker1" className='bgproker1'/>
+            <div className="proker proker1">
               <div className='proker--logo--container'>
                 <img src={ittoday} alt="ittoday" className='proker--logo' />
               </div>
+
               <div className='proker--info'>
                 <h1 className='judul'>IT TODAY</h1>
                 <p className='desc'><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.
@@ -94,7 +100,8 @@ const Page = () => {
               </div>
             </div>
 
-            <div className="proker-riset">
+            <img src={bgproker2} alt="bgproker2" className='bgproker2'/>
+            <div className="proker proker2">
               <div className='proker--logo--container'>
                 <img src={riset} alt="riset ilkomerz" className='proker--logo' />
               </div>
