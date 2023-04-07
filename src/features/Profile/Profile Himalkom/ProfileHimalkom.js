@@ -13,7 +13,8 @@ import HRD from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-HRD.png";
 import Medbrand from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Medbrand.png";
 import Ristek from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Ristek.png";
 import Internal from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Internal.png";
-
+import Infinity from "../../../Assets/Profil Himalkom/Aset Filosopi/DUA C LOGO.png";
+import dua_titik from "../../../Assets/Profil Himalkom/Aset Filosopi/DUA LINGKARAN.png";
 const ProfileHimalkom = () => {
   return (
     <div>
@@ -34,16 +35,36 @@ const ProfileHimalkom = () => {
               <p>Mencerdaskan ilkomerz agar siap dan semangat untuk menjadi professional, memperkuat internalisasi, meningkatkan eksistensi, dan membangun Ilmu Komputer IPB berdasarkan aspirasi Ilkomerz sehingga tercipta hasil yang dahsyat.</p>
           </div>
       </div>
-
+      {/* filosopi himalkom */}
       <div className="filop">
+        <div className="filop-kiri">
+          <div className="atas">
+          <img src={Infinity} alt="infinity" className="log-kecil" />
+            <h1>DUA C</h1>
+            <p>Melambangkan inisial kabinet saat ini yaitu C (Connect)</p>
+          </div>
+          <div className="bawah">
+            <h1>INFINITY</h1>
+            <p>Melambangkan ketidakterbataasan dalam menjalin kerjasama</p>
+          </div>
+        </div>
         <div className="filop-tengah">
           <h3>FILOSOFI LOGO</h3>
-          <h1 className="c1">CONNECT</h1>
+          <h1>CONNECT</h1>
           <img src={connect} alt="connect" className="c-image" />
-          <h1 className="c2">CONNECT</h1>
+          <h1>CONNECT</h1>
         </div>
-        <div className="filop-kiri"></div>
-        <div className="filop-kanan"></div>
+        <div className="filop-kanan">
+          <div className="atas">
+            <img src={dua_titik} alt="dua titik" className="log-kecil"/>
+            <h1>DUA LINGKARAN</h1>
+            <p>Menggambarkan dua insan yang saling terhubung</p>
+          </div>
+          <div className="bawah">
+            <h1>PUZZLE</h1>
+            <p>Setiap divisi harus saling melengkapi antara satu sama lain</p>
+          </div>
+        </div>
       </div>
 
       <div className="punchline">

@@ -92,9 +92,14 @@
 }
 
 .filop {
-  display: block;
-  background: #f7c5a1;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("./../../../Assets/Background/Rectangle\ 73.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 784px;
+  border-top: 4px solid;
   border-bottom: 4px solid;
 }
 
@@ -104,6 +109,18 @@
   align-items: center;
 }
 
+.filop-tengah > h1 {
+  font-family: "Sports World";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+  color: #f0e4d4;
+  text-shadow: 4.5px 2.5px 0px #040404;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #040404;
+}
 .filop-tengah > h3 {
   display: block;
   font-family: "Montserrat";
@@ -114,36 +131,51 @@
   margin-top: 29px;
 }
 
-.c1 {
-  font-family: "Changa One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 57px;
-  line-height: 64px;
-  letter-spacing: -0.25px;
-  color: #f0e4d4;
-  text-shadow: 4.5px 2.5px 0px #040404;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #040404;
-}
-
 .c-image {
   align-items: center;
-  margin-top: 100px;
+  margin-top: 200px;
+  margin-bottom: 25px;
 }
 
-.c2 {
-  font-family: "Changa One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 57px;
-  line-height: 64px;
-  letter-spacing: -0.25px;
-  color: #f0e4d4;
-  text-shadow: 4.5px 2.5px 0px #040404;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #040404;
-  margin-top: 24px;
+.filop-kiri{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.filop-kanan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.atas {
+  display:flex; 
+  flex-direction: column;
+  align-items: center;
+  background: #F7C5A1;
+  border-radius: 24px;
+  width: 244px;
+  height: 272px;
+  box-shadow:0px 3px 6px fade(black,20%);
+  transition:400ms all 0ms ease-in-out;
+}
+
+.bawah {
+  display:flex; 
+  flex-direction: column;
+  align-items: center;
+  background: #F7C5A1;
+  border-radius: 24px;
+  width: 232px;
+  height: 192px;
+  box-shadow:0px 3px 6px fade(black,20%);
+  transition:400ms all 0ms ease-in-out;
+}
+
+.log-kecil{
+  width: 120px;
 }
 
 /* Tujuan himalkom */
