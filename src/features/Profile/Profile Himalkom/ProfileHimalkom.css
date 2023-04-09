@@ -101,6 +101,7 @@
   height: 784px;
   border-top: 4px solid;
   border-bottom: 4px solid;
+  text-align: center;
 }
 
 .filop-tengah {
@@ -133,7 +134,7 @@
 
 .c-image {
   align-items: center;
-  margin-top: 200px;
+  margin-top: 170px;
   margin-bottom: 25px;
 }
 
@@ -155,11 +156,12 @@
   flex-direction: column;
   align-items: center;
   background: #F7C5A1;
+  padding: 25px;
   border-radius: 24px;
   width: 244px;
-  height: 272px;
-  box-shadow:0px 3px 6px fade(black,20%);
-  transition:400ms all 0ms ease-in-out;
+  margin-bottom: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 3ms;
 }
 
 .bawah {
@@ -168,16 +170,42 @@
   align-items: center;
   background: #F7C5A1;
   border-radius: 24px;
+  padding: 25px;
   width: 232px;
-  height: 192px;
-  box-shadow:0px 3px 6px fade(black,20%);
-  transition:400ms all 0ms ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.log-kecil{
+.log-1{
   width: 120px;
+  margin-bottom: 20px;
+}
+.log-2{
+  width: 80px;
+  margin-bottom: 20px;
 }
 
+.title {
+  font-family: 'Changa One';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #EC6F13;
+  text-shadow: 3.2px 1.2px 0px #040404;
+  margin-bottom: 20px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #040404;
+}
+
+.desc {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #000000;
+}
 /* Tujuan himalkom */
 .tujuan-himalkom {
   height: 464px;

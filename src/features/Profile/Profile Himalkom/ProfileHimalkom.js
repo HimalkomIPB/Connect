@@ -39,13 +39,13 @@ const ProfileHimalkom = () => {
       <div className="filop">
         <div className="filop-kiri">
           <div className="atas">
-          <img src={Infinity} alt="infinity" className="log-kecil" />
-            <h1>DUA C</h1>
-            <p>Melambangkan inisial kabinet saat ini yaitu C (Connect)</p>
+          <img src={Infinity} alt="infinity" className="log-1" />
+            <h1 className="title">DUA C</h1>
+            <p className="desc">Melambangkan inisial kabinet saat ini yaitu C (Connect)</p>
           </div>
           <div className="bawah">
-            <h1>INFINITY</h1>
-            <p>Melambangkan ketidakterbataasan dalam menjalin kerjasama</p>
+            <h1 className="title">INFINITY</h1>
+            <p className="desc">Melambangkan ketidakterbataasan dalam menjalin kerjasama</p>
           </div>
         </div>
         <div className="filop-tengah">
@@ -56,13 +56,14 @@ const ProfileHimalkom = () => {
         </div>
         <div className="filop-kanan">
           <div className="atas">
-            <img src={dua_titik} alt="dua titik" className="log-kecil"/>
-            <h1>DUA LINGKARAN</h1>
-            <p>Menggambarkan dua insan yang saling terhubung</p>
+            <img src={dua_titik} alt="dua titik" className="log-2"/>
+            <h1 className="title">DUA
+            <br/>LINGKARAN</h1>
+            <p className="desc" >Menggambarkan dua insan yang saling terhubung</p>
           </div>
           <div className="bawah">
-            <h1>PUZZLE</h1>
-            <p>Setiap divisi harus saling melengkapi antara satu sama lain</p>
+            <h1 className="title">PUZZLE</h1>
+            <p className="desc">Setiap divisi harus saling melengkapi antara satu sama lain</p>
           </div>
         </div>
       </div>
