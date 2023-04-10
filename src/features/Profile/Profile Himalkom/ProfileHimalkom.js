@@ -15,6 +15,7 @@ import Ristek from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Ristek.pn
 import Internal from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Internal.png";
 import Infinity from "../../../Assets/Profil Himalkom/Aset Filosopi/DUA C LOGO.png";
 import dua_titik from "../../../Assets/Profil Himalkom/Aset Filosopi/DUA LINGKARAN.png";
+import logoHimalkom from "../../../Assets/Profil Himalkom/LOGO HIMALKOM.svg";
 const ProfileHimalkom = () => {
   return (
     <div>
@@ -28,24 +29,56 @@ const ProfileHimalkom = () => {
         <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
       </div>
 
-      <div className="tujuan-himalkom">
-          <div className="txt-container">
-              <h3>Tujuan</h3>
-              <h2>HIMALKOM</h2>
-              <p>Mencerdaskan ilkomerz agar siap dan semangat untuk menjadi professional, memperkuat internalisasi, meningkatkan eksistensi, dan membangun Ilmu Komputer IPB berdasarkan aspirasi Ilkomerz sehingga tercipta hasil yang dahsyat.</p>
-          </div>
+      {/* Apa itu HIMALKOM */}
+
+      <div className="apa-itu-himalkom">
+        <div className="txt-container-aph">
+          <h3>Apa itu</h3>
+          <h2>HIMALKOM?</h2>
+          <img
+            src={logoHimalkom}
+            alt="logoHimalkom"
+            className="logo-Himalkom-img"
+          ></img>
+        </div>
+        <div className="text-p">
+          <p>
+            <span>Himpunan Mahasiswa Ilmu Komputer (HIMALKOM)</span> adalah
+            himpunan yang bergerak dalam pengembangan dan eksistensi mahasiswa
+            ilmu Komputer IPB.
+          </p>
+        </div>
       </div>
+
+      {/* tujuan HIMALKOM */}
+      <div className="tujuan-himalkom">
+        <div className="txt-container">
+          <h3>Tujuan</h3>
+          <h2>HIMALKOM</h2>
+          <p>
+            Mencerdaskan ilkomerz agar siap dan semangat untuk menjadi
+            professional, memperkuat internalisasi, meningkatkan eksistensi, dan
+            membangun Ilmu Komputer IPB berdasarkan aspirasi Ilkomerz sehingga
+            tercipta hasil yang dahsyat.
+          </p>
+        </div>
+      </div>
+
       {/* filosopi himalkom */}
       <div className="filop">
         <div className="filop-kiri">
           <div className="atas">
-          <img src={Infinity} alt="infinity" className="log-1" />
+            <img src={Infinity} alt="infinity" className="log-1" />
             <h1 className="title">DUA C</h1>
-            <p className="desc">Melambangkan inisial kabinet saat ini yaitu C (Connect)</p>
+            <p className="desc">
+              Melambangkan inisial kabinet saat ini yaitu C (Connect)
+            </p>
           </div>
           <div className="bawah">
             <h1 className="title">INFINITY</h1>
-            <p className="desc">Melambangkan ketidakterbataasan dalam menjalin kerjasama</p>
+            <p className="desc">
+              Melambangkan ketidakterbataasan dalam menjalin kerjasama
+            </p>
           </div>
         </div>
         <div className="filop-tengah">
@@ -56,14 +89,21 @@ const ProfileHimalkom = () => {
         </div>
         <div className="filop-kanan">
           <div className="atas">
-            <img src={dua_titik} alt="dua titik" className="log-2"/>
-            <h1 className="title">DUA
-            <br/>LINGKARAN</h1>
-            <p className="desc" >Menggambarkan dua insan yang saling terhubung</p>
+            <img src={dua_titik} alt="dua titik" className="log-2" />
+            <h1 className="title">
+              DUA
+              <br />
+              LINGKARAN
+            </h1>
+            <p className="desc">
+              Menggambarkan dua insan yang saling terhubung
+            </p>
           </div>
           <div className="bawah">
             <h1 className="title">PUZZLE</h1>
-            <p className="desc">Setiap divisi harus saling melengkapi antara satu sama lain</p>
+            <p className="desc">
+              Setiap divisi harus saling melengkapi antara satu sama lain
+            </p>
           </div>
         </div>
       </div>
