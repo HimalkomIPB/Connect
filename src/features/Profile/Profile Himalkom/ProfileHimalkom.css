@@ -206,6 +206,79 @@
   letter-spacing: 0.1px;
   color: #000000;
 }
+
+/* apa itu HIMALKOM */
+
+.apa-itu-himalkom {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 669px;
+  margin-bottom: 16px;
+  background-color: #A29BAA;
+  background-image: url("../../../Assets/Profil Himalkom/apa-itu-himalkom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-bottom: 5px solid;
+}
+
+.apa-itu-himalkom .txt-container-aph {
+  flex: 46%;
+}
+
+.apa-itu-himalkom .txt-container-aph h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #111827;
+  padding-top: 94px;
+  padding-bottom: 10px;
+}
+
+.apa-itu-himalkom .txt-container-aph h2 {
+  font-family: "Sports World";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+  color: #f0e4d4;
+  text-shadow: 3px 5px 0px #040404;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #040404;
+  margin-top: 0px;
+}
+
+.apa-itu-himalkom .txt-container-aph .logo-Himalkom-img {
+  width: 294px;
+  padding-top: 67px;
+}
+
+.apa-itu-himalkom .text-p {
+  flex: 46%;
+}
+
+.apa-itu-himalkom .text-p p {
+  width: 45%;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 32px;
+  color: #111827;
+  margin-top: 340px;
+  margin-left: 150px;
+}
+
+.apa-itu-himalkom .text-p span {
+  font-weight: 900;
+}
+
+
 /* Tujuan himalkom */
 .tujuan-himalkom {
   height: 464px;
