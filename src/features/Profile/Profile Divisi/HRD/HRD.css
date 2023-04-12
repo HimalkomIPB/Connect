@@ -1,10 +1,11 @@
-.profil-container {
+.profil-divisi_hrd .profil-container {
     display: flex;
     flex-direction: row;
     width: auto;
     height: 737px;
 
-    background-image: url(./../../../../Assets/Divisi/HRD/hrd_background.svg);
+    background-image: url("./../../../../Assets/Divisi/HRD/hrd_background.svg");
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -38,7 +39,7 @@
     margin: 0 0 29px 0;
     letter-spacing: -2px;
 
-    text-shadow: 3px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
@@ -74,7 +75,7 @@
     grid-template-rows: repeat(4, minmax(0, 1fr));
     gap: 80px 120px;
     justify-items: center;
-    padding: 76px 106px 160px 106px;
+    padding: 76px 106px 0px 106px;
 }
 
 .anggota-hrd:first-child {
