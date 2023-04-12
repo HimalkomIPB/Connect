@@ -21,7 +21,7 @@ const HRD = () => {
             <Navbar />
             
             {/* Profil Divisi */}
-            <section className="profil-divisi_HRD">
+            <section className="profil-divisi_hrd">
                 <div className="profil-container">
                     <div className="logo-container">
                     </div>
