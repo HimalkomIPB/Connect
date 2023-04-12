@@ -1,8 +1,19 @@
 import React from "react";
 import Navbar from "../../../../component/Navbar/Navbar";
 import Footer from "../../../../component/Footer/Footer";
-import Logo_HRD from "./../../../../Assets/Divisi/logo_HRD.png";
 import "./HRD.css";
+import anggota1 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Bares.png'
+import anggota2 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Naufal.png'
+import anggota3 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Aul.png'
+import anggota4 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Dinda.png'
+import anggota5 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Faiz.png'
+import anggota6 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Malikus.png'
+import anggota7 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Surya.png'
+import anggota8 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Ariq.png'
+import anggota9 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Rifqy.png'
+import anggota10 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Zhafran.png'
+
+
 
 const HRD = () => {
     return (
@@ -10,10 +21,9 @@ const HRD = () => {
             <Navbar />
             
             {/* Profil Divisi */}
-            <section className="profil-divisi">
+            <section className="profil-divisi_HRD">
                 <div className="profil-container">
                     <div className="logo-container">
-                        <img src={Logo_HRD} alt="Logo HRD" className="logo-HRD" />
                     </div>
 
                     <div  className="info-divisi">
@@ -25,15 +35,55 @@ const HRD = () => {
 
 
             {/* Staff Divisi */}
-            <section className="staff-divisi">
+            <section className="staff-divisi hrd">
+                <div className="staff-header">
+                        <h2>STAFF</h2>
+                        {/* <img src={line} alt="line" /> */}
+                </div>
+                <div className="hrd-anggota">
+                    <div className="anggota-hrd">
+                        <img src={anggota1} alt="Bares Manggala S" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota2} alt="" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota3} alt="" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota4} alt="" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota5} alt="" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota6} alt="" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota7} alt="" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota8} alt="" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota9} alt="" />
+                    </div>
+                    <div className="anggota-hrd">
+                        <img src={anggota10} alt="" />
+                    </div>
+                </div>
 
+                 {/* Program Kerja */}
+                <div className="program-divisi hrd">
+                        <div className="program-header ">
+                            <h2>PROGRAM KERJA</h2>
+                        </div>
+                </div>
 
             </section>
             
 
-            {/* Program Kerja */}
-
-
+           
 
             
 
