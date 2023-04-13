@@ -1,0 +1,130 @@
+.medbrand-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 737px;
+    background-image: url("./../../../../Assets/Divisi/Medbrand/desk-background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    margin-top: 13px
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+}
+
+.desc-medbrand {
+    flex: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.desc-medbrand h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    margin: 0 0 29px 0;
+
+    text-shadow: 7px 4px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+}
+
+.desc-medbrand p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    width: 85%;
+}
+
+.staff-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 0 0;
+}
+
+.staff-header h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    padding-bottom: 14px;
+
+    text-shadow: 7px 4px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+}
+
+.staff {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./../../../../Assets/Divisi/Edukasi/Pattern.svg')
+}
+
+.medbrand-anggota {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+    justify-items: center;
+    gap: 80px 120px;
+    padding: 76px 116px 160px 106px;
+}
+
+.anggota-divisi:first-child {
+    grid-column: span 3;
+}
+
+.anggota-divisi:last-child {
+    grid-column: span 3;
+}
+
+.anggota-divisi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.program-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0 40px 0;
+}
+
+.program-header h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    padding-bottom: 14px;
+
+
+    text-shadow: 7px 4px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+}
+
+.program-header img {
+    width: 572px;
+}
