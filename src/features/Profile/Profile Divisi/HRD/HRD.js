@@ -38,8 +38,8 @@ const HRD = () => {
             <section className="staff-divisi hrd">
                 <div className="staff-header">
                         <h2>STAFF</h2>
-                        {/* <img src={line} alt="line" /> */}
                 </div>
+                
                 <div className="hrd-anggota">
                     <div className="anggota-hrd">
                         <img src={anggota1} alt="Bares Manggala S" />
