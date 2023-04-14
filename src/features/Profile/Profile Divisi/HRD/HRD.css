@@ -27,7 +27,7 @@
     flex: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .info-divisi h1 {
@@ -36,7 +36,7 @@
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
-    margin: 0 0 29px 0;
+    margin: 254px 0 29px 0;
     letter-spacing: -2px;
 
     text-shadow: 7px 4px 0px #040404;
@@ -49,7 +49,7 @@
 .info-divisi p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     text-align: justify;

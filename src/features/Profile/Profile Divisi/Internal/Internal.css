@@ -1,0 +1,18 @@
+.profil-divisi_internal .profil-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 737px;
+
+    background-image: url("./../../../../Assets/Divisi/Internal/internal_background.svg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    margin-top: 13px;
+}
+
+/* Sisa CSS inherit dari HRD CSS */
