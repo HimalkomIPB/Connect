@@ -1,7 +1,7 @@
 import React from "react";
+import "./ProfileHimalkom.css";
 import Footer from "../../../component/Footer/Footer";
 import Navbar from "../../../component/Navbar/Navbar";
-import "./ProfileHimalkom.css";
 import connect from "../../../Assets/Connect/Logo Connect.png";
 import line from "./../../../Assets/Profil Himalkom/line.svg";
 import BPH from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-BPH.png";
@@ -115,56 +115,59 @@ const ProfileHimalkom = () => {
       {/* Divisi Himalkom*/}
       <div className="divisi-container">
         <div className="divisi-background">
-          <div className="divisi-header">
-            <p>DIVISI</p>
-            <h2>HIMALKOM</h2>
-            <img src={line} alt="line" />
-          </div>
-
-          <div className="divisi-card">
-            {/* BP */}
-            <div className="divisi">
-              <img src={BP} alt="BP" />
+          {/* <img className="divisi-bg" src={divisi_background} alt="Background Divisi" /> */}
+          <div className="divisi-span">
+            <div className="divisi-header">
+              <p>DIVISI</p>
+              <h2>HIMALKOM</h2>
+              <img src={line} alt="line" />
             </div>
 
-            {/* BPH */}
-            <div className="divisi">
-              <img src={BPH} alt="BPH" />
-            </div>
+            <div className="divisi-card">
+              {/* BP */}
+              <div className="divisi">
+                <img src={BP} alt="BP" />
+              </div>
 
-            {/* EDUKASI */}
-            <div className="divisi">
-              <img src={Edukasi} alt="Edukasi" />
-            </div>
+              {/* BPH */}
+              <div className="divisi">
+                <img src={BPH} alt="BPH" />
+              </div>
 
-            {/* EKSTERNAL */}
-            <div className="divisi">
-              <img src={Eksternal} alt="Eksternal" />
-            </div>
+              {/* EDUKASI */}
+              <div className="divisi">
+                <img src={Edukasi} alt="Edukasi" />
+              </div>
 
-            {/* HRD */}
-            <div className="divisi">
-              <img src={HRD} alt="HRD" />
-            </div>
+              {/* EKSTERNAL */}
+              <div className="divisi">
+                <img src={Eksternal} alt="Eksternal" />
+              </div>
 
-            {/* INTERNAL */}
-            <div className="divisi">
-              <img src={Internal} alt="Internal" />
-            </div>
+              {/* HRD */}
+              <div className="divisi">
+                <img src={HRD} alt="HRD" />
+              </div>
 
-            {/* MEDBRAND */}
-            <div className="divisi">
-              <img src={Medbrand} alt="Media dan Branding" />
-            </div>
+              {/* INTERNAL */}
+              <div className="divisi">
+                <img src={Internal} alt="Internal" />
+              </div>
 
-            {/* RISTEK */}
-            <div className="divisi">
-              <img src={Ristek} alt="Riset dan Teknologi" />
-            </div>
+              {/* MEDBRAND */}
+              <div className="divisi">
+                <img src={Medbrand} alt="Media dan Branding" />
+              </div>
 
-            {/* ENTREPRENEUR */}
-            <div className="divisi">
-              <img src={Entrepreneur} alt="Entrepreneur" />
+              {/* RISTEK */}
+              <div className="divisi">
+                <img src={Ristek} alt="Riset dan Teknologi" />
+              </div>
+
+              {/* ENTREPRENEUR */}
+              <div className="divisi">
+                <img src={Entrepreneur} alt="Entrepreneur" />
+              </div>
             </div>
           </div>
         </div>

@@ -1,3 +1,12 @@
+.divisi-container {
+  border-width: 5px 0px;
+  border-style: solid;
+  border-color: #111827;
+  margin: 0 0 24px 0;
+  background-color: #e49800;
+}
+
+
 .divisi-card {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -36,23 +45,11 @@
   padding-bottom: 14px;
 }
 
-.divisi-container {
-  border-width: 5px 0px;
-  border-style: solid;
-  border-color: #111827;
-  background-size: cover;
+.divisi-background{
+  background: url("../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Backgound1.svg");
   background-repeat: no-repeat;
-  margin: 0 0 24px 0;
+  background-size: cover;
 }
-
-.divisi-container {
-  background-color: #e49800;
-}
-
-/* .divisi-background{
-    background-image: url('./../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Background1.png');
-    opacity: 0.3;
-} */
 
 .divisi {
   border: 5px solid #16052b;
@@ -65,12 +62,13 @@
 }
 
 .divisi:hover {
-  box-shadow: 5px 5px 0px #16052b;
+  box-shadow: 7px 9px 0px #16052b;
   transform: translateY(-10px);
-  transform: translateX(-10px);
+  transform: translateX(-18px);
   background-image: url("../../../Assets/Profil Himalkom/Aset Divisi/Hover-Background.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #e49800;
 }
 
 .punchline {
