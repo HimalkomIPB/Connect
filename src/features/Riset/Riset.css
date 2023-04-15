@@ -1,0 +1,163 @@
+@import url('https://fonts.cdnfonts.com/css/sports-world');
+
+.Riset-Header-Container {
+    margin: 12px 0 0 0;
+    background-image: url('./../../Assets/Riset/Riset-Background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    border-top: 4px solid #111827;
+    border-bottom: 4px solid #111827;
+
+}
+
+.Riset-Header-Wrapper {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    column-gap: 78px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.Riset-Header h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 64px;
+    text-shadow: 4px 5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+}
+
+.Riset-Header p {
+    padding: 17px 0 0 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    width: 532px;
+}
+
+.Riset-Header b {
+    font-weight: 700;
+}
+
+.Riset-Main-Container {
+    background-image: url('./../../Assets/Riset/Riset-Main-Pattern.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 194px;
+}
+
+#Riset-Main-Header {
+    padding: 82px 0 62px 0;
+}
+
+#Riset-Main-Header h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 64px;
+    text-shadow: 4px 5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+}
+
+#Riset-Main-Column {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    row-gap: 60px;
+    column-gap: 57px;
+}
+
+.Riset-Main-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Riset img {
+    border: 5px solid black;
+    box-shadow: 2px 3px 0px #040404;
+}
+
+#Riset h3 {
+    width: 354px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0 12px 0;
+}
+
+#Riset p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 7px;
+}
+
+#Riset a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.Riset-Contact-Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Riset-Contact-Wrapper {
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 855px;
+    height: 164px;
+    border: 3px solid #000000;
+    box-shadow: 3px 4px 0px #000000;
+}
+
+#Riset-Contact-Header {
+    padding: 20px 0 0 20px;
+}
+
+#Riset-Contact-Header h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#Riset-Contact-Person {
+    padding: 42px 0 0 20px;
+}
+
+#Riset-Contact-Person p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: justify;
+}

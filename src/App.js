@@ -15,6 +15,8 @@ import Internal from './features/Profile/Profile Divisi/Internal/Internal';
 import Medbrand from './features/Profile/Profile Divisi/Medbrand/Medbrand';
 import Ristek from './features/Profile/Profile Divisi/Ristek/Ristek';
 import Entrepreneur from './features/Profile/Profile Divisi/Entrepreneur/Entrepreneur';
+import Riset from './features/Riset/Riset';
+
 
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
             <Route path='/Media-Branding' element={<Medbrand />} />
             <Route path='/Riset-Teknologi' element={<Ristek />} />
             <Route path='/Entrepreneur' element={<Entrepreneur />} />
+          <Route path='/Riset-Himalkom' element={<Riset />} />
           </Routes>
       </div>
     </Router>
