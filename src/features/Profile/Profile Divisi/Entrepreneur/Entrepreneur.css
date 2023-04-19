@@ -13,7 +13,7 @@
     margin-top: 13px
 }
 
-.eksternal-logo {
+.entre-logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,14 +21,14 @@
     flex: 50%;
 }
 
-.eksternal-desc {
+.entre-desc {
     flex: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.eksternal-desc h2 {
+.entre-desc h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -42,7 +42,7 @@
     color: #F0E4D4;
 }
 
-.eksternal-desc p{
+.entre-desc p{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -51,14 +51,14 @@
     text-align: justify;
     width: 75%;
 }
-.eksternal-header {
+.entre-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 70px 0 0 0;
 }
 
-.eksternal-header h2 {
+.entre-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -72,11 +72,17 @@
     color: #F0E4D4;
 }
 
-.eksternal-header img{
+/* .entre-header img{
     padding: 0 0 76px 0;
+} */
+
+.staff {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./../../../../Assets/Divisi/Entrepreneur/Pattern.svg')
 }
 
-.eksternal-staff{
+.entre-staff{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(4, minmax(0, 1fr));
@@ -85,17 +91,21 @@
     padding: 76px 116px 160px 106px;
 }
 
-.anggota-eksternal:first-child{
+.anggota-entre:first-child{
     grid-column: span 3;
 }
 
-.anggota-eksternal {
+.anggota-entre:last-child{
+    grid-column: span 3;
+}
+
+.anggota-entre {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.anggota-eksternal h2 {
+.anggota-entre h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -104,9 +114,4 @@
     text-align: center;
     width: 433px;
 
-    /* text-shadow: px 5px 0px #040404;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #040404;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: #F0073F; */
 }
