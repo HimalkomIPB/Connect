@@ -16,7 +16,7 @@ import Medbrand from './features/Profile/Profile Divisi/Medbrand/Medbrand';
 import Ristek from './features/Profile/Profile Divisi/Ristek/Ristek';
 import Entrepreneur from './features/Profile/Profile Divisi/Entrepreneur/Entrepreneur';
 import Riset from './features/Riset/Riset';
-import Csi from './features/Ilkommunity/CSI/CSI';
+import Csi from './features/Ilkommunity/CSI/Csi';
 
 
 

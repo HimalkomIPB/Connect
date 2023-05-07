@@ -1,5 +1,5 @@
 import React from 'react'
-import './CSI.css'
+import './Csi.css'
 import Navbar from '../../../component/Navbar/Navbar'
 import Footer from '../../../component/Footer/Footer'
 import img from '../../../Assets/Ilkommunity/CSI 200 x 200.png'
