@@ -38,7 +38,10 @@
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 29px;
-    
+}
+
+.ilkommunity a{
+    text-decoration: none;
 }
 
 .ilkommunity-agriux {

@@ -16,6 +16,7 @@ import Medbrand from './features/Profile/Profile Divisi/Medbrand/Medbrand';
 import Ristek from './features/Profile/Profile Divisi/Ristek/Ristek';
 import Entrepreneur from './features/Profile/Profile Divisi/Entrepreneur/Entrepreneur';
 import Riset from './features/Riset/Riset';
+import Csi from './features/Ilkommunity/CSI/CSI';
 
 
 
@@ -39,6 +40,7 @@ function App() {
             <Route path='/Riset-Teknologi' element={<Ristek />} />
             <Route path='/Entrepreneur' element={<Entrepreneur />} />
           <Route path='/Riset-Himalkom' element={<Riset />} />
+          <Route path='/CSI' element={<Csi />} />
           </Routes>
       </div>
     </Router>

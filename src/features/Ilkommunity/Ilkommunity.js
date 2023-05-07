@@ -24,10 +24,12 @@ const Ilkommunity = () => {
             <img src={agriux} alt="AgriUX" />
             <li>AGRIUX</li>
           </div>
-          <div className="ilkommunity-csi">
-            <img src={CSI} alt="CSI" />
-            <li>CSI</li>
-          </div>
+          <a href='/CSI'>
+            <div className="ilkommunity-csi">
+              <img src={CSI} alt="CSI" />
+              <li>CSI</li>
+            </div>
+          </a>
           <div className="ilkommunity-agribot">
             <img src={agribot} alt="Agribot" />
             <li>AGRIBOT</li>

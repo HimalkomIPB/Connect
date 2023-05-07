@@ -1,0 +1,186 @@
+.csi-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 737px;
+    background-image: url("./../../../Assets/Ilkommunity/CSI/bg_csi.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    margin-top: 13px
+}
+
+.csi-img {
+    flex: 40%;
+    margin: auto 0;
+}
+
+.csi-img img {
+    width: 325px;
+    height: 325px;
+    display: block;
+    margin: 0 40% 0 auto;
+}
+.desc {
+    flex: 60%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    margin: 0 0 29px 0;
+    text-align: center;
+
+    text-shadow: 7px 4px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+}
+
+.desc p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.csi-body {
+    background-image: url("./../../../Assets/Ilkommunity/CSI/bg_komun.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.body-atas {
+    display: flex;
+    flex-direction: column;
+}
+
+.judul-text {
+    display: inline-block;
+    background: #E49800;
+    border: 1px solid #111827;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 8px 16px 8px 16px;
+    transform: translateY(50%);
+}
+
+.isi-text {
+    box-sizing: border-box;
+    width: 1064px;
+    height: 345px;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-shadow: 3px 4px 0px #000000;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #000000;
+    padding: 45px 45px 45px 45px;
+    margin: 0 auto;
+}
+
+.body-atas .container-box {
+    padding-top: 127px;
+    text-align: center;
+}
+
+.container-box .isi-text p {
+    margin-bottom: 24px;
+}
+
+
+.Contact-Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Contact-Wrapper {
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 855px;
+    height: 164px;
+    border: 3px solid #000000;
+    box-shadow: 3px 4px 0px #000000;
+}
+
+.Contact-Header {
+    padding: 20px 0 0 20px;
+}
+
+.Contact-Header h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.Contact-Person {
+    padding: 42px 0 0 20px;
+}
+
+.Contact-Person p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: justify;
+    padding-bottom: 14px;
+}
+
+.body-bawah {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 71px;
+    padding-bottom: 420px;
+}
+
+.body-bawah .img-dokum-container img{
+    margin: 0 21.5px 0 21.5px;
+    /* background-image: url("./../../../Assets/Ilkommunity/CSI/dokum1.svg"); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    width: 329.93px;
+    height: 188.5px;
+    transition: 0.3s;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.body-bawah .img-dokum-container:hover img {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px);
+    transform: translateX(-10px);
+    width: 441.53px;
+    height: 257.81px;
+}
+
