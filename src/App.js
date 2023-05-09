@@ -4,6 +4,7 @@ import Page from './features/Homepage/Page'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProfileHimalkom from './features/Profile/Profile Himalkom/ProfileHimalkom';
 import Megaproker from './features/Megaproker/Megaproker'
+import Komnews from './features/Komnews/Komnews'
 import Ilkommunity from './features/Ilkommunity/Ilkommunity'
 import Placeholder from './features/Placeholder/Placeholder';
 import BP from './features/Profile/Profile Divisi/BP/BP';
@@ -28,6 +29,7 @@ function App() {
           <Route path='/' element={<Page />} />
           {/* <Route path='/Placeholder' element={<Placeholder />} /> */}
           <Route path='/ProfilHimalkom' element={<ProfileHimalkom />} />
+          <Route path='/Komnews' element={<Komnews />} />
           <Route path='/Megaproker' element={<Megaproker />} />
           <Route path='/Ilkommunity' element={<Ilkommunity />} />
             <Route path='/Badan-Pengawas' element={<BP />} />
