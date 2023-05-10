@@ -2,7 +2,8 @@ import React from 'react'
 import './Komnews.css'
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
-import gambar from "./../../Assets/Komnews/image.png";
+import gambar from "./../../Assets/Komnews/Headline/image.png";
+import topic1 from "./../../Assets/Komnews/Topic/topic_1.png";
 
 
 const Komnews = () => {
@@ -30,6 +31,89 @@ const Komnews = () => {
                 </div>
                 <div className='image'>
                   <img src={gambar} alt="gambar" width={344}/>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* Topics */}
+          <section>
+            <div className='topics'>
+              <div className='topics-list'>
+                {/* Topic */}
+
+                <div className='topic'>
+                  <div className='topic-desc'>
+                    <p>Selected for you</p>
+                    <h1>Dua Dosen Ilmu Komputer IPB University Dipromosikan Sebagai Senior Member di IEEE</h1>
+                    <p>Karlisa Priandana dan Auzi Asfarian, dosen Departemen Ilmu Komputer, Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA), IPB University mendapatkan pengakuan...</p>
+                    <div className='topic-category'>
+                      <p>Self Improvement</p>
+                    </div>
+                  </div>
+                  <img src={topic1} alt="gambar" width={120} height={120} />
+                </div>
+
+                <div className='topic'>
+                  <div className='topic-desc'>
+                    <p>Selected for you</p>
+                    <h1>Dua Dosen Ilmu Komputer IPB University Dipromosikan Sebagai Senior Member di IEEE</h1>
+                    <p>Karlisa Priandana dan Auzi Asfarian, dosen Departemen Ilmu Komputer, Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA), IPB University mendapatkan pengakuan...</p>
+                    <div className='topic-category'>
+                      <p>Self Improvement</p>
+                    </div>
+                  </div>
+                  <img src={topic1} alt="gambar" width={120} height={120} />
+                </div>
+
+                <div className='topic'>
+                  <div className='topic-desc'>
+                    <p>Selected for you</p>
+                    <h1>Dua Dosen Ilmu Komputer IPB University Dipromosikan Sebagai Senior Member di IEEE</h1>
+                    <p>Karlisa Priandana dan Auzi Asfarian, dosen Departemen Ilmu Komputer, Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA), IPB University mendapatkan pengakuan...</p>
+                    <div className='topic-category'>
+                      <p>Self Improvement</p>
+                    </div>
+                  </div>
+                  <img src={topic1} alt="gambar" width={120} height={120} />
+                </div>
+
+                <div className='topic'>
+                  <div className='topic-desc'>
+                    <p>Selected for you</p>
+                    <h1>Dua Dosen Ilmu Komputer IPB University Dipromosikan Sebagai Senior Member di IEEE</h1>
+                    <p>Karlisa Priandana dan Auzi Asfarian, dosen Departemen Ilmu Komputer, Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA), IPB University mendapatkan pengakuan...</p>
+                    <div className='topic-category'>
+                      <p>Self Improvement</p>
+                    </div>
+                  </div>
+                  <img src={topic1} alt="gambar" width={120} height={120} />
+                </div>
+
+                <div className='topic'>
+                  <div className='topic-desc'>
+                    <p>Selected for you</p>
+                    <h1>Dua Dosen Ilmu Komputer IPB University Dipromosikan Sebagai Senior Member di IEEE</h1>
+                    <p>Karlisa Priandana dan Auzi Asfarian, dosen Departemen Ilmu Komputer, Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA), IPB University mendapatkan pengakuan...</p>
+                    <div className='topic-category'>
+                      <p>Self Improvement</p>
+                    </div>
+                  </div>
+                  <img src={topic1} alt="gambar" width={120} height={120} />
+                </div>
+
+
+              </div>
+              <div className='topics-rec'>
+                <h1>Recommended Topic</h1>
+                <div className='rec-list'>
+                  <button className='recommend'><span>Programming</span></button>
+                  <button className='recommend'><span>Leadership</span></button>
+                  <button className='recommend'><span>Writing</span></button>
+                  <button className='recommend'><span>Technology</span></button>
+                  <button className='recommend'><span>Data Science</span></button>
+                  <button className='recommend'><span>AI</span></button>
+                  <button className='recommend'><span>Data Mining</span></button>
+                  <button className='recommend'><span>Machine Learning</span></button>
                 </div>
               </div>
             </div>
