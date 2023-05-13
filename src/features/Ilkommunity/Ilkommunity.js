@@ -12,10 +12,10 @@ import Navbar from '../../component/Navbar/Navbar'
 import Footer from '../../component/Footer/Footer'
 
 const Ilkommunity = () => {
-    return (
-        <div>
-            <Navbar />
-            <div className='ilkommunity-bg'>
+  return (
+    <div>
+      <Navbar />
+      <div className='ilkommunity-bg'>
         <div className="header">
           <h2 className='ilkommunity-header'>ILKOMMUNITY</h2>
         </div>
@@ -24,7 +24,7 @@ const Ilkommunity = () => {
             <img src={agriux} alt="AgriUX" />
             <li>AGRIUX</li>
           </div>
-          <a href='/CSI'>
+          <a href='/Ilkommunity-CSI'>
             <div className="ilkommunity-csi">
               <img src={CSI} alt="CSI" />
               <li>CSI</li>
@@ -42,10 +42,12 @@ const Ilkommunity = () => {
             <img src={daming} alt="Daming" />
             <li>DAMING</li>
           </div>
-          <div className="ilkommunity-iwdc">
-            <img src={iwdc} alt="IWDC" />
-            <li>IWDC</li>
-          </div>
+          <a href="/Ilkommunity-IWDC">
+            <div className="ilkommunity-iwdc">
+              <img src={iwdc} alt="IWDC" />
+              <li>IWDC</li>
+            </div>
+          </a>
           <div className="ilkommunity-gary">
             <img src={gary} alt="GARY" />
             <li>GARY</li>
@@ -57,9 +59,9 @@ const Ilkommunity = () => {
         </div>
 
       </div>
-            <Footer />
-        </div>
-    )
+      <Footer />
+    </div>
+  )
 }
 
 export default Ilkommunity

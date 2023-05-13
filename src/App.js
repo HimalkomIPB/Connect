@@ -18,6 +18,8 @@ import Ristek from './features/Profile/Profile Divisi/Ristek/Ristek';
 import Entrepreneur from './features/Profile/Profile Divisi/Entrepreneur/Entrepreneur';
 import Riset from './features/Riset/Riset';
 import Csi from './features/Ilkommunity/CSI/Csi';
+import IWDC from './features/Ilkommunity/IWDC/IWDC';
+
 
 
 
@@ -32,17 +34,18 @@ function App() {
           <Route path='/Komnews' element={<Komnews />} />
           <Route path='/Megaproker' element={<Megaproker />} />
           <Route path='/Ilkommunity' element={<Ilkommunity />} />
-            <Route path='/Badan-Pengawas' element={<BP />} />
-            <Route path='/BPH' element={<BPH />} />
-            <Route path='/Edukasi' element={<Edukasi />} />
-            <Route path='/Eksternal' element={<Eksternal />} />
-            <Route path='/HRD' element={<HRD />} />
-            <Route path='/Internal' element={<Internal />} />
-            <Route path='/Media-Branding' element={<Medbrand />} />
-            <Route path='/Riset-Teknologi' element={<Ristek />} />
-            <Route path='/Entrepreneur' element={<Entrepreneur />} />
+            <Route path='/Ilkommunity-IWDC' element={<IWDC />} />
+            <Route path='/Ilkommunity-CSI' element={<Csi />} />
+              <Route path='/Badan-Pengawas' element={<BP />} />
+              <Route path='/BPH' element={<BPH />} />
+              <Route path='/Edukasi' element={<Edukasi />} />
+              <Route path='/Eksternal' element={<Eksternal />} />
+              <Route path='/HRD' element={<HRD />} />
+              <Route path='/Internal' element={<Internal />} />
+              <Route path='/Media-Branding' element={<Medbrand />} />
+              <Route path='/Riset-Teknologi' element={<Ristek />} />
+              <Route path='/Entrepreneur' element={<Entrepreneur />} />
           <Route path='/Riset-Himalkom' element={<Riset />} />
-          <Route path='/CSI' element={<Csi />} />
           </Routes>
       </div>
     </Router>
