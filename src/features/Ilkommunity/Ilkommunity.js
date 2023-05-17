@@ -52,10 +52,12 @@ const Ilkommunity = () => {
             <img src={gary} alt="GARY" />
             <li>GARY</li>
           </div>
-          <div className="ilkommunity-mad">
-            <img src={mad} alt="MAD" />
-            <li>MAD</li>
-          </div>
+          <a href="/Ilkommunity-MAD">
+            <div className="ilkommunity-mad">
+              <img src={mad} alt="MAD" />
+              <li>MAD</li>
+            </div>
+          </a>
         </div>
 
       </div>
