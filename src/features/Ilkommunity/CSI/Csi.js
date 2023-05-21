@@ -1,82 +1,78 @@
 import React from 'react'
 import './Csi.css'
+import arrowleft from './../../../Assets/Ilkommunity/IWDC/IWDC-Arrow - Left Circle.svg'
+import arrowright from './../../../Assets/Ilkommunity/IWDC/IWDC- Arrow - Right Circle.svg'
+import dokum from './../../../Assets/Ilkommunity/CSI/dokum1.svg'
+
+import placeholder from './../../../Assets/Divisi/BP/logo_bp.png'
 import Navbar from '../../../component/Navbar/Navbar'
 import Footer from '../../../component/Footer/Footer'
-import img from '../../../Assets/Ilkommunity/CSI 200 x 200.png'
-import dokum1 from '../../../Assets/Ilkommunity/CSI/dokum1.svg';
 
-
-
-const CSI = () => {
+const Csi = () => {
     return (
         <div>
             <Navbar />
-
-            <section className="CSI">
-                <div className="csi-container">
-                    <div className="desc">
-                        <h2>CSI IPB</h2>
-                        <p>Cyber Security IPB (CSI) adalah komunitas yang bergerak pada bidang keamanan siber</p>
-                    </div>
-
-                    <div className="csi-img">
-                        <img src={img} alt="CSI" />
+            <section>
+                <div className="Csi-header-container">
+                    <div className="Csi-header-wrapper">
+                        <div className="Csi-header">
+                            <h2>Agribot</h2>
+                            <p>Cyber Security IPB (CSI) adalah komunitas yang bergerak pada bidang keamanan siber <br/>
+                            <br/>Setiap Jumat pukul 17:00 di gedung Gedung Pusat Komputer (GPK)
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
-            
-            <section className='csi-body'>
-                <div className='body-atas'>
-                    <div className='container-box'>
-                        <div className='judul-text'>Deskripsi Komunitas</div>
-                        <div className='isi-text'>
-                            <p>Komunitas Cyber Security IPB merupakan komunitas yang memfasilitasi mahasiswa IPB yang memiliki minat atau ketertarikan terhadap bidang Keamanan Jaringan. Komunitas ini mempelajari mulai dari metodologi “hacking”, eksploitasi web application hingga low-level application, serta keahlian-kahlian dasar keamanan jaringan.</p>
-                            <p>Harapannya di komunitas ini, peserta komunitas dapat menerapkan ilmunya untuk menyelesaikan masalah dan dapat mempersiapkan peserta komunitas untuk mengikuti lomba-lomba terkait serta mempersiapkan peserta untuk pratisipasi aktif dalam bug bounty.</p>
+            <section>
+                <div className="Csi-main-container">
+                    <div className="Csi-content-container">
+                        <div className="Csi-content-deskripsi-tujuan">
+                            <h2 id='Csi-deskripsi'>Deskripsi</h2>
+
+                            <h2 id='Csi-tujuan'>Tujuan</h2>
                         </div>
-                    </div>
-                    <div className='container-box'>
-                        <div className='judul-text'>Tujuan Komunitas</div>
-                        <div className='isi-text'>
-                        Tujuan dari komunitas ini adalah lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu fermentum augue, sit amet convallis augue. Integer eu iaculis sem, sed euismod eros. Nulla facilisi. Proin luctus odio nunc, sed laoreet est bibendum vitae. Sed a eleifend ex. Integer varius rhoncus euismod. Aliquam ac ultricies turpis, vitae eleifend ligula. Aliquam faucibus erat ut tincidunt cursus. Cras et ullamcorper velit. In hac habitasse platea dictumst. Nunc vitae dui quis risus elementum auctor.
+                        <div className="Csi-deskripsi-content">
+                            <p>Komunitas Cyber Security IPB merupakan komunitas yang memfasilitasi mahasiswa IPB yang memiliki minat atau ketertarikan terhadap bidang Keamanan Jaringan. Komunitas ini mempelajari mulai dari metodologi “hacking”, eksploitasi web application hingga low-level application, serta keahlian-kahlian dasar keamanan jaringan.<br/>
+                            <br/>Harapannya di komunitas ini, peserta komunitas dapat menerapkan ilmunya untuk menyelesaikan masalah dan dapat mempersiapkan peserta komunitas untuk mengikuti lomba-lomba terkait serta mempersiapkan peserta untuk pratisipasi aktif dalam bug bounty.
+                            </p>
                         </div>
-                    </div>
-                    <div className='container-box'>
-                        <div className='judul-text'>Prestasi</div>
-                        <div className='isi-text'>
-                            <ul>
+
+                        <div className="Csi-prestasi-container">
+                            <div className="Csi-prestasi-header">
+                                <h2>PRESTASI</h2>
+                            </div>
+                            <div className="Csi-prestasi-content">
                                 <li>Juara 3 Cabang Keamanan Jaringan dan Sistem Informasi GEMASTIK IX</li>
                                 <li>Juara 1 & 3 JOINTS UGM 2018 - CTF</li>
                                 <li>Juara 3 Compfest X - CTF</li>
-                            </ul>
+                            </div>
                         </div>
                     </div>
-                    <div className='container-box'>
-                        <div className='judul-text'>Dokumentasi</div>
-                    </div>
-                </div>
 
-                <div className='body-bawah'>
-                    <div className='img-dokum-container'>
-                        <img src={dokum1} alt='dokum1' />
-                    </div>
-                    <div className='img-dokum-container'>
-                        <img src={dokum1} alt='dokum1' />
-                    </div>
-                    <div className='img-dokum-container'>
-                        <img src={dokum1} alt='dokum1' />
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div className="Contact-Container">
-                    <div className="Contact-Wrapper">
-                        <div className="Contact-Header">
-                            <h2>Narahubung</h2>
+                    <div className="Csi-dokumentasi-container">
+                        <div className="Csi-dokumentasi-header">
+                            <h2>DOKUMENTASI</h2>
                         </div>
-                        <div className="Contact-Person">
-                            <p>08xxxxxxxxx (WhatsApp) Ariq Lubis (Kadiv Ristek)</p>
-                            <p>083xxxxxxxx (WhatsApp) Irpan Bedil (PIC Riset Ilkomerz)</p>
+                        <div className="Csi-dokumentasi-content">
+                            <div className="Csi-dokumentasi-head">
+                                <img src={arrowleft } alt="" className='arrow-left'/>
+                                <img src={dokum} alt="placeholder" className='Csi-main-pic'/>
+                                <img src={ arrowright} alt="" className='arrow-right'/>
+                            </div>
+                            <div className="Csi-dokumentasi-carousel">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="Csi-narahubung-container">
+                        <div className="Csi-narahubung-header">
+                            <h2>NARAHUBUNG</h2>
+                        </div>
+                        <div className="Csi-narahubung-content">
+                            <h3>Irfan Alamsyah</h3>
+                            <h3>Whatsapp: 089604283143</h3>                            
                         </div>
                     </div>
                 </div>
@@ -86,4 +82,4 @@ const CSI = () => {
     )
 }
 
-export default CSI
+export default Csi

@@ -1,5 +1,5 @@
-.Csi-header-container {
-    background-image: url('../../../Assets/Ilkommunity/CSI/bg_csi.svg');
+.Agribot-header-container {
+    background-image: url('../../../Assets/Ilkommunity/Agribot/bg-agribot.svg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -8,13 +8,13 @@
     margin-top: .8rem;
 }
 
-.Csi-header-wrapper {
+.Agribot-header-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     transform: translateX(242px);
 }
 
-.Csi-header {
+.Agribot-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
     height: 208px;
 }
 
-.Csi-header h2 {
+.Agribot-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -37,7 +37,7 @@
     color: #F0E4D4;
 }
 
-.Csi-header p {
+.Agribot-header p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -46,14 +46,14 @@
     text-align: center;
 }
 
-.Csi-main-container {
+.Agribot-main-container {
     background-image: url('../../../Assets/Ilkommunity/IWDC/IWDC-Main-Pattern.svg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 0 0 0;
 }
 
-.Csi-content-deskripsi-tujuan {
+.Agribot-content-deskripsi-tujuan {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@
     gap: 80px;
 }
 
-.Csi-content-deskripsi-tujuan #Csi-deskripsi {
+.Agribot-content-deskripsi-tujuan #Agribot-deskripsi {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -73,7 +73,7 @@
     border-bottom: 4px solid black;
 }
 
-.Csi-content-deskripsi-tujuan #Csi-tujuan {
+.Agribot-content-deskripsi-tujuan #Agribot-tujuan {
     font-family: 'Changa One';
     font-style: normal;
     font-weight: 400;
@@ -83,13 +83,13 @@
     text-align: center;
 }
 
-.Csi-content-container {
+.Agribot-content-container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.Csi-deskripsi-content {
+.Agribot-deskripsi-content {
     width: 1057px;
     height: 100%;
     display: flex;
@@ -102,7 +102,7 @@
     padding: 40px 40px 40px 44px;
 }
 
-.Csi-deskripsi-content p {
+.Agribot-deskripsi-content p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -112,7 +112,7 @@
     color: #FFFFFF;
 }
 
-.Csi-prestasi-container {
+.Agribot-prestasi-container {
     margin: 80px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -120,7 +120,7 @@
     align-items: center;
 }
 
-.Csi-prestasi-content {
+.Agribot-prestasi-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +134,7 @@
     padding: 45px 45px 45px 45px;
 }
 
-.Csi-prestasi-content li {
+.Agribot-prestasi-content li {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -144,7 +144,7 @@
     color: #000000;
 }
 
-.Csi-prestasi-header {
+.Agribot-prestasi-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +156,7 @@
     transform: translateY(25px);
 }
 
-.Csi-prestasi-header h2 {
+.Agribot-prestasi-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -167,7 +167,7 @@
 }
 
 
-.Csi-dokumentasi-container {
+.Agribot-dokumentasi-container {
     margin: 80px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -175,7 +175,7 @@
     align-items: center;
 }
 
-.Csi-dokumentasi-content {
+.Agribot-dokumentasi-content {
     width: 1057px;
     height: 704px;
     background: #453755;
@@ -183,7 +183,7 @@
     box-shadow: 7px 7px 0px #1F2937;
 }
 
-.Csi-dokumentasi-content h3 {
+.Agribot-dokumentasi-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -193,7 +193,7 @@
     color: #000000;
 }
 
-.Csi-dokumentasi-head {
+.Agribot-dokumentasi-head {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,14 +209,14 @@
     padding-left: 64px;
 }
 
-.Csi-main-pic {
+.Agribot-main-pic {
     width: 696px;
     height: 342px;
     border: 3px solid #16052B;
     box-shadow: 9px 10px 0px #16052B;
 }
 
-.Csi-dokumentasi-header {
+.Agribot-dokumentasi-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,7 +228,7 @@
     transform: translateY(25px);
 }
 
-.Csi-dokumentasi-header h2 {
+.Agribot-dokumentasi-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -240,7 +240,7 @@
 
 
 
-.Csi-narahubung-container {
+.Agribot-narahubung-container {
     padding: 80px 0 160px 0;
     display: flex;
     flex-direction: column;
@@ -248,7 +248,7 @@
     align-items: center;
 }
 
-.Csi-narahubung-content {
+.Agribot-narahubung-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,7 +262,7 @@
 
 }
 
-.Csi-narahubung-content h3 {
+.Agribot-narahubung-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -272,7 +272,7 @@
     color: #000000;
 }
 
-.Csi-narahubung-header {
+.Agribot-narahubung-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +284,7 @@
     transform: translateY(25px);
 }
 
-.Csi-narahubung-header h2 {
+.Agribot-narahubung-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;

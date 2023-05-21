@@ -30,10 +30,12 @@ const Ilkommunity = () => {
               <li>CSI</li>
             </div>
           </a>
-          <div className="ilkommunity-agribot">
-            <img src={agribot} alt="Agribot" />
-            <li>AGRIBOT</li>
-          </div>
+          <a href="Ilkommunity-Agribot">
+            <div className="ilkommunity-agribot">
+              <img src={agribot} alt="Agribot" />
+              <li>AGRIBOT</li>
+            </div>
+          </a>
           <div className="ilkommunity-cp">
             <img src={CP} alt="CP" />
             <li>CP</li>

@@ -20,6 +20,7 @@ import Riset from './features/Riset/Riset';
 import Csi from './features/Ilkommunity/CSI/Csi';
 import IWDC from './features/Ilkommunity/IWDC/IWDC';
 import MAD from './features/Ilkommunity/MAD/MAD';
+import Agribot from './features/Ilkommunity/Agribot/Agribot';
 
 
 
@@ -38,6 +39,7 @@ function App() {
             <Route path='/Ilkommunity-IWDC' element={<IWDC />} />
             <Route path='/Ilkommunity-CSI' element={<Csi />} />
             <Route path='/Ilkommunity-MAD' element={<MAD />} />
+            <Route path='/Ilkommunity-Agribot' element={<Agribot />} />
               <Route path='/Badan-Pengawas' element={<BP />} />
               <Route path='/BPH' element={<BPH />} />
               <Route path='/Edukasi' element={<Edukasi />} />
