@@ -21,6 +21,9 @@ import Csi from './features/Ilkommunity/CSI/Csi';
 import IWDC from './features/Ilkommunity/IWDC/IWDC';
 import MAD from './features/Ilkommunity/MAD/MAD';
 import Agribot from './features/Ilkommunity/Agribot/Agribot';
+import DAMING from './features/Ilkommunity/DAMING/Daming';
+import CP from './features/Ilkommunity/CP/CP';
+
 
 
 
@@ -40,6 +43,8 @@ function App() {
             <Route path='/Ilkommunity-CSI' element={<Csi />} />
             <Route path='/Ilkommunity-MAD' element={<MAD />} />
             <Route path='/Ilkommunity-Agribot' element={<Agribot />} />
+            <Route path='/Ilkommunity-DAMING' element={<DAMING />} />
+            <Route path='/Ilkommunity-CP' element={<CP />} />
               <Route path='/Badan-Pengawas' element={<BP />} />
               <Route path='/BPH' element={<BPH />} />
               <Route path='/Edukasi' element={<Edukasi />} />
