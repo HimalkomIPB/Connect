@@ -52,35 +52,52 @@ const ImageSlider = ({ slides }) => {
         </div>
         <div className="Dokumentasi-content">
           <div className="Dokumentasi-head">
-            <img src={arrowleft} alt="" className="arrow-left" onClick={goToPrevious} />
+            <img
+              src={arrowleft}
+              alt=""
+              className="arrow-left"
+              onClick={goToPrevious}
+            />
             <div style={slideStyles}></div>
-            <img src={arrowright} alt="" className="arrow-right" onClick={goToNext}/>
+            <img
+              src={arrowright}
+              alt=""
+              className="arrow-right"
+              onClick={goToNext}
+            />
           </div>
           <div className="Dokumentasi-carousel">
-                        {visibleThumbs.map((slide, slideIndex) => (
-                            <div
-                                key={slideIndex}
-                                style={{
-                                    border: '2px solid #16052B',
-                                    width: '215px',
-                                    height: '136px',
-                                    margin: '5px',
-                                }}
-                            >
-                                <img
-                                    src={slides[getThumbnailIndex(slideIndex)].url}
-                                    alt={`Slide ${slideIndex + 1}`}
-                                    style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                        cursor: 'pointer',
-                                    }}
-                                    onClick={() => setCurrentIndex(getThumbnailIndex(slideIndex))}
-                                />
-                            </div>
-                        ))}
-                    </div>
+            {visibleThumbs.map((slide, slideIndex) => (
+              <div
+                key={slideIndex}
+                style={{
+                  border: "2px solid #16052B",
+                  width: "215px",
+                  height: "136px",
+                  margin: "5px",
+                  transition: "transform 0.3s ease",
+                }}
+              >
+                <img
+                  src={slides[getThumbnailIndex(slideIndex)].url}
+                  alt={`Slide ${slideIndex + 1}`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => setCurrentIndex(getThumbnailIndex(slideIndex))}
+                  onMouseEnter={(event) => {
+                    event.target.parentNode.style.transform = "scale(1.1)";
+                  }}
+                  onMouseLeave={(event) => {
+                    event.target.parentNode.style.transform = "scale(1)";
+                  }}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     );
