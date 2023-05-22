@@ -6,12 +6,21 @@ import Footer from "../../../component/Footer/Footer";
 import arrowleft from './../../../Assets/Ilkommunity/IWDC/IWDC-Arrow - Left Circle.svg'
 import arrowright from './../../../Assets/Ilkommunity/IWDC/IWDC- Arrow - Right Circle.svg'
 
+import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 
 const CP = () => {
   const [showDeskripsi, setShowDeskripsi] = useState(true);
   const toggleContent = () => {
     setShowDeskripsi(!showDeskripsi);
   };
+  // add slide from url online\
+  const slides = [
+    {url: "http://placehold.it/350x150"},
+    {url:"http://placehold.it/255x150"},
+    {url:"http://placehold.it/295x150"},
+    {url:"http://placehold.it/310x150"},
+    {url:"http://placehold.it/450x150"},
+  ];
   return (
     <div>
       <Navbar />
@@ -64,22 +73,7 @@ const CP = () => {
                     </div>
                 </div>
 
-                <div className="CP-dokumentasi-container">
-                    <div className="CP-dokumentasi-header">
-                        <h2>DOKUMENTASI</h2>
-                    </div>
-                    <div className="CP-dokumentasi-content">
-                        <div className="CP-dokumentasi-head">
-                            <img src={arrowleft } alt="" className='arrow-left'/>
-                            <img src="http://placehold.it/350x150" alt="placeholder" className="IWDC-main-pic" />
-
-                            <img src={ arrowright} alt="" className='arrow-right'/>
-                        </div>
-                        <div className="CP-dokumentasi-carousel">
-
-                        </div>
-                    </div>
-                </div>
+                <ImageSlider slides={slides} />
 
                 <div className="CP-narahubung-container"> 
                     <div className="CP-narahubung-header">
