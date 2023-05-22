@@ -3,9 +3,6 @@ import "./CP.css";
 import Navbar from "../../../component/Navbar/Navbar";
 import Footer from "../../../component/Footer/Footer";
 
-import arrowleft from './../../../Assets/Ilkommunity/IWDC/IWDC-Arrow - Left Circle.svg'
-import arrowright from './../../../Assets/Ilkommunity/IWDC/IWDC- Arrow - Right Circle.svg'
-
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 
 const CP = () => {

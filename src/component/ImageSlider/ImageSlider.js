@@ -12,10 +12,6 @@ const ImageSlider = ({ slides }) => {
         (currentIndex + 3) % slides.length
       ];
 
-    const sliderStyles = {
-        height : "100%",
-        position: "relative",       
-    }
     const slideStyles = {   
         backgroundPosition: 'center',
         backgroundSize: "cover",
@@ -38,9 +34,9 @@ const ImageSlider = ({ slides }) => {
         setCurrentIndex(newIndex);
     };
 
-    const goToSlide = (index) => {
-        setCurrentIndex(index);
-    }
+    // const goToSlide = (index) => {
+    //     setCurrentIndex(index);
+    // }
 
     const getThumbnailIndex = (index) => {
         if (currentIndex + index < slides.length) {

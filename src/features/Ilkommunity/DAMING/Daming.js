@@ -20,13 +20,6 @@ const DAMING = () => {
     {url:"http://placehold.it/450x150"},
   ];
 
-  const containerStyles = {
-    // width: "500px",
-    // height: "280px",
-    margin: "0 auto",
-    display: "flex",
-    justifyContent: "center",
-  };
   return (
     <div>
       <Navbar />
