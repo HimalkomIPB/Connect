@@ -42,10 +42,12 @@
 
 .arrow-left {
     padding-right: 64px;
+    cursor: pointer;
 }
 
 .arrow-right {
     padding-left: 64px;
+    cursor: pointer;
 }
 
 .IWDC-main-pic {

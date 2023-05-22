@@ -78,6 +78,7 @@ const ImageSlider = ({ slides }) => {
                                         width: '100%',
                                         height: '100%',
                                         objectFit: 'cover',
+                                        cursor: 'pointer',
                                     }}
                                     onClick={() => setCurrentIndex(getThumbnailIndex(slideIndex))}
                                 />
