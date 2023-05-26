@@ -1,20 +1,23 @@
-#IWDC-header-container {
-    background-image: url('../../../Assets/Ilkommunity/IWDC/IWDC-Header-Background.svg');
+#UX-header-container {
+    background-image: url('../../../Assets/Ilkommunity/UX/UX-Header-Background.svg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     height: 100vh;
     margin-top: .8rem;
+    border-width: 4px 0px;
+    border-style: solid;
+    border-color: #111827;
 }
 
-.IWDC-header-wrapper {
+.UX-header-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     transform: translateX(242px);
 }
 
-.IWDC-header {
+.UX-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +28,7 @@
     height: 208px;
 }
 
-.IWDC-header h2 {
+.UX-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -37,7 +40,7 @@
     color: #F0E4D4;
 }
 
-.IWDC-header p {
+.UX-header p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -46,14 +49,14 @@
     text-align: center;
 }
 
-#IWDC-main-container {
+#UX-main-container {
     background-image: url('../../../Assets/Ilkommunity/IWDC/IWDC-Main-Pattern.svg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 0 0 0;
 }
 
-.IWDC-content-deskripsi-tujuan {
+.UX-content-deskripsi-tujuan {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +64,7 @@
     gap: 80px;
 }
 
-.IWDC-content-deskripsi-tujuan #IWDC-deskripsi {
+.UX-content-deskripsi-tujuan #UX-deskripsi {
     font-family: 'Changa One';
     font-style: normal;
     font-weight: 400;
@@ -72,7 +75,7 @@
     text-align: center;
 }
 
-#IWDC-deskripsi.iwdc-active{
+#UX-deskripsi.UX-active {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -86,7 +89,7 @@
     padding-bottom: 4px;
 }
 
-#IWDC-tujuan{
+#UX-tujuan {
     font-family: 'Changa One';
     font-style: normal;
     font-weight: 400;
@@ -97,7 +100,7 @@
     text-align: center;
 }
 
-#IWDC-tujuan.iwdc-active{
+#UX-tujuan.UX-active {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -111,7 +114,7 @@
     padding-bottom: 4px;
 }
 
-.IWDC-content-deskripsi-tujuan{
+.UX-content-deskripsi-tujuan {
     font-family: 'Changa One';
     font-style: normal;
     font-weight: 400;
@@ -122,15 +125,15 @@
     text-align: center;
 }
 
-.IWDC-content-container {
+.UX-content-container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.IWDC-deskripsi-content {
+.UX-deskripsi-content {
     width: 1057px;
-    height: 200px;
+    height: 272px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +145,7 @@
 }
 
 
-.IWDC-deskripsi-content p {
+.UX-deskripsi-content p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -152,9 +155,7 @@
     color: #FFFFFF;
 }
 
-.IWDC-tujuan-content {
-    width: 1055px;
-    height: 104px;
+.UX-tujuan-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,7 +168,7 @@
 
 
 
-.IWDC-tujuan-content h3 {
+.UX-tujuan-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -179,7 +180,7 @@
 
 
 
-.IWDC-prestasi-container {
+.UX-prestasi-container {
     margin: 80px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -187,7 +188,7 @@
     align-items: center;
 }
 
-.IWDC-prestasi-content {
+.UX-prestasi-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,7 +200,7 @@
     background-color: #FFFFFF;
 }
 
-.IWDC-prestasi-content h3 {
+.UX-prestasi-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -209,7 +210,7 @@
     color: #000000;
 }
 
-.IWDC-prestasi-header {
+.UX-prestasi-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,7 +222,7 @@
     transform: translateY(25px);
 }
 
-.IWDC-prestasi-header h2 {
+.UX-prestasi-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -231,7 +232,7 @@
     color: #FFFFFF;
 }
 
-.IWDC-narahubung-container {
+.UX-narahubung-container {
     padding: 80px 0 160px 0;
     display: flex;
     flex-direction: column;
@@ -239,21 +240,20 @@
     align-items: center;
 }
 
-.IWDC-narahubung-content {
+
+.UX-narahubung-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid #000000;
     width: 1060px;
-    height: 174px;
+    height: 202px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
     background-color: #FFFFFF;
-
 }
 
-.IWDC-narahubung-content h3 {
+.UX-narahubung-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -263,7 +263,7 @@
     color: #000000;
 }
 
-.IWDC-narahubung-header {
+.UX-narahubung-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -275,7 +275,7 @@
     transform: translateY(25px);
 }
 
-.IWDC-narahubung-header h2 {
+.UX-narahubung-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;

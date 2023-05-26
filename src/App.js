@@ -6,7 +6,6 @@ import ProfileHimalkom from './features/Profile/Profile Himalkom/ProfileHimalkom
 import Megaproker from './features/Megaproker/Megaproker'
 import Komnews from './features/Komnews/Komnews'
 import Ilkommunity from './features/Ilkommunity/Ilkommunity'
-import Placeholder from './features/Placeholder/Placeholder';
 import BP from './features/Profile/Profile Divisi/BP/BP';
 import BPH from './features/Profile/Profile Divisi/BPH/BPH'
 import Edukasi from './features/Profile/Profile Divisi/Edukasi/Edukasi';
@@ -23,6 +22,7 @@ import MAD from './features/Ilkommunity/MAD/MAD';
 import Agribot from './features/Ilkommunity/Agribot/Agribot';
 import DAMING from './features/Ilkommunity/DAMING/Daming';
 import CP from './features/Ilkommunity/CP/CP';
+import AgriUX from './features/Ilkommunity/AgriUX/UX'; 
 
 
 
@@ -45,6 +45,7 @@ function App() {
             <Route path='/Ilkommunity-Agribot' element={<Agribot />} />
             <Route path='/Ilkommunity-DAMING' element={<DAMING />} />
             <Route path='/Ilkommunity-CP' element={<CP />} />
+            <Route path='/Ilkommunity-AgriUX' element={<AgriUX />} />
               <Route path='/Badan-Pengawas' element={<BP />} />
               <Route path='/BPH' element={<BPH />} />
               <Route path='/Edukasi' element={<Edukasi />} />

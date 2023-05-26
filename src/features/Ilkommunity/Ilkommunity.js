@@ -21,8 +21,10 @@ const Ilkommunity = () => {
         </div>
         <div className="ilkommunity">
           <div className="ilkommunity-agriux">
-            <img src={agriux} alt="AgriUX" />
-            <li>AGRIUX</li>
+            <a href="/Ilkommunity-AgriUX">
+              <img src={agriux} alt="AgriUX" />
+              <li>AGRIUX</li>
+            </a>
           </div>
           <a href='/Ilkommunity-CSI'>
             <div className="ilkommunity-csi">
@@ -37,10 +39,10 @@ const Ilkommunity = () => {
             </div>
           </a>
           <a href="/Ilkommunity-CP">
-          <div className="ilkommunity-cp">
-            <img src={CP} alt="CP" />
-            <li>CP</li>
-          </div>
+            <div className="ilkommunity-cp">
+              <img src={CP} alt="CP" />
+              <li>CP</li>
+            </div>
           </a>
           <a href="/Ilkommunity-DAMING">
             <div className="ilkommunity-daming">

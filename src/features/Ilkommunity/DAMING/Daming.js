@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Daming.css";
 import Navbar from "../../../component/Navbar/Navbar";
 import Footer from "../../../component/Footer/Footer";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 const DAMING = () => {
