@@ -3,6 +3,7 @@ import "./Daming.css";
 import Navbar from "../../../component/Navbar/Navbar";
 import Footer from "../../../component/Footer/Footer";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
+import placeholdertest from "../../../Assets/Ilkommunity/placeholdertest.svg";
 
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 const DAMING = () => {
@@ -13,7 +14,7 @@ const DAMING = () => {
 
   // add slide from url online\
   const slides = [
-    {url: "http://placehold.it/350x150"},
+    {url: placeholdertest},
     {url:"http://placehold.it/255x150"},
     {url:"http://placehold.it/295x150"},
     {url:"http://placehold.it/310x150"},
