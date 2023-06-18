@@ -11,6 +11,7 @@
 .Footer-Logos {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 64px;
     padding-top: 127px;
     margin: 0 343px 54px 354px;
@@ -45,4 +46,25 @@
     padding-bottom: 25px;
     font-size: 16px;
     line-height: 24px;
+}
+
+@media(max-width: 768px){
+    .Footer-Logos{
+        flex-direction: column;
+    }
+
+    .Footer-address{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .address{
+        text-align: center;
+    }
+
+    .contact{
+        padding-top: 40px;
+        text-align: center;
+    }
 }

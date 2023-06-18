@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .Dokumentasi-content {
@@ -77,4 +78,11 @@
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media(max-width: 992px){
+    .Dokumentasi-container{
+        width: 800px;
+        height: 400px;
+    }
 }

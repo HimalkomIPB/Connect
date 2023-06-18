@@ -105,3 +105,10 @@ li {
 .sub-menu-2 li {
     padding: 0 0 22px 28px;
 }
+
+@media(max-width: 992px){
+    .navbar-list{
+        display: none;
+    }
+}
+
