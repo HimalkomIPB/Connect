@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh);
     margin-top: .8rem;
 }
 
@@ -126,6 +126,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .IWDC-deskripsi-content {
@@ -237,6 +238,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .IWDC-narahubung-content {
@@ -285,4 +287,40 @@
     color: #FFFFFF;
 }
 
-@media only screen and (min-width:600px) {}
+@media(max-width: 992px){
+    #IWDC-header-container{
+        background-image: url("../../../Assets/Ilkommunity/IWDC/IWDC-Header-Background-Mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+        width: auto;
+        height: calc(60rem);
+    }
+
+    .IWDC-header-wrapper{
+        grid-template-columns: none;
+        transform: translateY(11rem);
+    }
+
+    .IWDC-header{
+        width: auto;
+        height: auto;
+    }
+
+    .IWDC-header p{
+        font-size: large;
+        width: 401px;
+    }
+}
+
+@media(max-width: 768px){
+    #IWDC-header-container{
+
+    }
+
+
+    .IWDC-header-wrapper{
+        grid-template-columns: none;
+        /* transform: translateY(11rem); */
+    }
+}
