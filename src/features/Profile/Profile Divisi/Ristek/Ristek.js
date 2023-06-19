@@ -72,11 +72,6 @@ const Ristek = () => {
                 </div>
             </div>
         </section>
-
-
-
-
-
         <Footer />
     </div>);
 }

@@ -69,7 +69,7 @@ const Ilkommunity = () => {
         </div>
 
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

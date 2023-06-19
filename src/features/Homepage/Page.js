@@ -17,6 +17,10 @@ import riset from '../../Assets/Logo Riset.png'
 import bgproker1 from './../../Assets/Background/cardproker1.svg'
 import bgproker2 from './../../Assets/Background/cardproker2.svg'
 
+import placeholder_komnews from '../../Assets/Program Kerja/dokum/dokum.svg'
+import komnews_card_bg from '../../Assets/Background/Komnews-Home-Card.svg'
+
+
 const Page = () => {
   return (
     <div className='background'>
@@ -84,8 +88,8 @@ const Page = () => {
           </div>
 
           <div className="proker-container">
-            
-            <img src={bgproker1} alt="bgproker1" className='bgproker1'/>
+
+            <img src={bgproker1} alt="bgproker1" className='bgproker1' />
             <div className="proker proker1">
               <div className='proker--logo--container'>
                 <img src={ittoday} alt="ittoday" className='proker--logo' />
@@ -100,7 +104,7 @@ const Page = () => {
               </div>
             </div>
 
-            <img src={bgproker2} alt="bgproker2" className='bgproker2'/>
+            <img src={bgproker2} alt="bgproker2" className='bgproker2' />
             <div className="proker proker2">
               <div className='proker--logo--container'>
                 <img src={riset} alt="riset ilkomerz" className='proker--logo' />
@@ -124,11 +128,37 @@ const Page = () => {
 
 
       {/* Komnews */}
-      <div className="header">
-        <h2>
-          KOMNEWS
-        </h2>
-      </div>
+      <section id='Komnews-Home-container'>
+        <div className="Komnews-Home-Header">
+          <h2>
+            KOMNEWS
+          </h2>
+        </div>
+
+        <div className="Komnews-Home-Content-Container">
+          <div className="Komnews-Home-Content-Card">
+              <div className="Komnews-Home-Content">
+                <img src={placeholder_komnews} />
+                <h2>Placeholder Judul</h2>
+                <p>23/12/2023</p>
+              </div>
+          </div>
+          <div className="Komnews-Home-Content-Card">
+            <div className="Komnews-Home-Content">
+              <img src={placeholder_komnews} />
+              <h2>Placeholder Judul</h2>
+              <p>23/12/2023</p>
+            </div>
+          </div>
+          <div className="Komnews-Home-Content-Card">
+            <div className="Komnews-Home-Content">
+              <img src={placeholder_komnews} />
+              <h2>Placeholder Judul</h2>
+              <p>23/12/2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
