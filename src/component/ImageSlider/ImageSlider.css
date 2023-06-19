@@ -12,7 +12,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .Dokumentasi-content {
@@ -80,9 +79,23 @@
     color: #FFFFFF;
 }
 
+@media(max-width:1024px){
+    .Dokumentasi-container{
+        width: 800px;
+        height: 400px;
+    }
+}
+
 @media(max-width: 992px){
     .Dokumentasi-container{
         width: 800px;
         height: 400px;
+    }
+}
+
+@media(max-width: 768px){
+    .Dokumentasi-container{
+        width: 200px;
+        height: 200px;
     }
 }

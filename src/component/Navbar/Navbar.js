@@ -1,13 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import himalkom from '../../Assets/Himalkom/Logo HIMALKOM.svg'
 import './Navbar.css'
 const Navbar = () => {
+
+    const [Active, setActive] = useState(false)
+    const activeState = () => {
+        setActive(!Active)
+    }
+
+
     return (
         <div>
             <div className="navbar">
                 <div className="navbar-heading">
                     <img src={himalkom} alt='himalkom'></img>
                 </div>
+                {/* Mobile Nav */}
+                <div className="navbar-burger" onClick={activeState}>
+                    <div className="burger"></div>
+                    <div className="burger"></div>
+                    <div className="burger"></div>
+                    {console.log(Active)}
+                </div>
+
                 <div className="navbar-list">
                     <li><a href="/">Home</a></li>
                     <div className="profil-dropdown">
@@ -30,14 +45,32 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-
                     <li><a href="/Komnews">Komnews</a></li>
                     <li><a href="/Galeri">Galeri</a></li>
                     <li><a href="/Megaproker">Program Kerja</a></li>
                     <li><a href="/Ilkommunity">Komunitas</a></li>
                     <li><a href="/Riset-Himalkom">Riset</a></li>
                 </div>
+
+
             </div>
+                {
+                    Active == true
+                        ?
+                        <section className='mobile-navbar-container'>
+                            <div className={Active ? "mobile-navbar" : " "}>
+                                <li><a href="/ProfilHimalkom">Profil</a></li>
+                                <li><a href="/ProfilHimalkom">Himalkom</a></li>
+                                <li><a href="/Komnews">Komnews</a></li>
+                                <li><a href="/Galeri">Galeri</a></li>
+                                <li><a href="/Megaproker">Program Kerja</a></li>
+                                <li><a href="/Ilkommunity">Komunitas</a></li>
+                                <li><a href="/Riset-Himalkom">Riset</a></li>
+                            </div>
+                        </section>
+                        :
+                        <></>
+                }
         </div>
     )
 }

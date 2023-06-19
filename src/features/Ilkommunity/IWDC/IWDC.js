@@ -53,17 +53,17 @@ const IWDC = () => {
                         {
                             renderDiv == true
                                 ? //if true
+                                <div className="IWDC-deskripsi-content">
+                                    <p>IPB Web Development Community adalah sebuah komunitas di lingkungan mahasiswa Ilmu Komputer Institut Pertanian Bogor yang berfokus pada pembelajaran dan pengasahan kemampuan dalam pengembangan website. Semua anggota komunitas agriweb akan mempelajari segala hal yang berkaitan dengan proses pengembangan website, dimulai dari teknologi pada sisi front-end (HTML, CSS, dan Javascript), back-end (PHP, Node JS), sampai ke tools-tools yang dibutuhkan untuk mendeploy sebuah website.
+                                    </p>
+                                </div>
+                                : //else
                                 < div >
                                     <div className="IWDC-tujuan-container">
                                         <div className="IWDC-tujuan-content">
                                             <h3>Belajar serta membangun WebApp yang berkualitas, menarik, serta dapat menjadi konsumsi khalayak ramai</h3>
                                         </div>
                                     </div>
-                                </div>
-                                : //else
-                                <div className="IWDC-deskripsi-content">
-                                    <p>IPB Web Development Community adalah sebuah komunitas di lingkungan mahasiswa Ilmu Komputer Institut Pertanian Bogor yang berfokus pada pembelajaran dan pengasahan kemampuan dalam pengembangan website. Semua anggota komunitas agriweb akan mempelajari segala hal yang berkaitan dengan proses pengembangan website, dimulai dari teknologi pada sisi front-end (HTML, CSS, dan Javascript), back-end (PHP, Node JS), sampai ke tools-tools yang dibutuhkan untuk mendeploy sebuah website.
-                                    </p>
                                 </div>
                         }
 
@@ -76,7 +76,7 @@ const IWDC = () => {
                             </div>
                         </div>
                     </div>
-
+                    
                     <ImageSlider slides={slides} />
 
                     <div className="IWDC-narahubung-container">

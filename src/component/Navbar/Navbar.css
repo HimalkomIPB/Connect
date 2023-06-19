@@ -17,6 +17,9 @@ li {
     margin: 25px 80px 25px 80px;
 }
 
+.navbar-burger {
+    display: none;
+}
 
 .navbar-list {
     margin: 25px 80px 25px 80px;
@@ -30,6 +33,7 @@ li {
     font-size: 18px;
     list-style: none;
     letter-spacing: 0.1px;
+    width: max-content;
 }
 
 .navbar-list li a {
@@ -106,9 +110,73 @@ li {
     padding: 0 0 22px 28px;
 }
 
-@media(max-width: 992px){
-    .navbar-list{
-        display: none;
+.mobile-navbar-container{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar-list li a {
+        font-size: 16px;
     }
 }
 
+@media(max-width: 992px) {
+    .navbar-list {
+        display: none;
+    }
+
+    .navbar-burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 40px 0 0;
+    }
+
+    .burger {
+        cursor: pointer;
+        width: 35px;
+        height: 4px;
+        margin: 3px;
+        background: #FCFCFC;
+        border-radius: 2px;
+    }
+
+    .mobile-navbar-container {
+        display: block;
+        padding: 20px 0 20px 0;
+        background-color: #E49800;
+        border-bottom: 4px solid #040404;
+    }
+
+    .mobile-navbar li {
+        display: flex;
+        padding: 15px 0 15px 0;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .mobile-navbar li a {
+        font-family: Changa One;
+        font-weight: 350;
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+        letter-spacing: 0.1px;
+    }
+
+    .mobile-navbar li a:hover {
+        text-decoration: none;
+        font-family: 'Changa One';
+        font-style: italic;
+        font-weight: 350;
+        font-size: 28px;
+        line-height: 36px;
+        color: #F0E4D4;
+        text-shadow: 2.5px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        transition: 0.3s;
+
+    }
+}

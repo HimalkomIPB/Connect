@@ -42,57 +42,57 @@ const Riset = () => {
                         <div id="Riset-Main-Column">
                             <div id="Riset">
                                 <img src={icon1} alt="Riset Icon 1"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                             <div id="Riset">
                             <img src={icon2} alt="Riset Icon 2"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                             <div id="Riset">
                             <img src={icon3} alt="Riset Icon 3"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                             <div id="Riset">
                             <img src={icon4} alt="Riset Icon 4"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                             <div id="Riset">
                             <img src={icon5} alt="Riset Icon 5"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                             <div id="Riset">
                             <img src={icon6} alt="Riset Icon 6"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                             <div id="Riset">
                             <img src={icon7} alt="Riset Icon 7"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                             <div id="Riset">
                             <img src={icon8} alt="Riset Icon 8"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                             <div id="Riset">
                             <img src={icon1} alt="Riset Icon 1"/>
-                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> {/*Judul*/}
-                                <p>23/12</p> {/*Tanggal*/}
-                                <p><a href="#">Baca Selengkapnya</a></p>{/*Hyperlink*/}
+                                <h3 className='Judul-Riset'>Ketertarikan Ilkomerz dalam membangun Startup</h3> 
+                                <p>23/12</p> 
+                                <p><a href="#">Baca Selengkapnya</a></p>
                             </div>
                         </div>
                     </div>
