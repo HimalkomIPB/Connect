@@ -51,7 +51,22 @@
 @media(max-width: 768px){
     .Footer-Logos{
         flex-direction: column;
+        margin: 0 auto;
     }
+
+    .Footer-Logos .himalkom {
+        width: 20%;
+    }
+
+    .Footer-Logos .ipb {
+        order: 3;
+        width: 40%;
+      }
+    
+      .Footer-Logos .connect {
+        order: 2;
+        width: 25%;
+      }
 
     .Footer-address{
         flex-direction: column;
