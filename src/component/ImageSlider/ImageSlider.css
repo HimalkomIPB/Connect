@@ -1,18 +1,18 @@
-.Dokumentasi-carousel{
-    display: flex;
-    background-color: black;
-    justify-content: center;
-    padding: 54px 0;
-    gap: 20px;
-}
-
 .Dokumentasi-container {
     margin: 80px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.Dokumentasi-carousel{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 20px;
 }
 
 .Dokumentasi-content {
@@ -38,8 +38,18 @@
     align-items: center;
     justify-content: center;
     padding: 56px 0 48px 0;
-
+    width: 100%;
 }
+
+.image-preview {
+    background-position: center;
+    background-size: cover;
+    width: 696px;
+    height: 342px;
+    border: 3px solid #16052B;
+    box-shadow: 9px 10px 0px #16052B;
+  }
+  
 
 .arrow-left {
     padding-right: 64px;
@@ -80,9 +90,65 @@
     color: #FFFFFF;
 }
 
-@media(max-width: 992px){
-    .Dokumentasi-container{
+@media(max-width: 1024px) {
+    #image-slider  .Dokumentasi-content {
         width: 800px;
-        height: 400px;
+        height: 763px;
+        border: 3px solid #1F2937;
+        box-shadow: 7px 7px 0px #1F2937;
+    }
+    #image-slider  .Dokumentasi-carousel{
+        padding-left:20px ;
+        padding-right: 20px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    #image-slider  .Dokumentasi-content {
+        width: 400px;
+        height: 763px;
+        border: 3px solid #1F2937;
+        box-shadow: 7px 7px 0px #1F2937;
+    }
+    
+    #image-slider .arrow{
+        width: 10%;
+        height: auto;
+    }
+
+    #image-slider .arrow-left {
+        padding-right:0px;
+    }
+    
+    #image-slider .arrow-right {
+        padding-left: 0px;
+    }
+
+    .image-preview {
+        background-position: center;
+        background-size: cover;
+        padding: 0px;
+        width: 285px;
+        height: 416px;
+        box-shadow: 5px 5px 0px #16052B;
+        margin:0 7px;
+      }
+
+    .Dokumentasi-carousel{
+        padding: 45px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    
+    .Dokumentasi-carousel > div {
+        flex: 0 0 215px;
+        margin: 0 10px;
+    }
+
+
+}
+
+
+
+
