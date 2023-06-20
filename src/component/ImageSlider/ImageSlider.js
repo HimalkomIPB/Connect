@@ -16,10 +16,10 @@ const ImageSlider = ({ slides }) => {
         backgroundPosition: 'center',
         backgroundSize: "cover",
         backgroundImage: `url(${slides[currentIndex].url})`,
-        width: '696px',
-        height: '342px',
-        border: '3px solid #16052B',  
-        boxShadow: '9px 10px 0px #16052B',
+        // width: '696px',
+        // height: '342px',
+        // border: '3px solid #16052B',  
+        // boxShadow: '9px 10px 0px #16052B',
     };
 
     const goToPrevious = () => {
@@ -46,26 +46,29 @@ const ImageSlider = ({ slides }) => {
         }
     };
     return (
-      <div className="Dokumentasi-container">
+      <div id="image-slider" className="Dokumentasi-container">
+        
         <div className="Dokumentasi-header">
           <h2>DOKUMENTASI</h2>
         </div>
+
         <div className="Dokumentasi-content">
           <div className="Dokumentasi-head">
             <img
               src={arrowleft}
               alt=""
-              className="arrow-left"
+              className="arrow-left arrow"
               onClick={goToPrevious}
             />
-            <div style={slideStyles}></div>
+            <div className='image-preview' style={slideStyles}></div>
             <img
               src={arrowright}
               alt=""
-              className="arrow-right"
+              className="arrow-right arrow"
               onClick={goToNext}
             />
           </div>
+          
           <div className="Dokumentasi-carousel">
             {visibleThumbs.map((slide, slideIndex) => (
               <div
