@@ -469,19 +469,15 @@
     margin: 0 0 48px 0;
 }
 
-
-
 /* Proker CSS */
-.megaproker .container {
+#homepage .megaproker .container {
     background-image: url(./../../Assets/Background/bgproker.svg);
     background-size: cover;
     background-position: center bottom;
-    height: 1160px;
-    border: 5px solid black;
     width: 100%;
 }
 
-.header .proker-header {
+#homepage .header .proker-header {
     margin-top: 25px;
     margin-bottom: 0;
     font-weight: 400;
@@ -497,42 +493,46 @@
 }
 
 /* Proker Proker Himalkom */
-.proker-container {
+#homepage .proker-container {
     display: flex;
     flex-direction: column;
     padding: 0 80.25px;
     width: 100%;
     box-sizing: border-box;
+    padding-bottom: 5%;
+}
+
+#homepage .proker{
+    display: flex;
     position: relative;
 }
 
-.proker{
-    border: 2px solid rgb(160, 44, 44);
-    display: flex;
-    /* margin: 0 80.5px 0 80.5px; */
-    width: 90%;
+#homepage .bgproker1, #homepage .bgproker2{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 
-.proker--info,
-.proker--logo--container {
+#homepage .bgproker2{ bottom: 0;}
+
+#homepage .proker--info, .proker--logo--container {
     height: 100%;
-    flex: 75%;
     align-self: center;
+    z-index: 2;
 }
 
+#homepage .proker--logo--container{flex: 40%;}
+#homepage .proker--info{flex: 60%;}
 
-.proker--info,
-.proker--logo--container {
- z-index: 2;
-}
-.proker--logo {
+#homepage .proker--logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
 }
 
-.proker--info .judul {
+#homepage .proker--info .judul {
     margin-top:66px;
     margin-bottom: 0px;
     font-family: "Sports World";
@@ -543,12 +543,10 @@
     color: #f0e4d4;
     text-shadow: 3px 2px 0px #040404;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    
+    -webkit-text-stroke-color: #040404;   
 }
 
 .proker--info .desc {
-    border: 1px solid black;
     width: 75%;
     font-family: 'Montserrat';
     font-weight: 400;
@@ -560,51 +558,36 @@
     margin-top: 10px;
 }
 
-.bgproker1{
-    z-index: 1;
-    position: absolute;
+#homepage .proker1 {
     margin-top: 50px;
-    width: 89.5%;
-}
-.proker1 {
-    margin-top: 50px;
-    /* background-image: url(./../../Assets/Background/cardproker1.svg); */
     background-size: cover;
     background-position: center top;
     height: 542px;
     width: 100%;
 }
 
-.proker1 .proker--logo--container .proker--logo {
-    margin-top: 112px;
+#homepage .proker1 .proker--logo--container .proker--logo {
+    margin-top: 20%;
 }
 
-.bgproker2{
-    z-index: 1;
-    position: absolute;
-    margin-top: 490px;
-    width: 89.5%;
-}
-
-.proker2{
+#homepage .proker2{
     background-size: cover;
     background-position: center top;
     height: 450px;
     width: 100%;
+    margin-top: 0;
 }
 
-.proker2 {
+#homepage .proker2 {
     flex-direction: row-reverse;
+    margin-top: clamp(0.5rem, -0.1562rem + 3.281vw, 3.125rem);
 }
 
 .proker2 .proker--info {
     margin-left: 10%;
 }
-.proker2 .proker .proker--info .judul {
-    margin-top: 105px;
-}
 
-.proker--info .button {
+#homepage .proker--info .button {
     margin-top: 20px;
     box-sizing: border-box;
     font-family: 'Montserrat';
@@ -617,8 +600,17 @@
     color: white;
 }
 
-.proker--info>button:active {
+#homepage .proker--info>button:active {
     transform: translateY(2px);
     transform: translateX(3px);
     box-shadow: 1px 1px 0px #000000;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+#homepage .proker2 .proker--logo{
+    border: 3px solid #111827;
+    box-shadow: 7px 7px 0px #000000;
 }

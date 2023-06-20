@@ -12,14 +12,14 @@ import iwdc from '../../Assets/Ilkommunity/IWDC 200 x 200.png'
 import gary from '../../Assets/Ilkommunity/Gary 200 x 200.png'
 import mad from '../../Assets/Ilkommunity/MAD 200 x 200.png'
 import ittoday from '../../Assets/Logo IT Today.png'
-import riset from '../../Assets/Logo Riset.png'
+import riset from '../../Assets/Program Kerja/logo/cpsc.svg'
 
 import bgproker1 from './../../Assets/Background/cardproker1.svg'
 import bgproker2 from './../../Assets/Background/cardproker2.svg'
 
 const Page = () => {
   return (
-    <div className='background'>
+    <div className='background' id='homepage'>
       <Navbar />
 
       {/* Main Page */}
@@ -77,16 +77,15 @@ const Page = () => {
 
       {/* Megaproker */}
       <section className="megaproker">
-        <div className="container">
+        <div className="container" id='homepage'>
 
           <div className="header">
             <h3 className='proker-header'>MEGAPROKER</h3>
           </div>
 
           <div className="proker-container">
-            
-            <img src={bgproker1} alt="bgproker1" className='bgproker1'/>
             <div className="proker proker1">
+            <img src={bgproker1} alt="bgproker1" className='bgproker1'/>
               <div className='proker--logo--container'>
                 <img src={ittoday} alt="ittoday" className='proker--logo' />
               </div>
@@ -100,14 +99,14 @@ const Page = () => {
               </div>
             </div>
 
-            <img src={bgproker2} alt="bgproker2" className='bgproker2'/>
             <div className="proker proker2">
+              <img src={bgproker2} alt="bgproker2" className='bgproker2'/>
               <div className='proker--logo--container'>
                 <img src={riset} alt="riset ilkomerz" className='proker--logo' />
               </div>
               <div className='proker--info'>
-                <h1 className='judul'>RISET ILKOMERZ</h1>
-                <p className='desc'> <span className='bold'>Riset Ilkomerz</span> merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.
+                <h1 className='judul'>CPSC</h1>
+                <p className='desc'><span className='bold'>Computer Problem Solving Competition (CPSC)</span> merupakan ajang perlombaan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Ilmu Komputer (Himalkom) IPB dan merupakan rangkaian dari acara Pesta Sains Nasional (PSN) FMIPA IPB
                 </p>
                 {/* ini ntar dijadiin button yah */}
                 <button className='button'><span className='bold'>Selengkapnya</span></button>
