@@ -19,7 +19,7 @@ const Ristek = () => {
         {/* deskripsi divisi */}
         <section className="divisi-ristek">
             <div className="ristek-container">
-                <div className="logo-container">
+                <div className="logo-container-ristek">
                     <br />
                 </div>
                 

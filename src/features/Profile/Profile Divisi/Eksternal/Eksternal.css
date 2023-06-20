@@ -35,8 +35,7 @@
     font-size: 57px;
     line-height: 64px;
     margin: 0 0 29px 0;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
@@ -103,10 +102,68 @@
     line-height: 52px;
     text-align: center;
     width: 433px;
+}
 
-    /* text-shadow: px 5px 0px #040404;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #040404;
-    -webkit-text-stroke-color: #FFFFFF;
-    color: #F0073F; */
+@media(max-width: 1024px) {
+    .eksternal-container {
+        height: 100vh;
+    }
+
+    .desc-eksternal h2 {
+        font-size: 42px;
+        text-shadow: 4px 3px 0px #040404;
+    }
+
+    .eksternal-staff {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-eksternal img {
+        height: 380px;
+    }
+
+    .anggota-eksternal:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-eksternal:last-child {
+        grid-column: span 2;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .eksternal-container {
+        background-image: url("../../../../Assets/Divisi/Ristek/Ristek Mobile Bg.svg");
+        background-size: cover;
+        height: calc(60rem);
+    }
+
+    .eksternal-desc {
+        flex: auto;
+        align-items: center;
+        transform: translateY(10rem);
+    }
+
+    .eksternal-logo{
+        display: none;
+    }
+
+    .eksternal-desc h2 {
+        display: none;
+    }
+
+    .eksternal-desc p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .eksternal-staff {
+        gap: 40px 10px;
+    }
+
+    .anggota-eksternal img {
+        height: calc(300.75px);
+    }
 }

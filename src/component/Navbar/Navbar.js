@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import himalkom from '../../Assets/Himalkom/Logo HIMALKOM.svg'
+import NavCross from '../../Assets/Nav-Close.svg'
 import './Navbar.css'
 const Navbar = () => {
 
@@ -16,11 +17,16 @@ const Navbar = () => {
                     <img src={himalkom} alt='himalkom'></img>
                 </div>
                 {/* Mobile Nav */}
-                <div className="navbar-burger" onClick={activeState}>
-                    <div className="burger"></div>
-                    <div className="burger"></div>
-                    <div className="burger"></div>
-                    {console.log(Active)}
+                <div className="navbar-state" onClick={activeState}>
+                    <div className={Active ? "navbar-burger" : ""}>
+                        <div className="burger"></div>
+                        <div className="burger"></div>
+                        <div className="burger"></div>
+                    </div>
+                    <div className={Active ? "" : "navbar-cross"}>
+                            <img src={NavCross} />
+                        {console.log(Active)}
+                    </div>
                 </div>
 
                 <div className="navbar-list">
@@ -54,23 +60,24 @@ const Navbar = () => {
 
 
             </div>
-                {
-                    Active == true
-                        ?
-                        <section className='mobile-navbar-container'>
-                            <div className={Active ? "mobile-navbar" : " "}>
-                                <li><a href="/ProfilHimalkom">Profil</a></li>
-                                <li><a href="/ProfilHimalkom">Himalkom</a></li>
-                                <li><a href="/Komnews">Komnews</a></li>
-                                <li><a href="/Galeri">Galeri</a></li>
-                                <li><a href="/Megaproker">Program Kerja</a></li>
-                                <li><a href="/Ilkommunity">Komunitas</a></li>
-                                <li><a href="/Riset-Himalkom">Riset</a></li>
-                            </div>
-                        </section>
-                        :
-                        <></>
-                }
+            {
+                Active == true
+                    ?
+                    <section className='mobile-navbar-container'>
+                        <div className={Active ? "mobile-navbar" : " "}>
+                            <li><a href="/ProfilHimalkom">Profil</a></li>
+                            <li><a href="/ProfilHimalkom">Himalkom</a></li>
+                            <li><a href="/Komnews">Komnews</a></li>
+                            <li><a href="/Galeri">Galeri</a></li>
+                            <li><a href="/Megaproker">Program Kerja</a></li>
+                            <li><a href="/Ilkommunity">Komunitas</a></li>
+                            <li><a href="/Riset-Himalkom">Riset</a></li>
+                        </div>
+                    </section>
+                    :
+                    <div className={Active ? "" : ""}>
+                    </div>
+            }
         </div>
     )
 }

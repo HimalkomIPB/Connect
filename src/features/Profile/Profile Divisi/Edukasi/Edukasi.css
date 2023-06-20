@@ -6,14 +6,13 @@
     background-image: url("./../../../../Assets/Divisi/Edukasi/edukasi_background.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-
+    background-position: center;
     border-top: 5px solid #000000;
     border-bottom: 5px solid #000000;
     margin-top: 13px
 }
 
-.logo-container {
+.logo-container-edukasi {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,8 +35,7 @@
     font-size: 57px;
     line-height: 64px;
     margin: 0 0 29px 0;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
@@ -46,11 +44,11 @@
 .info-edukasi p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     text-align: justify;
-    width: 75%;
+    width: 85%;
 }
 
 .staff-header {
@@ -127,4 +125,66 @@
 
 .program-header img {
     width: 572px;
+}
+
+@media(max-width: 1024px) {
+    .edukasi-container {
+        height: 100vh;
+    }
+
+    .info-edukasi h2 {
+        font-size: 42px;
+        text-shadow: 4px 3px 0px #040404;
+    }
+
+    .edukasi-anggota {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-edukasi img {
+        height: 380px;
+    }
+
+    .anggota-edukasi:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-edukasi:last-child {
+        grid-column: span 1;
+    }
+}
+
+@media(max-width: 768px) {
+    .edukasi-container {
+        background-image: url("../../../../Assets/Divisi/Edukasi/Edukasi-mobile-bg.svg");
+        background-size: cover;
+        height: calc(60rem);
+    }
+
+    .logo-container-edukasi{
+        display: none;
+    }
+
+    .info-edukasi {
+        align-items: center;
+        transform: translateY(10rem);
+    }
+
+    .info-edukasi h2 {
+        display: none;
+    }
+
+    .info-edukasi p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .edukasi-anggota {
+        gap: 40px 10px;
+    }
+
+    .anggota-edukasi img {
+        height: calc(300.75px);
+    }
 }

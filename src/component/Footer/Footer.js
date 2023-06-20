@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         <div className="Footer-copyright">
           <p>
-            Copyright © Himalkom 2022. All right reserved.
+            <b>Copyright © Himalkom 2022. All right reserved.</b>
           </p>
         </div>
       </div>

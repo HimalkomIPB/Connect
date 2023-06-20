@@ -25,7 +25,7 @@ const Edukasi = () => {
             {/* Profil Divisi */}
             <section className="edukasi-divisi">
                 <div className="edukasi-container">
-                    <div className="logo-container">
+                    <div className="logo-container-edukasi">
                         <br />
                     </div>
 
@@ -83,7 +83,7 @@ const Edukasi = () => {
                 <div className="edukasi-program">
                     <div className="program-header">
                         <h2>PROGRAM KERJA</h2>
-                        <img src={line} alt="line"/>
+                        <img src={line} alt="line" />
                     </div>
                 </div>
             </section>

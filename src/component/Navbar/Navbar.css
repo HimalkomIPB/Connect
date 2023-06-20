@@ -21,6 +21,10 @@ li {
     display: none;
 }
 
+.navbar-cross {
+    display: none;
+}
+
 .navbar-list {
     margin: 25px 80px 25px 80px;
     display: flex;
@@ -125,7 +129,7 @@ li {
         display: none;
     }
 
-    .navbar-burger {
+    .navbar-state {
         display: flex;
         flex-direction: column;
         justify-content: center;

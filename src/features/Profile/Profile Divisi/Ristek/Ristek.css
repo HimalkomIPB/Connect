@@ -13,7 +13,7 @@
     margin-top: 13px
 }
 
-.logo-container {
+.logo-container-ristek {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,12 +160,16 @@
 
     .desc-ristek {
         flex: auto;
+        align-items: center;
         transform: translateY(10rem);
+    }
+
+    .logo-container-ristek{
+        display: none;
     }
 
     .desc-ristek h2 {
         display: none;
-
     }
 
     .desc-ristek p {
