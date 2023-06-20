@@ -24,7 +24,7 @@ const Navbar = () => {
                         <div className="burger"></div>
                     </div>
                     <div className={Active ? "" : "navbar-cross"}>
-                            <img src={NavCross} />
+                            <img id='navcross' src={NavCross} />
                         {console.log(Active)}
                     </div>
                 </div>
