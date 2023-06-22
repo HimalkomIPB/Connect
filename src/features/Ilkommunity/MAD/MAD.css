@@ -1,186 +1,364 @@
-.csi-container {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 737px;
-    background-image: url("./../../../Assets/Ilkommunity/CSI/bg_csi.svg");
+#MAD-header-container {
+    background-image: url('../../../Assets/Ilkommunity/MAD/MAD-Header-Background.svg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-
-    border-top: 5px solid #000000;
-    border-bottom: 5px solid #000000;
-    margin-top: 13px
-}
-
-.csi-img {
-    flex: 40%;
-    margin: auto 0;
-}
-
-.csi-img img {
-    width: 325px;
-    height: 325px;
-    display: block;
-    margin: 0 40% 0 auto;
-}
-.desc {
-    flex: 60%;
+    display: flex;
+    align-items: center;
+    height: calc(100vh);
+    margin-top: .8rem;
     justify-content: center;
+}
+
+.MAD-header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+.MAD-header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 377px;
+    height: 208px;
 }
 
-.desc h2 {
+.MAD-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
-    margin: 0 0 29px 0;
-    text-align: center;
-
-    text-shadow: 7px 4px 0px #040404;
+    text-shadow: 4px 5px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
 }
 
-.desc p {
+.MAD-header p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    width: 35%;
-    margin: 0 auto;
 }
 
-.csi-body {
-    background-image: url("./../../../Assets/Ilkommunity/CSI/bg_komun.svg");
+#MAD-main-container {
+    background-image: url('../../../Assets/Ilkommunity/IWDC/IWDC-Main-Pattern.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    padding: 80px 0 0 0;
 }
 
-.body-atas {
+.MAD-content-deskripsi-tujuan {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
 }
 
-.judul-text {
-    display: inline-block;
-    background: #E49800;
-    border: 1px solid #111827;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-    padding: 8px 16px 8px 16px;
-    transform: translateY(50%);
-}
-
-.isi-text {
-    box-sizing: border-box;
-    width: 1064px;
-    height: 345px;
-    background: #FFFFFF;
-    border: 3px solid #000000;
-    box-shadow: 3px 4px 0px #000000;
-
-    font-family: 'Montserrat';
+.MAD-content-deskripsi-tujuan #MAD-deskripsi {
+    font-family: 'Changa One';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: justify;
-    color: #000000;
-    padding: 45px 45px 45px 45px;
-    margin: 0 auto;
-}
-
-.body-atas .container-box {
-    padding-top: 127px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6B7280;
+    cursor: pointer;
     text-align: center;
 }
 
-.container-box .isi-text p {
-    margin-bottom: 24px;
+#MAD-deskripsi.mad-active {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-shadow: 4px 5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+    padding-bottom: 4px;
 }
 
+#MAD-tujuan {
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6B7280;
+    cursor: pointer;
+    text-align: center;
+}
 
-.Contact-Container {
-    position: relative;
+#MAD-tujuan.mad-active {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-shadow: 4px 5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+.MAD-content-deskripsi-tujuan {
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6B7280;
+    cursor: pointer;
+    text-align: center;
+}
+
+.MAD-content-container {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.MAD-deskripsi-content {
+    width: 1057px;
+    height: 200px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    background: #E9AD33;
+    border: 4px solid #16052B;
+    box-shadow: 7px 7px 0px #000000;
+    margin: 32px 32px 0 0;
+    padding: 40px 44px 40px 44px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.Contact-Wrapper {
-    position: absolute;
-    z-index: 10;
-    transform: translateY(-50%);
-    background-color: white;
-    width: 855px;
-    height: 164px;
-    border: 3px solid #000000;
-    box-shadow: 3px 4px 0px #000000;
-}
 
-.Contact-Header {
-    padding: 20px 0 0 20px;
-}
-
-.Contact-Header h2 {
+.MAD-deskripsi-content p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #FFFFFF;
 }
 
-.Contact-Person {
-    padding: 42px 0 0 20px;
+.MAD-tujuan-content {
+    width: 1055px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E9AD33;
+    border: 4px solid #16052B;
+    box-shadow: 7px 7px 0px #000000;
+    margin: 32px 32px 0 32px;
+    padding: 40px 44px 40px 44px;
 }
 
-.Contact-Person p{
+
+
+.MAD-tujuan-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
     text-align: justify;
-    padding-bottom: 14px;
+    color: #FFFFFF;
 }
 
-.body-bawah {
+
+
+.MAD-prestasi-container {
+    margin: 80px 0 0 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 71px;
-    padding-bottom: 420px;
 }
 
-.body-bawah .img-dokum-container img{
-    margin: 0 21.5px 0 21.5px;
-    /* background-image: url("./../../../Assets/Ilkommunity/CSI/dokum1.svg"); */
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    width: 329.93px;
-    height: 188.5px;
-    transition: 0.3s;
-    object-fit: cover;
-    border: 2px solid black;
+.MAD-prestasi-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    width: 1060px;
+    height: 118px;
+    border: 3px solid #16052B;
+    box-shadow: 3px 4px 0px #000000;
+    background-color: #FFFFFF;
 }
 
-.body-bawah .img-dokum-container:hover img {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-    width: 441.53px;
-    height: 257.81px;
+.MAD-prestasi-content h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
 }
 
+.MAD-prestasi-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 52px;
+    background: #E49800;
+    border: 1px solid #111827;
+    box-shadow: 4px 4px 0px #000000;
+    transform: translateY(25px);
+}
+
+.MAD-prestasi-header h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.MAD-narahubung-container {
+    padding: 80px 0 160px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.MAD-narahubung-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    width: 1060px;
+    height: 174px;
+    border: 3px solid #16052B;
+    box-shadow: 3px 4px 0px #000000;
+    background-color: #FFFFFF;
+
+}
+
+.MAD-narahubung-content h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.MAD-narahubung-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 228px;
+    height: 52px;
+    background: #E49800;
+    border: 1px solid #111827;
+    box-shadow: 4px 4px 0px #000000;
+    transform: translateY(25px);
+}
+
+.MAD-narahubung-header h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media(max-width: 1024px) {
+
+    .MAD-header {
+        width: auto;
+        height: auto;
+    }
+
+    .MAD-header p {
+        font-size: large;
+        width: 401px;
+    }
+
+    .MAD-deskripsi-content {
+        width: 800px;
+        height: 250px;
+    }
+
+    .MAD-tujuan-content {
+        width: 800px;
+        height: 100px;
+    }
+
+    .MAD-prestasi-content{
+        width: 800px;
+        height: 100px;
+    }
+
+    .MAD-narahubung-content{
+        width: 800px;
+        height: 190px;
+    }
+}
+
+@media(max-width: 768px) {
+    #MAD-header-container {
+        background-image: url("../../../Assets/Ilkommunity/MAD/MAD-Header-Background-Mobile.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        height: calc(60rem);
+        border: 2px solid #111827;
+    }
+
+
+    .MAD-header-wrapper {
+        grid-template-columns: none;
+        transform: translateY(11rem);
+    }
+
+
+    .MAD-deskripsi-content {
+        width: 400px;
+        height: 464px;
+    }
+
+    .MAD-tujuan-content {
+        width: 394px;
+        height: 176px;
+    }
+
+    .MAD-prestasi-content{
+        width: 400px;
+        height: 114px;
+    }
+
+    .MAD-narahubung-content{
+        width: 400px;
+        height: 190px;
+    }
+}
