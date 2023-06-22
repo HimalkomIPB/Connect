@@ -23,64 +23,64 @@ import komnews_card_bg from '../../Assets/Background/Komnews-Home-Card.svg'
 
 const Page = () => {
   return (
-    <div className='background'>
+    <div id="homepage" className='background'>
       <Navbar />
 
       {/* Main Page */}
-      <div className="hero" >
+      {/* <div className="hero" >
         <div className="hero-img">
           <img src={connect} alt="connect" className="hero-image" />
         </div>
         <h1>CONNECT</h1>
         <h3>Together We Connect Each Other</h3>
         <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
-      </div>
+      </div> */}
 
 
       {/* Ilkommunity */}
-      <div className='ilkommunity-bg'>
+      <div id="ilkomunity-homepage" className='ilkommunity-bg'>
         <div className="header">
           <h2 className='ilkommunity-header'>ILKOMMUNITY</h2>
         </div>
         <div className="ilkommunity">
           <div className="ilkommunity-agriux">
             <img src={agriux} alt="AgriUX" />
-            <li>AGRIUX</li>
+            <p>AGRIUX</p>
           </div>
           <div className="ilkommunity-csi">
             <img src={CSI} alt="CSI" />
-            <li>CSI</li>
+            <p>CSI</p>
           </div>
           <div className="ilkommunity-agribot">
             <img src={agribot} alt="Agribot" />
-            <li>AGRIBOT</li>
+            <p>AGRIBOT</p>
           </div>
           <div className="ilkommunity-cp">
             <img src={CP} alt="CP" />
-            <li>CP</li>
+            <p>CP</p>
           </div>
           <div className="ilkommunity-daming">
             <img src={daming} alt="Daming" />
-            <li>DAMING</li>
+            <p>DAMING</p>
           </div>
           <div className="ilkommunity-iwdc">
             <img src={iwdc} alt="IWDC" />
-            <li>IWDC</li>
+            <p>IWDC</p>
           </div>
           <div className="ilkommunity-gary">
             <img src={gary} alt="GARY" />
-            <li>GARY</li>
+            <p>GARY</p>
           </div>
           <div className="ilkommunity-mad">
             <img src={mad} alt="MAD" />
-            <li>MAD</li>
+            <p>MAD</p>
           </div>
         </div>
 
       </div>
 
       {/* Megaproker */}
-      <section className="megaproker">
+      {/* <section className="megaproker">
         <div className="container">
 
           <div className="header">
@@ -99,7 +99,7 @@ const Page = () => {
                 <h1 className='judul'>IT TODAY</h1>
                 <p className='desc'><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.
                 </p>
-                {/* ini ntar dijadiin button yah */}
+
                 <button className='button'><span className='bold'>Selengkapnya</span></button>
               </div>
             </div>
@@ -113,7 +113,7 @@ const Page = () => {
                 <h1 className='judul'>RISET ILKOMERZ</h1>
                 <p className='desc'> <span className='bold'>Riset Ilkomerz</span> merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.
                 </p>
-                {/* ini ntar dijadiin button yah */}
+
                 <button className='button'><span className='bold'>Selengkapnya</span></button>
               </div>
             </div>
@@ -121,8 +121,7 @@ const Page = () => {
           </div>
         </div>
 
-
-      </section>
+      </section> */}
 
 
 

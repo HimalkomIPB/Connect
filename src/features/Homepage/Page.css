@@ -60,8 +60,6 @@
     align-items: center;
     text-align: center;
     transition: 0.2s;
-
-
 }
 
 .hero-img {
@@ -115,19 +113,14 @@
     font-size: 36px;
 }
 
-.ilkommunity-bg {
-    background-image: url(./../../Assets/Background/bgilkomunity.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+#ilkomunity-homepage .ilkommunity-bg {
     width: 100%;
-    height: 110vh;
+    height: fit-content;
 }
 
-.header .ilkommunity-header {
+#ilkomunity-homepage .header .ilkommunity-header {
     margin-top: 100px;
     margin-bottom: 100px;
-
     font-weight: 400;
     font-size: 36px;
     line-height: 44px;
@@ -140,329 +133,146 @@
     color: #F0E4D4;
 }
 
-.ilkommunity {
+#ilkomunity-homepage .ilkommunity {
     display: grid;
     margin: 0 81px 64px 81px;
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 48px;
+    gap: 45px;
     justify-items: center;
 }
-
-.ilkommunity li {
+  
+#ilkomunity-homepage .ilkommunity > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: aqua; */
+    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.3s;
+    width: 304px; /* Adjust the width as desired */
+    height: 253px; /* Adjust the height as desired */
+  }
+  
+#ilkomunity-homepage .ilkommunity > div:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px) translateX(-10px);
+}
+  
+#ilkomunity-homepage .ilkommunity > div img {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 122px;
+    width: 122px;
+    height: 122px;
+}
+  
+#ilkomunity-homepage .ilkommunity > div p {
     list-style: none;
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 29px;
-
-}
-
-.ilkommunity-agriux {
-    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 304px;
-    height: 253px;
-    justify-items: center;
-    transition: 0.3s;
-}
-
-.ilkommunity-agriux li {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 32px;
-
     text-shadow: 1.5px 2.7px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #FFFFFF;
+    margin-top: 27px;
+}
+  
+@media (min-width: 992px) {
+    #ilkomunity-homepage .ilkommunity {
+      grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+    }
+}
+
+@media (max-width: 1023px) {
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 32px;
+        margin: 0 40px 64px 40px;
+    }
+
+    #ilkomunity-homepage .ilkommunity-bg {
+        background-image:none;
+        width: 100%;
+        height: auto;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div {
+        width: 192px;
+        height: 160px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div:hover {
+        box-shadow: 10px 10px 0px #000000;
+        transform: translateY(-7px) translateX(-7px);
+    }
+
+    #ilkomunity-homepage .ilkommunity>div img {
+        margin-top: 35px;
+        border: 2px solid;
+        border-radius: 122px;
+        width: 77.15px;
+        height: 77.15px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+        margin-top: 2px;
+    }
 }
 
 
-.ilkommunity-agriux:hover {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
+@media (max-width: 640px) {
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px;
+        margin: 0 40px 64px 40px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div {
+        width: 192px;
+        height: 160px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div:hover {
+        box-shadow: 10px 10px 0px #000000;
+        transform: translateY(-7px) translateX(-7px);
+    }
+
+    #ilkomunity-homepage .ilkommunity>div img {
+        margin-top: 35px;
+        border: 2px solid;
+        border-radius: 122px;
+        width: 77.15px;
+        height: 77.15px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+        margin-top: 2px;
+    }
+}
+  
+
+@media(max-width: 768px){
+
 }
 
-.ilkommunity-agriux img {
-    margin-top: 35px;
-    border: 2px solid;
-    border-radius: 122px;
-    width: 122px;
-    height: 122px;
-}
-
-.ilkommunity-csi {
-    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 304px;
-    height: 253px;
-    justify-items: center;
-    transition: 0.3s;
-}
-
-.ilkommunity-csi:hover {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-}
-
-.ilkommunity-csi img {
-    margin-top: 35px;
-    border-radius: 122px;
-    border: 2px solid;
-    width: 122px;
-    height: 122px;
-}
-
-.ilkommunity-csi li {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 32px;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #FFFFFF;
-}
-
-
-.ilkommunity-agribot {
-    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 304px;
-    height: 253px;
-    justify-items: center;
-    transition: 0.3s;
-}
-
-.ilkommunity-agribot:hover {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-}
-
-.ilkommunity-agribot img {
-    margin-top: 35px;
-    border-radius: 122px;
-    border: 2px solid;
-    width: 122px;
-    height: 122px;
-}
-
-
-.ilkommunity-agribot li {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 32px;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #FFFFFF;
-}
-
-.ilkommunity-cp {
-    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 304px;
-    height: 253px;
-    justify-items: center;
-    transition: 0.3s;
-}
-
-.ilkommunity-cp:hover {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-}
-
-.ilkommunity-cp img {
-    margin-top: 35px;
-    border: 2px solid;
-    border-radius: 122px;
-    width: 122px;
-    height: 122px;
-}
-
-.ilkommunity-cp li {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 32px;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #FFFFFF;
-}
-
-.ilkommunity-daming {
-    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 304px;
-    height: 253px;
-    justify-items: center;
-    transition: 0.3s;
-}
-
-.ilkommunity-daming li {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 32px;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #FFFFFF;
-}
-
-.ilkommunity-daming:hover {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-}
-
-.ilkommunity-daming img {
-    margin-top: 35px;
-    border: 2px solid;
-    border-radius: 122px;
-    width: 122px;
-    height: 122px;
-}
-
-.ilkommunity-iwdc {
-    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 304px;
-    height: 253px;
-    justify-items: center;
-    transition: 0.3s;
-}
-
-.ilkommunity-iwdc li {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 32px;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #FFFFFF;
-}
-
-.ilkommunity-iwdc:hover {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-}
-
-.ilkommunity-iwdc img {
-    margin-top: 35px;
-    width: 122px;
-    border: 2px solid;
-    border-radius: 122px;
-    height: 122px;
-}
-
-.ilkommunity-gary {
-    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 304px;
-    height: 253px;
-    justify-items: center;
-    transition: 0.3s;
-}
-
-.ilkommunity-gary:hover {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-}
-
-.ilkommunity-gary img {
-    margin-top: 35px;
-    border-radius: 122px;
-    border: 2px solid;
-    width: 122px;
-    height: 122px;
-}
-
-.ilkommunity-gary li {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 32px;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #FFFFFF;
-}
-
-.ilkommunity-mad {
-    background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    width: 304px;
-    height: 253px;
-    justify-items: center;
-    transition: 0.3s;
-}
-
-.ilkommunity-mad:hover {
-    box-shadow: 10px 10px 0px #000000;
-    transform: translateY(-10px);
-    transform: translateX(-10px);
-}
-
-.ilkommunity-mad img {
-    border: 2px solid;
-    border-radius: 122px;
-    margin-top: 35px;
-    width: 122px;
-    height: 122px;
-}
-
-.ilkommunity-mad li {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 32px;
-
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #FFFFFF;
-}
 
 .header h3 {
     font-size: 32px;
@@ -479,6 +289,7 @@
     height: 1160px;
     border: 5px solid black;
     width: 100%;
+    display: block;
 }
 
 .header .proker-header {
@@ -692,7 +503,14 @@
     padding: 2rem 0 2rem 0;
 }
 
-
+@media (min-width: 769px) {
+    .ilkommunity-bg {
+        background-image: url(./../../Assets/Background/bgilkomunity.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
 
 @media(max-width: 992px){
     .Komnews-Home-Content-Container{
@@ -701,3 +519,40 @@
         align-items: center;
     }
 }
+
+
+
+
+/* @media (max-width: 480px) {
+    .ilkommunity {
+        grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    }
+
+    .ilkommunity > div {
+        width: 192px;
+        height: 160px;
+      }
+      
+      .ilkommunity > div:hover {
+        box-shadow: 10px 10px 0px #000000;
+        transform: translateY(-10px) translateX(-10px);
+      }
+      
+      .ilkommunity > div img {
+        margin-top: 35px;
+        border: 2px solid;
+        border-radius: 122px;
+        width: 77.15px;
+        height: 77.15px;
+      }
+
+      .ilkommunity > div p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+    }
+} */
