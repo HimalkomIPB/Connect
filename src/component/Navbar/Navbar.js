@@ -9,7 +9,6 @@ const Navbar = () => {
         setActive(!Active)
     }
 
-
     return (
         <div>
             <div className="navbar">
@@ -65,6 +64,7 @@ const Navbar = () => {
                     ?
                     <section className='mobile-navbar-container'>
                         <div className={Active ? "mobile-navbar" : " "}>
+                            <li><a href="/">Home</a></li>
                             <li><a href="/ProfilHimalkom">Profil</a></li>
                             <li><a href="/ProfilHimalkom">Himalkom</a></li>
                             <li><a href="/Komnews">Komnews</a></li>

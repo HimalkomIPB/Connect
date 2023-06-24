@@ -1,17 +1,15 @@
-.hero {
+.hero-home-slide1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 110vh;
-    background-image: url(./../../Assets/Background/bghimal.jpg);
-    background-size: cover;
-    background-position: center center;
-    margin-top: 5px;
-    border-top: 4px solid;
+    background-image: url(./../../Assets/Background/bghimal-home.png);
+    background-size: 100% 100%;
+    height: 738px;
+    margin-top: 12px;
+    position: relative;
 }
 
-.hero>h1 {
-    /* yang sport world gk bisa, harus fetch fontnya kah? */
+.hero-home-slide1 h1 {
     font-family: "Sports World";
     font-style: normal;
     font-weight: 400;
@@ -25,32 +23,29 @@
     transition: 0.2s;
 }
 
-.hero>h3 {
+.hero-home-slide1 h3 {
     margin-top: 7px;
     font-family: 'Changa One';
     font-style: italic;
     font-weight: 400;
     font-size: 32px;
     line-height: 40px;
-    /* identical to box height, or 125% */
     text-shadow: 1.5px 2.7px 1px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     display: flex;
     align-items: center;
     text-align: center;
-    /* Cream/06 */
     color: #F0E4D4;
     transition: 0.2s;
 }
 
-.hero>p {
+.hero-home-slide1 p {
     font-family: 'Changa One';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    /* identical to box height, or 133% */
     color: #F0E4D4;
     text-shadow: 2px 2.5px 0px #040404;
     -webkit-text-stroke-width: 1.5px;
@@ -62,7 +57,7 @@
     transition: 0.2s;
 }
 
-.hero-img {
+.hero-home-logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,56 +66,165 @@
     margin-top: 80px;
 }
 
-.hero-image {
+.hero-home-logo-connect {
     width: 400px;
     height: 200px;
     transition: 0.2s;
 }
 
-.hero-image:hover {
+.hero-home-logo-connect:hover {
     width: 440px;
     height: 220px;
 }
 
-.hero>h3:hover {
-    font-weight: 440;
-    font-size: 34px;
-}
-
-.hero>p:hover {
-    font-weight: 520;
-    font-size: 31px;
-}
-
-.hero>h1:hover {
+.hero-home-slide1 h1:hover {
     font-weight: 480;
     font-size: 96px;
 }
 
-.header {
+.hero-home-slide1 h3:hover {
+    font-weight: 440;
+    font-size: 34px;
+}
+
+.hero-home-slide1 p:hover {
+    font-weight: 520;
+    font-size: 31px;
+}
+
+
+.hero-home-slider{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    bottom: 50px;
+}
+
+.hero-home-slider button img{
+    width: 12px;
+    height: auto;
+}
+
+/* Slide 2 */
+.hero-home-slide2 > .slider2{
+    bottom: 50px;
+}
+
+.hero-home-slide2{
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./../../Assets/Background/bghimal-home2.png);
+    /* background-image: url(./../../Assets/Background/bghimal-home2-ver2.png); */
+    background-size: 100% 100%;
+    height: 711px;
+    margin-top: 12px;
+}
+
+.hero-home-slide2 .hero-home-logo-container{
+    padding: 0;
+    margin-top: 9.66rem;
+    margin-bottom: 2.22rem;
+}
+
+.hero-home-slide2 h1{
+    font-family: "Sports World";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85.648px;
+    line-height: 64px;
+    letter-spacing: 5px;
+    color: #FFF;
+    text-shadow: 7px 7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    /* -webkit-text-stroke-color: #040404; */
+    transition: 0.2s;
+}
+
+.hero-home-slide2 h3{
+    margin-top: 21px;
+    font-family: 'Changa One';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.00738rem;
+    line-height: 40px;
+    text-shadow: 3px 3.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    /* -webkit-text-stroke-color: #040404; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    transition: 0.2s;
+}
+
+.home-slide2-kahim{
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    /* width: 100%; */
+    /* max-width:552.25px ;
+    max-height:656.68px ; */
+    /* max-width: 100%; */
+    /* height: auto; */
+}
+
+.home-slide2-wakahim{
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+}
+
+/* Animation on text */
+.hero-home-slide2 h1:hover {
+    font-weight: 480;
+    font-size: 96px;
+}
+
+.hero-home-slide2 h3:hover {
+    font-weight: 440;
+    font-size: 34px;
+}
+
+.hero-home-slide1{
+    display: none;
+}
+
+/* Css for the usetate */
+.active-slide {
+    display: flex;
+}
+
+#homepage button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Ilkomunity section */
+#ilkomunity-homepage {
+    width: 100%;
+    height: fit-content;
+    background-image: url(./../../Assets/Background/bgilkomunity.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#ilkomunity-homepage .header {
     display: flex;
     justify-content: center;
 }
 
-.header h2 {
-    font-size: 32px;
-    margin: 0 0 48px 0;
-}
-
-.header {
+#ilkomunity-homepage .header h2 {
     font-family: Changa One;
     font-weight: normal;
     font-size: 36px;
-}
-
-#ilkomunity-homepage .ilkommunity-bg {
-    width: 100%;
-    height: fit-content;
-}
-
-#ilkomunity-homepage .header .ilkommunity-header {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 57px;
     font-weight: 400;
     font-size: 36px;
     line-height: 44px;
@@ -135,7 +239,8 @@
 
 #ilkomunity-homepage .ilkommunity {
     display: grid;
-    margin: 0 81px 64px 81px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 0 81px;
     gap: 45px;
     justify-items: center;
 }
@@ -143,16 +248,16 @@
 #ilkomunity-homepage .ilkommunity > div {
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: aqua; */
     background-image: url(../../Assets/Background/Ilkommunity\ Card\ Desktop.png);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 30px;
     transition: 0.3s;
-    width: 304px; /* Adjust the width as desired */
-    height: 253px; /* Adjust the height as desired */
-  }
+
+    width: 304px; 
+    height: 253px; 
+}
   
 #ilkomunity-homepage .ilkommunity > div:hover {
     box-shadow: 10px 10px 0px #000000;
@@ -181,106 +286,6 @@
     margin-top: 27px;
 }
   
-@media (min-width: 992px) {
-    #ilkomunity-homepage .ilkommunity {
-      grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
-    }
-}
-
-@media (max-width: 1023px) {
-    #ilkomunity-homepage .ilkommunity {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 32px;
-        margin: 0 40px 64px 40px;
-    }
-
-    #ilkomunity-homepage .ilkommunity-bg {
-        background-image:none;
-        width: 100%;
-        height: auto;
-    }
-
-    #ilkomunity-homepage .ilkommunity>div {
-        width: 192px;
-        height: 160px;
-    }
-
-    #ilkomunity-homepage .ilkommunity>div:hover {
-        box-shadow: 10px 10px 0px #000000;
-        transform: translateY(-7px) translateX(-7px);
-    }
-
-    #ilkomunity-homepage .ilkommunity>div img {
-        margin-top: 35px;
-        border: 2px solid;
-        border-radius: 122px;
-        width: 77.15px;
-        height: 77.15px;
-    }
-
-    #ilkomunity-homepage .ilkommunity>div p {
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 32px;
-        text-shadow: 0.2px 1.5px 0px #040404;
-        -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: #040404;
-        color: #FFFFFF;
-        margin-top: 2px;
-    }
-}
-
-
-@media (max-width: 640px) {
-    #ilkomunity-homepage .ilkommunity {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 32px;
-        margin: 0 40px 64px 40px;
-    }
-
-    #ilkomunity-homepage .ilkommunity>div {
-        width: 192px;
-        height: 160px;
-    }
-
-    #ilkomunity-homepage .ilkommunity>div:hover {
-        box-shadow: 10px 10px 0px #000000;
-        transform: translateY(-7px) translateX(-7px);
-    }
-
-    #ilkomunity-homepage .ilkommunity>div img {
-        margin-top: 35px;
-        border: 2px solid;
-        border-radius: 122px;
-        width: 77.15px;
-        height: 77.15px;
-    }
-
-    #ilkomunity-homepage .ilkommunity>div p {
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 32px;
-        text-shadow: 0.2px 1.5px 0px #040404;
-        -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: #040404;
-        color: #FFFFFF;
-        margin-top: 2px;
-    }
-}
-  
-
-@media(max-width: 768px){
-
-}
-
-
-.header h3 {
-    font-size: 32px;
-    margin: 0 0 48px 0;
-}
-
-
-
 /* Proker CSS */
 .megaproker .container {
     background-image: url(./../../Assets/Background/bgproker.svg);
@@ -331,7 +336,6 @@
     align-self: center;
 }
 
-
 .proker--info,
 .proker--logo--container {
     z-index: 2;
@@ -381,7 +385,6 @@
 
 .proker1 {
     margin-top: 50px;
-    /* background-image: url(./../../Assets/Background/cardproker1.svg); */
     background-size: cover;
     background-position: center top;
     height: 542px;
@@ -503,50 +506,38 @@
     padding: 2rem 0 2rem 0;
 }
 
-@media (min-width: 769px) {
-    .ilkommunity-bg {
-        background-image: url(./../../Assets/Background/bgilkomunity.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-}
-
-@media(max-width: 992px){
+@media(max-width: 1024px){
     .Komnews-Home-Content-Container{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-}
 
-
-
-
-/* @media (max-width: 480px) {
-    .ilkommunity {
-        grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 32px;
+        margin: 0 40px;
     }
 
-    .ilkommunity > div {
+    #ilkomunity-homepage .ilkommunity>div {
         width: 192px;
         height: 160px;
-      }
-      
-      .ilkommunity > div:hover {
-        box-shadow: 10px 10px 0px #000000;
-        transform: translateY(-10px) translateX(-10px);
-      }
-      
-      .ilkommunity > div img {
+    }
+
+    #ilkomunity-homepage .ilkommunity>div:hover {
+        box-shadow: 7px 7px 0px #000000;
+        transform: translateY(-7px) translateX(-7px);
+    }
+
+    #ilkomunity-homepage .ilkommunity>div img {
         margin-top: 35px;
         border: 2px solid;
         border-radius: 122px;
         width: 77.15px;
         height: 77.15px;
-      }
+    }
 
-      .ilkommunity > div p {
+    #ilkomunity-homepage .ilkommunity>div p {
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
@@ -554,5 +545,168 @@
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: #040404;
         color: #FFFFFF;
+        margin-top: 2px;
     }
-} */
+}
+
+@media(max-width: 768px){
+    #ilkomunity-homepage {
+        background: none;
+    }
+    
+    #ilkomunity-homepage .header .ilkommunity-header {
+        margin-top: 115px;
+        margin-bottom: 34px;
+    }
+
+
+    #ilkomunity-homepage .header .ilkommunity-header {
+        margin-bottom: 36px;
+    }
+
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 0 40px;
+        gap: 32px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div {
+        width: 192px;
+        height: 160px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div:hover {
+        box-shadow: 7px 7px 0px #000000;
+        transform: translateY(-7px) translateX(-7px);
+    }
+
+    #ilkomunity-homepage .ilkommunity>div img {
+        margin-top: 35px;
+        border: 2px solid;
+        border-radius: 122px;
+        width: 77.15px;
+        height: 77.15px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+        margin-top: 2px;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+    #ilkomunity-homepage .header .ilkommunity-header {
+        margin-bottom: 36px;
+    }
+
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 0 40px;
+        gap: 16px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div {
+        width: 192px;
+        height: 160px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div:hover {
+        box-shadow: 7px 7px 0px #000000;
+        transform: translateY(-7px) translateX(-7px);
+    }
+
+    #ilkomunity-homepage .ilkommunity>div img {
+        margin-top: 34px;
+        border: 2px solid;
+        border-radius: 122px;
+        width: 77.15px;
+        height: 77.15px;
+    }
+
+    #ilkomunity-homepage .ilkommunity>div p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+        margin-top: 2px;
+    }
+
+
+    .hero-home-slider{
+        display: none;
+    }
+
+    .hero-home-slide1 {
+        background-image: url(./../../Assets/Background/bghimal-home-mobile.png);
+        height: 239.66px;
+    }
+
+    .hero-home-logo-container {
+        padding: 40.5px 40px 13px 40px;
+        margin-top: 0;
+    }
+    
+    .hero-home-logo-connect {
+        width: 133.518px;
+        height: 69.763px;
+        transition: 0.2s;
+    }
+    
+    .hero-home-logo-connect:hover {
+        width: 153.518px;
+        height: auto;
+    }
+
+    .hero-home-slide1 h1 {
+        font-size: 19.026px;
+        line-height: 21.363px;
+        letter-spacing: -0.083px;
+        color: #F0E4D4;
+        text-shadow: 2px 1px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+    }
+
+    .hero-home-slide1 h3 {
+        text-shadow: 0.5px 1px 0.2px #040404;
+        -webkit-text-stroke-width: 0.3px;
+        -webkit-text-stroke-color: #040404;
+        font-size: 10.681px;
+        line-height: 13.352px;
+    }
+
+    .hero-home-slide1 p{
+        font-size: 8.011px;
+        line-height: 10.681px;
+        text-shadow: 1px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 0.3px;
+        -webkit-text-stroke-color: #040404;
+        margin-top:12px;
+    }
+
+    .hero-home-slide1 h1:hover {
+        font-size: 25px;
+    }
+
+    .hero-home-slide1 h3:hover {
+        font-size: 15px;
+    }
+    
+    .hero-home-slide1 p:hover {
+        font-size: 12px;
+    }
+}
+
+
+

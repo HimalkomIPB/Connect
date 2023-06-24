@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import './Page.css'
 import connect from '../../Assets/Connect/Logo Connect.png'
 import Navbar from '../../component/Navbar/Navbar'
@@ -20,27 +20,71 @@ import bgproker2 from './../../Assets/Background/cardproker2.svg'
 import placeholder_komnews from '../../Assets/Program Kerja/dokum/dokum.svg'
 import komnews_card_bg from '../../Assets/Background/Komnews-Home-Card.svg'
 
+import radio_btn_active from './../../Assets/Slider/radio-btn-active.svg'
+import radio_btn from './../../Assets/Slider/radio-btn.svg'
+
+import kahim from './../../Assets/Slider/home-slide2-kahim.png'
+import wakahim from './../../Assets/Slider/home-slide2-wakahim.png'
+
 
 const Page = () => {
+  const [activeSlide, setActiveSlide] = useState(0); // State for the active slide index
+  const [renderDiv, setRenderDiv] = useState(true); // State for rendering content
+
+  const handleClick = (index) => {
+    setActiveSlide(index);
+  };
+
   return (
-    <div id="homepage" className='background'>
+    <div id="homepage" className="background">
       <Navbar />
 
       {/* Main Page */}
-      {/* <div className="hero" >
-        <div className="hero-img">
-          <img src={connect} alt="connect" className="hero-image" />
-        </div>
-        <h1>CONNECT</h1>
-        <h3>Together We Connect Each Other</h3>
-        <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
-      </div> */}
+      <section id="hero-home-container">
+        <div className={`hero-home-slide1 ${activeSlide === 0 ? 'active-slide' : ''}`}>
+          
+          <div className="hero-home-logo-container">
+            <img src={connect} alt="connect" className="hero-home-logo-connect"/>
+          </div>
 
+          <h1>CONNECT</h1>
+          <h3>Together We Connect Each Other</h3>
+          <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
+          <div className="hero-home-slider">
+            <button onClick={() => handleClick(0)} className={`slider-btn ${activeSlide === 0 ? 'active-btn' : ''}`}>
+              <img src={radio_btn_active} alt="slider-btn btn-active"></img>
+            </button>
+            <button onClick={() => handleClick(1)} className={`slider-btn ${activeSlide === 1 ? 'active-btn' : ''}`}>
+              <img src={radio_btn} alt="slider-btn"></img>
+            </button>
+          </div>
+        </div>
+        <div className={`hero-home-slide2 ${activeSlide === 1 ? 'active-slide' : ''}`}>
+          <div className="hero-home-logo-container">
+            <img src={connect} alt="connect" className="hero-home-logo-connect"/>
+          </div>
+
+          <img className="home-slide2-kahim" src={kahim} alt=""></img>
+          <img className="home-slide2-wakahim" src={wakahim} alt=""></img>
+
+          <h1>CONNECT</h1>
+          <h3>Together We Connect Each Other</h3>
+          
+          <div className="hero-home-slider slider2">
+            <button onClick={() => handleClick(0)} className={`slider-btn ${activeSlide === 1 ? 'active-btn' : ''}`}>
+              <img src={radio_btn} alt="slider-btn"></img>
+            </button>
+            <button onClick={() => handleClick(1)} className={`slider-btn ${activeSlide === 0 ? 'active-btn' : ''}`}>
+              <img src={radio_btn_active} alt="slider-btn btn-active"></img>
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/* Ilkommunity */}
-      <div id="ilkomunity-homepage" className='ilkommunity-bg'>
+      <section id="ilkomunity-homepage">
         <div className="header">
-          <h2 className='ilkommunity-header'>ILKOMMUNITY</h2>
+          <h2>ILKOMMUNITY</h2>
         </div>
         <div className="ilkommunity">
           <div className="ilkommunity-agriux">
@@ -76,8 +120,7 @@ const Page = () => {
             <p>MAD</p>
           </div>
         </div>
-
-      </div>
+      </section>
 
       {/* Megaproker */}
       {/* <section className="megaproker">
@@ -123,24 +166,19 @@ const Page = () => {
 
       </section> */}
 
-
-
-
       {/* Komnews */}
-      <section id='Komnews-Home-container'>
+      <section id="Komnews-Home-container">
         <div className="Komnews-Home-Header">
-          <h2>
-            KOMNEWS
-          </h2>
+          <h2>KOMNEWS</h2>
         </div>
 
         <div className="Komnews-Home-Content-Container">
           <div className="Komnews-Home-Content-Card">
-              <div className="Komnews-Home-Content">
-                <img src={placeholder_komnews} />
-                <h2>Placeholder Judul</h2>
-                <p>23/12/2023</p>
-              </div>
+            <div className="Komnews-Home-Content">
+              <img src={placeholder_komnews} />
+              <h2>Placeholder Judul</h2>
+              <p>23/12/2023</p>
+            </div>
           </div>
           <div className="Komnews-Home-Content-Card">
             <div className="Komnews-Home-Content">
@@ -161,7 +199,7 @@ const Page = () => {
 
       <Footer />
     </div>
-  )
+  );
 }
 
 export default Page
