@@ -56,10 +56,12 @@ const Ilkommunity = () => {
               <li>IWDC</li>
             </div>
           </a>
-          <div className="ilkommunity-gary">
-            <img src={gary} alt="GARY" />
-            <li>GARY</li>
-          </div>
+          <a href="/Ilkommunity-GARY">
+            <div className="ilkommunity-gary">
+              <img src={gary} alt="GARY" />
+              <li>GARY</li>
+            </div>
+          </a>
           <a href="/Ilkommunity-MAD">
             <div className="ilkommunity-mad">
               <img src={mad} alt="MAD" />

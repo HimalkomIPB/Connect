@@ -23,6 +23,7 @@ import Agribot from './features/Ilkommunity/Agribot/Agribot';
 import DAMING from './features/Ilkommunity/DAMING/Daming';
 import CP from './features/Ilkommunity/CP/CP';
 import AgriUX from './features/Ilkommunity/AgriUX/UX'; 
+import GARY from './features/Ilkommunity/GARY/GARY'; 
 
 
 
@@ -46,6 +47,7 @@ function App() {
             <Route path='/Ilkommunity-DAMING' element={<DAMING />} />
             <Route path='/Ilkommunity-CP' element={<CP />} />
             <Route path='/Ilkommunity-AgriUX' element={<AgriUX />} />
+            <Route path='/Ilkommunity-GARY' element={<GARY />} />
               <Route path='/Badan-Pengawas' element={<BP />} />
               <Route path='/BPH' element={<BPH />} />
               <Route path='/Edukasi' element={<Edukasi />} />
