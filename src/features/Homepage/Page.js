@@ -13,11 +13,11 @@ import gary from '../../Assets/Ilkommunity/Gary 200 x 200.png'
 import mad from '../../Assets/Ilkommunity/MAD 200 x 200.png'
 import ittoday from '../../Assets/Logo IT Today.png'
 import riset from '../../Assets/Logo Riset.png'
+import Card from "../../component/Komnews/Card"
 
 import bgproker1 from './../../Assets/Background/cardproker1.svg'
 import bgproker2 from './../../Assets/Background/cardproker2.svg'
 
-import placeholder_komnews from '../../Assets/Program Kerja/dokum/dokum.svg'
 import komnews_card_bg from '../../Assets/Background/Komnews-Home-Card.svg'
 
 import radio_btn_active from './../../Assets/Slider/radio-btn-active.svg'
@@ -34,6 +34,8 @@ const Page = () => {
   const handleClick = (index) => {
     setActiveSlide(index);
   };
+
+
 
   return (
     <div id="homepage" className="background">
@@ -173,62 +175,14 @@ const Page = () => {
         </div>
 
         <div className="Komnews-Home-Content-Container">
-          <div className="Komnews-Home-Content-Card">
-            <div className="Komnews-Home-Content">
-              <img src={placeholder_komnews} />
-              <h2>Placeholder Judul</h2>
-              <p>23/12/2023</p>
-            </div>
-          </div>
-          <div className="Komnews-Home-Content-Card">
-            <div className="Komnews-Home-Content">
-              <img src={placeholder_komnews} />
-              <h2>Placeholder Judul</h2>
-              <p>23/12/2023</p>
-            </div>
-          </div>
-          <div className="Komnews-Home-Content-Card">
-            <div className="Komnews-Home-Content">
-              <img src={placeholder_komnews} />
-              <h2>Placeholder Judul</h2>
-              <p>23/12/2023</p>
-            </div>
-          </div>
-          <div className="Komnews-Home-Content-Card">
-            <div className="Komnews-Home-Content">
-              <img src={placeholder_komnews} />
-              <h2>Placeholder Judul</h2>
-              <p>23/12/2023</p>
-            </div>
-          </div>
-          <div className="Komnews-Home-Content-Card">
-            <div className="Komnews-Home-Content">
-              <img src={placeholder_komnews} />
-              <h2>Placeholder Judul</h2>
-              <p>23/12/2023</p>
-            </div>
-          </div>
-          <div className="Komnews-Home-Content-Card">
-            <div className="Komnews-Home-Content">
-              <img src={placeholder_komnews} />
-              <h2>Placeholder Judul</h2>
-              <p>23/12/2023</p>
-            </div>
-          </div>
-          <div className="Komnews-Home-Content-Card">
-            <div className="Komnews-Home-Content">
-              <img src={placeholder_komnews} />
-              <h2>Placeholder Judul</h2>
-              <p>23/12/2023</p>
-            </div>
-          </div>
-          <div className="Komnews-Home-Content-Card">
-            <div className="Komnews-Home-Content">
-              <img src={placeholder_komnews} />
-              <h2>Placeholder Judul</h2>
-              <p>23/12/2023</p>
-            </div>
-          </div>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
 
         </div>
       </section>
