@@ -1,5 +1,4 @@
 import React from 'react'
-import topic1 from "../../Assets/Komnews/Topic/topic_1.png";
 
 const news = (props) => {
   return (
@@ -12,7 +11,7 @@ const news = (props) => {
                 <p>{props.category}</p>
             </div>
         </div>
-        <img src={topic1} alt="gambar" width={120} height={120} />
+        <img src={require('../../Assets/Komnews/Topic/' +  props.img + '.png')} alt="gambar" width={120} height={120} />
     </div>
   )
 }
