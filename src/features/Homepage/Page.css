@@ -473,8 +473,10 @@
 
 .Komnews-Home-Content-Container {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 2rem 0 2rem 0;
+    overflow: auto;
+    width: 1400px;
 }
 
 .Komnews-Home-Content-Card {

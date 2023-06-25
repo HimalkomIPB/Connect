@@ -194,6 +194,42 @@ const Page = () => {
               <p>23/12/2023</p>
             </div>
           </div>
+          <div className="Komnews-Home-Content-Card">
+            <div className="Komnews-Home-Content">
+              <img src={placeholder_komnews} />
+              <h2>Placeholder Judul</h2>
+              <p>23/12/2023</p>
+            </div>
+          </div>
+          <div className="Komnews-Home-Content-Card">
+            <div className="Komnews-Home-Content">
+              <img src={placeholder_komnews} />
+              <h2>Placeholder Judul</h2>
+              <p>23/12/2023</p>
+            </div>
+          </div>
+          <div className="Komnews-Home-Content-Card">
+            <div className="Komnews-Home-Content">
+              <img src={placeholder_komnews} />
+              <h2>Placeholder Judul</h2>
+              <p>23/12/2023</p>
+            </div>
+          </div>
+          <div className="Komnews-Home-Content-Card">
+            <div className="Komnews-Home-Content">
+              <img src={placeholder_komnews} />
+              <h2>Placeholder Judul</h2>
+              <p>23/12/2023</p>
+            </div>
+          </div>
+          <div className="Komnews-Home-Content-Card">
+            <div className="Komnews-Home-Content">
+              <img src={placeholder_komnews} />
+              <h2>Placeholder Judul</h2>
+              <p>23/12/2023</p>
+            </div>
+          </div>
+
         </div>
       </section>
 
