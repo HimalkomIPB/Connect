@@ -64,9 +64,9 @@ const Page = () => {
             <img src={connect} alt="connect" className="hero-home-logo-connect"/>
           </div>
 
-          <img className="home-slide2-kahim" src={kahim} alt=""></img>
-          <img className="home-slide2-wakahim" src={wakahim} alt=""></img>
-
+          <div className='hero-slide2-container1'></div>
+          <div className='hero-slide2-container2'></div>
+         
           <h1>CONNECT</h1>
           <h3>Together We Connect Each Other</h3>
           
