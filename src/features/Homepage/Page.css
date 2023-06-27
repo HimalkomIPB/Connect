@@ -477,47 +477,15 @@
     padding: 2rem 0 2rem 0;
     overflow: auto;
     width: 1400px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
-.Komnews-Home-Content-Card {
-    display: flex;
-    justify-content: center;
-    background-image: url("../../Assets/Background/Komnews-Home-Card.svg");
-    background-color: #E49800;
-    width: 413px;
-    height: auto;
-    padding-top: 1.2rem;
-    border: 2px solid #111827;
+.Komnews-Home-Content-Container::-webkit-scrollbar {
+    display: none;
 }
+  
 
-
-.Komnews-Home-Content img {
-    width: 380px;
-    border: 2px solid #040404;
-    box-shadow: 3px 3px 0px #040404;
-}
-
-.Komnews-Home-Content h2 {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    text-shadow: 1.5px 2.7px 0px #040404;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #040404;
-    color: #F0E4D4;
-    padding-top: 1rem;
-}
-
-.Komnews-Home-Content p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-    padding: 2rem 0 2rem 0;
-}
 
 @media(max-width: 1024px){
     .Komnews-Home-Content-Container{

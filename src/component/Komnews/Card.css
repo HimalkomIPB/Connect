@@ -1,0 +1,55 @@
+.Komnews-Home-Content-Card {
+    display: flex;
+    justify-content: center;
+    background-image: url("../../Assets/Background/Komnews-Home-Card.svg");
+    background-color: #E49800;
+    width: 413px;
+    padding: 17px;
+    border: 2px solid #111827;
+    height: 376px;
+}
+
+
+.newscard_img {
+    object-fit: cover;
+    width: 373px;
+    height: 205px;
+    border: 2px solid #040404;
+    box-shadow: 3px 3px 0px #040404;
+}
+
+.Komnews-Home-Content h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    padding-top: 1rem;
+}
+
+.Komnews-Home-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_date{
+    display: flex;
+    border: #000000 solid 2px;
+    width: 55px;
+    justify-content: center;
+    padding: 5px;
+    background: #F0E4D4;
+    box-shadow: 1.5px 2px 0px #000000;
+}
+
+.card_date p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+}

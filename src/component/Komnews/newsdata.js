@@ -15,7 +15,7 @@ export default [
         desc:"",
         category:"Self Improvement",
         img:"topic_2.jpg",
-        date:"12/12/22"
+        date:"27/6/23"
     },
     {
         id: 3,
@@ -24,6 +24,42 @@ export default [
         desc:"",
         category:"Self Improvement",
         img:"topic_3.jpg",
+        date:"27/6/23"
+    },
+    {
+        id: 4,
+        title: "Ingin Menjadi Penyuluh Pertanian Milenial? Masyarakat Pertanian SV IPB University",
+        thumbnail: "Jumlah penyuluh pertanian semakin menurun. Hal ini terjadi karena masih adanya pandangan bahwa pertanian kurang keren. Padahal, di era revolusi 4.0, teknologi pertanian semakin canggih dan peran",
+        desc:"",
+        category:"Self Improvement",
+        img:"topic_4.jpg",
+        date:"12/12/22"
+    },
+    {
+        id: 5,
+        title: "Berawal dari Ngopi, PPK Ormawa Himakua IPB University Ajak Warga Purwasari Menuju Desa Sentra Ikan Nila",
+        thumbnail: "Mahasiswa IPB University yang tergabung dalam tim Program Penguatan Kapasitas Organisasi Kemahasiswaan (PPK Ormawa) Himpunan Mahasiswa Akuakultur (Himakua), Fakultas Perikanan dan Ilmu Kelautan",
+        desc:"",
+        category:"Self Improvement",
+        img:"topic_5.jpg",
+        date:"12/12/22"
+    },
+    {
+        id: 6,
+        title: "Halal Science Center IPB University Berikan Pelatihan Penanganan dan Penyembelihan Hewan Kurban Tahun 2023 bagi Pengurus DKM",
+        thumbnail: "Hari raya Iduladha tinggal menghitung hari. Persiapan kurban juga semakin dekat. Namun masih ditemukan praktik kurban yang belum memenuhi persyaratan dan syariah.",
+        desc:"",
+        category:"Self Improvement",
+        img:"topic_6.jpg",
+        date:"12/12/22"
+    },
+    {
+        id: 7,
+        title: "IPB University Mendapat Kunjungan dari Petinggi Konsorsium Asia Hub, Michigan State University",
+        thumbnail: "Delegasi Michigan State University berkunjung ke IPB University. Kunjungan dilakukan dalam rangka bergabungnya IPB University menjadi anggota konsorsium Asia Hub yang dipelopori oleh Michigan State",
+        desc:"",
+        category:"Self Improvement",
+        img:"topic_7.jpg",
         date:"12/12/22"
     },
     

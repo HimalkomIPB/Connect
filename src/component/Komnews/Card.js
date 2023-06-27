@@ -1,13 +1,15 @@
 import React from 'react'
-import placeholder_komnews from '../../Assets/Program Kerja/dokum/dokum.svg'
+import "./Card.css"
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="Komnews-Home-Content-Card">
         <div className="Komnews-Home-Content">
-          <img src={placeholder_komnews} />
-          <h2>Placeholder Judul</h2>
-          <p>23/12/2023</p>
+          <img src={require('../../Assets/Komnews/Topic/' +  props.img )} alt="gambar" className='newscard_img'/>
+          <h2>{props.title}</h2>
+          <div className='card_date'>
+            <p>{props.date}</p>
+          </div>
         </div>
     </div>
   )
