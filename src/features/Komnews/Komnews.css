@@ -125,7 +125,7 @@
     flex-direction: row;
     justify-content:space-between;
     padding: 50px 100px;
-    height: 1700px;
+    height: 1500px;
 }
 
 .topics-list{
@@ -136,22 +136,6 @@
     overflow: auto;
 }
 
-
-.topic{
-    display: flex;
-    border-left: #000000 solid 2px;
-    height: 242px;
-    width: 758px;
-    margin-bottom: 20px;
-    flex-direction: row;
-    padding: 10px 30px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.topic:hover {
-    background: #E49800;
-}
 
 .topics-rec {
     background-color: rgba(179, 179, 179, 0.12);
@@ -166,46 +150,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-}
-
-
-.topic-desc > h1 {
-    font-family: 'Changa One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
-    max-width: 500px;
-}
-
-.topic-desc > p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
-    max-width: 500px;
-    margin: 10px 0px;
-}
-
-.topic-category {
-    display: flex;
-    border: #000000 solid 2px;
-    width: 150px;
-    justify-content: center;
-    padding: 5px;
-    background: #F0E4D4;
-    box-shadow: 3px 4px 0px #000000;
-}
-
-.topic-category > p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: 0.5px;
 }
 
 .rec-list {

@@ -5,7 +5,6 @@ import Footer from "../../component/Footer/Footer";
 import News from "../../component/Komnews/news";
 import Data from "../../component/Komnews/newsdata";
 import Headline from "../../component/Komnews/headline";
-import headline from '../../component/Komnews/headline';
 
 const Komnews = () => {
   const cards = Data.map(item => {
@@ -13,7 +12,7 @@ const Komnews = () => {
         <News
             key={item.id}
             title={item.title}
-            desc={item.description}
+            thumbnail={item.thumbnail}
             category={item.category}
             img={item.img}
         />
