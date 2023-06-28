@@ -1,6 +1,11 @@
 import React, { useState } from 'react'
 import himalkom from '../../Assets/Himalkom/Logo HIMALKOM.svg'
-import NavCross from '../../Assets/Nav-Close.svg'
+import NavCross from '../../Assets/Navbar Icon/nav-Close.svg'
+import nav_facebook from '../../Assets/Navbar Icon/nav_facebook.svg'
+import nav_instagram from '../../Assets/Navbar Icon/nav_instagram.svg'
+import nav_twitter from '../../Assets/Navbar Icon/nav_twitter.svg'
+import nav_youtube from '../../Assets/Navbar Icon/nav_youtube.svg'
+import navBurger from '../../Assets/Navbar Icon/nav_burger.svg'
 import './Navbar.css'
 const Navbar = () => {
 
@@ -13,18 +18,15 @@ const Navbar = () => {
         <div>
             <div className="navbar">
                 <div className="navbar-heading">
-                    <img src={himalkom} alt='himalkom'></img>
+                    <img src={himalkom} alt='himalkom' />
                 </div>
                 {/* Mobile Nav */}
                 <div className="navbar-state" onClick={activeState}>
                     <div className={Active ? "navbar-burger" : ""}>
+                        {/* <div className="burger"></div>
                         <div className="burger"></div>
-                        <div className="burger"></div>
-                        <div className="burger"></div>
-                    </div>
-                    <div className={Active ? "" : "navbar-cross"}>
-                            <img id='navcross' src={NavCross} />
-                        {console.log(Active)}
+                        <div className="burger"></div> */}
+                        <img className='burger' src={navBurger}/>
                     </div>
                 </div>
 
@@ -63,6 +65,10 @@ const Navbar = () => {
                 Active == true
                     ?
                     <section className='mobile-navbar-container'>
+                        <div className={Active ? "cross-active" : "navbar-cross"}>
+                            <img src={himalkom} alt='himalkom' />
+                            <img id='navcross' src={NavCross} onClick={activeState} />
+                        </div>
                         <div className={Active ? "mobile-navbar" : " "}>
                             <li><a href="/">Home</a></li>
                             <li><a href="/ProfilHimalkom">Profil</a></li>
@@ -72,6 +78,25 @@ const Navbar = () => {
                             <li><a href="/Megaproker">Program Kerja</a></li>
                             <li><a href="/Ilkommunity">Komunitas</a></li>
                             <li><a href="/Riset-Himalkom">Riset</a></li>
+                        </div>
+                        <div className="mobile-icon-container">
+                            <div className="mobile-icon">
+                                <a href="#">
+                                    <img src={nav_facebook} />
+                                </a>
+                                <a href="#">
+                                    <img src={nav_instagram} />
+                                </a>
+                                <a href="#">
+                                    <img src={nav_twitter} />
+                                </a>
+                                <a href="#">
+                                    <img src={nav_youtube} />
+                                </a>
+                            </div>
+                            <div className="mobile-copyright">
+                                <h2>Copyright © Himalkom 2022.</h2>
+                            </div>
                         </div>
                     </section>
                     :

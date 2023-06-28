@@ -326,6 +326,37 @@
 
 @media(max-width: 768px) {
     #IWDC-header-container {
+        background-image: url("../../../Assets/Ilkommunity/IWDC/IWDC-Header-Background-Tab.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+    }
+
+
+
+    .IWDC-deskripsi-content {
+        width: 400px;
+        height: 464px;
+    }
+
+    .IWDC-tujuan-content {
+        width: 394px;
+        height: 176px;
+    }
+
+    .IWDC-prestasi-content{
+        width: 400px;
+        height: 114px;
+    }
+
+    .IWDC-narahubung-content{
+        width: 400px;
+        height: 190px;
+    }
+}
+
+@media(max-width: 480px) {
+    #IWDC-header-container {
         background-image: url("../../../Assets/Ilkommunity/IWDC/IWDC-Header-Background-Mobile.svg");
         background-size: cover;
         background-position: center;

@@ -3,6 +3,7 @@ li {
 }
 
 .navbar {
+    position: relative;
     font-family: Changa One;
     font-weight: normal;
     display: flex;
@@ -10,7 +11,7 @@ li {
     justify-content: space-between;
     background-color: #E49800;
     border-bottom: 4px solid #040404;
-    z-index: 7;
+    z-index: 99;
 }
 
 .navbar-heading {
@@ -19,6 +20,10 @@ li {
 }
 
 .navbar-burger {
+    display: none;
+}
+
+.burger {
     display: none;
 }
 
@@ -115,7 +120,7 @@ li {
     padding: 0 0 22px 28px;
 }
 
-.mobile-navbar-container{
+.mobile-navbar-container {
     display: none;
 }
 
@@ -123,18 +128,20 @@ li {
     .navbar-list li a {
         font-size: 16px;
     }
-
 }
 
-@media(min-width: 993px){
-    #navcross {
-        display: none;
-    }
-}
 
 @media(max-width: 992px) {
+    #navcross {
+        display: block;
+    }
+
     .navbar-list {
         display: none;
+    }
+
+    .burger{
+        display: block;
     }
 
     .navbar-state {
@@ -144,33 +151,45 @@ li {
         margin: 0 40px 0 0;
     }
 
-    .burger {
+    .cross-active {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 40px 25px 40px;
+        border-bottom: 4px solid #040404;
+    }
+
+    #navcross {
         cursor: pointer;
-        width: 35px;
-        height: 4px;
-        margin: 3px;
-        background: #FCFCFC;
-        border-radius: 2px;
     }
 
     .mobile-navbar-container {
         display: block;
-        padding: 20px 0 20px 0;
+        position: absolute;
+        top: 3px;
+        right: 0;
         background-color: #E49800;
+        width: 586px;
+        height: auto;
         border-bottom: 4px solid #040404;
+        z-index: 99;
+    }
+
+    .mobile-navbar {
+        height: 846px;
+        padding: 3.19rem 2.47rem 0 2.47rem;
     }
 
     .mobile-navbar li {
         display: flex;
-        padding: 15px 0 15px 0;
-        justify-content: center;
+        padding: 1rem 0 1rem 0;
         list-style: none;
     }
 
     .mobile-navbar li a {
         font-family: Changa One;
         font-weight: 350;
-        font-size: 18px;
+        font-size: 2rem;
+        line-height: 2.5rem;
         text-decoration: none;
         color: black;
         transition: 0.3s;
@@ -189,6 +208,25 @@ li {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #040404;
         transition: 0.3s;
+    }
 
+    .mobile-icon-container {
+        padding: 0 2.47rem 1.19rem 2.47rem
+    }
+
+    .mobile-icon {
+        display: flex;
+        gap: 2.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+
+    .mobile-copyright h2 {
+        color: #111827;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 700;
+        line-height: 1.25rem;
+        letter-spacing: 0.00625rem;
     }
 }

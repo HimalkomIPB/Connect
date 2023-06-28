@@ -135,9 +135,8 @@
     color: #FFF;
     text-shadow: 7px 7px 0px #040404;
     -webkit-text-stroke-width: 2px;
-    /* -webkit-text-stroke-color: #040404; */
+    -webkit-text-stroke-color: #040404;
     transition: 0.2s;
-    z-index: 1;
 }
 
 .hero-home-slide2 h3{
@@ -149,13 +148,12 @@
     line-height: 40px;
     text-shadow: 3px 3.7px 0px #040404;
     -webkit-text-stroke-width: 2px;
-    /* -webkit-text-stroke-color: #040404; */
+    -webkit-text-stroke-color: #040404;
     display: flex;
     align-items: center;
     text-align: center;
     color: #FFF;
     transition: 0.2s;
-    z-index: 1;
 }
 
 .hero-slide2-container1{
