@@ -1,32 +1,33 @@
-#CP-header-container{
-    background-image: url('../../../Assets/Ilkommunity/CP/CP-Header-Background.svg');
+#CP-header-container {
+    background-image: url('../../../Assets/Ilkommunity/CP/bg-cp.svg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    align-items: center;
-    height: 100vh;
-    margin-top: .8rem;
     display: flex;
+    align-items: center;
+    height: calc(100vh);
+    margin-top: .8rem;
+    justify-content: center;
 }
 
-.CP-header-wrapper{
+.CP-header-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    transform: translateX(242px);
-    margin-left: 3%;
+    
 }
 
-.CP-header{
+.CP-header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px;
     gap: 24px;
 
     width: 377px;
     height: 208px;
 }
 
-
-.CP-header h2{
+.CP-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -38,17 +39,16 @@
     color: #F0E4D4;
 }
 
-.CP-header p{
+.CP-header p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    width: 85%;
 }
 
-#CP-main-container{
+#CP-main-container {
     background-image: url('../../../Assets/Ilkommunity/IWDC/IWDC-Main-Pattern.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,12 +59,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: row; */
+    flex-direction: row;
     gap: 80px;
 }
 
-#CP-deskripsi.active,
-#CP-tujuan.active {
+.CP-content-deskripsi-tujuan #CP-deskripsi {
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6B7280;
+    cursor: pointer;
+    text-align: center;
+}
+
+#CP-deskripsi.CP-active {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -78,18 +88,41 @@
     padding-bottom: 4px;
 }
 
-#CP-deskripsi,
 #CP-tujuan {
-  font-family: 'Changa One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  color: #6b7280;
-  text-align: center;
-  cursor: pointer;
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6B7280;
+    cursor: pointer;
+    text-align: center;
 }
 
+#CP-tujuan.CP-active {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-shadow: 4px 5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+.CP-content-deskripsi-tujuan {
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6B7280;
+    cursor: pointer;
+    text-align: center;
+}
 
 .CP-content-container {
     display: flex;
@@ -99,7 +132,7 @@
 
 .CP-deskripsi-content {
     width: 1057px;
-    height: 200px;
+    height: 176px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +140,9 @@
     border: 4px solid #16052B;
     box-shadow: 7px 7px 0px #000000;
     margin: 32px 0 0 0;
-    padding: 40px 44px 40px 44px;
+    padding: 40px 40px 40px 44px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -121,20 +156,21 @@
     color: #FFFFFF;
 }
 
-.CP-tujuan-content{
-    width: 1057px;
-    height: 272px;
+.CP-tujuan-content {
+    width: 1055px;
+    height: 128px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     background: #E9AD33;
     border: 4px solid #16052B;
     box-shadow: 7px 7px 0px #000000;
-    margin: 32px 0 0 0;
+    margin: 32px 32px 0 32px;
     padding: 40px 44px 40px 44px;
+    list-style-type: none;
 }
 
-.CP-tujuan-content p{
+.CP-tujuan-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -158,13 +194,15 @@
     align-items: center;
     border: 2px solid #000000;
     width: 1060px;
-    height: 118px;
+    height: 100%;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
     background-color: #FFFFFF;
+    flex-direction: column;
+    padding: 45px 45px 45px 45px;
 }
 
-.CP-prestasi-content h3 {
+.CP-prestasi-content li {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -186,8 +224,7 @@
     transform: translateY(25px);
 }
 
-
-.CP-prestasi-header h2{
+.CP-prestasi-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -203,6 +240,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .CP-narahubung-content {
@@ -249,4 +287,76 @@
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media(max-width: 1024px) {
+
+    .CP-header {
+        width: auto;
+        height: auto;
+    }
+
+    .CP-header p {
+        font-size: large;
+        width: 401px;
+    }
+
+    .CP-deskripsi-content {
+        width: 800px;
+        height: 224px;
+    }
+
+    .CP-tujuan-content {
+        width: 800px;
+        height: 152px;
+    }
+
+    .CP-prestasi-content{
+        width: 800px;
+        height: 230px;
+    }
+
+    .CP-narahubung-content{
+        width: 800px;
+        height: 190px;
+    }
+}
+
+@media(max-width: 768px) {
+    #CP-header-container {
+        background-image: url("../../../Assets/Ilkommunity/CP/bg-mobile-cp.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        height: calc(60rem);
+        border: 2px solid #111827;
+    }
+
+
+    .CP-header-wrapper {
+        grid-template-columns: none;
+        transform: translateY(11rem);
+    }
+
+
+    .CP-deskripsi-content {
+        width: 400px;
+        height: 344px;
+    }
+
+    .CP-tujuan-content {
+        width: 394px;
+        height: 200px;
+    }
+
+    .CP-prestasi-content{
+        width: 400px;
+        height: 250px;
+    }
+
+    .CP-narahubung-content{
+        width: 400px;
+        height: 190px;
+    }
 }

@@ -1,42 +1,74 @@
 import React from 'react'
+import { useState } from 'react'
 import './Agribot.css'
-import arrowleft from './../../../Assets/Ilkommunity/IWDC/IWDC-Arrow - Left Circle.svg'
-import arrowright from './../../../Assets/Ilkommunity/IWDC/IWDC- Arrow - Right Circle.svg'
-import dokum from './../../../Assets/Ilkommunity/Agribot/dokum1.svg'
-
-import placeholder from './../../../Assets/Divisi/BP/logo_bp.png'
+import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 import Navbar from '../../../component/Navbar/Navbar'
 import Footer from '../../../component/Footer/Footer'
 
 const Agribot = () => {
+    const [renderDiv, setrenderDiv] = useState(true);
+
+    const handleClick = () => {
+        setrenderDiv(!renderDiv)
+    }
+
+    const slides = [
+        { url: "http://placehold.it/350x150" },
+        { url: "http://placehold.it/255x150" },
+        { url: "http://placehold.it/295x150" },
+        { url: "http://placehold.it/310x150" },
+        { url: "http://placehold.it/450x150" },
+    ];
+
     return (
         <div>
             <Navbar />
             <section>
-                <div className="Agribot-header-container">
+                <div id="Agribot-header-container">
                     <div className="Agribot-header-wrapper">
                         <div className="Agribot-header">
                             <h2>Agribot</h2>
-                            <p>Agribot adalah <br/>
-                            <br/>
-                            Setiap Rabu pukul 19:00 di Localhost (FMIPA lantai 4)
+                            <p>Agribot merupakan komunitas yang mewadahi mahasiswa dalam mengembangkan minatnya yang berfokus pada pengembangan dan penerapan teknologi dalam bidang robotik.<br/>
+                                <br/>
+                                Setiap Rabu pukul 19:00 di Localhost (FMIPA lantai 4)
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
             <section>
-                <div className="Agribot-main-container">
+                <div id="Agribot-main-container">
                     <div className="Agribot-content-container">
                         <div className="Agribot-content-deskripsi-tujuan">
-                            <h2 id='Agribot-deskripsi'>Deskripsi</h2>
-
-                            <h2 id='Agribot-tujuan'>Tujuan</h2>
+                            <h2 id='Agribot-deskripsi'
+                                onClick={handleClick}
+                                className={renderDiv ? "Agribot-active" : ""}
+                            >Deskripsi
+                            </h2>
+                            <h2 id='Agribot-tujuan'
+                                onClick={handleClick}
+                                className={!renderDiv ? "Agribot-active" : ""}>
+                                Tujuan
+                            </h2>
                         </div>
-                        <div className="Agribot-deskripsi-content">
-                            <p>Agribot merupakan komunitas robotik mahasiswa Ilmu Komputer IPB yang telah berdiri sejak tahun 2014. Kegiatan komunitas robotika ini berfokus pada pengembangan sistem tertanam dan juga pada bidang robotika. Komunitas ini juga bergerak dalam hal-hal yang terkait kecerdasan buatan, machine learning, dan pengembangan decision support system. Komunitas ini diperuntukkan untuk semua mahasiswa aktif ilmu komputer IPB beserta mahasiswa lain yang tertarik dengan tujuan komunitas ini. Mulai tahun 2016, sesuai dengan semangat IPB membentuk Unit Kegiatan Mahasiswa Robotika, komunitas ini mulai menjalin kerja sama dengan mahasiswa dari Departemen Teknik Mesin dan Biosistem serta Departemen Fisika.
-                            </p>
-                        </div>
+                        {
+                            renderDiv == true
+                                ? //if true
+                                <div className="Agribot-deskripsi-content">
+                                    <p>Agribot merupakan komunitas robotik mahasiswa Ilmu Komputer IPB yang telah berdiri sejak tahun 2014. Kegiatan komunitas robotika ini berfokus pada pengembangan sistem tertanam dan juga pada bidang robotika. Komunitas ini juga bergerak dalam hal-hal yang terkait kecerdasan buatan, machine learning, dan pengembangan decision support system. Komunitas ini diperuntukkan untuk semua mahasiswa aktif ilmu komputer IPB beserta mahasiswa lain yang tertarik dengan tujuan komunitas ini. Mulai tahun 2016, sesuai dengan semangat IPB membentuk Unit Kegiatan Mahasiswa Robotika, komunitas ini mulai menjalin kerja sama dengan mahasiswa dari Departemen Teknik Mesin dan Biosistem serta Departemen Fisika.
+                                    </p>
+                                </div>
+                                : //else
+                                < div >
+                                    <div className="Agribot-tujuan-container">
+                                        <div className="Agribot-tujuan-content">
+                                            <li>Mewadahi minat mahasiswa Ilmu Komputer IPB di bidang pengembangan robotik,</li>
+                                            <li>Menghasilkan robot yang memiliki dampak baik terhadap masyarakat dan institusi,</li>
+                                            <li>Memfasilitasi pelatihan robotik bagi Ilmu Komputer dan mahasiswa IPB.</li>
+                                        </div>
+                                    </div>
+                                </div>
+                        }
 
                         <div className="Agribot-prestasi-container">
                             <div className="Agribot-prestasi-header">
@@ -49,7 +81,7 @@ const Agribot = () => {
                         </div>
                     </div>
 
-                    <div className="Agribot-dokumentasi-container">
+                    {/* <div className="Agribot-dokumentasi-container">
                         <div className="Agribot-dokumentasi-header">
                             <h2>DOKUMENTASI</h2>
                         </div>
@@ -63,7 +95,9 @@ const Agribot = () => {
 
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
+                    <ImageSlider slides={slides} />
 
                     <div className="Agribot-narahubung-container">
                         <div className="Agribot-narahubung-header">

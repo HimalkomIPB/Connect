@@ -1,20 +1,22 @@
-.Csi-header-container {
-    background-image: url('../../../Assets/Ilkommunity/CSI/bg_csi.svg');
+#CSI-header-container {
+    background-image: url('../../../Assets/Ilkommunity/CSI/bg-csi.svg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh);
     margin-top: .8rem;
+    justify-content: center;
 }
 
-.Csi-header-wrapper {
+.CSI-header-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    transform: translateX(242px);
+    
 }
 
-.Csi-header {
+.CSI-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +27,7 @@
     height: 208px;
 }
 
-.Csi-header h2 {
+.CSI-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -37,7 +39,7 @@
     color: #F0E4D4;
 }
 
-.Csi-header p {
+.CSI-header p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -46,14 +48,14 @@
     text-align: center;
 }
 
-.Csi-main-container {
+#CSI-main-container {
     background-image: url('../../../Assets/Ilkommunity/IWDC/IWDC-Main-Pattern.svg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 0 0 0;
 }
 
-.Csi-content-deskripsi-tujuan {
+.CSI-content-deskripsi-tujuan {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +63,18 @@
     gap: 80px;
 }
 
-.Csi-content-deskripsi-tujuan #Csi-deskripsi {
+.CSI-content-deskripsi-tujuan #CSI-deskripsi {
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6B7280;
+    cursor: pointer;
+    text-align: center;
+}
+
+#CSI-deskripsi.CSI-active {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -71,27 +84,55 @@
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
     border-bottom: 4px solid black;
+    cursor: pointer;
+    padding-bottom: 4px;
 }
 
-.Csi-content-deskripsi-tujuan #Csi-tujuan {
+#CSI-tujuan {
     font-family: 'Changa One';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     color: #6B7280;
+    cursor: pointer;
     text-align: center;
 }
 
-.Csi-content-container {
+#CSI-tujuan.CSI-active {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    text-shadow: 4px 5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+
+.CSI-content-deskripsi-tujuan {
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6B7280;
+    cursor: pointer;
+    text-align: center;
+}
+
+.CSI-content-container {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.Csi-deskripsi-content {
+.CSI-deskripsi-content {
     width: 1057px;
-    height: 100%;
+    height: 248px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,9 +141,12 @@
     box-shadow: 7px 7px 0px #000000;
     margin: 32px 0 0 0;
     padding: 40px 40px 40px 44px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.Csi-deskripsi-content p {
+
+.CSI-deskripsi-content p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -112,7 +156,31 @@
     color: #FFFFFF;
 }
 
-.Csi-prestasi-container {
+.CSI-tujuan-content {
+    width: 1055px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E9AD33;
+    border: 4px solid #16052B;
+    box-shadow: 7px 7px 0px #000000;
+    margin: 32px 32px 0 32px;
+    padding: 40px 44px 40px 44px;
+    list-style-type: none;
+}
+
+.CSI-tujuan-content h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.CSI-prestasi-container {
     margin: 80px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -120,7 +188,7 @@
     align-items: center;
 }
 
-.Csi-prestasi-content {
+.CSI-prestasi-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +202,7 @@
     padding: 45px 45px 45px 45px;
 }
 
-.Csi-prestasi-content li {
+.CSI-prestasi-content li {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -144,7 +212,7 @@
     color: #000000;
 }
 
-.Csi-prestasi-header {
+.CSI-prestasi-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +224,7 @@
     transform: translateY(25px);
 }
 
-.Csi-prestasi-header h2 {
+.CSI-prestasi-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -166,89 +234,16 @@
     color: #FFFFFF;
 }
 
-
-.Csi-dokumentasi-container {
-    margin: 80px 0 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.Csi-dokumentasi-content {
-    width: 1057px;
-    height: 704px;
-    background: #453755;
-    border: 3px solid #1F2937;
-    box-shadow: 7px 7px 0px #1F2937;
-}
-
-.Csi-dokumentasi-content h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 28px;
-    text-align: center;
-    color: #000000;
-}
-
-.Csi-dokumentasi-head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 56px 0 48px 0;
-
-}
-
-.arrow-left {
-    padding-right: 64px;
-}
-
-.arrow-right {
-    padding-left: 64px;
-}
-
-.Csi-main-pic {
-    width: 696px;
-    height: 342px;
-    border: 3px solid #16052B;
-    box-shadow: 9px 10px 0px #16052B;
-}
-
-.Csi-dokumentasi-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 231px;
-    height: 52px;
-    background: #E49800;
-    border: 1px solid #111827;
-    box-shadow: 4px 4px 0px #000000;
-    transform: translateY(25px);
-}
-
-.Csi-dokumentasi-header h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-
-
-.Csi-narahubung-container {
+.CSI-narahubung-container {
     padding: 80px 0 160px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.Csi-narahubung-content {
+.CSI-narahubung-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -262,7 +257,7 @@
 
 }
 
-.Csi-narahubung-content h3 {
+.CSI-narahubung-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -272,7 +267,7 @@
     color: #000000;
 }
 
-.Csi-narahubung-header {
+.CSI-narahubung-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +279,7 @@
     transform: translateY(25px);
 }
 
-.Csi-narahubung-header h2 {
+.CSI-narahubung-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -292,4 +287,76 @@
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media(max-width: 1024px) {
+
+    .CSI-header {
+        width: auto;
+        height: auto;
+    }
+
+    .CSI-header p {
+        font-size: large;
+        width: 401px;
+    }
+
+    .CSI-deskripsi-content {
+        width: 800px;
+        height: 320px;
+    }
+
+    .CSI-tujuan-content {
+        width: 800px;
+        height: 152px;
+    }
+
+    .CSI-prestasi-content{
+        width: 800px;
+        height: 286px;
+    }
+
+    .CSI-narahubung-content{
+        width: 800px;
+        height: 190px;
+    }
+}
+
+@media(max-width: 768px) {
+    #CSI-header-container {
+        background-image: url("../../../Assets/Ilkommunity/CSI/bg-mobile-csi.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        height: calc(60rem);
+        border: 2px solid #111827;
+    }
+
+
+    .CSI-header-wrapper {
+        grid-template-columns: none;
+        transform: translateY(11rem);
+    }
+
+
+    .CSI-deskripsi-content {
+        width: 400px;
+        height: 536px;
+    }
+
+    .CSI-tujuan-content {
+        width: 394px;
+        height: 224px;
+    }
+
+    .CSI-prestasi-content{
+        width: 400px;
+        height: 366px;
+    }
+
+    .CSI-narahubung-content{
+        width: 400px;
+        height: 190px;
+    }
 }
