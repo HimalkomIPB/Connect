@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     background-image: url("../../Assets/Background/Komnews-Home-Card.svg");
+    background-size: cover;
     background-color: #E49800;
+    background-repeat: no-repeat;
     width: 413px;
     padding: 17px;
     border: 2px solid #111827;
     height: 376px;
 }
-
 
 .newscard_img {
     object-fit: cover;
@@ -37,7 +38,7 @@
     justify-content: space-between;
 }
 
-.card_date{
+.card_date {
     display: flex;
     border: #000000 solid 2px;
     width: 55px;
@@ -52,4 +53,21 @@
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .Komnews-Home-Content-Card {
+        width: 690px;
+        height: auto;
+    }
+
+    .Komnews-Home-Content-Card img {
+        width: 634.867px;
+        height: 441.065px;
+    }
+
+    .Komnews-Home-Content-Card h2 {
+        font-size: 24px;
+        padding: 25px 0 63.31px 0;
+    }
 }
