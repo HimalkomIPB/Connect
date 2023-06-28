@@ -208,7 +208,7 @@
     display: flex;
 }
 
-#homepage button{
+.hero-home-slider button{
     background: none;
     border: none;
     padding: 0;
@@ -297,71 +297,104 @@
     margin-top: 27px;
 }
   
-/* Proker CSS */
-.megaproker .container {
-    background-image: url(./../../Assets/Background/bgproker.svg);
-    background-size: cover;
-    background-position: center bottom;
-    height: 1160px;
-    border: 5px solid black;
+/* Megaproker Himalkom  Section*/
+#Megaproker-Home-Container{
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 0 81px;
 }
 
-.header .proker-header {
-    margin-top: 25px;
-    margin-bottom: 0;
+.Megaproker-Home-Header{
+    font-family: Changa One;
+    font-weight: normal;
+    font-size: 36px;
     font-weight: 400;
     font-size: 36px;
     line-height: 44px;
     text-shadow: 1.5px 2.7px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
+    color: #F0E4D4; 
+    /* postitioning */
     display: flex;
     align-items: center;
     text-align: center;
-    color: #F0E4D4;
+    margin-top: 80px;
+    margin-bottom: 57px;
 }
 
-/* Proker Proker Himalkom */
-.proker-container {
+.Megaproker-Home-Card{
+    background-size: 100% 100%;
+    width: 100%;
+    /* postitioning */
+    position: relative;
+    display: flex;
+}
+
+#Megaproker-Home-Container .Card1{
+    height:456px;
+}
+
+.Megaproker-Home-Card1-bg{
     display: flex;
     flex-direction: column;
-    padding: 0 80.25px;
+    align-items: center;
+    background-image: url(./../../Assets/Program%20Kerja/card/home-card1.png);
+    background-size: 100% 100%;
+    height:542.5px;
     width: 100%;
-    box-sizing: border-box;
-    position: relative;
+    position: absolute;
+    z-index: 0;
 }
 
-.proker {
-    /* border: 2px solid rgb(160, 44, 44); */
+.Megaproker-Home-Card1-logo, .Megaproker-Home-Card2-logo{
+    z-index: 1;
     display: flex;
-    /* margin: 0 80.5px 0 80.5px; */
-    width: 90%;
+    align-items: center;
+    flex: 40%;
 }
 
-.proker--info,
-.proker--logo--container {
-    height: 100%;
-    flex: 75%;
-    align-self: center;
+.Megaproker-Home-Card1-logo{
+    padding-left: clamp(0.625rem, -3.8462rem + 9.315vw, 5.46875rem);
 }
 
-.proker--info,
-.proker--logo--container {
-    z-index: 2;
+.Megaproker-Home-Card2-logo{
+    justify-content: flex-end;
+    align-self: start;
+    margin-top: 0;
+    /* padding-right: 147.64px; */
+    padding-right: clamp(3.321875rem, -2.12949rem + 11.357vw, 9.2275rem);
 }
 
-.proker--logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
+.Megaproker-Home-Card1-logo img, .Megaproker-Home-Card2-logo img {
+    object-fit: contain;
+    width: 328px;
+    height: 328px;
 }
 
-.proker--info .judul {
-    margin-top: 66px;
-    margin-bottom: 0px;
+.Megaproker-Home-Card1-logo img{
+    /* declare the max width */
+    width:472.43px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Megaproker-Home-Card-info{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 60%;
+}
+
+#Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info{
+    padding-left:99.5px ;
+    padding-left: clamp(1.25rem, -13.6564rem + 31.055vw, 6.21875rem);
+}
+
+.Megaproker-Home-Card-info h1{
     font-family: "Sports World";
     font-style: normal;
     font-weight: 400;
@@ -371,69 +404,36 @@
     text-shadow: 3px 2px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
-
+    /* Positioning */
+    margin-top: 66px;
+    margin-top: clamp(1.658125rem, -0.619rem + 4.744vw, 4.125rem);
+    margin-bottom: 0px;
 }
 
-.proker--info .desc {
-    border: 1px solid black;
+.Megaproker-Home-Card-info p{
     width: 75%;
     font-family: 'Montserrat';
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+    font-size: clamp(0.875rem, 0.50012rem + 0.781vw, 1rem);
     line-height: 24px;
     text-align: justify;
     color: #111827;
-    margin-top: 10px;
+
+    margin-top: 16.56px;
+    margin-top: clamp(0.3125rem, -1.93774rem + 4.688vw, 1.0625rem);
 }
 
-.bgproker1 {
-    z-index: 1;
-    position: absolute;
-    margin-top: 50px;
-    width: 89.5%;
+.bold{
+    font-weight: 700;
 }
 
-.proker1 {
-    margin-top: 50px;
-    background-size: cover;
-    background-position: center top;
-    height: 542px;
-    width: 100%;
+.Megaproker-Home-Card-info p span{
+    color: var(--gray-10, #111827);
 }
 
-.proker1 .proker--logo--container .proker--logo {
-    margin-top: 112px;
-}
-
-.bgproker2 {
-    z-index: 1;
-    position: absolute;
-    margin-top: 490px;
-    width: 89.5%;
-}
-
-.proker2 {
-    background-size: cover;
-    background-position: center top;
-    height: 450px;
-    width: 100%;
-}
-
-.proker2 {
-    flex-direction: row-reverse;
-}
-
-.proker2 .proker--info {
-    margin-left: 10%;
-}
-
-.proker2 .proker .proker--info .judul {
-    margin-top: 105px;
-}
-
-.proker--info .button {
-    margin-top: 20px;
+.Megaproker-Home-Card-info button{
     box-sizing: border-box;
     font-family: 'Montserrat';
     padding: 8px 14px 8px 16px;
@@ -441,16 +441,56 @@
     height: 36px;
     background: #E49800;
     border: 1px solid #111827;
+    border: 1px solid var(--gray-10, #111827);
+
     box-shadow: 3px 4px 0px #000000;
     color: white;
+
+    margin-top: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.proker--info>button:active {
+.Megaproker-Home-Card-info button:active {
     transform: translateY(2px);
     transform: translateX(3px);
     box-shadow: 1px 1px 0px #000000;
 }
 
+
+#Megaproker-Home-Container .Card2{
+    z-index: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(./../../Assets/Program%20Kerja/card/home-card2.png);
+    background-size: 100% 100%;
+    height:544px;
+    width: 100%;
+    padding-top: 128px;
+}
+
+.Megaproker-Home-Card2-logo img{
+    height: auto;
+    background-color: aqua;
+    max-width: 100%;
+    max-height: 100%;
+    border: 3px solid var(--gray-10, #111827);
+    box-shadow: 10px 10px 0px #000000;
+}
+
+#Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info{
+    padding-left:93.5px ;
+}
+
+#Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info h1{
+    /* margin-top: 67.44px; */
+    margin-top: clamp(1.25rem, -1.48696rem + 5.702vw, 4.215rem);
+}
+
+
+/* Komnews Section */
 #Komnews-Home-container {
     display: flex;
     flex-direction: column;
@@ -528,6 +568,11 @@
         color: #FFFFFF;
         margin-top: 2px;
     }
+
+    /* Megaproker section */
+    #Megaproker-Home-Container{
+        padding: 0 clamp(2.5rem, -5.0936rem + 15.82vw, 5.03125rem);
+    }
 }
 
 @media(max-width: 768px){
@@ -580,6 +625,79 @@
         margin-top: 2px;
     }
 
+    /* Megaproker section */
+    #Megaproker-Home-Container .Card1{
+        height:339.03px;
+    }
+
+    .Megaproker-Home-Card1-bg{
+        background-image: url(./../../Assets/Program%20Kerja/card/home-card1-tablet.png);
+        height:550px;
+    }
+
+    .Megaproker-Home-Card-info h1{
+        font-size: 28px;
+        line-height: 36px;
+        color: #f0e4d4;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+        /* Positioning */
+        margin-top: 26.53px;
+        margin-bottom: 0px;
+    }
+
+    #Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info{
+        padding-left:15px;
+        padding-left: clamp(0.625rem, -1.5626rem + 7.292vw, 1.9375rem);
+    }
+
+    #Megaproker-Home-Container .Card2{
+        background-image: url(./../../Assets/Program%20Kerja/card/home-card2-tablet.png);
+        height:655.4px;
+        padding-top: 256.82px;
+    }
+    
+    .Megaproker-Home-Card1-logo img{
+        /* margin-left: 10px; */
+        margin-left: clamp(0.625rem, -0.4166rem + 3.472vw, 1.25rem);
+        width:287.69px;
+        height: 151px;
+    }
+    .Megaproker-Home-Card2-logo img {
+        object-fit: contain;
+        width: 221px;
+        height: auto;
+    }
+
+    .Megaproker-Home-Card-info h1{
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+    }
+
+    .Megaproker-Home-Card-info p{
+        font-size: 14px;
+        font-size: clamp(0.625rem, 0.38014rem + 1.031vw, 0.875rem);
+        line-height: 20px;
+        width: 85%;
+    }
+
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info{
+        padding-left:32px ;
+    }
+
+    .Megaproker-Home-Card2-logo{
+        margin-top: 30.96px;
+    }
+    .Megaproker-Home-Card2-logo{
+        justify-content: flex-end;
+        padding-right: 53.15px;
+    }
+
+    .Megaproker-Home-Card-info button{
+        margin-top: 16px
+    }
 }
 
 
@@ -745,5 +863,112 @@
     }
 }
 
+@media(max-width: 480px){
+    .Megaproker-Home-Header{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        text-shadow: 1px 2px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4; 
+        /* postitioning */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom:41px;
+    }
 
+    #Megaproker-Home-Container{
+        padding: 0 clamp(1.25rem, -1.25rem + 12.5vw, 2.5rem);
+    }
+    .Megaproker-Home-Card{
+        flex-direction: column;
+    }
 
+    #Megaproker-Home-Container .Card1{
+        height:544.74px;
+    }
+
+    .Megaproker-Home-Card1-bg{
+        background-image: url(./../../Assets/Program%20Kerja/card/home-card1-phone.png);
+        height:741px;
+    }
+
+    .Megaproker-Home-Card1-logo{
+        padding-left: 0;
+    }
+    
+    .Card2 .Megaproker-Home-Card2-logo{
+        align-items: center;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: 49px;
+    }
+
+    .Card2 .Megaproker-Home-Card2-logo img{
+        box-shadow: 3px 4px 0px #000000;
+    }
+
+    #Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info, 
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info{
+        padding-left:49px;
+        padding-right: 49px;
+        flex-direction: column;
+    }
+
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info h1{
+        margin-top: clamp(1.5625rem, -2.04557rem + 15.152vw, 2.5rem);
+    }
+
+    .Megaproker-Home-Card-info p{
+        font-size: 14px;
+        width: 100%;
+        line-height: 24px;
+        margin-top: 21px;
+    }
+
+    #Megaproker-Home-Container .Card2{
+        background-image: url(./../../Assets/Program%20Kerja/card/home-card2-phone.png);
+        height:796.25px;
+        padding-top:182.25px;
+        flex-direction: column;
+    }
+
+    .Card2 .Megaproker-Home-Card2-logo{
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media(max-width: 380px){
+    .Megaproker-Home-Card1-logo img{
+        width: 90%;
+    }
+
+    #Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info h1,
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info h1{
+        margin-top: 0;
+    }
+
+    .Megaproker-Home-Card2-logo img{
+        width: 170px;
+    }
+
+    .Megaproker-Home-Card-info p{
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    #Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info, 
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info{
+        padding-left:25px;
+        padding-right: 25px;
+    }
+
+    .Card2 .Megaproker-Home-Card2-logo{
+        margin-right: 24px;
+    }
+}
