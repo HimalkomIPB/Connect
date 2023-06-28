@@ -27,6 +27,10 @@ import radio_btn from './../../Assets/Slider/radio-btn.svg'
 import kahim from './../../Assets/Slider/home-slide2-kahim.png'
 import wakahim from './../../Assets/Slider/home-slide2-wakahim.png'
 
+import logo1 from '../../Assets/Program Kerja/logo/IT_Today.svg'
+import logo2 from '../../Assets/Program Kerja/logo/cpsc.svg'
+
+import btn_arrow from '../../Assets/Program Kerja/button/right-arrow.svg'
 
 const Page = () => {
   const [activeSlide, setActiveSlide] = useState(0); // State for the active slide index
@@ -134,48 +138,35 @@ const Page = () => {
       </section>
 
       {/* Megaproker */}
-      {/* <section className="megaproker">
-        <div className="container">
+      <section id="Megaproker-Home-Container">
 
-          <div className="header">
-            <h3 className='proker-header'>MEGAPROKER</h3>
+          <div className="Megaproker-Home-Header">
+            <h3>MEGAPROKER</h3>
+          </div>
+          
+          <div className="Megaproker-Home-Card Card1">
+              <div className="Megaproker-Home-Card1-bg"/>
+              <div className="Megaproker-Home-Card1-logo">
+                <img src={logo1} alt="ittoday"/>
+              </div>
+              <div className="Megaproker-Home-Card-info">
+                <h1>IT TODAY</h1>
+                <p><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.</p>
+                <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
+              </div>
           </div>
 
-          <div className="proker-container">
-
-            <img src={bgproker1} alt="bgproker1" className='bgproker1' />
-            <div className="proker proker1">
-              <div className='proker--logo--container'>
-                <img src={ittoday} alt="ittoday" className='proker--logo' />
+          <div className="Megaproker-Home-Card Card2">
+              <div className="Megaproker-Home-Card2-logo">
+                <img src={logo2} alt="cpsc"/>
               </div>
-
-              <div className='proker--info'>
-                <h1 className='judul'>IT TODAY</h1>
-                <p className='desc'><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.
-                </p>
-
-                <button className='button'><span className='bold'>Selengkapnya</span></button>
+              <div className="Megaproker-Home-Card-info">
+                <h1>CPSC</h1>
+                <p><span className="bold">Computer Problem Solving Competition (CPSC)</span> merupakan ajang perlombaan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Ilmu Komputer (Himalkom) IPB dan merupakan rangkaian dari acara Pesta Sains Nasional (PSN) FMIPA IPB</p>
+                <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
               </div>
-            </div>
-
-            <img src={bgproker2} alt="bgproker2" className='bgproker2' />
-            <div className="proker proker2">
-              <div className='proker--logo--container'>
-                <img src={riset} alt="riset ilkomerz" className='proker--logo' />
-              </div>
-              <div className='proker--info'>
-                <h1 className='judul'>RISET ILKOMERZ</h1>
-                <p className='desc'> <span className='bold'>Riset Ilkomerz</span> merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.
-                </p>
-
-                <button className='button'><span className='bold'>Selengkapnya</span></button>
-              </div>
-            </div>
-
           </div>
-        </div>
-
-      </section> */}
+      </section>
 
       {/* Komnews */}
       <section id="Komnews-Home-container">
