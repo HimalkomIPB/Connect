@@ -23,9 +23,6 @@ const Navbar = () => {
                 {/* Mobile Nav */}
                 <div className="navbar-state" onClick={activeState}>
                     <div className={Active ? "navbar-burger" : ""}>
-                        {/* <div className="burger"></div>
-                        <div className="burger"></div>
-                        <div className="burger"></div> */}
                         <img className='burger' src={navBurger}/>
                     </div>
                 </div>

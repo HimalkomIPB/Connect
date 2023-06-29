@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './UX.css'
+import gary from '../../Assets/Ilkommunity/Gary 200 x 200.png'
 import Navbar from '../../../component/Navbar/Navbar'
 import Footer from '../../../component/Footer/Footer'
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";

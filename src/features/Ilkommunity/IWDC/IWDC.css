@@ -326,13 +326,18 @@
 
 @media(max-width: 768px) {
     #IWDC-header-container {
-        background-image: url("../../../Assets/Ilkommunity/IWDC/IWDC-Header-Background-Tab.svg");
-        background-position: center;
-        background-repeat: no-repeat;
+        background-image: url("../../../Assets/Ilkommunity/IWDC/IWDC-Header-Background-Mobile.svg");
+        background-size: cover;
         justify-content: center;
+        border-bottom: 4px solid #040404;
+        border-top: 4px solid #040404;
+
     }
 
-
+    .IWDC-header-wrapper{
+        display: block;
+        transform: translateY(10rem);
+    }
 
     .IWDC-deskripsi-content {
         width: 400px;
