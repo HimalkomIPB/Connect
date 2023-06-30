@@ -99,8 +99,6 @@
     margin: 15px 0px;
 }
 
-
-
 .button {
     box-sizing: border-box;
     font-family: 'Montserrat';
@@ -110,8 +108,12 @@
     border: 1px solid #111827;
     box-shadow: 3px 4px 0px #000000;
     color: white;
-    display: block;
+    display: flex;
     margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .button:active {

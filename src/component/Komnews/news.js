@@ -3,7 +3,7 @@ import "./news.css"
 
 const news = (props) => {
   return (
-    <div className='topic'>
+    <a className='topic' href='/Newsdesc'>
         <div className='topic-desc'>
             <p>Selected for you</p>
             <h1>{props.title}</h1>
@@ -13,7 +13,7 @@ const news = (props) => {
             </div>
         </div>
         <img src={require('../../Assets/Komnews/Topic/' +  props.img )} className="news_img" alt="gambar" width={140} height={140} />
-    </div>
+    </a>
   )
 }
 

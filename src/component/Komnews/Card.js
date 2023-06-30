@@ -3,7 +3,7 @@ import "./Card.css"
 
 const Card = (props) => {
   return (
-    <div className="Komnews-Home-Content-Card">
+    <a className="Komnews-Home-Content-Card" href='/Newsdesc'>
         <div className="Komnews-Home-Content">
           <img src={require('../../Assets/Komnews/Topic/' +  props.img )} alt="gambar" className='newscard_img'/>
           <h2>{props.title}</h2>
@@ -11,7 +11,7 @@ const Card = (props) => {
             <p>{props.date}</p>
           </div>
         </div>
-    </div>
+    </a>
   )
 }
 
