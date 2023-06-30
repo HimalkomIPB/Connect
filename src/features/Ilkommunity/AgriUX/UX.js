@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import './UX.css'
-import gary from '../../Assets/Ilkommunity/Gary 200 x 200.png'
 import Navbar from '../../../component/Navbar/Navbar'
 import Footer from '../../../component/Footer/Footer'
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
@@ -81,7 +80,13 @@ const UX = () => {
                                 <h2>PRESTASI</h2>
                             </div>
                             <div className="UX-prestasi-content">
-                                <h3>Coming Soon!</h3>
+                                <li>Medali Perak Gemastik IX Cabang Desain Pengalaman Pengguna 2016</li>
+                                <li>Juara 2 Samsung Ideaction 2016</li>
+                                <li>Juara 2 Bidang UI/UX ITFEST USU 2017</li>
+                                <li>Juara 2 UnityFest UNY cabang UX Design Competition</li>
+                                <li>Medali Emas Gemastik XIII Cabang Desain Pengalaman Pengguna 2020</li>
+                                <li>Juara 2 International Prototype Design Competition - Proto A Thon</li>
+
                             </div>
                         </div>
                     </div>

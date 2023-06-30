@@ -50,7 +50,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <li><a href="/Komnews">Komnews</a></li>
-                    <li><a href="/Galeri">Galeri</a></li>
+                    <li><a href="/I-Gallery">Galeri</a></li>
                     <li><a href="/Megaproker">Program Kerja</a></li>
                     <li><a href="/Ilkommunity">Komunitas</a></li>
                     <li><a href="/Riset-Himalkom">Riset</a></li>

@@ -190,24 +190,25 @@
 
 .UX-prestasi-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
     width: 1060px;
-    height: 118px;
+    padding: 45px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
     background-color: #FFFFFF;
 }
 
-.UX-prestasi-content h3 {
-    font-family: 'Montserrat';
+.UX-prestasi-content li {
+    color: #010101;
+    text-align: center;
+    font-size: 22px;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
     line-height: 28px;
-    text-align: center;
-    color: #000000;
 }
 
 .UX-prestasi-header {
@@ -285,4 +286,75 @@
     color: #FFFFFF;
 }
 
-@media only screen and (min-width:600px) {}
+@media only screen and (max-width:768px) {
+    #UX-header-container {
+        background-image: url('../../../Assets/Ilkommunity/UX/UX-Header-Background-mobile.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        justify-content: center;
+    }
+
+    .UX-header-wrapper {
+        display: flex;
+        flex-direction: column;
+        transform: translateY(10rem);
+
+    }
+
+    .UX-deskripsi-content {
+        width: 688px;
+        height: auto;
+        padding: 40px;
+    }
+
+    .UX-tujuan-content {
+        width: 688px;
+        height: auto;
+        padding: 40px;
+    }
+
+    .UX-prestasi-container {
+        padding: 45px;
+    }
+
+    .UX-prestasi-content {
+        height: auto;
+        width: 688px;
+    }
+
+    .UX-prestasi-content li {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .UX-narahubung-content {
+        width: 688px;
+        padding: 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .UX-deskripsi-content {
+        width: 401px;
+        height: auto;
+    }
+
+    .UX-tujuan-content {
+        width: 394px;
+        height: auto;
+        padding: 40px;
+    }
+
+    .UX-prestasi-content {
+        width: 401px;
+    }
+
+    .UX-narahubung-content {
+        width: 397px;
+        padding: 45px;
+    }
+}
