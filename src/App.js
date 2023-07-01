@@ -24,7 +24,7 @@ import DAMING from './features/Ilkommunity/DAMING/Daming';
 import CP from './features/Ilkommunity/CP/CP';
 import AgriUX from './features/Ilkommunity/AgriUX/UX'; 
 import GARY from './features/Ilkommunity/GARY/GARY';
-import Newsdesc from './features/Komnews/Newsdesc'
+import Newsdesc from './features/Komnews/newsdesc'
 
 
 

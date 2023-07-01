@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Newsdesc.css"
+import "./newsdesc.css"
 import Card from "../../component/Komnews/Card"
 import Data from "../../component/Komnews/newsdata"
 import Navbar from "../../component/Navbar/Navbar"
