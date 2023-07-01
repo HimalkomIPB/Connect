@@ -5,19 +5,33 @@ import Footer from "../../../component/Footer/Footer";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
+
+// Ambil dokumentasi dari file lokal
+import foto1 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/1.svg'
+import foto2 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/2.svg'
+import foto3 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/3.svg'
+import foto4 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/4.svg'
+
+
 const DAMING = () => {
   const [showDeskripsi, setShowDeskripsi] = useState(true);
-  const toggleContent = () => {
-    setShowDeskripsi(!showDeskripsi);
+
+  const handleDeskripsiClick = () => {
+    setShowDeskripsi(true);
   };
+
+  const handleTujuanClick = () => {
+    setShowDeskripsi(false);
+  };
+
 
   // add slide from url online\
   const slides = [
-    {url: "http://placehold.it/350x150"},
-    {url:"http://placehold.it/255x150"},
-    {url:"http://placehold.it/295x150"},
-    {url:"http://placehold.it/310x150"},
-    {url:"http://placehold.it/450x150"},
+    { url: foto1 },
+    { url: foto2 },
+    { url: foto3 },
+    { url: foto4 }
+
   ];
 
   return (
@@ -30,9 +44,9 @@ const DAMING = () => {
               <h2>DAMING</h2>
               <p>
                 {" "}
-                Data Mining (Daming) adalah. <br />
+                Data Mining (Daming) merupakan komunitas yang bergerak di bidang penambangan dan pengolahan data.<br />
                 <br />
-                Setiap Rabu pukul 19:00 di Localhost (FMIPA lantai 4)
+                Setiap Rabu pukul 19:00 <br />di Localhost (FMIPA lantai 4)
               </p>
             </div>
           </div>
@@ -45,7 +59,7 @@ const DAMING = () => {
             <div className="DAMING-content-deskripsi-tujuan">
               <h2
                 id="DAMING-deskripsi"
-                onClick={toggleContent}
+                onClick={handleDeskripsiClick}
                 className={showDeskripsi ? "active" : ""}
               >
                 Deskripsi
@@ -53,7 +67,7 @@ const DAMING = () => {
 
               <h2
                 id="DAMING-tujuan"
-                onClick={toggleContent}
+                onClick={handleTujuanClick}
                 className={!showDeskripsi ? "active" : ""}
               >
                 Tujuan
@@ -81,17 +95,7 @@ const DAMING = () => {
             ) : (
               <div className="DAMING-tujuan-content">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  vitae feugiat leo. Sed nec luctus elit. In hac habitasse
-                  platea dictumst. Vestibulum ac lacus ut enim euismod aliquet.
-                  Nunc suscipit nibh a dui hendrerit finibus.
-                  <br />
-                  <br />
-                  Harapannya di komunitas ini, peserta komunitas dapat
-                  menerapkan ilmunya untuk menyelesaikan masalah dan dapat
-                  mempersiapkan peserta komunitas untuk mengikuti lomba, seperti
-                  di Joints UGM, Find-IT UGM, Compfest (Data Science Academy),
-                  bahkan Gemastik.
+                  Meningkatkan kemampuan dalam penambangan dan pengolahan data.
                 </p>
               </div>
             )}
@@ -101,7 +105,9 @@ const DAMING = () => {
                 <h2>PRESTASI</h2>
               </div>
               <div className="DAMING-prestasi-content">
-                <h3>Coming Soon!</h3>
+                  <li>Juara 1 Satria dara 2022 </li>
+                  <li>Finalis Joints Data Competition 2023 </li>
+                  <li>Juara 3 Gammafest - Data Science Competition 2023</li>
               </div>
             </div>
           </div>
@@ -117,10 +123,9 @@ const DAMING = () => {
               <h3>Whatsapp: 085694503296</h3>
             </div>
           </div>
+          
         </div>
       </section>
-      
-
 
       <Footer />
     </div>
