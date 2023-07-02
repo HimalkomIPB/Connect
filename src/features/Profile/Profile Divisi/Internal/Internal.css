@@ -139,7 +139,7 @@
     border-collapse: collapse; 
     
     margin-top: 39.63px;
-    margin-bottom: 254px;
+    margin-bottom: 240px;
 }
 
 .program-table-internal tbody{
@@ -180,6 +180,10 @@
 
 
 @media(max-width: 768px) {
+    #staff-divisi-internal {
+        background-image: url('./../../../../Assets/Background/Pattern-Profil-Divisi-Tablet.svg')
+    }
+    
     #profil-divisi-internal .profil-container-internal {
         height: 549px;
         background-image: url("./../../../../Assets/Divisi/Internal/internal_header_teks_tablet.png"), url("./../../../../Assets/Divisi/Internal/internal_background_tablet.svg");    
@@ -231,6 +235,10 @@
         height: 240.13px;
     }
 
+    .program-divisi-internal{
+        padding: 87px 0 40px 0;
+    }
+
     .program-header-internal h2{
         font-size: 45px;
         border-bottom: 6px solid  #000000;
@@ -254,12 +262,15 @@
 }
 
 @media(max-width: 480px) {
+    #staff-divisi-internal {
+        background-image: url('./../../../../Assets/Background/Pattern-Profil-Divisi-Phone.svg')
+    }
+
     #profil-divisi-internal .profil-container-internal {
         height: 522px;
         background-image: url("./../../../../Assets/Divisi/Internal/internal_header_teks_phone.png"), url("./../../../../Assets/Divisi/Internal/internal_background_phone.svg");    
     }
 
-    
     .logo-container-internal {
         display: none;
     }
@@ -275,7 +286,7 @@
     .info-divisi-internal h1 {
         font-size: 32px;
         line-height: 40px;
-        margin: 170px 0 9px 0;
+        margin: 200px 0 9px 0;
         letter-spacing: -2px;        
     }
      
@@ -285,7 +296,6 @@
         width: 80%;
         text-align: center;
     }
-
 
     .staff-header-internal h2 {
         text-shadow: 3px 2px 0px #040404;
@@ -314,6 +324,11 @@
 
     .anggota-divisi-internal img{
         height: 235.88px;
+    }
+
+    
+    .program-divisi-internal{
+        padding: 80px 0 40px 0;
     }
 
     .program-header-internal h2{
