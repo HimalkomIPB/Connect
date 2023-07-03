@@ -85,8 +85,8 @@ const ImageSlider = ({ slides }) => {
                   src={slides[getThumbnailIndex(slideIndex)].url}
                   alt={`Slide ${slideIndex + 1}`}
                   style={{
-                    width: "100%",
-                    height: "100%",
+                    // width: "100%",
+                    // height: "100%",
                     objectFit: "cover",
                     cursor: "pointer",
                   }}

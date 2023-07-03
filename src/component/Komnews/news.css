@@ -8,6 +8,8 @@
     padding: 10px 30px;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
+    color: #000000;
 }
 
 .topic:hover {

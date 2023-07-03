@@ -9,6 +9,8 @@
     padding: 17px;
     border: 2px solid #111827;
     height: 376px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .newscard_img {

@@ -6,12 +6,13 @@
     height: 100vh;
     margin-top: .8rem;
     display: flex;
+    overflow-x: hidden;
 }
 
 .DAMING-header-wrapper{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    transform: translateX(242px);
+    transform: translate(242px,-1.5rem);
     margin-left: 3%;
 }
 
@@ -24,7 +25,6 @@
     width: 377px;
     height: 208px;
 }
-
 
 .DAMING-header h2{
     font-family: 'Sports World';
@@ -45,7 +45,7 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    width: 70%;
+    width: 100%;
 }
 
 
@@ -99,8 +99,6 @@
 }
 
 .DAMING-deskripsi-content {
-    width: 1057px;
-    height: 272px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,8 +121,6 @@
 }
 
 .DAMING-tujuan-content{
-    width: 1057px;
-    height: 272px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,6 +129,12 @@
     box-shadow: 7px 7px 0px #000000;
     margin: 32px 0 0 0;
     padding: 40px 44px 40px 44px;
+}
+
+.DAMING-deskripsi-content, .DAMING-tujuan-content{
+    width: 90%;
+    max-width: 1057px;
+    height: auto;
 }
 
 .DAMING-tujuan-content p{
@@ -151,6 +153,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .DAMING-prestasi-content {
@@ -158,11 +161,16 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
-    height: 118px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
     background-color: #FFFFFF;
+    padding: 45px;
+
+    width: 90%;
+    max-width: 1057px;
+    height: auto;
+
+    flex-direction: column;
 }
 
 .DAMING-prestasi-content h3 {
@@ -187,7 +195,6 @@
     transform: translateY(25px);
 }
 
-
 .DAMING-prestasi-header h2{
     font-family: 'Montserrat';
     font-style: normal;
@@ -197,6 +204,17 @@
     text-align: center;
     color: #FFFFFF;
 }
+
+.DAMING-prestasi-content li {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
 
 .DAMING-narahubung-container {
     padding: 80px 0 160px 0;
@@ -212,11 +230,14 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
-    height: 174px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
     background-color: #FFFFFF;
+
+    padding: 45px;
+    width: 90%;
+    max-width: 1057px;
+    height: auto;
 
 }
 
@@ -240,6 +261,7 @@
     border: 1px solid #111827;
     box-shadow: 4px 4px 0px #000000;
     transform: translateY(25px);
+    
 }
 
 .DAMING-narahubung-header h2 {
@@ -252,12 +274,87 @@
     color: #FFFFFF;
 }
 
-
-
 .dokumentasi-content-slider {
     width: 1057px;
     height: 704px;
     background: #453755;
     border: 3px solid #1F2937;
     box-shadow: 7px 7px 0px #1F2937;
+}
+
+@media(max-width: 768px) {
+    #DAMING-header-container {
+        background-image: url("../../../Assets/Ilkommunity/DAMING/DAMING-Header-Background-Tablet.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 521px;
+    }
+
+    .DAMING-header-wrapper {
+        grid-template-columns: none;
+        transform: translateY(0rem);
+        margin-left: 5%;
+    }
+
+    .DAMING-header p{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .DAMING-deskripsi-content, 
+    .DAMING-tujuan-content, 
+    .DAMING-prestasi-content, 
+    .DAMING-narahubung-content{
+        width: 90%;
+        max-width: 668px;
+        height: auto;
+    }
+
+    .DAMING-deskripsi-content p, .DAMING-tujuan-content p{
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 480px) {
+    #DAMING-header-container {
+        background-image: url("../../../Assets/Ilkommunity/DAMING/DAMING-Header-Background-Phone.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 521px;
+    }
+
+    .DAMING-header-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left:auto;
+        margin-right:auto;
+        transform: translateY(6rem);
+        
+    }
+
+    .DAMING-header h2{
+        font-size: 45px;
+        line-height: 52px;
+    }
+
+    #DAMING-deskripsi.active,
+    #DAMING-tujuan.active {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #DAMING-deskripsi,
+    #DAMING-tujuan {
+    font-size: 22px;
+    line-height: 28px;
+    overflow-x: hidden;
+    }
+
+    .DAMING-prestasi-content li, 
+    .DAMING-narahubung-content h3{
+        font-size: 16px;
+    }
 }

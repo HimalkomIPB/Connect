@@ -25,6 +25,7 @@ import CP from './features/Ilkommunity/CP/CP';
 import AgriUX from './features/Ilkommunity/AgriUX/UX'; 
 import GARY from './features/Ilkommunity/GARY/GARY'; 
 import IGallery from './features/IGallery/IGallery';
+import Newsdesc from './features/Komnews/newsdesc'
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Page />} />
           {/* <Route path='/Placeholder' element={<Placeholder />} /> */}
+          <Route path='/Newsdesc' element={<Newsdesc />} />
           <Route path='/ProfilHimalkom' element={<ProfileHimalkom />} />
           <Route path='/Komnews' element={<Komnews />} />
           <Route path='/Megaproker' element={<Megaproker />} />
