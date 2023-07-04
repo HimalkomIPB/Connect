@@ -181,10 +181,19 @@
     }
 
     .edukasi-anggota {
-        gap: 40px 10px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(5, minmax(0, 1fr));
     }
 
     .anggota-edukasi img {
-        height: calc(300.75px);
+        height: 257px;
+    }
+
+    .anggota-edukasi:first-child {
+        grid-column: span 3;
+    }
+    
+    .anggota-edukasi:last-child {
+        grid-column: span 3;
     }
 }

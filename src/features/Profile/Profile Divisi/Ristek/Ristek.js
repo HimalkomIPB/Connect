@@ -11,8 +11,33 @@ import anggota5 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-mumtaz.
 import anggota6 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-rifqi.png'
 import anggota7 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-khalid.png'
 import anggota8 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-irfan.png'
+import { useState } from "react";
+
+
+
+
+const proker_ristek = [
+    {
+        title: 'Riset Ilkomerz',
+        description: 'Kegiatan riset yang dilakukan dengan mengedepankan prinsip-prinsip riset dan data yang faktual sehingga dapat memahami permasalahan serta kebutuhan dari mahasiswa Ilmu Komputer.'
+    },
+    {
+        title: 'Website Himalkom',
+        description: 'Mengelola dan mengembangkan website Himalkom.'
+    }
+]
+
 
 const Ristek = () => {
+    const [selected, setSelected] = useState(null)
+
+    const toggleClick = (i) => {
+        if (selected == i) {
+            return setSelected(null)
+        }
+        setSelected(i)
+    }
+
     return (<div>
         <Navbar />
 
@@ -22,7 +47,7 @@ const Ristek = () => {
                 <div className="logo-container-ristek">
                     <br />
                 </div>
-                
+
                 <div className="desc-ristek">
                     <h2>RISET DAN TEKNOLOGI</h2>
                     <p>Ristek merupakan badan yang bertugas untuk melaksanakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi mahasiswa untuk membangun Himalkom, serta melakukan pengembangan pada website Himalkom.</p>
@@ -68,7 +93,30 @@ const Ristek = () => {
             <div className="ristek-program">
                 <div className="program-header">
                     <h2>PROGRAM KERJA</h2>
-                    <img src={line} alt="line"/>
+                    <img src={line} alt="line" />
+                </div>
+                <div className="ristek-accordion-container">
+                    <div className="ristek-accordion-wrapper">
+                        {
+                            proker_ristek.map((proker, i) => (
+                                <div className="ristek-item">
+                                    <div className={selected === i ? "ristek-proker-title active" : "ristek-proker-title"} onClick={() => toggleClick(i)}>
+                                        <h2>
+                                            {proker.title}
+                                        </h2>
+                                        <span>
+                                            {selected === i ? '-' : "+"}
+                                        </span>
+                                    </div>
+                                    <div className={selected === i ? "ristek-proker-desc show" : "ristek-proker-desc"}>
+                                        <p>
+                                            {proker.description}
+                                        </p>
+                                    </div>
+                                </div>)
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,0 +1,62 @@
+.ristek-accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 14rem;
+}
+
+.ristek-accordion-wrapper {
+    background-color: #FFFFFF;
+    width: 1065px;
+    border: 2px solid #040404;
+    border-radius: 8px;
+}
+
+.ristek-proker-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    cursor: pointer;
+    border-bottom: 2px solid #040404;
+}
+
+.ristek-proker-title.active{
+    background-color: #E9AD33;
+}
+
+.ristek-proker-title h2 {
+    font-size: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.ristek-proker-title:hover{
+    background-color: #E9AD33;
+    transition: .4s;
+}
+
+.ristek-proker-desc{
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 2px solid #040404;
+    transition: 0.05s;
+}
+
+.ristek-proker-desc.show{
+    height: auto;
+    max-height: 99999px;
+    overflow: hidden;
+    transition: 0.3s cubic-bezier(0,1,0,1);
+    padding: 20px 24px;
+}
+.ristek-proker-desc p {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
