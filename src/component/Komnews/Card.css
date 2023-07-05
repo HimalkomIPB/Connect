@@ -5,20 +5,22 @@
     background-size: cover;
     background-color: #E49800;
     background-repeat: no-repeat;
-    width: 413px;
-    padding: 17px;
     border: 2px solid #111827;
-    height: 376px;
     text-decoration: none;
     color: #000000;
+    
+    padding: 17px;
+    width: 413px;
+    height: 376px;
 }
 
 .newscard_img {
     object-fit: cover;
-    width: 373px;
-    height: 205px;
     border: 2px solid #040404;
     box-shadow: 3px 3px 0px #040404;
+
+    width: 373px;
+    height: 205px;
 }
 
 .Komnews-Home-Content h2 {
