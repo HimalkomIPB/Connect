@@ -65,14 +65,15 @@ const Page = () => {
           <h1>CONNECT</h1>
           <h3>Together We Connect Each Other</h3>
           <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
-          <div className="hero-home-slider">
+          
+          {/* <div className="hero-home-slider">
             <button onClick={() => handleClick(0)} className={`slider-btn ${activeSlide === 0 ? 'active-btn' : ''}`}>
               <img src={radio_btn_active} alt="slider-btn btn-active"></img>
             </button>
             <button onClick={() => handleClick(1)} className={`slider-btn ${activeSlide === 1 ? 'active-btn' : ''}`}>
               <img src={radio_btn} alt="slider-btn"></img>
             </button>
-          </div>
+          </div> */}
         </div>
         <div className={`hero-home-slide2 ${activeSlide === 1 ? 'active-slide' : ''}`}>
           <div className="hero-home-logo-container">
@@ -85,100 +86,121 @@ const Page = () => {
           <h1>CONNECT</h1>
           <h3>Together We Connect Each Other</h3>
           
-          <div className="hero-home-slider slider2">
+          {/* <div className="hero-home-slider slider2">
             <button onClick={() => handleClick(0)} className={`slider-btn ${activeSlide === 1 ? 'active-btn' : ''}`}>
               <img src={radio_btn} alt="slider-btn"></img>
             </button>
             <button onClick={() => handleClick(1)} className={`slider-btn ${activeSlide === 0 ? 'active-btn' : ''}`}>
               <img src={radio_btn_active} alt="slider-btn btn-active"></img>
             </button>
-          </div>
+          </div> */}
+
         </div>
       </section>
 
       {/* Ilkommunity */}
-      <section id="ilkomunity-homepage">
-        <div className="header">
-          <h2>ILKOMMUNITY</h2>
-        </div>
-        <div className="ilkommunity">
-          <div className="ilkommunity-agriux">
-            <img src={agriux} alt="AgriUX" />
-            <p>AGRIUX</p>
-          </div>
-          <div className="ilkommunity-csi">
-            <img src={CSI} alt="CSI" />
-            <p>CSI</p>
-          </div>
-          <div className="ilkommunity-agribot">
-            <img src={agribot} alt="Agribot" />
-            <p>AGRIBOT</p>
-          </div>
-          <div className="ilkommunity-cp">
-            <img src={CP} alt="CP" />
-            <p>CP</p>
-          </div>
-          <div className="ilkommunity-daming">
-            <img src={daming} alt="Daming" />
-            <p>DAMING</p>
-          </div>
-          <div className="ilkommunity-iwdc">
-            <img src={iwdc} alt="IWDC" />
-            <p>IWDC</p>
-          </div>
-          <div className="ilkommunity-gary">
-            <img src={gary} alt="GARY" />
-            <p>GARY</p>
-          </div>
-          <div className="ilkommunity-mad">
-            <img src={mad} alt="MAD" />
-            <p>MAD</p>
-          </div>
-        </div>
-      </section>
+      <div className='homepage-3section-wrapper'>
+          <section id="ilkomunity-homepage">
+            <div className="header">
+              <h2>ILKOMMUNITY</h2>
+            </div>
+            <div className="ilkommunity">
+              <a  href="/Ilkommunity-AgriUX">
+                <div className="ilkommunity-agriux">
+                    <img src={agriux} alt="AgriUX" />
+                    <p>AGRIUX</p>
+                </div>
+              </a>
+              <a href='/Ilkommunity-CSI'>
+                <div className="ilkommunity-csi">
+                  <img src={CSI} alt="CSI" />
+                  <p>CSI</p>
+                </div>
+              </a>
+              <a href="Ilkommunity-Agribot">
+                <div className="ilkommunity-agribot">
+                  <img src={agribot} alt="Agribot" />
+                  <p>AGRIBOT</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-CP">
+                <div className="ilkommunity-cp">
+                  <img src={CP} alt="CP" />
+                  <p>CP</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-DAMING">
+                <div className="ilkommunity-daming">
+                  <img src={daming} alt="Daming" />
+                  <p>DAMING</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-IWDC">
+                <div className="ilkommunity-iwdc">
+                  <img src={iwdc} alt="IWDC" />
+                  <p>IWDC</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-GARY">
+                <div className="ilkommunity-gary">
+                  <img src={gary} alt="GARY" />
+                  <p>GARY</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-MAD">
+                <div className="ilkommunity-mad">
+                  <img src={mad} alt="MAD" />
+                  <p>MAD</p>
+                </div>
+              </a>
+            </div>
+          </section>
 
-      {/* Megaproker */}
-      <section id="Megaproker-Home-Container">
+          {/* Megaproker */}
+          <section id="Megaproker-Home-Container">
 
-          <div className="Megaproker-Home-Header">
-            <h3>MEGAPROKER</h3>
-          </div>
-          
-          <div className="Megaproker-Home-Card Card1">
-              <div className="Megaproker-Home-Card1-bg"/>
-              <div className="Megaproker-Home-Card1-logo">
-                <img src={logo1} alt="ittoday"/>
+              <div className="Megaproker-Home-Header">
+                <h3>MEGAPROKER</h3>
               </div>
-              <div className="Megaproker-Home-Card-info">
-                <h1>IT TODAY</h1>
-                <p><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.</p>
-                <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
+              
+              <div className="Megaproker-Home-Card Card1">
+                  <div className="Megaproker-Home-Card1-bg"/>
+                  <div className="Megaproker-Home-Card1-logo">
+                    <img src={logo1} alt="ittoday"/>
+                  </div>
+                  <div className="Megaproker-Home-Card-info">
+                    <h1>IT TODAY</h1>
+                    <p><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.</p>
+                    <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
+                  </div>
               </div>
-          </div>
 
-          <div className="Megaproker-Home-Card Card2">
-              <div className="Megaproker-Home-Card2-logo">
-                <img src={logo2} alt="cpsc"/>
+              <div className="Megaproker-Home-Card Card2">
+                  <div className="Megaproker-Home-Card2-logo">
+                    <img src={logo2} alt="cpsc"/>
+                  </div>
+                  <div className="Megaproker-Home-Card-info">
+                    <h1>CPSC</h1>
+                    <p><span className="bold">Computer Problem Solving Competition (CPSC)</span> merupakan ajang perlombaan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Ilmu Komputer (Himalkom) IPB dan merupakan rangkaian dari acara Pesta Sains Nasional (PSN) FMIPA IPB</p>
+                    <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
+                  </div>
               </div>
-              <div className="Megaproker-Home-Card-info">
-                <h1>CPSC</h1>
-                <p><span className="bold">Computer Problem Solving Competition (CPSC)</span> merupakan ajang perlombaan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Ilmu Komputer (Himalkom) IPB dan merupakan rangkaian dari acara Pesta Sains Nasional (PSN) FMIPA IPB</p>
-                <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
-              </div>
-          </div>
-      </section>
+          </section>
 
-      {/* Komnews */}
-      <section id="Komnews-Home-container">
-        <div className="Komnews-Home-Header">
-          <h2>KOMNEWS</h2>
-        </div>
+          {/* Komnews */}
+          <section id="Komnews-Home-container">
+            <div className="Komnews-Home-Header">
+              <h2>KOMNEWS</h2>
+            </div>
 
-        <div className="Komnews-Home-Content-Container">
-          {cards}
-        </div>
-      </section>
+            <div className="Komnews-Home-Content-Container">
+              {cards}
+            </div>
+          </section>
 
+      </div>
+
+      
       <Footer />
     </div>
   );
