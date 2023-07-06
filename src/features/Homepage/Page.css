@@ -503,9 +503,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0 5rem 0;
+    /* padding: 5rem 0 5rem 0; */
+    padding: 0px 80px 5rem 80px;
+    
     overflow-x: hidden;
-    background-color: aqua;
 }
 
 .Komnews-Home-Header h2 {
@@ -518,6 +519,8 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+
+    margin-top: 5rem;
 }
 
 .Komnews-Home-Content-Container {
@@ -526,19 +529,13 @@
     padding: 2rem 0 1rem 0;
     overflow: auto;
     width: 1279.5px;
+    width: 100%;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-
-    background-color: aquamarine;
-    border: 1px solid black;
 }
 
-/* .Komnews-Home-Content-Container::-webkit-scrollbar {
-    display: none;
-}
-*/
 
 @media(max-width: 1200px) {
     #ilkomunity-homepage .ilkommunity {
@@ -800,6 +797,34 @@
     .Megaproker-Home-Card-info button {
         margin-top: 16px
     }
+
+    /* Komnews section */
+    #Komnews-Home-container {
+        padding: 0px 40px 5rem 40px;
+    }
+
+    .Komnews-Home-Header h2 {
+        margin-top: 2.5rem;
+    }
+
+    #Komnews-Home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 40px;
+        overflow-x: hidden;
+    }
+
+    .Komnews-Home-Content-Container {
+        display: flex;
+        gap: 1.5rem;
+        padding: 2rem 0 1rem 0;
+        width: 100%;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    
 }
 
 @media (max-width: 640px) {
@@ -1041,6 +1066,26 @@
     .Card2 .Megaproker-Home-Card2-logo {
         width: 90%;
         height: auto;
+    }
+
+    /* Komnews */
+    #Komnews-Home-container {
+        padding: 5rem clamp(0.9375rem, -2.1875rem + 15.625vw, 2.5rem);
+    }
+
+    .Komnews-Home-Header h2 {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        text-shadow: 1px 2px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4;
+        /* postitioning */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
     }
 }
 

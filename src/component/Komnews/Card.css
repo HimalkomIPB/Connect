@@ -3,15 +3,17 @@
     justify-content: center;
     background-image: url("../../Assets/Background/Komnews-Home-Card.svg");
     background-size: cover;
-    background-color: #E49800;
+    background-color: #EFC166;
     background-repeat: no-repeat;
-    border: 2px solid #111827;
     text-decoration: none;
     color: #000000;
+    border: 2px solid #111827;
     
     padding: 17px;
     width: 413px;
     height: 376px;
+
+    position: relative;
 }
 
 .newscard_img {
@@ -20,7 +22,7 @@
     box-shadow: 3px 3px 0px #040404;
 
     width: 373px;
-    height: 205px;
+    max-height: 205px;
 }
 
 .Komnews-Home-Content h2 {
@@ -33,16 +35,20 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
-    padding-top: 1rem;
+    padding-top: 0.94rem;
 }
 
 .Komnews-Home-Content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .card_date {
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+
     display: flex;
     border: #000000 solid 2px;
     width: 55px;
@@ -62,16 +68,40 @@
 @media screen and (max-width: 768px) {
     .Komnews-Home-Content-Card {
         width: 690px;
-        height: auto;
+        height: 628.18px;
     }
 
     .Komnews-Home-Content-Card img {
-        width: 634.867px;
-        height: 441.065px;
+        width: 623px;
+        height: 342px;
+        max-height: 441.065px;
     }
 
     .Komnews-Home-Content-Card h2 {
+        text-shadow: 1.6707020998001099px 3.3414041996002197px 0px 0px #170F00;
+        font-size: 23.39px;
         font-size: 24px;
         padding: 25px 0 63.31px 0;
+        line-height: 33.414px;
+        letter-spacing: 0.167px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Komnews-Home-Content-Card {
+        width: 397px;
+        height: 361.433px;
+    }
+
+    .Komnews-Home-Content-Card img {
+        width: 358.55px;
+        height: 197.06px;
+    }
+
+    .Komnews-Home-Content-Card h2 {
+        font-size: 13.458px;
+        line-height: 19.225px;
+        letter-spacing: 0.096px;
+        padding: 14px 0 63.31px 0;
     }
 }
