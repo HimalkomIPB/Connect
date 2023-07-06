@@ -4,6 +4,7 @@
     align-items: center;
     background-image: url(./../../Assets/Background/bghimal-home.png);
     background-size: 100% 100%;
+    background-position: center center;
     height: 738px;
     margin-top: 12px;
     position: relative;
@@ -277,12 +278,12 @@
     height: 253px;
 }
 
-#ilkomunity-homepage .ilkommunity > div:hover {
+#ilkomunity-homepage .ilkommunity  div:hover {
     box-shadow: 10px 10px 0px #000000;
     transform: translateY(-10px) translateX(-10px);
 }
 
-#ilkomunity-homepage .ilkommunity > div img {
+#ilkomunity-homepage .ilkommunity div img {
     margin-top: 35px;
     border: 2px solid;
     border-radius: 122px;
@@ -290,7 +291,7 @@
     height: 122px;
 }
 
-#ilkomunity-homepage .ilkommunity > div p {
+#ilkomunity-homepage .ilkommunity div p {
     list-style: none;
     font-family: 'Sports World';
     font-style: normal;
@@ -566,17 +567,17 @@
         gap: 32px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div {
+    #ilkomunity-homepage .ilkommunity div {
         width: 192px;
         height: 160px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div:hover {
+    #ilkomunity-homepage .ilkommunity div:hover {
         box-shadow: 7px 7px 0px #000000;
         transform: translateY(-7px) translateX(-7px);
     }
 
-    #ilkomunity-homepage .ilkommunity>div img {
+    #ilkomunity-homepage .ilkommunity div img {
         border: 2px solid;
         border-radius: 122px;
         width: 77.15px;
@@ -585,7 +586,7 @@
         margin-top: 18px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div p {
+    #ilkomunity-homepage .ilkommunity div p {
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
@@ -682,7 +683,7 @@
         margin: 0 40px;
     }
 
-    #ilkomunity-homepage .ilkommunity > div {
+    #ilkomunity-homepage .ilkommunity div {
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(../../Assets/Ilkommunity/Background/card-bg-svg.svg);
@@ -698,12 +699,12 @@
         height: 253px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div:hover {
+    #ilkomunity-homepage .ilkommunity div:hover {
         box-shadow: 10px 10px 0px #000000;
         transform: translateY(-10px) translateX(-10px);
     }
 
-    #ilkomunity-homepage .ilkommunity > div img {
+    #ilkomunity-homepage .ilkommunity  div img {
         border: 2px solid;
         border-radius: 122px;
         width: 122px;
@@ -712,7 +713,7 @@
         margin-top: 35px;
     }
 
-    #ilkomunity-homepage .ilkommunity > div p {
+    #ilkomunity-homepage .ilkommunity div p {
         font-size: 30px;
         line-height: 32px;
         text-shadow: 1.5px 2.7px 0px #040404;
@@ -834,25 +835,25 @@
         gap: 32px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div {
+    #ilkomunity-homepage .ilkommunity div {
         width: 192px;
         height: 160px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div:hover {
+    #ilkomunity-homepage .ilkommunity div:hover {
         box-shadow: 7px 7px 0px #000000;
         transform: translateY(-7px) translateX(-7px);
     }
 
-    #ilkomunity-homepage .ilkommunity>div img {
+    #ilkomunity-homepage .ilkommunity div img {
         margin-top: 18px;
         border: 2px solid;
         border-radius: 122px;
         width: 77.15px;
         height: 77.15px;
     }
-
-    #ilkomunity-homepage .ilkommunity>div p {
+ 
+    #ilkomunity-homepage .ilkommunity div p {
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
@@ -957,17 +958,17 @@
         gap: 16px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div {
+    #ilkomunity-homepage .ilkommunity div {
         width: 192px;
         height: 160px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div:hover {
+    #ilkomunity-homepage .ilkommunity div:hover {
         box-shadow: 5px 5px 0px #000000;
         transform: translateY(-5px) translateX(-5px);
     }
 
-    #ilkomunity-homepage .ilkommunity>div img {
+    #ilkomunity-homepage .ilkommunity div img {
         border: 2px solid;
         border-radius: 122px;
         width: 77.15px;
@@ -976,7 +977,7 @@
         margin-top: 18px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div p {
+    #ilkomunity-homepage .ilkommunity div p {
         font-weight: 400;
         font-size: 19px;
         line-height: 32px;
@@ -1091,17 +1092,17 @@
 
 @media(max-width: 380px) {
     /* Ilkomunity section */
-    #ilkomunity-homepage .ilkommunity>div {
+    #ilkomunity-homepage .ilkommunity div {
         width: 145.94px;
         height: 122.37px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div:hover {
+    #ilkomunity-homepage .ilkommunity div:hover {
         box-shadow: 5px 5px 0px #000000;
         transform: translateY(-5px) translateX(-5px);
     }
 
-    #ilkomunity-homepage .ilkommunity>div img {
+    #ilkomunity-homepage .ilkommunity div img {
         margin-top: 20px;
         border: 2px solid;
         border-radius: 122px;
@@ -1109,7 +1110,7 @@
         height: 57.74px;
     }
 
-    #ilkomunity-homepage .ilkommunity>div p {
+    #ilkomunity-homepage .ilkommunity div p {
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;

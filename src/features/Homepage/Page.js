@@ -105,38 +105,54 @@ const Page = () => {
               <h2>ILKOMMUNITY</h2>
             </div>
             <div className="ilkommunity">
-              <div className="ilkommunity-agriux">
-                <img src={agriux} alt="AgriUX" />
-                <p>AGRIUX</p>
-              </div>
-              <div className="ilkommunity-csi">
-                <img src={CSI} alt="CSI" />
-                <p>CSI</p>
-              </div>
-              <div className="ilkommunity-agribot">
-                <img src={agribot} alt="Agribot" />
-                <p>AGRIBOT</p>
-              </div>
-              <div className="ilkommunity-cp">
-                <img src={CP} alt="CP" />
-                <p>CP</p>
-              </div>
-              <div className="ilkommunity-daming">
-                <img src={daming} alt="Daming" />
-                <p>DAMING</p>
-              </div>
-              <div className="ilkommunity-iwdc">
-                <img src={iwdc} alt="IWDC" />
-                <p>IWDC</p>
-              </div>
-              <div className="ilkommunity-gary">
-                <img src={gary} alt="GARY" />
-                <p>GARY</p>
-              </div>
-              <div className="ilkommunity-mad">
-                <img src={mad} alt="MAD" />
-                <p>MAD</p>
-              </div>
+              <a  href="/Ilkommunity-AgriUX">
+                <div className="ilkommunity-agriux">
+                    <img src={agriux} alt="AgriUX" />
+                    <p>AGRIUX</p>
+                </div>
+              </a>
+              <a href='/Ilkommunity-CSI'>
+                <div className="ilkommunity-csi">
+                  <img src={CSI} alt="CSI" />
+                  <p>CSI</p>
+                </div>
+              </a>
+              <a href="Ilkommunity-Agribot">
+                <div className="ilkommunity-agribot">
+                  <img src={agribot} alt="Agribot" />
+                  <p>AGRIBOT</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-CP">
+                <div className="ilkommunity-cp">
+                  <img src={CP} alt="CP" />
+                  <p>CP</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-DAMING">
+                <div className="ilkommunity-daming">
+                  <img src={daming} alt="Daming" />
+                  <p>DAMING</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-IWDC">
+                <div className="ilkommunity-iwdc">
+                  <img src={iwdc} alt="IWDC" />
+                  <p>IWDC</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-GARY">
+                <div className="ilkommunity-gary">
+                  <img src={gary} alt="GARY" />
+                  <p>GARY</p>
+                </div>
+              </a>
+              <a href="/Ilkommunity-MAD">
+                <div className="ilkommunity-mad">
+                  <img src={mad} alt="MAD" />
+                  <p>MAD</p>
+                </div>
+              </a>
             </div>
           </section>
 

@@ -181,7 +181,7 @@
 
 @media(max-width: 768px) {
     #staff-divisi-internal {
-        background-image: url('./../../../../Assets/Background/Pattern-Profil-Divisi-Tablet.svg')
+        background-image: url('./../../../../Assets/Background/Pattern-Tablet.svg')
     }
     
     #profil-divisi-internal .profil-container-internal {
@@ -263,7 +263,7 @@
 
 @media(max-width: 480px) {
     #staff-divisi-internal {
-        background-image: url('./../../../../Assets/Background/Pattern-Profil-Divisi-Phone.svg')
+        background-image: url('./../../../../Assets/Background/Pattern-Phone.svg')
     }
 
     #profil-divisi-internal .profil-container-internal {
