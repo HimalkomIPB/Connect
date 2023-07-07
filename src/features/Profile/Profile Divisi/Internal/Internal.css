@@ -57,6 +57,8 @@
 /* Staff Section */
 #staff-divisi-internal {
     background-size: cover;
+    /* make it fixed */
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-image: url('./../../../../Assets/Background/Pattern.svg')
 }
@@ -124,38 +126,12 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
-    
 }
 
 .program-header-internal h2{
     padding: 0 16px 20px 16px;
     border-bottom: 8px solid  #000000;
-}
-
-.program-table-internal {
-    padding: 20px 24px;
-    max-width: 1064px;
-    width: 90%;
-    border-collapse: collapse; 
-    
-    margin-top: 39.63px;
-    margin-bottom: 240px;
-}
-
-.program-table-internal tbody{
-    border-radius: 8px; 
-}
-  
-.program-table-internal td {
-    border: 2px solid var(--ungu-06, #16052B);
-    padding: 20px 24px; 
-
-    /* Font styles */
-    font-size: 16px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+    margin-bottom: 2.5rem;
 }
 
 @media(max-width: 1024px) {

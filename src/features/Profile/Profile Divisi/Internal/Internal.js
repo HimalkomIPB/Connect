@@ -12,8 +12,20 @@ import anggota7 from './../../../../Assets/Divisi/Internal/Anggota/anggota_mirza
 import anggota8 from './../../../../Assets/Divisi/Internal/Anggota/anggota_adi.png'
 import anggota9 from './../../../../Assets/Divisi/Internal/Anggota/anggota_kevin.png'
 import anggota10 from './../../../../Assets/Divisi/Internal/Anggota/anggota_novia.png'
+import Accordion from './../../../../component/Accordion/Accordion';
 
 const internal = () => {
+    const proker_internal = [
+        {title: 'I-PI Unggun', description: 'Malam keakraban untuk seluruh pengurus Himalkom agar pengurus dapat saling mengenal satu sama lain dan semakin akrab.'},
+        {title: 'I-Forum', description: 'Sharing session bagi mahasiswa Ilkom yang bersifat insidental (menyesuaikan dengan kebutuhan).'},
+        {title: 'I-Nvasion', description: 'Main bareng bersama divisi lain di LPK Tepi Sawah.'},
+        {title: 'Delegasi ISC', description: 'Bersama HRD, membantu pencarian delegasi ISC.'},
+        {title: 'Dirgahayu Himalkom', description: 'Kegiatan peringatan Dirgahayu HIMALKOM IPB.'},
+        {title: 'I-Birthday', description: 'Bentuk perayaan untuk memperingati ulang tahun para pengurus HIMALKOM IPB.'},
+        {title: 'Staff of the Month', description: 'Apresiasi bagi staff yang memiliki kerja terbaik di divisinya masing-masing.'},
+        {title: 'Ilkomerz Wisudaan', description: 'Bentuk apresiasi sekaligus perayaan dari Ilkomerz aktif untuk merayakan kelulusan Ilkomerz. Program kerja ini akan bekerja sama dengan Divisi Eksternal.'},
+    ]
+
     return (
       <div>
         <Navbar />
@@ -77,34 +89,8 @@ const internal = () => {
               <h2>PROGRAM KERJA</h2>
             </div>
 
-            <table className="program-table-internal">
-              <tbody>
-                <tr>
-                  <td>I-PI Unggun</td>
-                </tr>
-                <tr>
-                  <td>I-Forum</td>
-                </tr>
-                <tr>
-                  <td>I-Nvasion</td>
-                </tr>
-                <tr>
-                  <td>Delegasi ISC</td>
-                </tr>
-                <tr>
-                  <td>Dirgahayu Himalkom</td>
-                </tr>
-                <tr>
-                  <td>I-Birthday</td>
-                </tr>
-                <tr>
-                  <td>Staff of the Month</td>
-                </tr>
-                <tr>
-                  <td>Ilkomerz Wisudaan</td>
-                </tr>
-              </tbody>
-            </table>
+            <Accordion proker_divisi={proker_internal} />
+            
           </div>
         </section>
 

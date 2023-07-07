@@ -132,9 +132,10 @@
 
 .ristek-accordion-wrapper {
     background-color: #FFFFFF;
-    width: 1065px;
     border: 2px solid #040404;
     border-radius: 8px;
+    max-width: 1065px;
+    width: 90%;
 }
 
 .ristek-proker-title {
@@ -256,6 +257,6 @@
     }
 
     .ristek-accordion-wrapper {
-        width: 688px;
+        max-width: 688px;
     }
 }

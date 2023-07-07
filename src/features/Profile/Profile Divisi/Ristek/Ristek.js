@@ -12,6 +12,7 @@ import anggota6 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-rifqi.p
 import anggota7 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-khalid.png'
 import anggota8 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-irfan.png'
 import { useState } from "react";
+import Accordion from "../../../../component/Accordion/Accordion";
 
 
 
@@ -95,29 +96,9 @@ const Ristek = () => {
                     <h2>PROGRAM KERJA</h2>
                     <img src={line} alt="line" />
                 </div>
-                <div className="ristek-accordion-container">
-                    <div className="ristek-accordion-wrapper">
-                        {
-                            proker_ristek.map((proker, i) => (
-                                <div className="ristek-item">
-                                    <div className={selected === i ? "ristek-proker-title active" : "ristek-proker-title"} onClick={() => toggleClick(i)}>
-                                        <h2>
-                                            {proker.title}
-                                        </h2>
-                                        <span>
-                                            {selected === i ? '-' : "+"}
-                                        </span>
-                                    </div>
-                                    <div className={selected === i ? "ristek-proker-desc show" : "ristek-proker-desc"}>
-                                        <p>
-                                            {proker.description}
-                                        </p>
-                                    </div>
-                                </div>)
-                            )
-                        }
-                    </div>
-                </div>
+                
+                <Accordion proker_divisi={proker_ristek} />
+
             </div>
         </section>
         <Footer />
