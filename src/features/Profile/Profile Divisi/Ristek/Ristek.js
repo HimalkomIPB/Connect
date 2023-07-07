@@ -25,10 +25,6 @@ const proker_ristek = [
     {
         title: 'Website Himalkom',
         description: 'Mengelola dan mengembangkan website Himalkom.'
-    },
-    {
-        title: 'Website Himalkom2',
-        description: 'Mengelola dan mengembangkan website Himalkom.'
     }
 ]
 
