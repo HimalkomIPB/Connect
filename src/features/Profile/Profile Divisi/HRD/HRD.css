@@ -58,9 +58,10 @@
 
 /* Staff Section */
 .staff-divisi {
-    background-size: cover;
+    background-image: url('./../../../../Assets/Background/pattern-top.svg'), url('./../../../../Assets/Background/pattern-bottom.svg');
+    background-position: top left, bottom right;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('./../../../../Assets/Background/Pattern.svg')
 }
 
 

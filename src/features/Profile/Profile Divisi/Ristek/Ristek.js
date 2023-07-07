@@ -58,7 +58,7 @@ const Ristek = () => {
 
 
         {/* Staff */}
-        <section className="staff">
+        <section className="stafff">
             <div className="staff-header">
                 <h2>STAFF</h2>
                 <img src={line} alt="line" />

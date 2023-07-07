@@ -56,11 +56,10 @@
 
 /* Staff Section */
 #staff-divisi-internal {
-    background-size: cover;
-    /* make it fixed */
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
-    background-image: url('./../../../../Assets/Background/Pattern.svg')
+    background-image: url('./../../../../Assets/Background/pattern-top.svg'), url('./../../../../Assets/Background/pattern-bottom.svg');
+    background-position: top left, bottom right;
+    background-size: contain;
 }
 
 
@@ -156,10 +155,6 @@
 
 
 @media(max-width: 768px) {
-    #staff-divisi-internal {
-        background-image: url('./../../../../Assets/Background/Pattern-Tablet.svg')
-    }
-    
     #profil-divisi-internal .profil-container-internal {
         height: 549px;
         background-image: url("./../../../../Assets/Divisi/Internal/internal_header_teks_tablet.png"), url("./../../../../Assets/Divisi/Internal/internal_background_tablet.svg");    
@@ -238,10 +233,6 @@
 }
 
 @media(max-width: 480px) {
-    #staff-divisi-internal {
-        background-image: url('./../../../../Assets/Background/Pattern-Phone.svg')
-    }
-
     #profil-divisi-internal .profil-container-internal {
         height: 522px;
         background-image: url("./../../../../Assets/Divisi/Internal/internal_header_teks_phone.png"), url("./../../../../Assets/Divisi/Internal/internal_background_phone.svg");    
