@@ -49,8 +49,9 @@
 }
 
 #DAMING-main-container{
-    background-image: url('./../../../Assets/Background/Pattern.svg');
-    background-size: cover;
+    background-image: url('./../../../Assets/Background/pattern-top.svg'), url('./../../../Assets/Background/pattern-bottom.svg');
+    background-position: top left, bottom right;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 80px 0 0 0;
 }
@@ -301,10 +302,6 @@
         font-size: 16px;
     }
 
-    #DAMING-main-container{
-        background-image: url('./../../../Assets/Background/Pattern-Tablet.svg');
-    }
-
     .DAMING-deskripsi-content, 
     .DAMING-tujuan-content, 
     .DAMING-prestasi-content, 
@@ -336,10 +333,6 @@
         margin-right:auto;
         transform: translateY(6rem);
         
-    }
-
-    #DAMING-main-container{
-        background-image: url('./../../../Assets/Background/Pattern-Phone.svg');
     }
 
     .DAMING-header h2{

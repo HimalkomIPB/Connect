@@ -284,11 +284,11 @@
    }
 
    .megaproker-container{
-      background-image: url('./../../Assets/Background/Bgmegaproker.svg');
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
       z-index: -1;
+      background-repeat: no-repeat;
+      background-image: url('./../../Assets/Background/pattern-top.svg'), url('./../../Assets/Background/pattern-bottom.svg');
+      background-position: top left, bottom right;
+      background-size: contain;
    }
 
    .megaproker-proker .megaproker-title{

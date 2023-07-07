@@ -74,10 +74,11 @@
     color: #F0E4D4;
 }
 
-.staff {
-    background-size: cover;
+.stafff {
     background-repeat: no-repeat;
-    background-image: url('./../../../../Assets/Divisi/Edukasi/Pattern.svg')
+    background-image: url('./../../../../Assets/Background/pattern-top.svg'), url('./../../../../Assets/Background/pattern-bottom.svg');
+    background-position: top left, bottom right;
+    background-size: contain;
 }
 
 .ristek-anggota {
