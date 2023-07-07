@@ -1,18 +1,20 @@
-.ristek-accordion-container {
+#proker-accordion-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 14rem;
+    width: 100%;
 }
 
-.ristek-accordion-wrapper {
+.proker-accordion-wrapper {
     background-color: #FFFFFF;
-    width: 1065px;
     border: 2px solid #040404;
     border-radius: 8px;
+    max-width: 1065px;
+    width: 90%;
 }
 
-.ristek-proker-title{
+.proker-accordion-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,11 +23,11 @@
     border-bottom: 2px solid #040404;
 }
 
-.ristek-proker-title.active{
+.proker-accordion-title.active{
     background-color: #E9AD33;
 }
 
-.ristek-proker-title h2 {
+.proker-accordion-title h2 {
     font-size: 22px;
     font-family: Montserrat;
     font-style: normal;
@@ -33,12 +35,12 @@
     line-height: 28px;
 }
 
-.ristek-proker-title:hover{
+.proker-accordion-title:hover{
     background-color: #E9AD33;
     transition: .4s;
 }
 
-.ristek-proker-desc{
+.proker-accordion-desc{
     max-height: 0;
     padding: 0;
     overflow: hidden;
@@ -46,17 +48,23 @@
     transition: 0.05s;
 }
 
-.ristek-proker-desc.show{
+.proker-accordion-desc.show{
     height: auto;
     max-height: 99999px;
     overflow: hidden;
     transition: 0.3s cubic-bezier(0,1,0,1);
     padding: 20px 24px;
 }
-.ristek-proker-desc p {
+.proker-accordion-desc p {
     font-size: 16px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+}
+
+@media(max-width: 768px) {
+    .proker-accordion-wrapper {
+        max-width: 688px;
+    }
 }
