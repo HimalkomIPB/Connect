@@ -19,7 +19,7 @@ const Newsdesc = () => {
             />
         )
     })
-  return (
+return (
     <div>
         <Navbar/>
             <div className='form-desc'>
@@ -30,7 +30,9 @@ const Newsdesc = () => {
                 <div className='main-desc'>
                     <h1 className='title-desc'>Student Portal IPB University Dukung Aktivitas Merdeka Belajar Kampus Merdeka (MBKM)</h1>
                     <p className='date-desc'>23-12-2021</p>
-                    <img src={Dummy} className="img-desc"/>
+                    <div className="img-desc">
+                        <img src={Dummy}/>
+                    </div>
                     <p className='text-desc'>IPB University sosialisasikan Student Portal untuk mendukung kegiatan Merdeka Belajar Kampus Merdeka (MBKM), 13/12. Student portal merupakan aplikasi yang diperuntukkan bagi mahasiswa IPB University dalam mendukung aktivitas akademik dan kemahasiswaan.
                         Dr Alim Setiawan Slamet, Direktur Kemahasiswaan dan Pengembangan Karir (Ditmawa PK) IPB University, mengatakan bahwa dalam kurun empat tahun terakhir IPB University secara bertahap melakukan transformasi digital. Transformasi digital ini tujuan utamanya adalah untuk meningkatkan pelayanan kepada stakeholder, salah satunya mahasiswa IPB University.
 
