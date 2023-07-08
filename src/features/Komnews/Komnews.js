@@ -2,7 +2,7 @@ import React from 'react'
 import './Komnews.css'
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
-import News from "../../component/Komnews/news";
+import News from "../../component/Komnews/News";
 import Data from "../../component/Komnews/newsdata";
 import Headline from "../../component/Komnews/headline";
 
@@ -15,6 +15,8 @@ const Komnews = () => {
             thumbnail={item.thumbnail}
             category={item.category}
             img={item.img}
+            date={item.date}
+            desc={item.desc}
         />
     )
 })

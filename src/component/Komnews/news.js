@@ -1,20 +1,26 @@
-import React from 'react'
-import "./news.css"
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import "./News.css";
 
-const news = (props) => {
+const News = (props) => {
+  const navigate = useNavigate();
+  const handleNewsClick = () => {
+    navigate('/Newsdesc', { state: { berita: props } });
+  };
+
   return (
-    <a className='topic' href='/Newsdesc'>
-        <div className='topic-desc'>
-            <p>Selected for you</p>
-            <h1>{props.title}</h1>
-            <p>{props.thumbnail}</p>
-            <div className='topic-category'>
-                <p>{props.category}</p>
-            </div>
+    <div className='topic' onClick={handleNewsClick}>
+      <div className='topic-desc'>
+        <p>Selected for you</p>
+        <h1>{props.title}</h1>
+        <p>{props.thumbnail}</p>
+        <div className='topic-category'>
+          <p>{props.category}</p>
         </div>
-        <img src={require('../../Assets/Komnews/Topic/' +  props.img )} className="news_img" alt="gambar" width={140} height={140} />
-    </a>
-  )
+      </div>
+      <img src={require('../../Assets/Komnews/Topic/' + props.img)} className="news_img" alt="gambar" width={140} height={140} />
+    </div>
+  );
 }
 
-export default news
+export default News;

@@ -47,6 +47,8 @@ const Page = () => {
             title={item.title}
             img={item.img}
             date={item.date}
+            desc={item.desc}
+            category={item.category}
         />
     )
   })
