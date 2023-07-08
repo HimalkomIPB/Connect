@@ -13,6 +13,10 @@ const Komnews = () => {
     setSelectedCategory(category);
   };
 
+  const handleAllClick = () => {
+    setSelectedCategory(null);
+  };
+
   const cards = Data.map(item => {
     return (
       <News
@@ -55,6 +59,9 @@ const Komnews = () => {
           <div className='topics-rec'>
             <h1>Recommended Topic</h1>
             <div className='rec-list'>
+              <button className='recommend' onClick={handleAllClick}>
+                <span>All</span>
+              </button>
               <button className='recommend' onClick={() => handleFilterClick('Self Improvement')}>
                 <span>Self Improvement</span>
               </button>
