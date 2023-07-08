@@ -1,7 +1,18 @@
 import React from 'react'
 import gambar from "./../../Assets/Komnews/Headline/image.png";
+import data from "./newsdata"
+import "./Headline.css"
+import { useNavigate } from 'react-router-dom';
 
-const headline = () => {
+
+const Headline = () => {
+  const topic = data[0]
+
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate('/Newsdesc', { state: { berita: topic } });
+  };
   return (
     <div className='Headline'>
         <div className='title-head'>
@@ -9,16 +20,16 @@ const headline = () => {
         </div>
         <div className='headline'>
           <div className='desc-news'>
-            <h1>Pelantikan Rektor IPB University Periode 2023-2028</h1>
-            <p>Pada 18 Januari 2023 bertempat di Grha Widya Wisuda (GWW) Kampus IPB Dramaga, Bogor dilangsungkan Sidang Paripurna Terbuka Majelis Wali Amanat (MWA) IPB University dengan agenda Pelantikan Rektor IPB University Periode 2023-2028. Prof Arif Satria terpilih sebagai Rektor IPB University periode 2023-2028. Prof Arif Satria menjadi rektor terpilih berdasarkan hasil putusan MWA IPB University dalam Sidang Paripurna Tertutup yang digelar di IPB International Convention Center (IICC), Bogor, (9/11). Ini adalah periode kedua jabatan Prof Arif Satria sebagai Rektor IPB University</p>
-            <a className='button' href='/Newsdesc' ><span className='bold'>Read More {'>'}</span></a>
+            <h1>{topic.title}</h1>
+            <p>{topic.thumbnail}</p>
+            <a className='button_headline' onClick={handleCardClick} ><span className='bold'>Read More {'>'}</span></a>
           </div>
           <div className='image'>
-            <img src={gambar} alt="gambar" width={344}/>
+            <img src={require('../../Assets/Komnews/Topic/' + topic.img)} alt="gambar" width={344} className="headline_img"/>
           </div>
         </div>
     </div>
   )
 }
 
-export default headline
+export default Headline

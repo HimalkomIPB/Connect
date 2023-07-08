@@ -4,7 +4,7 @@ import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
 import News from "../../component/Komnews/News";
 import Data from "../../component/Komnews/newsdata";
-import Headline from "../../component/Komnews/headline";
+import Headline from "../../component/Komnews/Headline";
 
 const Komnews = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
