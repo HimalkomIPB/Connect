@@ -1,6 +1,6 @@
 import React from 'react'
 import gambar from "./../../Assets/Komnews/Headline/image.png";
-import data from "./newsdata"
+import data from "../../Data/newsdata"
 import "./Headline.css"
 import { useNavigate } from 'react-router-dom';
 
