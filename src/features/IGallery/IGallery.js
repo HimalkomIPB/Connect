@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
 import "./IGallery.css"
+import dummy from "../../Assets/IGallery/Arcanon.svg"
 const IGallery = () => {
   return (
     <div>
@@ -41,12 +42,12 @@ const IGallery = () => {
           </div>
           <div className='IG-main-content'>
             <div className='IG-content'>
-              <img/>
-              <h1 className='IG-content-title'></h1>
-              <h1 className='IG-content-category'></h1>
-              <p className='IG-content-desc'></p>
-              <h1 className='IG-content-created'>Created by</h1>
-              <button></button>
+              <img className="IG-content-img" src={dummy} />
+              <h1 className='IG-content-title'>Arcanon</h1>
+              <h1 className='IG-content-category'>Rekayasa Perangkat Lunak</h1>
+              <p className='IG-content-desc'>The development of the Arcanon software is expected to improve mental health, facilitate positive social interactions, and enhance the overall quality of life for individuals and society as a whole.</p>
+              <h1 className='IG-content-created'>Created by Ipan, Ismy, Zefan KOM 58</h1>
+              <button className='IG-button'><span>See Project {'>'}</span></button>
             </div>
           </div>
         </div>
