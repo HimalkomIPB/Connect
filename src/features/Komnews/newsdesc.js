@@ -1,10 +1,9 @@
 import React from 'react'
 import "./newsdesc.css"
 import Card from "../../component/Komnews/Card"
-import Data from "../../component/Komnews/newsdata"
+import Data from "../../Data/newsdata"
 import Navbar from "../../component/Navbar/Navbar"
 import Footer from "../../component/Footer/Footer"
-import Dummy from "../../Assets/Komnews/dummy.png"
 import { useLocation } from 'react-router-dom';
 
 const Newsdesc = () => {
