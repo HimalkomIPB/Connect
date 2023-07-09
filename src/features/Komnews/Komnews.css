@@ -97,6 +97,7 @@
     border: #000000 solid 2px;
     width:auto;
     justify-content: center;
+    align-items: center;
     padding: 5px;
     background:#E49800;
     box-shadow: 3px 4px 0px #000000;

@@ -6,6 +6,10 @@ const News = (props) => {
   const navigate = useNavigate();
   const handleNewsClick = () => {
     navigate('/Newsdesc', { state: { berita: props } });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
