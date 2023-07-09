@@ -47,3 +47,57 @@
     line-height: 24px;
     text-align: center;
 }
+
+.IG-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.IG-main > h1{
+    font-family: 'Sports World';
+    font-style: normal;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 52px;
+    text-shadow: 4px 5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    margin-bottom: 24px;
+}
+
+.IG-main-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.IG-list{
+    display: flex;
+    border: #000000 solid 2px;
+    width:auto;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    background:#E49800;
+    box-shadow: 3px 4px 0px #000000;
+    margin: 3px;
+}
+
+.IG-list:active {
+    transform: translateY(2px);
+    transform: translateX(3px);
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.IG-list > span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}

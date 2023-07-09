@@ -88,8 +88,8 @@
 }
 
 .rec-list {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .recommend{
@@ -98,7 +98,7 @@
     width:auto;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 5px 10px;
     background:#E49800;
     box-shadow: 3px 4px 0px #000000;
     margin: 5px;

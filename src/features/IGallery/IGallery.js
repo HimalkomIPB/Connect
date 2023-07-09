@@ -18,32 +18,36 @@ const IGallery = () => {
           <h1>DAFTAR MATKUL</h1>
           <div className='IG-main-button'>
               <button className='IG-list'>
-                <span>All</span>
+                <span>Semua</span>
               </button>
               <button className='IG-list' >
-                <span>Self Improvement</span>
+                <span>Basis Data</span>
               </button>
               <button className='IG-list'>
-                <span>Social</span>
+                <span>Rekayasa Perangkat Lunak</span>
               </button>
               <button className='IG-list'>
-                <span>Kehidupan Mahasiswa</span>
+                <span>Grafika Komputer</span>
               </button>
               <button className='IG-list'>
-                <span>Technology</span>
+                <span>Analisis Desain Sistem</span>
               </button>
               <button className='IG-list'>
-                <span>Data Science</span>
+                <span>Desain Pengalaman Pengguna</span>
               </button>
               <button className='IG-list'>
-                <span>AI</span>
+                <span>Pengolahan Citra Digital</span>
               </button>
-              <button className='IG-list'>
-                <span>Data Mining</span>
-              </button>
-              <button className='IG-list'>
-                <span>Machine Learning</span>
-              </button>
+          </div>
+          <div className='IG-main-content'>
+            <div className='IG-content'>
+              <img/>
+              <h1 className='IG-content-title'></h1>
+              <h1 className='IG-content-category'></h1>
+              <p className='IG-content-desc'></p>
+              <h1 className='IG-content-created'>Created by</h1>
+              <button></button>
+            </div>
           </div>
         </div>
         <Footer />
