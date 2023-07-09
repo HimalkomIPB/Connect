@@ -14,7 +14,7 @@ import mad from '../../Assets/Ilkommunity/MAD 200 x 200.png'
 import ittoday from '../../Assets/Logo IT Today.png'
 import riset from '../../Assets/Logo Riset.png'
 import Card from "../../component/Komnews/Card"
-import Data from "../../component/Komnews/newsdata"
+import Data from "../../Data/newsdata"
 
 import bgproker1 from './../../Assets/Background/cardproker1.svg'
 import bgproker2 from './../../Assets/Background/cardproker2.svg'
