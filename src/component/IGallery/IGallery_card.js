@@ -12,7 +12,7 @@ const IGallery_card = (props) => {
       <h1 className='IG-content-title'>{props.title}</h1>
       <h1 className='IG-content-category'>{props.category}</h1>
       <p className='IG-content-desc'>{props.desc}</p>
-      <h1 className='IG-content-created'>{props.created}</h1>
+      <h1 className='IG-content-created'>Created by {props.created}</h1>
       <button className='IG-button' onClick={redirectToLink} ><span>See Project {'>'}</span></button>
     </div>
   )
