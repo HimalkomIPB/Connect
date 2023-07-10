@@ -54,9 +54,8 @@
     flex-direction: column;
     padding: 80px 10px 80px 10px;
     height: auto;
-    background-image: url('../../Assets/Background/pattern-top.svg'), url('../../Assets/Background/pattern-bottom.svg');
-    background-position: top left, bottom right;
-    background-size: contain;
+    background-image: url('../../Assets/Background/IGallery_main.svg');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .IG-main > h1{
