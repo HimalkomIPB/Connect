@@ -20,39 +20,33 @@ const ProfileHimalkom = () => {
   return (
     <div>
       <Navbar />
-      <div className="hero">
-        <div className="hero-img">
+      <section className="profil-himalkom-hero">
+        <div className="profil-himalkom-img">
           <img src={connect} alt="connect" className="hero-image" />
         </div>
         <h1>CONNECT</h1>
         <h3>Together We Connect Each Other</h3>
         <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
-      </div>
+      </section>
 
       {/* Apa itu HIMALKOM */}
+      <section className="Himalkom-intro-container">
+        <div className="Himalkom-intro-wrapper">
+          <div className="Himalkom-intro-header">
+            <p>Apa itu</p>
+            <h1>Himalkom</h1>
+          </div>
+          <div className="Himalkom-intro-content">
+            <img src={logoHimalkom} />
+            <p><b>Himpunan Mahasiswa Ilmu Komputer (HIMALKOM) </b>adalah himpunan yang bergerak dalam pengembangan dan eksistensi mahasiswa ilmu Komputer IPB.</p>
+          </div>
+        </div>
+      </section>
 
-      <div className="apa-itu-himalkom">
-        <div className="txt-container-aph">
-          <h3>Apa itu</h3>
-          <h2>HIMALKOM?</h2>
-          <img
-            src={logoHimalkom}
-            alt="logoHimalkom"
-            className="logo-Himalkom-img"
-          ></img>
-        </div>
-        <div className="text-p">
-          <p>
-            <span>Himpunan Mahasiswa Ilmu Komputer (HIMALKOM)</span> adalah
-            himpunan yang bergerak dalam pengembangan dan eksistensi mahasiswa
-            ilmu Komputer IPB.
-          </p>
-        </div>
-      </div>
 
       {/* tujuan HIMALKOM */}
-      <div className="tujuan-himalkom">
-        <div className="txt-container">
+      <section className="tujuan-himalkom-container">
+        <div className="tujuan-himalkom-wrapper">
           <h3>Tujuan</h3>
           <h2>HIMALKOM</h2>
           <p>
@@ -62,7 +56,7 @@ const ProfileHimalkom = () => {
             tercipta hasil yang dahsyat.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* filosopi himalkom */}
       <div className="filop">
@@ -115,7 +109,6 @@ const ProfileHimalkom = () => {
       {/* Divisi Himalkom*/}
       <div className="divisi-container">
         <div className="divisi-background">
-          {/* <img className="divisi-bg" src={divisi_background} alt="Background Divisi" /> */}
           <div className="divisi-span">
             <div className="divisi-header">
               <p>DIVISI</p>
@@ -125,49 +118,67 @@ const ProfileHimalkom = () => {
 
             <div className="divisi-card">
               {/* BP */}
-              <div className="divisi">
-                <img src={BP} alt="BP" />
-              </div>
+              <a href="/Badan-Pengawas">
+                <div className="divisi">
+                  <img src={BP} alt="BP" />
+                </div>
+              </a>
 
               {/* BPH */}
-              <div className="divisi">
-                <img src={BPH} alt="BPH" />
-              </div>
+              <a href="/BPH">
+                <div className="divisi">
+                  <img src={BPH} alt="BPH" />
+                </div>
+              </a>
 
               {/* EDUKASI */}
-              <div className="divisi">
-                <img src={Edukasi} alt="Edukasi" />
-              </div>
+              <a href="/Edukasi">
+                <div className="divisi">
+                  <img src={Edukasi} alt="Edukasi" />
+                </div>
+              </a>
 
               {/* EKSTERNAL */}
-              <div className="divisi">
-                <img src={Eksternal} alt="Eksternal" />
-              </div>
+              <a href="/Eksternal">
+                <div className="divisi">
+                  <img src={Eksternal} alt="Eksternal" />
+                </div>
+              </a>
 
               {/* HRD */}
-              <div className="divisi">
-                <img src={HRD} alt="HRD" />
-              </div>
+              <a href="/HRD">
+                <div className="divisi">
+                  <img src={HRD} alt="HRD" />
+                </div>
+              </a>
 
               {/* INTERNAL */}
-              <div className="divisi">
-                <img src={Internal} alt="Internal" />
-              </div>
+              <a href="/Internal">
+                <div className="divisi">
+                  <img src={Internal} alt="Internal" />
+                </div>
+              </a>
 
               {/* MEDBRAND */}
-              <div className="divisi">
-                <img src={Medbrand} alt="Media dan Branding" />
-              </div>
+              <a href="/Media-Branding">
+                <div className="divisi">
+                  <img src={Medbrand} alt="Media dan Branding" />
+                </div>
+              </a>
 
               {/* RISTEK */}
-              <div className="divisi">
-                <img src={Ristek} alt="Riset dan Teknologi" />
-              </div>
+              <a href="/Riset-Teknologi">
+                <div className="divisi">
+                  <img src={Ristek} alt="Riset dan Teknologi" />
+                </div>
+              </a>
 
               {/* ENTREPRENEUR */}
-              <div className="divisi">
-                <img src={Entrepreneur} alt="Entrepreneur" />
-              </div>
+              <a href="/Entrepreneur">
+                <div className="divisi">
+                  <img src={Entrepreneur} alt="Entrepreneur" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
