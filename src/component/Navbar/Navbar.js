@@ -177,7 +177,7 @@ const Navbar = () => {
               <a href="/Komnews">Komnews</a>
             </li>
             <li>
-              <a href="/Galeri">Galeri</a>
+              <a href="/I-Gallery">Galeri</a>
             </li>
             <li>
               <a href="/Megaproker">Program Kerja</a>

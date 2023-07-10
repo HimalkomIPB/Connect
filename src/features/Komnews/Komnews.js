@@ -42,7 +42,7 @@ const Komnews = () => {
       <section>
         <div className='hero_news'>
           <h1>KOMNEWS</h1>
-          <p><span>KOMNEWS</span> Merupakan tempat untuk membaca berita seputar Ilmu Komputer</p>
+          <p><span className='komnews-bold'>KOMNEWS</span> Merupakan tempat untuk membaca berita seputar Ilmu Komputer</p>
         </div>
       </section>
       {/* Headline */}

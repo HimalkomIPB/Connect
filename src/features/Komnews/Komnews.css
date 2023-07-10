@@ -1,5 +1,4 @@
 
-
 .hero_news {
     display: flex;
     flex-direction: column;
@@ -30,12 +29,12 @@
 .hero_news > p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: lighter;
     font-size: 12px;
-    line-height: 8px;
+    line-height: 15px;
     text-align: center;
     color: #111827;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 .title-head {
@@ -118,4 +117,38 @@
     line-height: 20px;
     letter-spacing: 0.1px;
     color: #FFFFFF;
+}
+
+.komnews-bold{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 8px;
+    text-align: center;
+    color: #111827;
+    margin-top: 7px;
+}
+
+@media (max-width: 1330px) {
+    .topics{
+        flex-direction: column-reverse;
+        padding: 50px 43px;
+    }
+    .topics-rec{
+        background-color: white;
+        padding: 25px 0px;
+        width:auto;
+        height: auto;
+    }
+    .topics-rec > h1 {
+        font-family: 'Changa One';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .rec-list{
+        margin: 15px 0px;
+    }
 }
