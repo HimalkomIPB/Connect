@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './Komnews.css';
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
-import News from "../../component/Komnews/News";
+import News from "../../component/Komnews/news";
 import Data from "../../Data/newsdata";
-import Headline from "../../component/Komnews/Headline";
+import Headline from "../../component/Komnews/headline";
 
 const Komnews = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);

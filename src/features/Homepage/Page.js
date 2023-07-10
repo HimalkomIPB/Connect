@@ -107,49 +107,49 @@ const Page = () => {
               <h2>ILKOMMUNITY</h2>
             </div>
             <div className="ilkommunity">
-              <a  href="/Ilkommunity-AgriUX">
+              <a  href="/Ilkommunity-AgriUX" className='fade-in'>
                 <div className="ilkommunity-agriux">
                     <img src={agriux} alt="AgriUX" />
                     <p>AGRIUX</p>
                 </div>
               </a>
-              <a href='/Ilkommunity-CSI'>
+              <a href='/Ilkommunity-CSI' className='fade-in'>
                 <div className="ilkommunity-csi">
                   <img src={CSI} alt="CSI" />
                   <p>CSI</p>
                 </div>
               </a>
-              <a href="Ilkommunity-Agribot">
+              <a href="Ilkommunity-Agribot" className='fade-in'>
                 <div className="ilkommunity-agribot">
                   <img src={agribot} alt="Agribot" />
                   <p>AGRIBOT</p>
                 </div>
               </a>
-              <a href="/Ilkommunity-CP">
+              <a href="/Ilkommunity-CP" className='fade-in'>
                 <div className="ilkommunity-cp">
                   <img src={CP} alt="CP" />
                   <p>CP</p>
                 </div>
               </a>
-              <a href="/Ilkommunity-DAMING">
+              <a href="/Ilkommunity-DAMING" className='fade-in'>
                 <div className="ilkommunity-daming">
                   <img src={daming} alt="Daming" />
                   <p>DAMING</p>
                 </div>
               </a>
-              <a href="/Ilkommunity-IWDC">
+              <a href="/Ilkommunity-IWDC" className='fade-in'>
                 <div className="ilkommunity-iwdc">
                   <img src={iwdc} alt="IWDC" />
                   <p>IWDC</p>
                 </div>
               </a>
-              <a href="/Ilkommunity-GARY">
+              <a href="/Ilkommunity-GARY" className='fade-in'>
                 <div className="ilkommunity-gary">
                   <img src={gary} alt="GARY" />
                   <p>GARY</p>
                 </div>
               </a>
-              <a href="/Ilkommunity-MAD">
+              <a href="/Ilkommunity-MAD" className='fade-in'>
                 <div className="ilkommunity-mad">
                   <img src={mad} alt="MAD" />
                   <p>MAD</p>

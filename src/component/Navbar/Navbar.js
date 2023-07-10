@@ -1,107 +1,235 @@
-import React, { useState } from 'react'
-import himalkom from '../../Assets/Himalkom/Logo HIMALKOM.svg'
-import NavCross from '../../Assets/Navbar Icon/nav-Close.svg'
-import nav_facebook from '../../Assets/Navbar Icon/nav_facebook.svg'
-import nav_instagram from '../../Assets/Navbar Icon/nav_instagram.svg'
-import nav_twitter from '../../Assets/Navbar Icon/nav_twitter.svg'
-import nav_youtube from '../../Assets/Navbar Icon/nav_youtube.svg'
-import navBurger from '../../Assets/Navbar Icon/nav_burger.svg'
-import './Navbar.css'
+import React, { useState } from "react";
+import himalkom from "../../Assets/Himalkom/Logo HIMALKOM.svg";
+import NavCross from "../../Assets/Navbar Icon/nav-Close.svg";
+import nav_facebook from "../../Assets/Navbar Icon/nav_facebook.svg";
+import nav_instagram from "../../Assets/Navbar Icon/nav_instagram.svg";
+import nav_twitter from "../../Assets/Navbar Icon/nav_twitter.svg";
+import nav_youtube from "../../Assets/Navbar Icon/nav_youtube.svg";
+import navBurger from "../../Assets/Navbar Icon/nav_burger.svg";
+import "./Navbar.css";
+
+import arrow_up from "./../../Assets/Profil Himalkom/arrow-up.svg";
+import arrow_down from "./../../Assets/Profil Himalkom/arrow-down.svg";
+
 const Navbar = () => {
+  const [Active, setActive] = useState(false);
+  const activeState = () => {
+    setActive(!Active);
+  };
 
-    const [Active, setActive] = useState(false)
-    const activeState = () => {
-        setActive(!Active)
-    }
+  const [isActive, setIsActive] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
+  const [isActive3, setIsActive3] = useState(false);
 
-    return (
-        <div>
-            <div className="navbar">
-                <div className="navbar-heading">
-                    <img src={himalkom} alt='himalkom' />
-                </div>
-                {/* Mobile Nav */}
-                <div className="navbar-state" onClick={activeState}>
-                    <div className={Active ? "navbar-burger" : ""}>
-                        <img className='burger' src={navBurger}/>
-                    </div>
-                </div>
+  const toggleDropdown = () => {
+    setIsActive(!isActive);
+  };
 
-                <div className="navbar-list">
-                    <li><a href="/">Home</a></li>
-                    <div className="profil-dropdown">
-                        <li><a href="/ProfilHimalkom">Profil</a></li>
-                        <div className="sub-menu-1">
-                            <li><a href="/ProfilHimalkom">Himalkom</a></li>
-                            <div className="divisi-dropdown">
-                                <li>Divisi</li>
-                                <div className="sub-menu-2">
-                                    <li><a href='/Badan-Pengawas'>BP</a></li>
-                                    <li><a href='/BPH'>BPH</a></li>
-                                    <li><a href='/Edukasi'>Edukasi</a></li>
-                                    <li><a href='/Eksternal'>Eksternal</a></li>
-                                    <li><a href='/HRD'>HRD</a></li>
-                                    <li><a href='/Internal'>Internal</a></li>
-                                    <li><a href='/Media-Branding'>Media dan Branding</a></li>
-                                    <li><a href='/Riset-Teknologi'>Riset dan Teknologi</a></li>
-                                    <li><a href='/Entrepreneur'>Entrepreneur</a></li>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <li><a href="/Komnews">Komnews</a></li>
-                    <li><a href="/I-Gallery">Galeri</a></li>
-                    <li><a href="/Megaproker">Program Kerja</a></li>
-                    <li><a href="/Ilkommunity">Komunitas</a></li>
-                    <li><a href="/Riset-Himalkom">Riset</a></li>
-                </div>
+  const toggleDropdown2 = () => {
+    setIsActive2(!isActive2);
+  };
 
+  const toggleDropdown3 = () => {
+    setIsActive3(!isActive3);
+  };
 
-            </div>
-            {
-                Active == true
-                    ?
-                    <section className='mobile-navbar-container'>
-                        <div className={Active ? "cross-active" : "navbar-cross"}>
-                            <img src={himalkom} alt='himalkom' />
-                            <img id='navcross' src={NavCross} onClick={activeState} />
-                        </div>
-                        <div className={Active ? "mobile-navbar" : " "}>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/ProfilHimalkom">Profil</a></li>
-                            <li><a href="/ProfilHimalkom">Himalkom</a></li>
-                            <li><a href="/Komnews">Komnews</a></li>
-                            <li><a href="/Galeri">Galeri</a></li>
-                            <li><a href="/Megaproker">Program Kerja</a></li>
-                            <li><a href="/Ilkommunity">Komunitas</a></li>
-                            <li><a href="/Riset-Himalkom">Riset</a></li>
-                        </div>
-                        <div className="mobile-icon-container">
-                            <div className="mobile-icon">
-                                <a href="#">
-                                    <img src={nav_facebook} />
-                                </a>
-                                <a href="#">
-                                    <img src={nav_instagram} />
-                                </a>
-                                <a href="#">
-                                    <img src={nav_twitter} />
-                                </a>
-                                <a href="#">
-                                    <img src={nav_youtube} />
-                                </a>
-                            </div>
-                            <div className="mobile-copyright">
-                                <h2>Copyright © Himalkom 2022.</h2>
-                            </div>
-                        </div>
-                    </section>
-                    :
-                    <div className={Active ? "" : ""}>
-                    </div>
-            }
+  return (
+    <div>
+      <div className="navbar">
+        <div className="navbar-heading">
+          <img src={himalkom} alt="himalkom" />
         </div>
-    )
-}
+        {/* Mobile Nav */}
+        <div className="navbar-state" onClick={activeState}>
+          <div className={Active ? "navbar-burger" : ""}>
+            <img className="burger" src={navBurger} />
+          </div>
+        </div>
 
-export default Navbar
+        <div className="navbar-list">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <div className="profil-dropdown">
+            <li>
+              <a href="/ProfilHimalkom">Profil</a>
+            </li>
+            <div className="sub-menu-1">
+              <li>
+                <a href="/ProfilHimalkom">Himalkom</a>
+              </li>
+              <div className="divisi-dropdown">
+                <li>Divisi</li>
+                <div className="sub-menu-2">
+                  <li>
+                    <a href="/Badan-Pengawas">BP</a>
+                  </li>
+                  <li>
+                    <a href="/BPH">BPH</a>
+                  </li>
+                  <li>
+                    <a href="/Edukasi">Edukasi</a>
+                  </li>
+                  <li>
+                    <a href="/Eksternal">Eksternal</a>
+                  </li>
+                  <li>
+                    <a href="/HRD">HRD</a>
+                  </li>
+                  <li>
+                    <a href="/Internal">Internal</a>
+                  </li>
+                  <li>
+                    <a href="/Media-Branding">Media dan Branding</a>
+                  </li>
+                  <li>
+                    <a href="/Riset-Teknologi">Riset dan Teknologi</a>
+                  </li>
+                  <li>
+                    <a href="/Entrepreneur">Entrepreneur</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li>
+            <a href="/Komnews">Komnews</a>
+          </li>
+          <li>
+            <a href="/I-Gallery">Galeri</a>
+          </li>
+          <li>
+            <a href="/Megaproker">Program Kerja</a>
+          </li>
+          <li>
+            <a href="/Ilkommunity">Komunitas</a>
+          </li>
+          <li>
+            <a href="/Riset-Himalkom">Riset</a>
+          </li>
+        </div>
+      </div>
+      {Active == true ? (
+        <section className="mobile-navbar-container">
+          <div className={Active ? "cross-active" : "navbar-cross"}>
+            <img src={himalkom} alt="himalkom" />
+            <img id="navcross" src={NavCross} onClick={activeState} />
+          </div>
+          <div className={Active ? "mobile-navbar" : " "}>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li className="mobile-navbar-dropdown">
+              <p onClick={toggleDropdown}>
+                <a href="#">Profil</a>
+                <img src={isActive ? arrow_up : arrow_down} alt="arrow" />
+              </p>
+              {isActive && (
+                <ul className="dropdown-menu">
+                  <li>
+                    <a href="/ProfilHimalkom">Himalkom</a>
+                  </li>
+
+                  <li className="dropdown-divisi">
+                    <p onClick={toggleDropdown2}>
+                      <a href="#">Divisi</a>
+                      <img
+                        src={isActive2 ? arrow_up : arrow_down}
+                        alt="arrow"
+                      />
+                    </p>
+                    {isActive2 && (
+                      <ul className="dropdown-menu-divisi">
+                        <li>
+                          <a href="/Badan-Pengawas">BP</a>
+                        </li>
+                        <li>
+                          <a href="/BPH">BPH</a>
+                        </li>
+                        <li>
+                          <a href="/Edukasi">Edukasi</a>
+                        </li>
+                        <li>
+                          <a href="/Eksternal">Eksternal</a>
+                        </li>
+                        <li>
+                          <a href="/HRD">HRD</a>
+                        </li>
+                        <li>
+                          <a href="/Internal">Internal</a>
+                        </li>
+                        <li>
+                          <a href="/Media-Branding">Media dan Branding</a>
+                        </li>
+                        <li>
+                          <a href="/Riset-Teknologi">Riset dan Teknologi</a>
+                        </li>
+                        <li>
+                          <a href="/Entrepreneur">Entrepreneur</a>
+                        </li>
+                      </ul>
+                    )}
+                  </li>
+                </ul>
+              )}
+            </li>
+            <li>
+              <a href="/Komnews">Komnews</a>
+            </li>
+            <li>
+              <a href="/Galeri">Galeri</a>
+            </li>
+            <li>
+              <a href="/Megaproker">Program Kerja</a>
+            </li>
+            <li className="mobile-navbar-dropdown">
+              <p  onClick={toggleDropdown3}>
+              <a href="/Ilkommunity">Komunitas</a>
+              <img src={isActive3 ? arrow_up : arrow_down} alt="arrow" />
+              </p>
+              {isActive3 && (
+                <ul className="dropdown-menu dropdown-menu-komun">
+                    {/* List of each community */}
+                    <li><a href="/Ilkommunity-AgriUX">AGRIUX</a></li>
+                    <li><a href="/Ilkommunity-CSI">CSI</a></li>
+                    <li><a href="/Ilkommunity-agribot">AGRIBOT</a></li>
+                    <li><a href="/Ilkommunity-CP">CP</a></li>
+                    <li><a href="/Ilkommunity-Daming">DAMING</a></li>
+                    <li><a href="/Ilkommunity-IWDC">IWDC</a></li>
+                    <li><a href="/Ilkommunity-GARY">GARY</a></li>
+                    <li><a href="/Ilkommunity-MAD">MAD</a></li>                    
+                </ul>
+              )}
+            </li>
+            <li>
+              <a href="/Riset-Himalkom">Riset</a>
+            </li>
+          </div>
+          <div className="mobile-icon-container">
+            <div className="mobile-icon">
+              <a href="#">
+                <img src={nav_facebook} />
+              </a>
+              <a href="#">
+                <img src={nav_instagram} />
+              </a>
+              <a href="#">
+                <img src={nav_twitter} />
+              </a>
+              <a href="#">
+                <img src={nav_youtube} />
+              </a>
+            </div>
+            <div className="mobile-copyright">
+              <h2>Copyright © Himalkom 2022.</h2>
+            </div>
+          </div>
+        </section>
+      ) : (
+        <div className={Active ? "" : ""}></div>
+      )}
+    </div>
+  );
+};
+
+export default Navbar;
