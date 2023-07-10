@@ -111,6 +111,16 @@
     padding: 55px;
     justify-content: center;
     flex-wrap: wrap;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.IG-main-content > div {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.IG-main-content > div.fade-out {
+    opacity: 0;
 }
 
 

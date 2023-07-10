@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
 import "./IGallery.css"
@@ -17,6 +17,36 @@ const IGallery = () => {
         />
     )
   })
+
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [fadeOut, setFadeOut] = useState(false);
+
+  const handleFilterClick = (category) => {
+    setSelectedCategory(category);
+    setFadeOut(true);
+    setTimeout(() => {
+    setFadeOut(false);
+    }, 200);
+  };
+
+  const handleAllClick = () => {
+    setSelectedCategory(null);
+    setFadeOut(true);
+    setTimeout(() => {
+    setFadeOut(false);
+    }, 200);
+  };
+
+  const filteredCards = selectedCategory
+    ? cards.filter((item) => item.props.category === selectedCategory)
+    : cards;
+
+  const cardElements = filteredCards.map((card, index) => (
+    <div key={index} className={fadeOut ? 'fade-out' : ''}>
+      {card}
+    </div>
+  ));
+
   return (
     <div>
         <Navbar />
@@ -31,30 +61,30 @@ const IGallery = () => {
         <div className='IG-main'>
           <h1>DAFTAR MATKUL</h1>
           <div className='IG-main-button'>
-              <button className='IG-list'>
+              <button className='IG-list' onClick={handleAllClick}>
                 <span>Semua</span>
               </button>
-              <button className='IG-list' >
+              <button className='IG-list' onClick={() => handleFilterClick('Basis Data')}>
                 <span>Basis Data</span>
               </button>
-              <button className='IG-list'>
+              <button className='IG-list' onClick={() => handleFilterClick('Rekayasa Perangkat Lunak')}>
                 <span>Rekayasa Perangkat Lunak</span>
               </button>
-              <button className='IG-list'>
+              <button className='IG-list' onClick={() => handleFilterClick('Grafika Komputer')}>
                 <span>Grafika Komputer</span>
               </button>
-              <button className='IG-list'>
+              <button className='IG-list' onClick={() => handleFilterClick('Analisis Desain Sistem')}>
                 <span>Analisis Desain Sistem</span>
               </button>
-              <button className='IG-list'>
+              <button className='IG-list' onClick={() => handleFilterClick('Desain Pengalaman Pengguna')}>
                 <span>Desain Pengalaman Pengguna</span>
               </button>
-              <button className='IG-list'>
+              <button className='IG-list' onClick={() => handleFilterClick('Pengolahan Citra Digital')}>
                 <span>Pengolahan Citra Digital</span>
               </button>
           </div>
           <div className='IG-main-content'>
-            {cards}
+            {cardElements}
           </div>
         </div>
         <Footer />
