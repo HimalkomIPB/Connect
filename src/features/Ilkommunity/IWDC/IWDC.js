@@ -4,19 +4,31 @@ import './IWDC.css'
 import Navbar from '../../../component/Navbar/Navbar';
 import Footer from '../../../component/Footer/Footer'
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
-const IWDC = () => {
-    const [renderDiv, setrenderDiv] = useState(true);
+import dokum1 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum1.png'
+import dokum2 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum2.png'
+import dokum3 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum3.png'
+import dokum4 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum4.png'
+import dokum5 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum5.png'
 
-    const handleClick = () => {
-        setrenderDiv(!renderDiv)
-    }
+
+const IWDC = () => {
+    const [showDeskripsi, setShowDeskripsi] = useState(true);
+
+    const handleDeskripsiClick = () => {
+        setShowDeskripsi(true);
+    };
+
+    const handleTujuanClick = () => {
+        setShowDeskripsi(false);
+    };
+
 
     const slides = [
-        { url: "http://placehold.it/350x150" },
-        { url: "http://placehold.it/255x150" },
-        { url: "http://placehold.it/295x150" },
-        { url: "http://placehold.it/310x150" },
-        { url: "http://placehold.it/450x150" },
+        { url: dokum1 },
+        { url: dokum2},
+        { url: dokum3 },
+        { url: dokum4 },
+        { url: dokum5 },
     ];
 
     return (
@@ -40,31 +52,35 @@ const IWDC = () => {
                     <div className="IWDC-content-container">
                         <div className="IWDC-content-deskripsi-tujuan">
                             <h2 id='IWDC-deskripsi'
-                                onClick={handleClick}
-                                className={renderDiv ? "iwdc-active" : ""}
+                                onClick={handleDeskripsiClick}
+                                className={showDeskripsi ? "iwdc-active" : ""}
                             >Deskripsi
                             </h2>
                             <h2 id='IWDC-tujuan'
-                                onClick={handleClick}
-                                className={!renderDiv ? "iwdc-active" : ""}>
+                                onClick={handleTujuanClick}
+                                className={!showDeskripsi ? "iwdc-active" : ""}>
                                 Tujuan
                             </h2>
                         </div>
                         {
-                            renderDiv == true
+                            showDeskripsi
                                 ? //if true
-                                <div className="IWDC-deskripsi-content">
-                                    <p>IPB Web Development Community adalah sebuah komunitas di lingkungan mahasiswa Ilmu Komputer Institut Pertanian Bogor yang berfokus pada pembelajaran dan pengasahan kemampuan dalam pengembangan website. Semua anggota komunitas agriweb akan mempelajari segala hal yang berkaitan dengan proses pengembangan website, dimulai dari teknologi pada sisi front-end (HTML, CSS, dan Javascript), back-end (PHP, Node JS), sampai ke tools-tools yang dibutuhkan untuk mendeploy sebuah website.
-                                    </p>
-                                </div>
+                                (
+                                    <div className="IWDC-deskripsi-content">
+                                        <p>IPB Web Development Community adalah sebuah komunitas di lingkungan mahasiswa Ilmu Komputer Institut Pertanian Bogor yang berfokus pada pembelajaran dan pengasahan kemampuan dalam pengembangan website. Semua anggota komunitas agriweb akan mempelajari segala hal yang berkaitan dengan proses pengembangan website, dimulai dari teknologi pada sisi front-end (HTML, CSS, dan Javascript), back-end (PHP, Node JS), sampai ke tools-tools yang dibutuhkan untuk mendeploy sebuah website.
+                                        </p>
+                                    </div>
+                                )
                                 : //else
-                                < div >
-                                    <div className="IWDC-tujuan-container">
-                                        <div className="IWDC-tujuan-content">
-                                            <h3>Belajar serta membangun WebApp yang berkualitas, menarik, serta dapat menjadi konsumsi khalayak ramai</h3>
+                                (
+                                    < div >
+                                        <div className="IWDC-tujuan-container">
+                                            <div className="IWDC-tujuan-content">
+                                                <h3>Belajar serta membangun WebApp yang berkualitas, menarik, serta dapat menjadi konsumsi khalayak ramai</h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                )
                         }
 
                         <div className="IWDC-prestasi-container">
@@ -76,7 +92,7 @@ const IWDC = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <ImageSlider slides={slides} />
 
                     <div className="IWDC-narahubung-container">
