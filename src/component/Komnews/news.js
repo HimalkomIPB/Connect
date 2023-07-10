@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import "./News.css";
+import "./news.css";
 
 const News = (props) => {
   const navigate = useNavigate();

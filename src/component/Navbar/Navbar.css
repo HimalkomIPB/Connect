@@ -132,6 +132,10 @@ li {
 
 
 @media(max-width: 992px) {
+    .navbar-heading{
+        margin-left: 40px;
+    }
+
     #navcross {
         display: block;
     }
@@ -168,14 +172,14 @@ li {
         top: 3px;
         right: 0;
         background-color: #E49800;
-        width: 586px;
+        width: 583px;
         height: auto;
         border-bottom: 4px solid #040404;
         z-index: 99;
     }
 
     .mobile-navbar {
-        height: 846px;
+        min-height: 846px;
         padding: 3.19rem 2.47rem 0 2.47rem;
     }
 
@@ -229,4 +233,100 @@ li {
         line-height: 1.25rem;
         letter-spacing: 0.00625rem;
     }
+
+    .mobile-navbar-dropdown{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-navbar-dropdown p{
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    .mobile-navbar .dropdown-divisi p{
+        display: flex;
+
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .dropdown-menusub-divisi{
+        display: flex;
+        flex-direction: row;
+        background-color: pink;
+    }
+
+    .mobile-navbar .dropdown-menu{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 4px solid var(--gray-10, #111827);
+        padding: 24px 0px 24px 28px;
+        align-self: flex-end;
+    }
+
+    .mobile-navbar .dropdown-divisi{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .mobile-navbar .dropdown-menu li{
+       padding: 0;
+    }
+
+    .mobile-navbar .dropdown-menu a{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .mobile-navbar .dropdown-menu li a:hover {
+        font-size: 14px;
+        line-height: 20px;
+        color: #F0E4D4;
+        text-shadow: 2.5px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        transition: 0.3s;
+    }
+
+    .mobile-navbar .dropdown-menu-divisi{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        width: 90%;
+        padding: 24px 0px 24px 28px;
+        border-bottom: 4px solid var(--gray-10, #111827);
+    }
+
+    .mobile-navbar .dropdown-menu-divisi li{
+        margin-bottom: 16px;
+    }
+
+    
+    .mobile-navbar .dropdown-menu-komun li{
+        margin-bottom: 16px;
+    }
+}
+
+
+@media(max-width: 480px){
+        .mobile-navbar li a {
+        font-family: Changa One;
+        font-weight: 350;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+        letter-spacing: 0.1px;
+    }
+
+        .mobile-navbar-container {
+            width: 397px ;
+        }
+
+
 }
