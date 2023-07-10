@@ -151,4 +151,50 @@
     .rec-list{
         margin: 15px 0px;
     }
+    .topics-list{
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 640px) {
+    .topics{
+        padding: 0px 15px 50px 15px;
+        height: 950px;
+    }
+    .topics-rec{
+        background-color: white;
+        padding: 25px 0px;
+        width:auto;
+        height: auto;
+    }
+    .topics-rec > h1 {
+        font-family: 'Changa One';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 18px;
+    }
+    .rec-list{
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width:480px) {
+    .hero_news > p {
+        max-width: 400px;
+    }
+    .recommend{
+        padding: 4px 8px;
+        box-shadow: 2.5px 3px 0px #000000;
+        margin: 4px;
+    }
+    .recommend:active {
+        transform: translateY(2px);
+        transform: translateX(3px);
+        box-shadow: 1px 1px 0px #000000;
+    }
+    .recommend > span {
+        font-size: 11px;
+        line-height: 15px;
+    }
 }

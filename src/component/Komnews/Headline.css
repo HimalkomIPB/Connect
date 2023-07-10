@@ -96,21 +96,40 @@
 
 @media (max-width:690px) {
     .headline{
-        width: 688px;
         gap: 25px;
         display: flex;
         flex-direction: column-reverse;
         width: 380px;
         height: auto;
+        margin-bottom: 40px;
     }
     .desc-news{
         align-items: center;
     }
     .desc-news > h1{
         text-align: center;
+        line-height: 25px;
     }
     .desc-news > p{
         font-size: 16px;
         text-align: center;
+    }
+}
+
+@media (max-width:480px) {
+    .headline{
+        width: 340px;
+    }
+    .desc-news > h1{
+        max-width: 300px;
+        font-size: 23px;
+    }
+    .desc-news > p{
+        max-width: 300px;
+        font-size: 15px;
+    }
+    .headline_img{
+        width: 250px;
+        height: 250px;
     }
 }
