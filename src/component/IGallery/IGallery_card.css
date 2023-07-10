@@ -56,12 +56,12 @@
     color: var(--monochrome-white, #FFF);
     text-align: justify;
     font-family: Montserrat;
-    font-size: 11px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: 14.825px;
     letter-spacing: 0.074px;
-    margin: 8px 0px 8px 0px;
+    margin-top: auto;
 }
 
 .IG-button{
@@ -73,7 +73,8 @@
     padding: 3px;
     background:#E49800;
     box-shadow: 1.5px 1.5px 0px #000000;
-    margin-top: 8px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .IG-button:active {
@@ -90,4 +91,16 @@
     line-height: 20px;
     letter-spacing: 0.1px;
     color: #FFFFFF;
+}
+
+.createdby{
+    color: var(--monochrome-white, #FFF);
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 14.825px;
+    letter-spacing: 0.074px;
+    align-items: center;
 }
