@@ -9,14 +9,6 @@ import Headline from "../../component/Komnews/headline";
 const Komnews = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  const handleFilterClick = (category) => {
-    setSelectedCategory(category);
-  };
-
-  const handleAllClick = () => {
-    setSelectedCategory(null);
-  };
-
   const cards = Data.map(item => {
     return (
       <News
@@ -31,9 +23,33 @@ const Komnews = () => {
     );
   });
 
+  const [fadeOut, setFadeOut] = useState(false);
+
+  const handleFilterClick = (category) => {
+    setSelectedCategory(category);
+    setFadeOut(true);
+    setTimeout(() => {
+    setFadeOut(false);
+    }, 200);
+  };
+
+  const handleAllClick = () => {
+    setSelectedCategory(null);
+    setFadeOut(true);
+    setTimeout(() => {
+    setFadeOut(false);
+    }, 200);
+  };
+
   const filteredCards = selectedCategory
     ? cards.filter((item) => item.props.category === selectedCategory)
     : cards;
+
+  const cardElements = filteredCards.map((card, index) => (
+    <div key={index} className={fadeOut ? 'fade-out' : ''}>
+      {card}
+    </div>
+  ));
 
   return (
     <div>
@@ -54,7 +70,7 @@ const Komnews = () => {
         <div className='topics'>
           <div className='topics-list'>
             {/* Topic */}
-            {filteredCards}
+            {cardElements}
           </div>
           <div className='topics-rec'>
             <h1>Recommended Topic</h1>

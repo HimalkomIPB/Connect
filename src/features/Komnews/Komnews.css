@@ -130,6 +130,15 @@
     margin-top: 7px;
 }
 
+.topics-list > div {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.topics-list > div.fade-out {
+    opacity: 0;
+}
+
 @media (max-width: 1330px) {
     .topics{
         flex-direction: column-reverse;
