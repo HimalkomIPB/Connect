@@ -106,8 +106,7 @@
 
 @media (max-width:640px) {
     .topic{
-        width: auto;
-        height: 130px;
+        height: auto;
     }
     .news_img{
         width: 94px;
@@ -138,10 +137,6 @@
 }
 
 @media (max-width:480px) {
-    .topic{
-        width: auto;
-        height: 130;
-    }
     .news_img{
         width: 63px;
         height: 63px;

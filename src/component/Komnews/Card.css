@@ -42,14 +42,10 @@
 .Komnews-Home-Content {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .card_date {
-    position: absolute;
-    left: 20px;
-    bottom: 25px;
-
+    margin-top: auto;
     display: flex;
     border: #000000 solid 2px;
     width: 55px;
@@ -66,43 +62,41 @@
     font-size: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     .Komnews-Home-Content-Card {
-        width: 690px;
-        height: 628.18px;
+        width: 350px;
+        height: 300px;
+        padding: 13px;
     }
 
-    .Komnews-Home-Content-Card img {
-        width: 623px;
-        height: 342px;
-        max-height: 441.065px;
+    .newscard_img {
+        width: 300px;
+        height: 150px;
     }
 
-    .Komnews-Home-Content-Card h2 {
-        text-shadow: 1.6707020998001099px 3.3414041996002197px 0px 0px #170F00;
-        font-size: 23.39px;
-        font-size: 24px;
-        padding: 25px 0 63.31px 0;
-        line-height: 33.414px;
-        letter-spacing: 0.167px;
+    .Komnews-Home-Content h1 {
+        font-size: 15px;
+        line-height: 18px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
     .Komnews-Home-Content-Card {
-        width: 397px;
-        height: 361.433px;
+        width: 300px;
+        height: 270px;
+        padding: 11px;
     }
 
-    .Komnews-Home-Content-Card img {
-        width: 358.55px;
-        height: 197.06px;
+    .newscard_img {
+        width: 250px;
+        height: 130px;
     }
 
-    .Komnews-Home-Content-Card h2 {
-        font-size: 13.458px;
-        line-height: 19.225px;
-        letter-spacing: 0.096px;
-        padding: 14px 0 63.31px 0;
+    .Komnews-Home-Content h1 {
+        font-size: 14px;
+        line-height: 15px;
+        text-shadow: 0.7px 0.7px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
     }
 }
