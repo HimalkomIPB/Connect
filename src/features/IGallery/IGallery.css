@@ -1,19 +1,20 @@
 #IG-header-container {
     background-image: url('../../Assets/Background/IGallery_bg.svg');
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    background-position: center;
     align-items: center;
-    height: calc(100vh);
+    height: 100vh;
     margin-top: .8rem;
-    justify-content: center;
+    display: flex;
+    overflow-x: hidden;
 }
 
 .IG-header-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
+    transform: translate(242px,-1.5rem);
+    margin-left: 3%;
 }
 
 .IG-header {
@@ -22,9 +23,8 @@
     align-items: center;
     padding: 0px;
     gap: 24px;
-
-    width: 377px;
-    height: 208px;
+    width: 490px;
+    height: auto;
 }
 
 .IG-header h2 {
@@ -54,11 +54,10 @@
     flex-direction: column;
     padding: 80px 10px 80px 10px;
     height: auto;
-    background-image: url("../../Assets/Background/IGallery_main.svg");
-    background-repeat: no-repeat;
+    background-image: url('../../Assets/Background/IGallery_main.svg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
-
 .IG-main > h1{
     font-family: 'Sports World';
     font-style: normal;
@@ -70,6 +69,7 @@
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .IG-main-button{
@@ -87,7 +87,7 @@
     padding: 9px;
     background:#E49800;
     box-shadow: 3px 4px 0px #000000;
-    margin: 3px;
+    margin: 4px;
 }
 
 .IG-list:active {
@@ -108,10 +108,10 @@
 
 .IG-main-content{
     display: flex;
-    padding: 55px;
     justify-content: center;
     flex-wrap: wrap;
     transition: opacity 0.2s ease-in-out;
+    gap: 50px;
 }
 
 .IG-main-content > div {
@@ -123,4 +123,60 @@
     opacity: 0;
 }
 
+@media(max-width: 1200px){
+    #IG-header-container{
+        background-image: url('../../Assets/Background/IGallery_tab.svg');
+        background-position: center;
+        height: 640px;
+    }
+
+    .IG-header-wrapper {
+        grid-template-columns: none;
+        transform: translateY(0rem);
+        margin-left: 5%;
+    }
+
+    .IG-header{
+        width: 325px;
+    }
+    
+    .DAMING-header p{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .IG-header h2{
+        font-size: 45px;
+        line-height: 52px;
+    }
+}
+
+@media(max-width: 640px) {
+    #IG-header-container{
+        background-image: url('../../Assets/Background/IGallery_Phone.svg');
+        
+    }
+    .IG-header-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left:auto;
+        margin-right:auto;
+        transform: translateY(8rem);
+    }
+    .IG-header h2{
+        font-size: 46px;
+        line-height: 44px;
+    }
+    .IG-header p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .IG-main > h1{
+        font-size: 36px;
+        line-height: 44px;
+        text-shadow: 3px 4px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+    }
+}
 

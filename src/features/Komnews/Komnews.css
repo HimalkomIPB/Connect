@@ -1,5 +1,4 @@
 
-
 .hero_news {
     display: flex;
     flex-direction: column;
@@ -30,12 +29,12 @@
 .hero_news > p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: lighter;
     font-size: 12px;
-    line-height: 8px;
+    line-height: 15px;
     text-align: center;
     color: #111827;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 .title-head {
@@ -118,4 +117,84 @@
     line-height: 20px;
     letter-spacing: 0.1px;
     color: #FFFFFF;
+}
+
+.komnews-bold{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 8px;
+    text-align: center;
+    color: #111827;
+    margin-top: 7px;
+}
+
+@media (max-width: 1330px) {
+    .topics{
+        flex-direction: column-reverse;
+        padding: 50px 43px;
+    }
+    .topics-rec{
+        background-color: white;
+        padding: 25px 0px;
+        width:auto;
+        height: auto;
+    }
+    .topics-rec > h1 {
+        font-family: 'Changa One';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .rec-list{
+        margin: 15px 0px;
+    }
+    .topics-list{
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 640px) {
+    .topics{
+        padding: 0px 15px 50px 15px;
+        height: 950px;
+    }
+    .topics-rec{
+        background-color: white;
+        padding: 25px 0px;
+        width:auto;
+        height: auto;
+    }
+    .topics-rec > h1 {
+        font-family: 'Changa One';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 18px;
+    }
+    .rec-list{
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width:480px) {
+    .hero_news > p {
+        max-width: 400px;
+    }
+    .recommend{
+        padding: 4px 8px;
+        box-shadow: 2.5px 3px 0px #000000;
+        margin: 4px;
+    }
+    .recommend:active {
+        transform: translateY(2px);
+        transform: translateX(3px);
+        box-shadow: 1px 1px 0px #000000;
+    }
+    .recommend > span {
+        font-size: 11px;
+        line-height: 15px;
+    }
 }

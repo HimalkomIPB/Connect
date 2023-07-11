@@ -13,11 +13,13 @@
     background-image: url("./../../Assets/Komnews/Headline/bg-headline.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    width: 1280px;
+    background-position: center;
+    width: auto;
     height: 463px;
     margin-bottom: 100px;
     padding: 50px 70px;
+    border: solid 4px #000000;
+    gap: 40px;
 }
 
 .desc-news {
@@ -70,7 +72,64 @@
     object-fit: cover;
     border: 2px solid #040404;
     box-shadow: 3px 3px 0px #040404;
+    width: 344px;
+    height: 344px;
+}
 
-    width: 373px;
-    max-height: 205px;
+@media (max-width:1234px) {
+    .headline{
+        width: 688px;
+        gap: 25px;
+    }
+    .desc-news > h1{
+        max-width: 324px;
+        font-size: 24px;
+    }
+    .desc-news > p{
+        max-width: 324px;
+    }
+    .headline_img{
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media (max-width:690px) {
+    .headline{
+        gap: 25px;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 380px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .desc-news{
+        align-items: center;
+    }
+    .desc-news > h1{
+        text-align: center;
+        line-height: 25px;
+    }
+    .desc-news > p{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media (max-width:480px) {
+    .headline{
+        width: 340px;
+    }
+    .desc-news > h1{
+        max-width: 300px;
+        font-size: 23px;
+    }
+    .desc-news > p{
+        max-width: 300px;
+        font-size: 15px;
+    }
+    .headline_img{
+        width: 250px;
+        height: 250px;
+    }
 }

@@ -22,7 +22,7 @@ const News = (props) => {
           <p>{props.category}</p>
         </div>
       </div>
-      <img src={require('../../Assets/Komnews/Topic/' + props.img)} className="news_img" alt="gambar" width={140} height={140} />
+      <img src={require('../../Assets/Komnews/Topic/' + props.img)} className="news_img" alt="gambar" />
     </div>
   );
 }

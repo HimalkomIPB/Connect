@@ -58,4 +58,109 @@
 
 .news_img {
     object-fit: cover;
+    width: 140px;
+    height: 140px;
+}
+
+@media (max-width:1330px) {
+    .topic{
+        width: auto;
+        padding: 10px 18px;
+    }
+    .news_img {
+        width: 170px;
+        height: 170px;
+    }
+    .topic-desc > h1 {
+        font-size: 26px;
+        max-width: 840px;
+    }
+    .topic-desc > p {
+        font-size: 16px;
+        max-width: 840px;
+        line-height: 23px;
+    }
+    
+}
+
+@media (max-width:900px) {
+    .topic{
+        width: auto;
+        height: 219px;
+    }
+    .news_img{
+        width: 118px;
+        height: 118px;
+    }
+    .topic-desc > h1 {
+        font-size: 20px;
+        max-width: 470px;
+        line-height: 18px;
+    }
+    .topic-desc > p {
+        font-size: 11px;
+        max-width: 470px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width:640px) {
+    .topic{
+        width: auto;
+        height: 130px;
+    }
+    .news_img{
+        width: 94px;
+        height: 94px;
+    }
+    .topic-desc > h1 {
+        font-size: 14px;
+        max-width: 370px;
+        line-height: 16px;
+    }
+    .topic-desc > p {
+        font-size: 8px;
+        max-width: 370px;
+        line-height: 12px;
+    }
+    .topic-category{
+        border: #000000 solid 1px;
+        width: 115px;
+        justify-content: center;
+        padding: 3.5px;
+        background: #F0E4D4;
+        box-shadow: 2px 3px 0px #000000;
+    }
+    .topic-category > p{
+        font-size: 8px;
+        line-height: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .topic{
+        width: auto;
+        height: 130;
+    }
+    .news_img{
+        width: 63px;
+        height: 63px;
+    }
+    .topic-desc > h1 {
+        font-size: 11px;
+        max-width: 220px;
+        line-height: 14px;
+    }
+    .topic-desc > p {
+        font-size: 6px;
+        max-width: 220px;
+        line-height: 8px;
+    }
+    .topic-category{
+        padding: 3px;
+    }
+    .topic-category > p{
+        font-size: 7px;
+        line-height: 8px;
+    }
 }

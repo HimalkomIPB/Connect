@@ -25,7 +25,7 @@ const Headline = () => {
             <a className='button_headline' onClick={handleCardClick} ><span className='bold'>Read More {'>'}</span></a>
           </div>
           <div className='image'>
-            <img src={require('../../Assets/Komnews/Topic/' + topic.img)} alt="gambar" width={344} className="headline_img"/>
+            <img src={require('../../Assets/Komnews/Topic/' + topic.img)} alt="gambar" className="headline_img"/>
           </div>
         </div>
     </div>
