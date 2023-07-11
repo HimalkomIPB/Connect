@@ -4,19 +4,34 @@ import './UX.css'
 import Navbar from '../../../component/Navbar/Navbar'
 import Footer from '../../../component/Footer/Footer'
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
-const UX = () => {
-    const [renderDiv, setrenderDiv] = useState(true);
+import dokum1 from "../../../Assets/Ilkommunity/UX/UX-dokum1.png"
+import dokum2 from "../../../Assets/Ilkommunity/UX/UX-dokum2.png"
+import dokum3 from "../../../Assets/Ilkommunity/UX/UX-dokum3.png"
+import dokum4 from "../../../Assets/Ilkommunity/UX/UX-dokum4.png"
+import dokum5 from "../../../Assets/Ilkommunity/UX/UX-dokum5.png"
+import dokum6 from "../../../Assets/Ilkommunity/UX/UX-dokum6.png"
+import dokum7 from "../../../Assets/Ilkommunity/UX/UX-dokum7.png"
 
-    const handleClick = () => {
-        setrenderDiv(!renderDiv)
-    }
+
+const UX = () => {
+    const [showDeskripsi, setShowDeskripsi] = useState(true);
+
+    const handleDeskripsiClick = () => {
+        setShowDeskripsi(true);
+    };
+
+    const handleTujuanClick = () => {
+        setShowDeskripsi(false);
+    };
 
     const slides = [
-        { url: "http://placehold.it/350x150" },
-        { url: "http://placehold.it/255x150" },
-        { url: "http://placehold.it/295x150" },
-        { url: "http://placehold.it/310x150" },
-        { url: "http://placehold.it/450x150" },
+        { url: dokum1  },
+        { url: dokum2  },
+        { url: dokum3  },
+        { url: dokum4  },
+        { url: dokum5  },
+        { url: dokum6  },
+        { url: dokum7  }
     ];
 
     return (
@@ -42,18 +57,18 @@ const UX = () => {
                     <div className="UX-content-container">
                         <div className="UX-content-deskripsi-tujuan">
                             <h2 id='UX-deskripsi'
-                                onClick={handleClick}
-                                className={renderDiv ? "UX-active" : ""}
+                                onClick={handleDeskripsiClick}
+                                className={showDeskripsi ? "UX-active" : ""}
                             >Deskripsi
                             </h2>
                             <h2 id='UX-tujuan'
-                                onClick={handleClick}
-                                className={!renderDiv ? "UX-active" : ""}>
+                                onClick={handleTujuanClick}
+                                className={!showDeskripsi ? "UX-active" : ""}>
                                 Tujuan
                             </h2>
                         </div>
                         {
-                            renderDiv == true
+                            showDeskripsi
                                 ? //if true
                                 <div className="UX-deskripsi-content">
                                     <p>

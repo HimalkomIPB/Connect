@@ -1,20 +1,21 @@
 #UX-header-container {
     background-image: url('../../../Assets/Ilkommunity/UX/UX-Header-Background.svg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 640px;
+    justify-content: center;
     margin-top: .8rem;
-    border-width: 4px 0px;
-    border-style: solid;
-    border-color: #111827;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
 }
 
 .UX-header-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    transform: translateX(242px);
+    column-gap: 15.81rem;
 }
 
 .UX-header {
@@ -50,8 +51,9 @@
 }
 
 #UX-main-container {
-    background-image: url('../../../Assets/Ilkommunity/IWDC/IWDC-Main-Pattern.svg');
-    background-size: cover;
+    background-image: url('./../../../Assets/Background/pattern-top.svg'), url('./../../../Assets/Background/pattern-bottom.svg');
+    background-size: contain;
+    background-position: top right, bottom left;
     background-repeat: no-repeat;
     padding: 80px 0 0 0;
 }
@@ -286,20 +288,28 @@
     color: #FFFFFF;
 }
 
+@media only screen and (max-width: 1024px){
+    .UX-header-wrapper {
+        column-gap: normal;
+    }
+}
+
 @media only screen and (max-width:768px) {
     #UX-header-container {
-        background-image: url('../../../Assets/Ilkommunity/UX/UX-Header-Background-mobile.png');
+        background-image: url('../../../Assets/Ilkommunity/UX/UX-Header-Background-Tab.svg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         justify-content: center;
+        height: 521px;
     }
 
     .UX-header-wrapper {
-        display: flex;
-        flex-direction: column;
-        transform: translateY(10rem);
+        width: 670px;
+    }
 
+    .UX-header{
+        width: 377px;
     }
 
     .UX-deskripsi-content {
@@ -338,6 +348,24 @@
 }
 
 @media screen and (max-width: 480px) {
+    #UX-header-container {
+        background-image: url("../../../Assets/Ilkommunity/UX/UX-Header-Background-Mobile.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: center;
+        height: 522px;
+        border-top: 4px solid #111827;
+        border-bottom: 4px solid #111827;
+        align-items: unset;
+    }
+
+    .UX-header-wrapper {
+        grid-template-columns: none;
+        transform: translateY(16.5rem);
+        width: auto;
+    }
+
     .UX-deskripsi-content {
         width: 401px;
         height: auto;

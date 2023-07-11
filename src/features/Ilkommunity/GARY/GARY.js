@@ -4,20 +4,28 @@ import './GARY.css';
 import Navbar from '../../../component/Navbar/Navbar';
 import Footer from '../../../component/Footer/Footer';
 import ImageSlider from '../../../component/ImageSlider/ImageSlider';
+import dokum1 from '../../../Assets/Ilkommunity/GARY/GARY-Dokum1.png'
+import dokum2 from '../../../Assets/Ilkommunity/GARY/GARY-Dokum2.png'
+import dokum3 from '../../../Assets/Ilkommunity/GARY/GARY-Dokum3.png'
+import dokum4 from '../../../Assets/Ilkommunity/GARY/GARY-Dokum4.png'
+
 
 const GARY = () => {
-    const [renderDiv, setRenderDiv] = useState(true);
+  const [showDeskripsi, setShowDeskripsi] = useState(true);
 
-  const handleClick = () => {
-    setRenderDiv(!renderDiv);
+  const handleDeskripsiClick = () => {
+    setShowDeskripsi(true);
+  };
+
+  const handleTujuanClick = () => {
+    setShowDeskripsi(false);
   };
 
   const slides = [
-    { url: 'http://placehold.it/350x150' },
-    { url: 'http://placehold.it/255x150' },
-    { url: 'http://placehold.it/295x150' },
-    { url: 'http://placehold.it/310x150' },
-    { url: 'http://placehold.it/450x150' },
+    { url: dokum1 },
+    { url: dokum2 },
+    { url: dokum3 },
+    { url: dokum4 }
   ];
 
   return (
@@ -29,7 +37,7 @@ const GARY = () => {
             <div className="GARY-header">
               <h2>GARY</h2>
               <p>
-              Game Reality (Gary) adalah komunitas yang berfokus pada game development
+                Game Reality (Gary) adalah komunitas yang berfokus pada game development
                 <br />
                 <br />
                 Setiap Rabu pukul 19:00 <br />
@@ -45,30 +53,31 @@ const GARY = () => {
             <div className="GARY-content-deskripsi-tujuan">
               <h2
                 id="GARY-deskripsi"
-                onClick={handleClick}
-                className={renderDiv ? 'gary-active' : ''}
+                onClick={handleDeskripsiClick}
+                className={showDeskripsi ? 'gary-active' : ''}
               >
                 Deskripsi
               </h2>
               <h2
                 id="GARY-tujuan"
-                onClick={handleClick}
-                className={!renderDiv ? 'gary-active' : ''}
+                onClick={handleTujuanClick}
+                className={!showDeskripsi ? 'gary-active' : ''}
               >
                 Tujuan
               </h2>
             </div>
-            {renderDiv === true ? (
+            {showDeskripsi ? (
               <div className="GARY-deskripsi-content">
                 <p>
-                Komunitas Game Reality adalah komunitas yang berorientasi pada pengembangan permainan. Anggota komunitas di dukung untuk dapat menciptakan permainan yang berkualitas dengan memperhatikan dari segi teknik, perancangan dan grafis. Diharapkan kedepannya permainan tersebut dapat diikutkan dalam kompetisi-kompetisi dan dikomersialkan.
+                  Komunitas Game Reality adalah komunitas yang berorientasi pada pengembangan permainan. Anggota komunitas di dukung untuk dapat menciptakan permainan yang berkualitas dengan memperhatikan dari segi teknik, perancangan dan grafis. Diharapkan kedepannya permainan tersebut dapat diikutkan dalam kompetisi-kompetisi dan dikomersialkan.
                 </p>
               </div>
             ) : (
               <div>
                 <div className="GARY-tujuan-container">
                   <div className="GARY-tujuan-content">
-                    <h3>Komunitas Game Reality adalah komunitas yang berorientasi pada pengembangan permainan. Anggota komunitas di dukung untuk dapat menciptakan permainan yang berkualitas dengan memperhatikan dari segi teknik, perancangan dan grafis. Diharapkan kedepannya permainan tersebut dapat diikutkan dalam kompetisi-kompetisi dan dikomersialkan.</h3>
+                    <h3>
+                      Wadah pertumbuhan dan pengembangan skill dan passion dalam game development bagi mahasiswa IPB.                      </h3>
                   </div>
                 </div>
               </div>
@@ -88,7 +97,7 @@ const GARY = () => {
               </div>
             </div>
           </div>
-          
+
           <ImageSlider slides={slides} />
 
           <div className="GARY-narahubung-container">

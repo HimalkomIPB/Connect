@@ -4,19 +4,25 @@ import './MAD.css'
 import Navbar from '../../../component/Navbar/Navbar';
 import Footer from '../../../component/Footer/Footer'
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
-const MAD = () => {
-    const [renderDiv, setrenderDiv] = useState(true);
+import dokum1 from '../../../Assets/Ilkommunity/MAD/MAD-dokum1.png'
+import dokum2 from '../../../Assets/Ilkommunity/MAD/MAD-dokum2.png'
+import dokum3 from '../../../Assets/Ilkommunity/MAD/MAD-dokum3.png'
 
-    const handleClick = () => {
-        setrenderDiv(!renderDiv)
-    }
+const MAD = () => {
+    const [showDeskripsi, setShowDeskripsi] = useState(true);
+
+    const handleDeskripsiClick = () => {
+        setShowDeskripsi(true);
+    };
+
+    const handleTujuanClick = () => {
+        setShowDeskripsi(false);
+    };
 
     const slides = [
-        { url: "http://placehold.it/350x150" },
-        { url: "http://placehold.it/255x150" },
-        { url: "http://placehold.it/295x150" },
-        { url: "http://placehold.it/310x150" },
-        { url: "http://placehold.it/450x150" },
+        { url: dokum1  },
+        { url: dokum2  },
+        { url: dokum3  }
     ];
 
     return (
@@ -42,18 +48,18 @@ const MAD = () => {
                     <div className="MAD-content-container">
                         <div className="MAD-content-deskripsi-tujuan">
                             <h2 id='MAD-deskripsi'
-                                onClick={handleClick}
-                                className={renderDiv ? "mad-active" : ""}
+                                onClick={handleDeskripsiClick}
+                                className={showDeskripsi ? "mad-active" : ""}
                             >Deskripsi
                             </h2>
                             <h2 id='MAD-tujuan'
-                                onClick={handleClick}
-                                className={!renderDiv ? "mad-active" : ""}>
+                                onClick={handleTujuanClick}
+                                className={!showDeskripsi ? "mad-active" : ""}>
                                 Tujuan
                             </h2>
                         </div>
                         {
-                            renderDiv === true
+                            showDeskripsi
                                 ? //if true
                                 <div className="MAD-deskripsi-content">
                                     <p>Mobile Apps Development (MAD) merupakan komunitas pengembangan perangkat lunak berbasis android. Kegiatan komunitas ini berfokus pada pengembangan perangkat lunak berbasis android dari segi perencanaan, desain dan implementasi. Komunitas ini juga bergerak dalam hal-hal terkait project management, pengembangan design antarmuka yang mengacu terhadap aturan google material, percobaan dan pembelajaran berberapa development frameworks, pengenalan Android Studio dan Pengenalan database dan server. Komunitas ini diperuntukkan untuk semua mahasiswa aktif IPB. 

@@ -3,21 +3,30 @@ import "./Csi.css";
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 import Navbar from "../../../component/Navbar/Navbar";
 import Footer from "../../../component/Footer/Footer";
+import dokum1 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum1.png'
+import dokum2 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum2.png'
+import dokum3 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum3.png'
+import dokum4 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum4.png'
+import dokum5 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum5.png'
 
 
 const CSI = () => {
-    const [renderDiv, setrenderDiv] = useState(true);
+    const [showDeskripsi, setShowDeskripsi] = useState(true);
 
-    const handleClick = () => {
-        setrenderDiv(!renderDiv)
-    }
+    const handleDeskripsiClick = () => {
+        setShowDeskripsi(true);
+    };
+
+    const handleTujuanClick = () => {
+        setShowDeskripsi(false);
+    };
 
     const slides = [
-        { url: "http://placehold.it/350x150" },
-        { url: "http://placehold.it/255x150" },
-        { url: "http://placehold.it/295x150" },
-        { url: "http://placehold.it/310x150" },
-        { url: "http://placehold.it/450x150" },
+        { url: dokum1},
+        { url: dokum2},
+        { url: dokum3},
+        { url: dokum5},
+        { url: dokum4}
     ];
     return (
         <div>
@@ -26,7 +35,7 @@ const CSI = () => {
             <div id="CSI-header-container">
                 <div className="CSI-header-wrapper">
                     <div className="CSI-header">
-                        <h2>CSI IPB</h2>
+                        <h2>CSI</h2>
                         <p>Cyber Security IPB (CSI) adalah komunitas yang bergerak pada bidang keamanan siber dan berfokus pada kompetisi Capture the Flag (CTF) baik di tingkat nasional maupun internasional.<br />
                             <br />
                             Setiap Jumat pukul 17:00 di gedung Gedung Pusat Komputer (GPK)
@@ -41,18 +50,18 @@ const CSI = () => {
                     <div className="CSI-content-container">
                         <div className="CSI-content-deskripsi-tujuan">
                                 <h2 id='CSI-deskripsi'
-                                    onClick={handleClick}
-                                    className={renderDiv ? "CSI-active" : ""}
+                                    onClick={handleDeskripsiClick}
+                                    className={showDeskripsi ? "CSI-active" : ""}
                                 >Deskripsi
                                 </h2>
                                 <h2 id='CSI-tujuan'
-                                    onClick={handleClick}
-                                    className={!renderDiv ? "CSI-active" : ""}>
+                                    onClick={handleTujuanClick}
+                                    className={!showDeskripsi ? "CSI-active" : ""}>
                                     Tujuan
                                 </h2>
                         </div>
                         {
-                        renderDiv == true
+                        showDeskripsi 
                             ? //if true
                             <div className="CSI-deskripsi-content">
                                 <p>Komunitas Cyber Security IPB merupakan komunitas yang memfasilitasi mahasiswa IPB yang memiliki minat atau ketertarikan terhadap bidang Keamanan Jaringan. Komunitas ini mempelajari mulai dari metodologi “hacking”, eksploitasi web application hingga low-level application, serta keahlian-kahlian dasar keamanan jaringan.<br />

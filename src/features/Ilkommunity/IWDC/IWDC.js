@@ -25,7 +25,7 @@ const IWDC = () => {
 
     const slides = [
         { url: dokum1 },
-        { url: dokum2},
+        { url: dokum2 },
         { url: dokum3 },
         { url: dokum4 },
         { url: dokum5 },
@@ -38,7 +38,7 @@ const IWDC = () => {
                 <div id="IWDC-header-container">
                     <div className="IWDC-header-wrapper">
                         <div className="IWDC-header">
-                            <h2>IWDC IPB</h2>
+                            <h2>IWDC</h2>
                             <p>IWDC adalah komunitas yang berorientasi pada web development. <br />
                                 <br />
                                 Setiap Kamis pukul 19:30 ruangan menyesuaikan

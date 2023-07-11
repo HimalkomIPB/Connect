@@ -1,22 +1,24 @@
-#DAMING-header-container{
+#DAMING-header-container {
     background-image: url('../../../Assets/Ilkommunity/DAMING/DAMING-Header-Background.svg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
-    height: 100vh;
+    height: 640px;
     margin-top: .8rem;
     display: flex;
-    overflow-x: hidden;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    justify-content: center;
 }
 
-.DAMING-header-wrapper{
+.DAMING-header-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    transform: translate(242px,-1.5rem);
-    margin-left: 3%;
+    column-gap: 15.81rem;
 }
 
-.DAMING-header{
+.DAMING-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +28,7 @@
     height: 208px;
 }
 
-.DAMING-header h2{
+.DAMING-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -36,9 +38,10 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+
 }
 
-.DAMING-header p{
+.DAMING-header p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -48,7 +51,7 @@
     width: 100%;
 }
 
-#DAMING-main-container{
+#DAMING-main-container {
     background-image: url('./../../../Assets/Background/pattern-top.svg'), url('./../../../Assets/Background/pattern-bottom.svg');
     background-position: top left, bottom right;
     background-size: contain;
@@ -81,14 +84,14 @@
 
 #DAMING-deskripsi,
 #DAMING-tujuan {
-  font-family: 'Changa One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  color: #6b7280;
-  text-align: center;
-  cursor: pointer;
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #6b7280;
+    text-align: center;
+    cursor: pointer;
 }
 
 
@@ -120,7 +123,7 @@
     color: #FFFFFF;
 }
 
-.DAMING-tujuan-content{
+.DAMING-tujuan-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,13 +134,14 @@
     padding: 40px 44px 40px 44px;
 }
 
-.DAMING-deskripsi-content, .DAMING-tujuan-content{
+.DAMING-deskripsi-content,
+.DAMING-tujuan-content {
     width: 90%;
     max-width: 1057px;
     height: auto;
 }
 
-.DAMING-tujuan-content p{
+.DAMING-tujuan-content p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -195,7 +199,7 @@
     transform: translateY(25px);
 }
 
-.DAMING-prestasi-header h2{
+.DAMING-prestasi-header h2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -261,7 +265,7 @@
     border: 1px solid #111827;
     box-shadow: 4px 4px 0px #000000;
     transform: translateY(25px);
-    
+
 }
 
 .DAMING-narahubung-header h2 {
@@ -282,6 +286,12 @@
     box-shadow: 7px 7px 0px #1F2937;
 }
 
+@media screen and (max-width: 1024px){
+    .DAMING-header-wrapper{
+        column-gap: normal;
+    }
+}
+
 @media(max-width: 768px) {
     #DAMING-header-container {
         background-image: url("../../../Assets/Ilkommunity/DAMING/DAMING-Header-Background-Tablet.svg");
@@ -292,26 +302,29 @@
     }
 
     .DAMING-header-wrapper {
-        grid-template-columns: none;
-        transform: translateY(0rem);
-        margin-left: 5%;
+        width: 670px;
     }
 
-    .DAMING-header p{
-        width: 100%;
+    .DAMING-header{
+        width: 377px;
+    }
+
+    .DAMING-header p {
+        width: auto;
         font-size: 16px;
     }
 
-    .DAMING-deskripsi-content, 
-    .DAMING-tujuan-content, 
-    .DAMING-prestasi-content, 
-    .DAMING-narahubung-content{
+    .DAMING-deskripsi-content,
+    .DAMING-tujuan-content,
+    .DAMING-prestasi-content,
+    .DAMING-narahubung-content {
         width: 90%;
         max-width: 668px;
         height: auto;
     }
 
-    .DAMING-deskripsi-content p, .DAMING-tujuan-content p{
+    .DAMING-deskripsi-content p,
+    .DAMING-tujuan-content p {
         font-size: 16px;
     }
 }
@@ -323,19 +336,20 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 521px;
+        height: 522px;
     }
 
-    .DAMING-header-wrapper{
+    .DAMING-header-wrapper {
         display: flex;
+        align-items: center;
         flex-direction: column;
-        margin-left:auto;
-        margin-right:auto;
+        margin-left: auto;
+        margin-right: auto;
         transform: translateY(6rem);
-        
+
     }
 
-    .DAMING-header h2{
+    .DAMING-header h2 {
         font-size: 45px;
         line-height: 52px;
     }
@@ -348,13 +362,13 @@
 
     #DAMING-deskripsi,
     #DAMING-tujuan {
-    font-size: 22px;
-    line-height: 28px;
-    overflow-x: hidden;
+        font-size: 22px;
+        line-height: 28px;
+        overflow-x: hidden;
     }
 
-    .DAMING-prestasi-content li, 
-    .DAMING-narahubung-content h3{
+    .DAMING-prestasi-content li,
+    .DAMING-narahubung-content h3 {
         font-size: 16px;
     }
 }
