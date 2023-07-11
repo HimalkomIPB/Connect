@@ -134,6 +134,7 @@
     .topics{
         flex-direction: column-reverse;
         padding: 50px 43px;
+        justify-content:flex-end
     }
     .topics-rec{
         background-color: white;
