@@ -35,7 +35,14 @@
     letter-spacing: 0.2px;
     max-width: 500px;
     margin: 10px 0px;
+    overflow-wrap: break-word;
+    max-height: 50px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
+
 
 .topic-category {
     display: flex;

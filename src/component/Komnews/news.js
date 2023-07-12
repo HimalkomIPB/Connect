@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./news.css";
+import { urlFor } from '../../client';
 
 const News = (props) => {
   const navigate = useNavigate();
@@ -17,12 +18,12 @@ const News = (props) => {
       <div className='topic-desc'>
         <p>Selected for you</p>
         <h1>{props.title}</h1>
-        <p>{props.thumbnail}</p>
+        <p>{props.desc}</p>
         <div className='topic-category'>
           <p>{props.category}</p>
         </div>
       </div>
-      <img src={require('../../Assets/Komnews/Topic/' + props.img)} className="news_img" alt="gambar" />
+      <img src={urlFor(props.img)} className="news_img" alt="gambar" />
     </div>
   );
 }

@@ -1,20 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Komnews.css';
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
 import News from "../../component/Komnews/news";
-import Data from "../../Data/newsdata";
 import Headline from "../../component/Komnews/headline";
+import { client } from '../../client';
 
 const Komnews = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [Data, setData] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "komnews"]';
+
+    client.fetch(query)
+      .then((data) => setData(data))
+  }, [])
+
+
 
   const cards = Data.map(item => {
     return (
       <News
-        key={item.id}
         title={item.title}
-        thumbnail={item.thumbnail}
         category={item.category}
         img={item.img}
         date={item.date}

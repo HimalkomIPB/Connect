@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { client } from '../../client';
 import './Page.css'
 import connect from '../../Assets/Connect/Logo Connect.png'
 import Navbar from '../../component/Navbar/Navbar'
@@ -14,7 +15,6 @@ import mad from '../../Assets/Ilkommunity/MAD 200 x 200.png'
 import ittoday from '../../Assets/Logo IT Today.png'
 import riset from '../../Assets/Logo Riset.png'
 import Card from "../../component/Komnews/Card"
-import Data from "../../Data/newsdata"
 
 import bgproker1 from './../../Assets/Background/cardproker1.svg'
 import bgproker2 from './../../Assets/Background/cardproker2.svg'
@@ -39,6 +39,15 @@ const Page = () => {
   const handleClick = (index) => {
     setActiveSlide(index);
   };
+
+  const [Data, setData] = useState([]);
+
+    useEffect(() => {
+      const query = '*[_type == "komnews"]';
+
+      client.fetch(query)
+        .then((data) => setData(data))
+    }, [])
 
   const cards = Data.map(item => {
     return (

@@ -1,53 +1,5 @@
 export default [
     {
-        id: 1,
-        title: "IPB University Terima Wakaf Lahan Penunjang Pendidikan",
-        thumbnail: "Badan Pengelola Bisnis, Investasi dan Wakaf (BP Biswaf) IPB University selaku pengelola wakaf (nazhir) menerima wakaf lahan seluas 1,3 hektare yang berlokasi di Cihideung Ilir, Ciampea, Bogor. Lahan",
-        desc: `Badan Pengelola Bisnis, Investasi dan Wakaf (BP Biswaf) IPB University selaku pengelola wakaf (nazhir) menerima wakaf lahan seluas 1,3 hektare yang berlokasi di Cihideung Ilir, Ciampea, Bogor. Lahan ini dimaksudkan untuk kegiatan penunjang, pendidikan, penelitian, usaha produktif dan pemberdayaan masyarakat. Penerimaan wakaf ditandai dengan penandatanganan ikrar wakaf yang dilaksanakan di Kantor Urusan Agama (KUA) Kecamatan Ciampea, Kabupaten Bogor.
-
-        Ikrar wakaf lahan tersebut dilakukan oleh Akhmad Mirza selaku wakif dan kuasa ahli waris dari Alm Akhmad Mastur Amien kepada Ketua BP Biswaf IPB University, Naufal Mahfudz selaku nazhir di hadapan Kepala KUA Kecamatan Ciampea dan Tamba Tuah Matondang selaku Pejabat Pembuat Akta Ikrar Wakaf (PPAIW). Penandatanganan ikrar juga disaksikan oleh Adi Rahman dan Andika Budi Purnomo serta Wakil Kepala BP Biswaf, Dr Alla Asmara, Wakil Kepala Badan Satuan Usaha dan Kemitraan, Dr Ahmad Yani dan pengelola wakaf IPB University lainnya yang turut hadir.
-        
-        Pemilik lahan telah mengamanatkan dan mewakafkan lahan kepada IPB University untuk dimanfaatkan sebagai sarana kegiatan penunjang pendidikan, penelitian, usaha produktif dan pemberdayaan masyarakat. Wakaf yang diserahkan diharapkan bukan hanya bermanfaat untuk civitas akademika IPB University, tetapi juga masyarakat umum.
-        
-        Akhmad Mirza selaku kuasa ahli waris menyampaikan bahwa wakaf yang ditunaikan ini merupakan amanah dari Alm. Akhmad Mastur Amien, yang merupakan orang tua yang bersangkutan. Ia berharap wakaf yang diberikan ini dapat memberikan manfaat untuk IPB University dan masyarakat sekitar lahan wakaf.
-        
-        “Terima kasih kepada wakif yang telah mewakafkan lahan yang berlokasi di Cihideung Ilir ini kepada IPB University. Kami berkomitmen untuk mengelola dan menggunakan lahan wakaf dengan optimal, sehingga wakaf tersebut akan terus menjadi investasi amal bagi para wakif,” ujar Naufal Mahfudz, Kepala BP Biswaf IPB University.
-        
-        Senada, Dr Alla Asmara, mewakili nazhir IPB University turut menyampaikan terima kasih kepada wakif yang telah menjadi pelopor wakaf lahan. Ia menambahkan bahwa apa yang dilakukan oleh wakif akan menjadi inspirasi untuk para calon wakif lainnya. (*/Rz)`,
-        category: "Social",
-        img: "topic_2.jpg",
-        date: "27/6/23",
-      },
-    {
-        id: 2,
-        title: "Prodi Pengelolaan Sumberdaya Pesisir dan Lautan, Departemen MSP IPB University Kunjungi KKP",
-        thumbnail: "Di era Internet of Things (IoT) sekarang ini, segala sepak terjang profesional seseorang mesti diperkenalkan ke khalayak dan diunggah dalam platform media sosial. Demikian pula halnya Program Studi",
-        desc: `Di era Internet of Things (IoT) sekarang ini, segala sepak terjang profesional seseorang mesti diperkenalkan ke khalayak dan diunggah dalam platform media sosial. Demikian pula halnya Program Studi (Prodi) Pengelolaan Sumberdaya Pesisir dan Lautan (SPL) S2 dan S3 di bawah Departemen Manajemen Sumberdaya Perairan (MSP), Fakultas Perikanan dan Ilmu Kelautan (FPIK) IPB University.
-      
-      Ketua Prodi S3 SPL, Prof Ario Damar didampingi Ketua Departemen MSP, Prof Hefni Effendi melakukan kunjungan ke Direktorat Jenderal (Ditjen) Pengelolaan Ruang Laut (PRL), Kementerian Kelautan dan Perikanan (KKP). Keduanya diterima oleh Sekretaris Ditjen PRL, Dr Kusdiantoro.
-      
-      Pada kesempatan ini Prof Ario menjelaskan ruang lingkup Prodi SPL sangat sejalan dengan tugas dan fungsi Ditjen PRL yang esensinya berupa pengelolaan ruang laut, pengelolaan pesisir dan pulau-pulau kecil. Variabel, pendekatan, metode yang dilakukan dalam pengelolaan ruang laut menjadi salah satu core-competence yang diajarkan di Prodi SPL.
-      
-      “Keberadaan Prodi SPL bahkan lebih dulu dari terbentuknya KKP. Ilmu tentang Integrated Coastal Zone Management (ICZM) banyak dikembangkan dan diajarkan di prodi ini bersama dengan Pusat Kajian Sumberdaya Pesisir dan Lautan (PKSPL) IPB University. Bahkan kala itu dilakukan secara berkala training tentang ICZM,” jelas Prof Ario.
-      
-      Dalam perkembangannya, ICZM banyak diadopsi di tanah air sebagai konsideran dalam merancang pembangunan secara terpadu di wilayah pesisir. Bahkan belakangan ini, lebih dipertajam lagi prinsip inklusivitas dalam pembangunan wilayah pesisir.
-      
-      “Ketika berbincang tentang konservasi, tidak semata hanya menjaga dan mempreservasi sumber daya alam yang mungkin telah terancam eksistensinya. Akan tetapi juga turut memperhatikan livelihood masyarakat yang menggantungkan hidupnya pada keanekaragaman hayati yang ada di sekitar mereka,” imbuh dia.
-      
-      Keterlibatan masyarakat dalam konservasi inilah salah satu yang dipertajam pemahamannya dalam Social Ecological System (SES). Ilmu SES ini pun juga menjadi salah satu core-competence Departemen MSP IPB University.
-      
-      Selanjutnya Prof Hefni menguraikan bahwa saat ini Departemen MSP merupakan departemen yang progresif, proaktif dan adaptif. Pada tahun 2023 ini, Departemen MSP IPB University dengan United Nation Development Program (UNDP) berkolaborasi mengembangkan program S2 internasional dalam pengelolaan pulau-pulau kecil (small island management).
-      
-      Program tersebut memberikan full master scholarship kepada sejumlah scholar dari negara-negara yang tergabung dalam Archipelagic Island State (AIS) seperti Fiji, Solomon, Kaledonia Baru, Vanuatu dan negara lainnya untuk belajar ke SPL IPB University tentang small island management.
-      
-      “Departemen MSP IPB University melalui Prodi SPL juga menyediakan beberapa full doctoral scholarship program untuk kajian SES. Program ini diselenggarakan melalui kerja sama dengan Oxford University Inggris. Selain itu, juga dieksplorasi kemungkinan kerja sama riset antara Departemen MSP IPB University dan Ditjen PRL KKP,” tandas Prof Hefni yang juga diamini oleh Dr Kusdiantoro.
-      
-      Prof Hefni berharap dengan adanya kunjungan ini, sejumlah staf Ditjen PRL KKP akan studi lanjut di Prodi SPL, menambah kuantitas staf PRL yang sebelumnya juga telah dan sedang studi di SPL serta terjalin kemitraan dalam bentuk kolaborasi riset. (*/Rz)`,
-        category:"Social",
-        img:"topic_3.jpg",
-        date:"27/6/23"
-    },
-    {
         id: 3,
         title: "Ingin Menjadi Penyuluh Pertanian Milenial? Masyarakat Pertanian SV IPB University",
         thumbnail: "Jumlah penyuluh pertanian semakin menurun. Hal ini terjadi karena masih adanya pandangan bahwa pertanian kurang keren. Padahal, di era revolusi 4.0, teknologi pertanian semakin canggih dan peran",
