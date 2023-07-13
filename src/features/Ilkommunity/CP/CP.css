@@ -133,9 +133,14 @@
     flex-direction: column;
 }
 
+.CP-deskripsi-content,
+.CP-tujuan-content {
+    max-width: 1057px;
+    width: 90%;
+    height: auto;
+}
+
 .CP-deskripsi-content {
-    width: 1057px;
-    height: 176px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,8 +165,6 @@
 }
 
 .CP-tujuan-content {
-    width: 1055px;
-    height: 128px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,6 +192,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .CP-prestasi-content {
@@ -196,7 +200,8 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
+    max-width: 1060px;
+    width: 90%;
     height: 100%;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
@@ -299,7 +304,7 @@
         height: auto;
     }
 
-    .CP-header-wrapper{
+    .CP-header-wrapper {
         column-gap: normal;
     }
 
@@ -309,22 +314,22 @@
     }
 
     .CP-deskripsi-content {
-        width: 800px;
-        height: 224px;
+        width: 90%;
+        height: auto;
     }
 
     .CP-tujuan-content {
-        width: 800px;
-        height: 152px;
+        width: 90%;
+        height: auto;
     }
 
-    .CP-prestasi-content{
-        width: 800px;
-        height: 230px;
+    .CP-prestasi-content {
+        width: 90%;
+        height: auto;
     }
 
-    .CP-narahubung-content{
-        width: 800px;
+    .CP-narahubung-content {
+        width: 90%;
         height: 190px;
     }
 }
@@ -344,49 +349,66 @@
         width: 670px;
     }
 
-    .CP-header{
+    .CP-header {
         width: 377px;
     }
 
-    .CP-deskripsi-content {
-        width: 400px;
-        height: 344px;
+    .CP-header p {
+        width: 90%;
+        max-width: 668px;
+        height: auto;
     }
 
-    .CP-header p{
-        font-size: 16px;
-        width: auto;
+    .CP-deskripsi-content {
+        width: 90%;
+        max-width: 668px;
+        height: auto;
+    }
+
+    .CP-header p {
+        width: 90%;
+        max-width: 668px;
+        height: auto;
     }
 
     .CP-tujuan-content {
-        width: 394px;
-        height: 200px;
+        width: 90%;
+        max-width: 668px;
+        height: auto;
     }
 
-    .CP-prestasi-content{
-        width: 400px;
-        height: 250px;
+    .CP-prestasi-content {
+        width: 90%;
+        max-width: 668px;
+        height: auto;
     }
 
-    .CP-narahubung-content{
-        width: 400px;
+    .CP-narahubung-content {
+        width: 90%;
+        max-width: 668px;
         height: 190px;
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     #CP-header-container {
         background-image: url("../../../Assets/Ilkommunity/CP/bg-mobile-cp.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         justify-content: center;
-        height: 522px;
+        height: 550px;
         border-top: 4px solid #111827;
         border-bottom: 4px solid #111827;
         align-items: unset;
     }
 
+    #CP-deskripsi,
+    #CP-tujuan {
+        font-size: 22px;
+        line-height: 28px;
+        overflow-x: hidden;
+    }
 
     .CP-header-wrapper {
         grid-template-columns: none;
@@ -394,27 +416,31 @@
         width: auto;
     }
 
-    .CP-header h2{
+    .CP-header h2 {
         font-size: 45px;
     }
 
+    .CP-header p{
+        font-size: 16px;
+    }
+
     .CP-deskripsi-content {
-        width: 400px;
-        height: 464px;
+        width: 90%;
+        height: auto;
     }
 
     .CP-tujuan-content {
-        width: 394px;
-        height: 176px;
+        width: 90%;
+        height: auto;
     }
 
     .CP-prestasi-content {
-        width: 400px;
-        height: 114px;
+        width: 90%;
+        height: auto;
     }
 
     .CP-narahubung-content {
-        width: 400px;
+        width: 90%;
         height: 190px;
     }
 }

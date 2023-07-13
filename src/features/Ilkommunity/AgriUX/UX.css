@@ -133,9 +133,13 @@
     flex-direction: column;
 }
 
+.UX-deskripsi-content, .UX-tujuan-content{
+    max-width: 1057px;
+    width: 90%;
+    height: auto;
+}
+
 .UX-deskripsi-content {
-    width: 1057px;
-    height: 272px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +173,6 @@
 }
 
 
-
 .UX-tujuan-content h3 {
     font-family: 'Montserrat';
     font-style: normal;
@@ -181,13 +184,13 @@
 }
 
 
-
 .UX-prestasi-container {
     margin: 80px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .UX-prestasi-content {
@@ -196,7 +199,8 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
+    max-width: 1060px;
+    width: 90%;
     padding: 45px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
@@ -241,6 +245,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -249,8 +254,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1060px;
-    height: 202px;
+    border: 2px solid #000000;
+    max-width: 1060px;
+    width: 90%;
+    height: 174px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
     background-color: #FFFFFF;
@@ -288,9 +295,41 @@
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 1024px){
+@media(max-width: 1024px) {
+
+    .UX-header {
+        width: auto;
+        height: auto;
+    }
+
     .UX-header-wrapper {
         column-gap: normal;
+    }
+
+    .UX-header p {
+        font-size: large;
+        width: 401px;
+    }
+
+    .UX-deskripsi-content {
+        width: 90%;
+        height: 250px;
+    }
+
+
+    .UX-tujuan-content {
+        width: 90%;
+        height: 100px;
+    }
+
+    .UX-prestasi-content {
+        width: 90%;
+        height: auto;
+    }
+
+    .UX-narahubung-content {
+        width: 90%;
+        height: 190px;
     }
 }
 
@@ -312,25 +351,28 @@
         width: 377px;
     }
 
+    .UX-header p {
+        font-size: 16px;
+        width: auto;
+    }
+
     .UX-deskripsi-content {
-        width: 688px;
+        width: 90%;
+        max-width: 668px;
         height: auto;
-        padding: 40px;
     }
 
     .UX-tujuan-content {
-        width: 688px;
-        height: auto;
-        padding: 40px;
+        width: 90%;
+        max-width: 668px;
+        height: 48px;
     }
 
-    .UX-prestasi-container {
-        padding: 45px;
-    }
 
     .UX-prestasi-content {
+        width: 90%;
+        max-width: 668px;
         height: auto;
-        width: 688px;
     }
 
     .UX-prestasi-content li {
@@ -342,8 +384,9 @@
     }
 
     .UX-narahubung-content {
-        width: 688px;
-        padding: 45px;
+        width: 90%;
+        max-width: 668px;
+        height: 190px;
     }
 }
 
@@ -360,29 +403,39 @@
         align-items: unset;
     }
 
+    #UX-deskripsi, #UX-tujuan{
+        font-size: 22px;
+        line-height: 28px;
+        overflow-x: hidden;
+    }
+
     .UX-header-wrapper {
         grid-template-columns: none;
         transform: translateY(16.5rem);
         width: auto;
     }
 
+    .UX-header h2 {
+        font-size: 45px;
+    }
+
     .UX-deskripsi-content {
-        width: 401px;
+        width: 90%;
         height: auto;
     }
 
     .UX-tujuan-content {
-        width: 394px;
+        width: 90%;
         height: auto;
-        padding: 40px;
     }
 
     .UX-prestasi-content {
-        width: 401px;
+        width: 90%;
+        height: auto;
     }
 
     .UX-narahubung-content {
-        width: 397px;
-        padding: 45px;
+        width: 90%;
+        height: 190px;
     }
 }

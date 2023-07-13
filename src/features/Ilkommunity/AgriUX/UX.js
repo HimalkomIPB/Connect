@@ -25,13 +25,13 @@ const UX = () => {
     };
 
     const slides = [
-        { url: dokum1  },
-        { url: dokum2  },
-        { url: dokum3  },
-        { url: dokum4  },
-        { url: dokum5  },
-        { url: dokum6  },
-        { url: dokum7  }
+        { url: dokum1 },
+        { url: dokum2 },
+        { url: dokum3 },
+        { url: dokum4 },
+        { url: dokum5 },
+        { url: dokum6 },
+        { url: dokum7 }
     ];
 
     return (
@@ -79,14 +79,10 @@ const UX = () => {
                                     </p>
                                 </div>
                                 : //else
-                                < div >
-                                    <div className="UX-tujuan-container">
-                                        <div className="UX-tujuan-content">
-                                            <h3>
-                                                Mewadahi Mahasiswa IPB khususnya departemen Ilmu Komputer dalam menyalurkan minatnya di bidang UI/UX Design
-                                            </h3>
-                                        </div>
-                                    </div>
+                                <div className="UX-tujuan-content">
+                                    <h3>
+                                        Mewadahi Mahasiswa IPB khususnya departemen Ilmu Komputer dalam menyalurkan minatnya di bidang UI/UX Design
+                                    </h3>
                                 </div>
                         }
 
@@ -112,13 +108,11 @@ const UX = () => {
                         <div className="UX-narahubung-header">
                             <h2>NARAHUBUNG</h2>
                         </div>
-                        <div className="UX-narahubung-wrapper">
-                            <div className="UX-narahubung-content">
-                                <h3>Raka</h3>
-                                <h3>Line: irzan24</h3>
-                                <h3>Whatsapp: 089513348202</h3>
-                                <h3>IG: @agriux</h3>
-                            </div>
+                        <div className="UX-narahubung-content">
+                            <h3>Raka</h3>
+                            <h3>Line: irzan24</h3>
+                            <h3>Whatsapp: 089513348202</h3>
+                            <h3>IG: @agriux</h3>
                         </div>
                     </div>
                 </div>

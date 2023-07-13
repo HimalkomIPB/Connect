@@ -73,13 +73,9 @@ const GARY = () => {
                 </p>
               </div>
             ) : (
-              <div>
-                <div className="GARY-tujuan-container">
-                  <div className="GARY-tujuan-content">
-                    <h3>
-                      Wadah pertumbuhan dan pengembangan skill dan passion dalam game development bagi mahasiswa IPB.                      </h3>
-                  </div>
-                </div>
+              <div className="GARY-tujuan-content">
+                <h3>
+                  Wadah pertumbuhan dan pengembangan skill dan passion dalam game development bagi mahasiswa IPB.                      </h3>
               </div>
             )}
             <div className="GARY-prestasi-container">
