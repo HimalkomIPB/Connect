@@ -99,7 +99,7 @@ const Navbar = () => {
             <a href="/I-Gallery">Galeri</a>
           </li>
           <li>
-            <a href="/Megaproker">Program Kerja</a>
+            <a href="/Megaproker">Megaproker</a>
           </li>
           <li>
             <a href="/Ilkommunity">Komunitas</a>
@@ -180,7 +180,7 @@ const Navbar = () => {
               <a href="/I-Gallery">Galeri</a>
             </li>
             <li>
-              <a href="/Megaproker">Program Kerja</a>
+              <a href="/Megaproker">Megaproker</a>
             </li>
             <li className="mobile-navbar-dropdown">
               <p  onClick={toggleDropdown3}>

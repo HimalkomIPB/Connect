@@ -16,8 +16,8 @@ const Footer = () => {
       <div className="Footer">
         <div className="Footer-Logos">
           <img src={himalkom} alt="Himalkom" className='himalkom' />
-          <img src={logo} alt="IPB University" className='ipb' />
           <img src={connect} alt="Connect" className='connect' />
+          <img src={logo} alt="IPB University" className='ipb' />
         </div>
 
         <div className="Footer-social">

@@ -6,6 +6,7 @@
     font-family: montserrat;
     font-size: 14px;
     line-height: 20px;
+    width: 100%;
 }
 
 .Footer-Logos {
@@ -14,7 +15,9 @@
     align-items: center;
     gap: 64px;
     padding-top: 127px;
-    margin: 0 343px 54px 354px;
+    /* margin: 0 343px 54px 354px; */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .Footer-social {
@@ -52,6 +55,7 @@
     .Footer-Logos {
         margin: 0 auto;
         padding-top: 40px;
+        overflow-x: hidden;
     }
 
     .Footer-Logos .himalkom {
@@ -60,13 +64,11 @@
     }
 
     .Footer-Logos .ipb {
-        order: 3;
         width: 184px;
         height: 48px;
     }
 
     .Footer-Logos .connect {
-        order: 2;
         width: 144px;
         height: 87px;
     }
@@ -92,5 +94,12 @@
         flex-direction: column;
         margin: 0 auto;
         padding-top: 40px;
+    }
+
+    
+    .Footer-copyright {
+        margin-left: auto;
+        margin-right: auto;
+
     }
 }

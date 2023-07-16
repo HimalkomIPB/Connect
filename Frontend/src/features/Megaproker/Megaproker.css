@@ -1,7 +1,3 @@
-.bg11, .bg22, .bg33, .bg44{
-   display: none;
-}
-
 .megaproker-header{
    display: flex;
    text-align: center;
@@ -15,431 +11,651 @@
    margin: 13px 0px 0px 0px;
    background-size: cover;
    padding: 0 2em;
-   margin-bottom: 0;
 }
 
 .megaproker-header h1{
    font-family: 'Sports World';
    font-style: normal;
    font-weight: 400;
-   font-size: 22px;
-   line-height: 28px;
+   font-size: 45px;
+   line-height: 52px;
    color: #F0E4D4;
    text-shadow: 4px 3px 0px #040404;
    -webkit-text-stroke-width: 1px; 
    -webkit-text-stroke-color: #040404;
 }
 
-.backgroundd{
+
+#Megaproker-Page-Card-Container{
    width: 100%;
-   z-index: -1;
-   position: absolute;
-}
-
-.megaproker-container{
-   padding: 10px 0px;
-   /* min-height: 4200px; */
-   height: fit-content;
-   width: 100%;
-   font-size: 16px;
-   /* background-color: rgb(255, 0, 230); */
-}
-
-.megaproker-proker{
-   position: relative;
-   /* background-color: aqua; */
-}
-
-.megaproker-proker{
-   padding: 0.1rem  0.7rem 20px 0.7rem;
-   padding-bottom: clamp(2.5rem, 1.25rem + 6.25vw, 3.125rem);
-   box-sizing: border-box;
-   width: 100%;
-   height: fit-content;
-}
-
-.megaproker-title, .megaproker-content{
-   position: relative;
-   font-size: 16px;
-}
-
-.megaproker-title{
-   padding: 1px 0;
-   margin-top: clamp(0.9375rem, -0.0625rem + 5vw, 1.4375rem);
-   margin-bottom: clamp(1.875rem, -0.5rem + 10vw, 2.5rem);
-   z-index: 2;
-}
-
-/* Logo Container */
-.logo-containerr{
-   text-align: center;
-   font-size: 16px;
-   padding-top: 5%;
-}
-
-.logo-proker{
-   margin: 0 auto;
-   display: block;
-   height: auto;  
-   width: clamp(5.625rem, -5.8036rem + 57.143vw, 10.625rem);
-}
-
-.txt-containerr{
-   z-index: 2;
-}
-
-.txt-containerr h2,  .txt-containerr p{
-   text-align: center;
-   padding: 0  0.7rem;
-}
-
-.txt-containerr h2{
-   font-family: 'Sports World';
-   font-style: normal;
-   font-weight: 400;
-   line-height: 1em;
-   color: #F0E4D4;
-   text-shadow: 2px 3px 0px #040404;
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #040404;
-   font-size: clamp(1em, 1.5vw, 1.5em);
-   margin-top: clamp(0.3125rem, -1.0625rem + 6.875vw, 1rem);
-}
-
-.txt-containerr p{
-   font-family: 'Montserrat';
-   font-style: normal;
-   font-weight: 700;
-   font-size: clamp(0.5em, 2vw, 0.75em);
-   line-height: 1em;
-   color: #111827;
-   margin-top: clamp(0.3125rem, -0.5625rem + 4.375vw, 0.75rem);
-}
-
-.megaproker-content{
-   font-size: 16px;
-   z-index: 2;
-}
-
-.content-containerr{
    display: flex;
    flex-direction: column;
+   align-items: center;
+   height: fit-content;
+   padding: 0 81px;
+   padding-top: 6.75rem;
 }
 
-.content-containerr h3{
+.Megaproker-Proker-Card{ 
+   width: 100%;
+}
+
+.Megaproker-Proker-Card-Header{
+   width: 100%;
+   height: 336px;
+
+   display: flex;
+   position: relative;
+   background-size: 100% 100%;
+   width: 100%;
+}
+
+.Megaproker-Proker-Card-Header-bg{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url(./../../Assets/Megaproker/megaproker-card1-header-dekstop.png);
+   background-size: 100% 100%;
+   height: 398px;
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+}
+
+.Megaproker-Proker-Content{
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   background-size: 100% 100%;
+   width: 100%;
+   height: 1104px;
+}
+
+.Megaproker-Proker-Card-Content-bg{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url(./../../Assets/Megaproker/megaproker-card1-content-dekstop.png);
+   background-size: 100% 100%;
+   height: 1104px;
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+}
+
+.Megaproker-Card1-logo{
+   display: flex;
+   align-items: center;
+   flex: 40%;
+   padding-left: clamp(1rem, 0.1608rem + 4.196vw, 3.9375rem);
+}
+
+.Megaproker-Card1-logo img{
+    object-fit: contain;
+    max-width:472.796px;
+    width: 100%;
+    height: auto;
+}
+
+.Megaproker-Card-info{
+   display: flex;
+   flex-direction: column;
+   flex: 60%;
+   padding-left: clamp(1rem, -0.634rem + 8.17vw, 6.71875rem);
+}
+
+.Megaproker-Card1-logo, .Megaproker-Card-info {  z-index: 2;}
+
+.Megaproker-Card-info h1 {
+   font-family: "Sports World";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 64px;
+   color: #f0e4d4;
+   text-shadow: 3px 2px 0px #040404;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #040404;
+   
+}
+
+.Proker-Card1 h1{
+   margin-top: 114px;
+}
+
+.Megaproker-Card-info p {
+   font-family: 'Montserrat';
+   font-weight: 400;
+   font-style: normal;
+   font-size: 16px;
+   font-size: clamp(0.875rem, 0.50012rem + 0.781vw, 1rem);
+   line-height: 24px;
+   text-align: justify;
+   color: #111827;
+
+   width: 75%;
+}
+
+.Megaproker-Proker-Content h3{
    margin: 0 auto;
    font-family: 'Changa One';
    font-style: normal;
    font-weight: 400;
-   font-size: clamp(0.875rem, 0.4rem + 2vw, 1rem);
+   font-size: 36px;
+   margin-top: 7.66rem;
 }
 
-.proker2 .logo-containerr{
-   padding-top:0.5% ;
+/* Carousel */
+.Megaproker-Proker-Content .carousel{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
+   overflow-x: scroll;
+
+   margin-top: 3.06rem;
 }
 
-/* Buttton CSS */
-.megaproker-container .button {
-   margin-top: 20px;
+.Megaproker-Proker-Content .carousel .box img{
+   margin: 0 21.5px;
+   width: 329.93px;
+   height: 188.5px;
+   transition: 0.3s;
+   object-fit: cover;
+   border: 2px solid black;
+}
+
+.Megaproker-Proker-Content .carousel .box:hover img{
+   box-shadow: 10px 10px 0px #000000;
+   transform: translateY(-10px);
+   transform: translateX(-10px);
+   width: 441.53px;
+   height: 257.81px;
+}
+
+.Megaproker-Proker-Content .dokumentasi-vid-title{
+   margin-top: 6.25rem;
+}
+
+.dokumentasi-video {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+
+   margin-top: 1.69rem;
+}
+
+.dokumentasi-video .box img{
+   max-width: 638px;
+   width: 100%;
+   max-height: 307.71px;
+   height: 100%;
+   border: 2px solid black;
+   box-shadow: 10px 10px 0px #000000;
+}
+
+
+#Megaproker-Page-Card-Container button {
    box-sizing: border-box;
    font-family: 'Montserrat';
+   font-weight: 700;
+   font-style: normal;
+   font-size: 22px;
+   line-height: 28px;
    padding: 8px 14px 8px 16px;
-   width: 156px;
-   height: 36px;
    background: #E49800;
    border: 1px solid #111827;
    box-shadow: 3px 4px 0px #000000;
-   color: white;
+   color: var(--monochrome-white, #FFF);
 
+   
+   width: 214px;
+   height: 44px;
    display: block;
+
    margin: 0 auto;
+   margin-top: 4.27rem;
 }
 
-.megaproker-container   button:active {
+#Megaproker-Page-Card-Container  button:active {
    transform: translateY(2px);
    transform: translateX(3px);
    box-shadow: 1px 1px 0px #000000;
 }
 
-.content-containerr .rangkaian-acara{
-   margin-top: clamp(2.875rem, 0.0178rem + 14.286vw, 4.125rem);
-   margin-bottom: clamp(0.8125rem, 0.5625rem + 1.25vw, 0.9375rem);
+.Proker-Card2{
+   margin-top: 2.65rem; 
 }
 
-.content-containerr .dokumentasi{
-   margin-top: clamp(0.875rem, -0.6964rem + 7.857vw, 1.5625rem);
-   margin-bottom: clamp(0.5625rem, 0.0625rem + 2.5vw, 0.8125rem);
+.Proker-Card2  .Megaproker-Proker-Card-Header{
+   flex-direction: row-reverse;
 }
 
-.content-containerr .button{
-   font-weight: 700;
-   font-size: 12px;
-   margin-top: clamp(1.6875rem, 1.3125rem + 1.875vw, 1.875rem);
-   box-sizing: border-box;
-   font-family: 'Montserrat';
-   padding: 0.5em 0.875em 0.5em 1em; /* equals 8px 14px 8px 16px / 16px = 0.5em 0.875em 0.5em 1em */
-   width: 9.75em; /* equals 156px / 16px = 9.75em */
-   height: 2.25em; /* equals 36px / 16px = 2.25em */
-   background: #E49800;
-   border: 0.0625em solid #111827; /* equals 1px / 16px = 0.0625em */
-   box-shadow: 0.1875em 0.25em 0px #000000; /* equals 3px 4px 0px #000000 / 16px = 0.1875em 0.25em 0px */
-   color: white;
+.Proker-Card2 .Megaproker-Proker-Card-Header-bg{
+   background-image: url(./../../Assets/Megaproker/megaproker-card2-header-dekstop.png);
 }
 
-.dokumentasi-video{
-   padding: 82px 0 0 0;
-   padding-top: clamp(7.5rem, -1.7858rem + 46.429vw, 11.5625rem);
-   /* padding: 0; */
-   width: 100%;
+.Proker-Card2 .Megaproker-Proker-Card-Content-bg{
+   background-image: url(./../../Assets/Megaproker/megaproker-card2-content-dekstop.png);
 }
 
-.carousel{
-   padding-top: clamp(4.6875rem, -6.7411rem + 57.143vw, 9.6875rem);
-   width: 100%;
+.Proker-Card2 .Megaproker-Card-info h1{
+   margin-top: 6rem;
 }
 
-
-.proker2 {
-   margin-top: clamp(3.125rem, 1.6964rem + 7.143vw, 3.75rem);
-}
-
-.proker2 .megaproker-title p{
-   margin-left: auto;
-   margin-right: 14%;
-   text-align: right;
-   width: 70%;
-}
-
-.proker2 .button-proker{
-   margin-top: clamp(3.4375rem, 2.0625rem + 6.875vw, 4.125rem);
-}
-
- .button-etc .button{
-   font-size: 16px;
-   box-sizing: border-box;
-   font-weight: 700;
-   font-family: 'Montserrat';
-   padding: 0.5em 0.875em 0.5em 1em; /* equals 8px 14px 8px 16px / 16px = 0.5em 0.875em 0.5em 1em */
-   width: 9.75em; /* equals 156px / 16px = 9.75em */
-   height: 2.25em; /* equals 36px / 16px = 2.25em */
-   background: #E49800;
-   border: 0.0625em solid #111827; /* equals 1px / 16px = 0.0625em */
-   box-shadow: 0.1875em 0.25em 0px #000000; /* equals 3px 4px 0px #000000 / 16px = 0.1875em 0.25em 0px */
-   color: white;
-   margin-bottom: 30%;
-}
-
-.Megaproker-Contact-Container {
-   position: relative;
+.Megaproker-Card2-logo{
    display: flex;
-   justify-content: center;
+   align-items: center;
+   justify-content: flex-end;
+   flex: 40%;
+   padding-right: clamp(0.625rem, -1.25rem + 9.375vw, 7.1875rem);
 }
 
-.Megaproker-Contact-Wrapper {
-   position: absolute;
-   /* z-index: 10; */
-   transform: translateY(-50%);
-   background-color: white;
-   width: 855px;
-   height: 164px;
-   border: 3px solid #000000;
-   box-shadow: 3px 4px 0px #000000;
+.Megaproker-Card2-logo img{
+   object-fit: contain;
+   width: 300px;
+   height: auto;
+   max-width: 100%;
+   max-height: 100%;
+   border: 3px solid var(--gray-10, #111827);
+   box-shadow: 10px 10px 0px #000000;
 }
 
-#Megaproker-Contact-Header {
-   padding: 20px 0 0 20px;
+#button-etc{
+   margin-bottom: 8.62rem;
 }
 
-#Megaproker-Contact-Header h2 {
-   font-family: 'Montserrat';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 20px;
-   line-height: 20px;
+#Megaproker-Page-Card-Container #button-etc button {
+   width: 220px;
+   height: 48px;
+   line-height: 32px;
 }
 
-#Megaproker-Contact-Person {
-   padding: 42px 0 0 20px;
+
+@media (max-width:1024px) {
+   #Megaproker-Page-Card-Container{
+      padding-left:  clamp(2.5rem, -5.0936rem + 15.82vw, 5.03125rem);
+      padding-right: clamp(2.5rem, -5.0936rem + 15.82vw, 5.03125rem);
+   }
 }
 
-#Megaproker-Contact-Person p{
-   font-family: 'Montserrat';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 17px;
-   text-align: justify;
-}
-
-@media screen and (min-width: 481px) {
-   .bg1, .bg2, .bg3, .bg4{
-      display: none;
-   }
-   .megaproker-header{
-      display: none;
+@media(max-width: 768px) {
+   #Megaproker-Page-Card-Container{
+      padding-top: 2rem;
    }
 
-   .bg11, .bg22, .bg33, .bg44{
-      display: block;
+   .Megaproker-Proker-Card-Header{
+      height:296.25px;
+   
+      flex-direction: column;
+      align-items: center;
+
    }
 
-   .megaproker-container{
-      z-index: -1;
-      background-repeat: no-repeat;
-      background-image: url('./../../Assets/Background/pattern-top.svg'), url('./../../Assets/Background/pattern-bottom.svg');
-      background-position: top left, bottom right;
-      background-size: contain;
+   .Megaproker-Proker-Card-Header-bg{
+      background-image: url(./../../Assets/Megaproker/megaproker-card1-header-tablet.png);
+      height: 382.22px;
+   }
+   
+   .Megaproker-Card1-logo{
+      align-items: center;
+      flex: 0%;
+      padding-left: 0;
+      padding-top:2.72rem ;
+   }
+   
+   .Megaproker-Card1-logo img{
+       object-fit: contain;
+       max-width:253.93px;
+       width: 100%;
+       height: auto;
    }
 
-   .megaproker-proker .megaproker-title{
-      margin-top: clamp(5.625rem, -1.62878rem + 24.129vw, 22.5rem);
-      margin-bottom: clamp(3.125rem, -1.71085rem + 16.086vw, 14.375rem); /* 50 - 230 px*/
-      margin-bottom: 35px;
+   .Proker-Card1 h1{
+      margin-top: clamp(0.9375rem, 0.3126rem + 2.083vw, 1.3125rem);
    }
 
-   .content-containerr h3{
-      font-size: clamp(1.25rem, 0.82011rem + 1.43vw, 2.25rem);
-      font-size: clamp(0.625rem, -0.07365rem + 2.324vw, 2.25rem);
+   .Megaproker-Card-info{
+      flex: 100%;
+      padding-left: 0;
    }
 
-   .content-containerr .rangkaian-acara{
-      margin-top: clamp(2.875rem, 0.0178rem + 14.286vw, 4.125rem);
-      margin-top: clamp(5.625rem, 4.17418rem + 4.826vw, 9rem);
-      margin-top: clamp(2.5rem, -0.29401rem + 9.294vw, 9rem);
-      margin-bottom: clamp(0.8125rem, 0.5625rem + 1.25vw, 0.9375rem);
+   .Megaproker-Card-info h1 {
+      font-size: 24px;
+      line-height: 35.974px;
+      text-shadow: 3px 2px 0px #040404;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #040404;
+
+      text-align: center;
    }
 
-   .megaproker-title{
-      display: flex;
-   }
-
-   .proker2 .megaproker-title{
-      flex-direction: row-reverse;
+   .Megaproker-Card-info p {
+      font-size: 18px;
+      font-size: clamp(0.875rem, 0.50012rem + 0.781vw, 1rem);
+      line-height: 23.983px;
+      text-align: center;
+      font-weight: 700;
+      margin: 0 auto;
+      width: 100%;
    }
   
-   .logo-containerr{
-      height: auto;
-      display: flex;
-      flex-direction: column;
+   .Megaproker-Proker-Content{
+      height: 900.85px;
    }
 
-   .logo-containerr img{
-      margin: auto 0;
-      width: clamp(5rem, -5.8483rem + 36.161vw, 30.3125rem);/*485*/
+   .Megaproker-Proker-Card-Content-bg{
+      background-image: url(./../../Assets/Megaproker/megaproker-card1-content-tablet.png);
+      height: 900.85px;
    }
 
-   .proker1  .logo-containerr{ margin-left:3% ;}
-   .proker2 .logo-containerr{ margin-right: 5%; }
-
-   .txt-containerr{
-      flex: 50%;
-      margin: auto 0;
-      margin-top: clamp(1.25rem, -2.08123rem + 11.081vw, 9rem);
+   .Megaproker-Proker-Content h3{
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 35.974px; 
+      margin-top: 5.71rem;
    }
 
-   .proker2 .txt-containerr{ margin-left: 5%; }
-
-   .txt-containerr  h2{
-      display: block;
-      text-align: left;
-   } 
-
-   .txt-containerr  p{
-      display: block;
-      text-align: left;
+   /* Carousel  */
+   .Megaproker-Proker-Content .carousel{   
+      margin-top:0.84rem;
+      padding-bottom: 3%;
    }
-
-   .proker2 .txt-containerr p{
-      text-align: left;
-      margin-left: 0;
-      margin-right: 0;
-      width: 75%;
-   }
-
-   .proker1 .txt-containerr {
-      margin-left: 7%;
-   }
-
-   .txt-containerr p{
-      font-size: clamp(0.5rem, 0.3442rem + 0.656vw, 1rem);
-   }
-    
-   .megaproker-proker{
-      padding: 0  2rem;
-      padding-right: clamp(1rem, -0.71927rem + 5.719vw, 5rem);
-      padding-left: clamp(1rem, -0.71927rem + 5.719vw, 5rem);
-   }
-
-   .megaproker-title{
-      font-size: 32px;
-   }
-
-   .proker2{
-      margin-top: clamp(1.25rem, -3.04834rem + 14.298vw, 11.25rem);
-   }
-
-   .carousel{
-      padding: 82px 0 0 0;
-      padding-top: clamp(3.125rem, -4.12878rem + 24.129vw, 20rem);/* 320*/
-      padding: 0;
-   }
-
-   .content-containerr .dokumentasi{
-      margin-top: clamp(1.25rem, -1.70514rem + 9.83vw, 8.125rem);
-   }
-
-   .dokumentasi-video{
-      padding-top: clamp(9.375rem, 4.59296rem + 15.907vw, 20.5rem);
-      padding: 0;
-   }
-
-   .content-containerr .button{ 
-      margin-top: 100px;
-      font-size: clamp(0.75rem, 0.63315rem + 0.492vw, 1.125rem);/*18px*/}
-   .megaproker-proker .button-etc .button{font-size: clamp(0.875rem, 0.75815rem + 0.492vw, 1.25rem);/*20px*/}
-
-   .button-etc {
-      margin-top: 340px;
-      margin-top: clamp(3.125rem, -4.12878rem + 24.129vw, 20rem);
-      padding-bottom: 120px;
-   }
-   .button-etc .button{margin-bottom: 0;}
-
-   .megaproker-content .carousel{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .megaproker-content .carousel .box img{
-      margin: 0 21.5px;
-      width: 329.93px;
-      height: 188.5px;
+   
+   .Megaproker-Proker-Content .carousel .box img{
+      margin: 0 90px;
+      width: 325.26px;
+      height:217.34px;
       transition: 0.3s;
       object-fit: cover;
       border: 2px solid black;
    }
-
-   .megaproker-content .carousel .box:hover img{
+   
+   .Megaproker-Proker-Content .carousel .box:hover img{
       box-shadow: 10px 10px 0px #000000;
       transform: translateY(-10px);
       transform: translateX(-10px);
-      width: 441.53px;
-      height: 257.81px;
+      width: 379.9px;
+      height: 253.85px;
+   }
+
+   .Megaproker-Proker-Content .dokumentasi-vid-title{
+      margin-top: 3rem;
    }
 
    .dokumentasi-video {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+      margin-top: 0.84rem;
+      padding: 0 10%;
    }
 
    .dokumentasi-video .box img{
-      width: 638px;
-      height: 307.71px;
+      max-width: 471.05px;
+      max-height:265.64px;
+      width: 100%;
+      height: 100%;
       border: 2px solid black;
-      box-shadow: 10px 10px 0px #000000;
+      box-shadow: 8px 8px 0px #000000;
    }
 
+   #Megaproker-Page-Card-Container button {
+      display: flex;
+      justify-content: space-between;
+
+      font-size: 16.488px;
+      line-height: 23.983px;
+      letter-spacing: 0.749px;
+
+      padding: 8px 14px 8px 16px;
+      background: #E49800;
+      border: 1px solid #111827;
+      box-shadow: 3px 4px 0px #000000;
+      color: var(--monochrome-white, #FFF);
+
+      min-width: 173.87px;
+      width: auto;
+      height:37.47px;
+      display: block;
+
+      margin-top: 3.09rem;
+   }
+
+   /* Proker Card 2 */
+   .Proker-Card2{
+      margin-top: 4.49rem; 
+   }
+   
+   .Proker-Card2  .Megaproker-Proker-Card-Header{
+      flex-direction: column;
+   }
+   
+   .Proker-Card2 .Megaproker-Proker-Card-Header-bg{
+      background-image: url(./../../Assets/Megaproker/megaproker-card2-header-tablet.png);
+   }
+   
+   .Proker-Card2 .Megaproker-Proker-Card-Content-bg{
+      background-image: url(./../../Assets/Megaproker/megaproker-card2-content-tablet.png);
+   }
+   
+   .Proker-Card2 .Megaproker-Card-info h1{
+      margin-top: 0.8rem;
+   }
+   
+   .Proker-Card2   .Megaproker-Card-info p{
+      width: 80%;
+   }
+
+   .Megaproker-Card2-logo{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex: 100%;
+      padding-right: 0;
+      padding-top: 1.03rem;
+   }
+   
+   .Megaproker-Card2-logo img{
+      width: 166.38px;
+      border: 3px solid var(--gray-10, #111827);
+      box-shadow: 10px 10px 0px #000000;
+   }
+   
+   #button-etc{
+      margin-bottom: 5rem;
+   }
+   
+   #Megaproker-Page-Card-Container #button-etc button {
+      width: 220px;
+      height: 48px;
+      line-height: 32px;
+   }
+   
+
+}
+
+@media (max-width: 480px) {   
+   .megaproker-header h1{
+      font-size: 28px;
+      line-height: 36px;
+      color: #F0E4D4;
+      text-shadow: 3px 3px 0px #040404;
+      -webkit-text-stroke-width: 1.5px; 
+      -webkit-text-stroke-color: #040404;
+   }
+
+   #Megaproker-Page-Card-Container{
+      padding:  0 0.63rem;
+      padding-top: 1.81rem;
+   }
+
+   .Megaproker-Proker-Card-Header{
+      height:196.16px;
+   }
+
+   .Megaproker-Proker-Card-Header-bg{
+      background-image: url(./../../Assets/Megaproker/megaproker-card1-header-tablet.png);
+      height: 251px;
+   }
+   .Megaproker-Card1-logo{
+      padding-top:1.04rem ;
+   }
+
+   .Megaproker-Card1-logo img{
+      object-fit: contain;
+      max-width:169.41px;
+      width: 100%;
+      height: auto;
+  }
+
+   .Megaproker-Card-info h1 {
+      font-size: 16px;
+      line-height: 24px;
+      text-shadow: 1.5px 1px 0px #040404;
+      -webkit-text-stroke-width:1px;
+      -webkit-text-stroke-color: #040404;
+
+      text-align: center;
+   }
+
+   .Megaproker-Card-info p {
+      font-size: 12px;
+      line-height: 16px;
+      width: 98%;
+   }
+
+   .Megaproker-Proker-Content{
+      height: 601px;
+   }
+
+   .Megaproker-Proker-Card-Content-bg{
+      background-image: url(./../../Assets/Megaproker/megaproker-card1-content-phone.png);
+      height:601px;
+   }
+
+   .Megaproker-Proker-Content h3{
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 3.94rem;
+   }
+
+   /* Carousel  */
+   .Megaproker-Proker-Content .carousel{   
+      margin-top:0.56rem;
+      padding-bottom: 5%;
+      padding-top: 1%;
+   }
+   
+   .Megaproker-Proker-Content .carousel .box img{
+      margin: 0 90px;
+      width: 217px;
+      height: 145px;
+      transition: 0.3s;
+      object-fit: cover;
+      border: 2px solid black;
+   }
+   
+   .Megaproker-Proker-Content .carousel .box:hover img{
+      box-shadow: 5px 5px 0px #000000;
+      transform: translateY(-10px);
+      transform: translateX(-10px);
+      width: 227.26px;
+      height: 151.86px;
+   }
+
+   .Megaproker-Proker-Content .dokumentasi-vid-title{
+      margin-top: 1.5rem;
+   }
+
+   .dokumentasi-video {
+      margin-top: 0.56rem;
+      padding: 0 10%;
+   }
+
+   .dokumentasi-video .box img{
+      max-width: 314.26px;
+      max-height:177.22px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid black;
+      box-shadow: 5px 5px 0px #000000;
+   }
+
+   #Megaproker-Page-Card-Container button {
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+
+      padding:8px 5px 8px 16px;
+      background: #E49800;
+      border: 1px solid #111827;
+      box-shadow: 3px 4px 0px #000000;
+      color: var(--monochrome-white, #FFF);
+
+      min-width: 116px;
+      width: auto;
+      height:auto;
+      display: flex;
+
+      margin-top: 2rem;
+   }
+
+   #Megaproker-Page-Card-Container button img{
+      margin-left: 8px;
+   }
+
+
+   /* Proker 2 */
+   .Proker-Card2{
+      margin-top: 1.56rem; 
+   }
+   
+   .Proker-Card2  .Megaproker-Proker-Card-Header{
+      flex-direction: column;
+   }
+   
+   .Proker-Card2 .Megaproker-Proker-Card-Header-bg{
+      background-image: url(./../../Assets/Megaproker/megaproker-card2-header-phone.png);
+   }
+   
+   .Proker-Card2 .Megaproker-Proker-Card-Content-bg{
+      background-image: url(./../../Assets/Megaproker/megaproker-card2-content-phone.png);
+   }
+   
+   .Megaproker-Card2-logo{
+      flex: 100%;
+      padding-right: 0;
+      padding-top: 0.69rem;
+   }
+   
+   .Megaproker-Card2-logo img{
+      max-width: 111px;
+      width: 100%;
+      max-height: 111px;
+      height: auto;
+      border: 3px solid var(--gray-10, #111827);
+      box-shadow: 5px 5px 0px #000000;
+   }
+   
+   .Proker-Card2 .Megaproker-Card-info h1{
+      margin-top: 0.8rem;
+   }
+   
+   .Proker-Card2   .Megaproker-Card-info p{
+      width: 90%;
+      text-align: right;
+   }
+   
+   #Megaproker-Page-Card-Container #button-etc{
+      margin-top:1.56rem;
+   }
+
+   #Megaproker-Page-Card-Container #button-etc button {
+      width: 142px;
+      height: 36px;
+      font-size: 14px;
+      line-height: 20px; /* 142.857% */
+      letter-spacing: 0.1px;  
+      margin-top: 0;
+   }
 }
