@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
 import "./IGallery.css"
 import Card from "../../component/IGallery/IGallery_card"
-import Data from "../../Data/IGallery_data"
+import { client } from '../../client';
 const IGallery = () => {
+  const [Data, setData] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "igallery"]';
+    client.fetch(query)
+      .then((data) => setData(data))
+  }, [])
+
   const cards = Data.map(item => {
     return (
         <Card

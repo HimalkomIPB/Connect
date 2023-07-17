@@ -1,6 +1,6 @@
 import React from 'react'
 import "./IGallery_card.css"
-import dummy from "../../Assets/IGallery/Arcanon.svg"
+import { urlFor } from '../../client';
 
 const IGallery_card = (props) => {
     const redirectToLink = () => {
@@ -8,7 +8,7 @@ const IGallery_card = (props) => {
     }
   return (
     <div className='IG-content'>
-      <img className="IG-content-img" src={require('../../Assets/IGallery/' + props.img + '.svg')} alt="gambar" />
+      <img className="IG-content-img" src={urlFor(props.img)} alt="gambar" />
       <h1 className='IG-content-title'>{props.title}</h1>
       <h1 className='IG-content-category'>{props.category}</h1>
       <p className='IG-content-desc'>{props.desc}</p>
