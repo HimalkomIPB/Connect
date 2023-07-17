@@ -14,7 +14,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: auto;
+    width: 1280px;
     height: 463px;
     margin-bottom: 100px;
     padding: 50px 70px;
@@ -76,7 +76,7 @@
     height: 344px;
 }
 
-@media (max-width:1234px) {
+@media (max-width:1280px) {
     .headline{
         width: 688px;
         gap: 25px;

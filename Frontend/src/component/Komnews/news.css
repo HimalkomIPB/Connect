@@ -145,18 +145,18 @@
 
 @media (max-width:480px) {
     .news_img{
-        width: 63px;
-        height: 63px;
+        width: 90px;
+        height: 75px;
     }
     .topic-desc > h1 {
-        font-size: 11px;
+        font-size: 12px;
         max-width: 220px;
         line-height: 14px;
     }
     .topic-desc > p {
-        font-size: 6px;
+        font-size: 7px;
         max-width: 220px;
-        line-height: 8px;
+        line-height: 9px;
     }
     .topic-category{
         padding: 3px;
@@ -165,4 +165,5 @@
         font-size: 7px;
         line-height: 8px;
     }
+    
 }
