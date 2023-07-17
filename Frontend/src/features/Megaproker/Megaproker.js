@@ -53,6 +53,7 @@ const Megaproker = () => {
               <div className="box">
                 <img alt="dokum-img" src={dokumimg} />
               </div>
+              
             </div>
 
             <h3 className="dokumentasi-vid-title">Dokumentasi Video</h3>
