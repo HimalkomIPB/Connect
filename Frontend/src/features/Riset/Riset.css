@@ -1,16 +1,17 @@
 @import url('https://fonts.cdnfonts.com/css/sports-world');
 
 .Riset-Header-Container {
-    margin: 12px 0 0 0;
-    background-image: url('./../../Assets/Riset/Riset-Background.svg');
+    background-image: url('./../../Assets/Riset/Riset-Header-Icon.svg'), url('./../../Assets/Riset/Riset-Header-Bg.svg');
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    height: 100vh;
+    /* justify-content: center; */
     border-top: 4px solid #111827;
     border-bottom: 4px solid #111827;
-
+    height: 737px ;
+    margin: 12px 0 0 0;
+    overflow-x: hidden
 }
 
 .Riset-Header-Wrapper {
@@ -20,6 +21,14 @@
     column-gap: 78px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+
+.Riset-Header-Wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+
 
 .Riset-Header h2 {
     font-family: 'Sports World';
@@ -49,28 +58,16 @@
 }
 
 .Riset-Main-Container {
-    background-image: url('./../../Assets/Riset/Riset-Main-Pattern.svg');
-    background-size: cover;
+    background-image: url('./../../Assets/Background/pattern-top.svg'), url('./../../Assets/Background/pattern-bottom.svg');
+    background-position: top right, bottom left;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    padding-bottom: 194px;
-}
 
-#Riset-Main-Header {
-    padding: 82px 0 62px 0;
-}
 
-#Riset-Main-Header h2 {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 64px;
-    text-shadow: 4px 5px 0px #040404;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #040404;
-    color: #F0E4D4;
+    padding-top: 5.25rem;
+    padding-bottom: 5rem;
 }
 
 #Riset-Main-Column {
@@ -81,6 +78,8 @@
     grid-template-rows: repeat(3, minmax(0, 1fr));
     row-gap: 60px;
     column-gap: 57px;
+
+    padding:0 clamp(2.375rem, -5.68756rem + 16.797vw, 5.0625rem);
 }
 
 .Riset-Main-Wrapper {
@@ -89,19 +88,27 @@
     align-items: center;
 }
 
+#Riset{
+    max-width:389px;
+    width: 100%;
+}
+
 #Riset img {
+    width: 100%;
+    height: auto;
     background-color: white;
     border: 5px solid black;
     box-shadow: 2px 3px 0px #040404;
 }
 
 #Riset h3 {
-    width: 354px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
+
+    width:100%;
     padding: 20px 0 12px 0;
 }
 
@@ -109,8 +116,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     padding-bottom: 7px;
 }
 
@@ -122,59 +129,10 @@
     line-height: 20px;
 }
 
-.Riset-Contact-Container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.Riset-Contact-Wrapper {
-    position: absolute;
-    z-index: 10;
-    transform: translateY(-50%);
-    background-color: white;
-    width: 855px;
-    height: 164px;
-    border: 3px solid #000000;
-    box-shadow: 3px 4px 0px #000000;
-}
-
-#Riset-Contact-Header {
-    padding: 20px 0 0 20px;
-}
-
-#Riset-Contact-Header h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-}
-
-#Riset-Contact-Person {
-    padding: 42px 0 0 20px;
-}
-
-#Riset-Contact-Person p{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: justify;
-}
-
-@media(max-width: 1280px){
-    #Riset img{
-        width: 300px;
-        height: 300px;
-    }
-}
-
 @media(max-width: 1024px){
-    .Riset-Header{
+    /* .Riset-Header{
         transform: translateX(60px);
-    }
+    } */
 
     .Riset-Header h2{
         width: 500px;
@@ -192,47 +150,142 @@
         height: 200px;
     }
 
-    #Riset-Main-Column{
+     #Riset-Main-Column{
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .Riset-Contact-Container{
-        display: none;
-    }
-
-    #Riset{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #Riset h3{
-        text-align: center;
-    }
-
-    #Riset img{
-        width: 200px;
-        height: 200px;
-    }
+    } 
 }
 
 @media(max-width: 768px){
+    .Riset-Header-Container {
+        height: 414px;
+    }
 
-    .Riset-Header{
-        transform: translateX(120px);
+    .Riset-Header-Wrapper {
+        column-gap: 24px;
+    }
+
+    .Riset-Main-Container {
+        padding-top: 4.38rem;
+        padding-bottom: 4.94rem;
     }
 
     .Riset-Header h2{
         font-size: 24px;
+        line-height: 32px;
         text-shadow: 3px 2px 0px #040404;
     }
 
     .Riset-Header p{
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 24px;
         width: 300px;
+        padding-top: 8px;
     }
 
     #Riset-Main-Column {
         padding: 0 32px 0 32px;
+    }
+
+    #Riset-Main-Column{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: 40px;
+        column-gap: 28px;
+    } 
+
+    #Riset{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width:211px;
+        width: 100%;
+    }
+
+    #Riset img {
+        border: 2px solid black;
+        box-shadow: none;
+    }
+
+    #Riset h3 {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    
+    #Riset p {
+        font-size: 12px;
+        line-height: 9.769px;
+        padding-bottom: 8px;
+        font-weight: 400;
+    }
+
+    #Riset a {
+        line-height: 20px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 9.769px; 
+        letter-spacing: 0.049px;
+    }
+}
+
+@media(max-width: 480px){
+    .Riset-Header-Container {
+        background-image: url('./../../Assets/Riset/Riset-Background-Phone.svg');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 4px solid #111827;
+        border-bottom: 4px solid #111827;
+        margin: 12px 0 0 0;
+        height:426px;
+    }
+    
+    
+    .Riset-Header-Wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0%;
+        margin-top:240px ;
+    }
+
+    .Riset-Header{
+        text-align: center;
+    }
+
+    .Riset-Header h2 {
+        font-size: 24px;
+        line-height: 32px;
+        text-shadow: 4px 5px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4;
+    }
+    
+    .Riset-Header p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 8px 0 0 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        font-size: clamp(0.875rem, 0.4rem + 2vw, 1rem);
+        width: 80%;
+    }
+
+    .Riset-Main-Container {
+        padding-top: 2.5rem;
+        padding-bottom: 4.91rem;
+    }
+
+    #Riset-Main-Column {
+        padding-right: clamp(0.625rem, -2.125rem + 13.75vw, 2rem);
+    }
+
+    #Riset-Main-Column{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 24px;
+        column-gap: 20px;
+    } 
+
+    #Riset{
+        max-width:190px;
     }
 }
