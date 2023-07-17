@@ -1,0 +1,1148 @@
+.hero-home-slide1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./../../Assets/Background/bghimal-home.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 738px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.hero-home-slide1 h1 {
+    font-family: "Sports World";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 64px;
+    letter-spacing: -0.25px;
+    color: #F0E4D4;
+    text-shadow: 4.5px 2.5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    transition: 0.2s;
+}
+
+.hero-home-slide1 h1:hover {
+    font-weight: 480;
+    font-size: 96px;
+}
+
+.hero-home-slide1 h3 {
+    /* Font styles */
+    font-family: 'Changa One';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-shadow: 1.5px 2.7px 1px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    transition: 0.2s;
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.hero-home-slide1 h3:hover {
+    font-size: 34px;
+}
+
+.hero-home-slide1 p {
+    /* Font family */
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #F0E4D4;
+    text-shadow: 2px 2.5px 0px #040404;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: #040404;
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+.hero-home-slide1 p:hover {
+    font-weight: 520;
+    font-size: 31px;
+}
+
+.hero-home-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40.5px 40px;
+    margin-top: 80px;
+}
+
+
+.hero-home-logo-connect {
+    width: 400px;
+    height: 200px;
+    transition: 0.2s;
+}
+
+.hero-home-logo-connect:hover {
+    width: 440px;
+    height: 220px;
+}
+
+.hero-home-slider {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    bottom: 50px;
+}
+
+.hero-home-slider button img {
+    width: 12px;
+    height: auto;
+}
+
+/* Slide 2 */
+.hero-home-slide2 {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./../../Assets/Background/bghimal-home2.png);
+    background-size: 100% 100%;
+    height: 711px;
+    margin-top: 12px;
+}
+
+.hero-home-slide2 .hero-home-logo-container {
+    padding: 0;
+    margin-top: 9.66rem;
+    margin-bottom: 2.22rem;
+}
+
+.hero-home-slide2 h1 {
+    font-family: "Sports World";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85.648px;
+    line-height: 64px;
+    letter-spacing: 5px;
+    color: #FFF;
+    text-shadow: 7px 7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    transition: 0.2s;
+}
+
+.hero-home-slide2 h3 {
+    font-family: 'Changa One';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.00738rem;
+    line-height: 40px;
+    text-shadow: 3px 3.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFF;
+    transition: 0.2s;
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.hero-slide2-container1 {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+
+    padding-top: clamp(4.4115625rem, 0.38156rem + 20.15vw, 20.53125rem);
+    padding-bottom: clamp(4.4115625rem, 0.38156rem + 20.15vw, 20.53125rem);
+    padding-right: clamp(3.6190625rem, 0.31286rem + 16.531vw, 16.84375rem);
+    padding-left: clamp(3.6190625rem, 0.31286rem + 16.531vw, 16.84375rem);
+
+    background-image: url(./../../Assets/Slider/home-slide2-kahim.png);
+    background-size: 100% 100%;
+
+}
+
+.hero-slide2-container2 {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+
+    padding-top: clamp(4.4115625rem, 0.38156rem + 20.15vw, 20.53125rem);
+    padding-bottom: clamp(4.4115625rem, 0.38156rem + 20.15vw, 20.53125rem);
+    padding-right: clamp(3.6190625rem, 0.95146rem + 13.338vw, 14.2890625rem);
+    padding-left: clamp(3.6190625rem, 0.95146rem + 13.338vw, 14.2890625rem);
+
+    background-image: url(./../../Assets/Slider/home-slide2-wakahim.png);
+    background-size: 100% 100%;
+}
+
+
+/* Animation on text */
+.hero-home-slide2 h1:hover {
+    font-weight: 480;
+    font-size: 96px;
+}
+
+.hero-home-slide2 h3:hover {
+    font-weight: 440;
+    font-size: 34px;
+}
+
+.hero-home-slide1 {
+    display: none;
+}
+
+/* Css for the usetate */
+.active-slide {
+    display: flex;
+}
+
+.hero-home-slider button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Change the background of 3 section at home */
+.homepage-3section-wrapper{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./../../Assets/Background/homepage-bg3section.svg')
+}
+
+/* Ilkomunity section */
+#ilkomunity-homepage {
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#ilkomunity-homepage .header {
+    display: flex;
+    justify-content: center;
+}
+
+#ilkomunity-homepage .header h2 {
+    font-family: 'Sports World';
+    font-weight: normal;
+    font-size: 36px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 57px;
+}
+
+#ilkomunity-homepage .ilkommunity {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap:45px 21px ;
+    justify-items: center;
+}
+
+#ilkomunity-homepage .ilkommunity > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../Assets/Ilkommunity/Background/card-bg-svg.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.3s;
+
+    width: 304px;
+    height: 253px;
+}
+
+#ilkomunity-homepage .ilkommunity  div:hover {
+    box-shadow: 10px 10px 0px #000000;
+    transform: translateY(-10px) translateX(-10px);
+}
+
+#ilkomunity-homepage .ilkommunity div img {
+    margin-top: 35px;
+    border: 2px solid;
+    border-radius: 122px;
+    width: 122px;
+    height: 122px;
+}
+
+#ilkomunity-homepage .ilkommunity div p {
+    list-style: none;
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #FFFFFF;
+    /* Positioning */
+    margin-top: 27px;
+}
+
+/* Megaproker Himalkom  Section*/
+#Megaproker-Home-Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 0 81px;
+}
+
+.Megaproker-Home-Header {
+    font-family: 'Sports World';
+    font-weight: normal;
+    font-size: 36px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 1.5px 2px 0px #040404;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    /* postitioning */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 57px;
+}
+
+.Megaproker-Home-Card {
+    background-size: 100% 100%;
+    width: 100%;
+    /* postitioning */
+    position: relative;
+    display: flex;
+}
+
+#Megaproker-Home-Container .Card1 {
+    height: 456px;
+}
+
+.Megaproker-Home-Card1-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./../../Assets/Program%20Kerja/card/home-card1.png);
+    background-size: 100% 100%;
+    height: 542.5px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.Megaproker-Home-Card1-logo,
+.Megaproker-Home-Card2-logo {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex: 40%;
+}
+
+.Megaproker-Home-Card1-logo {
+    padding-left: clamp(0.625rem, -3.8462rem + 9.315vw, 5.46875rem);
+}
+
+.Megaproker-Home-Card2-logo {
+    justify-content: flex-end;
+    align-self: start;
+    margin-top: 0;
+    /* padding-right: 147.64px; */
+    padding-right: clamp(3.321875rem, -2.12949rem + 11.357vw, 9.2275rem);
+}
+
+.Megaproker-Home-Card1-logo img,
+.Megaproker-Home-Card2-logo img {
+    object-fit: contain;
+    width: 328px;
+    height: 328px;
+}
+
+.Megaproker-Home-Card1-logo img {
+    /* declare the max width */
+    width: 472.43px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Megaproker-Home-Card-info {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 60%;
+}
+
+#Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info {
+    padding-left: 99.5px;
+    padding-left: clamp(1.25rem, -13.6564rem + 31.055vw, 6.21875rem);
+}
+
+.Megaproker-Home-Card-info h1 {
+    font-family: "Sports World";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 64px;
+    color: #f0e4d4;
+    text-shadow: 3px 2px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    /* Positioning */
+    margin-top: 66px;
+    margin-top: clamp(1.658125rem, -0.619rem + 4.744vw, 4.125rem);
+    margin-bottom: 0px;
+}
+
+.Megaproker-Home-Card-info p {
+    width: 75%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    font-size: clamp(0.875rem, 0.50012rem + 0.781vw, 1rem);
+    line-height: 24px;
+    text-align: justify;
+    color: #111827;
+
+    margin-top: 16.56px;
+    margin-top: clamp(0.3125rem, -1.93774rem + 4.688vw, 1.0625rem);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.Megaproker-Home-Card-info p span {
+    color: var(--gray-10, #111827);
+}
+
+.Megaproker-Home-Card-info button {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    padding: 8px 14px 8px 16px;
+    width: 156px;
+    height: 36px;
+    background: #E49800;
+    border: 1px solid #111827;
+    border: 1px solid var(--gray-10, #111827);
+
+    box-shadow: 3px 4px 0px #000000;
+    color: white;
+
+    margin-top: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Megaproker-Home-Card-info button:active {
+    transform: translateY(2px);
+    transform: translateX(3px);
+    box-shadow: 1px 1px 0px #000000;
+}
+
+#Megaproker-Home-Container .Card2 {
+    z-index: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(./../../Assets/Program%20Kerja/card/home-card2.png);
+    background-size: 100% 100%;
+    height: 544px;  /* Height dipake buat ngubah jarak space antar pagenya juga */
+    width: 100%;
+    padding-top: 128px;
+}
+
+.Megaproker-Home-Card2-logo img {
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border: 3px solid var(--gray-10, #111827);
+    box-shadow: 10px 10px 0px #000000;
+}
+
+#Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info {
+    padding-left: 93.5px;
+}
+
+#Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info h1 {
+    margin-top: clamp(1.25rem, -1.48696rem + 5.702vw, 4.215rem);
+}
+
+/* Komnews Section */
+#Komnews-Home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5rem 0 5rem 0; */
+    padding: 0px 80px 5rem 80px;
+    
+    overflow-x: hidden;
+}
+
+.Komnews-Home-Header h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 64px;
+    text-shadow: 1.5px 2.7px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+
+    margin-top: 5rem;
+}
+
+.Komnews-Home-Content-Container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 0 1rem 0;
+    overflow: auto;
+    width: 1279.5px;
+    width: 100%;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+
+@media(max-width: 1200px) {
+    #ilkomunity-homepage .ilkommunity {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 1024px) {
+    /* .Komnews-Home-Content-Container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 820px;
+        overflow: auto;
+    } */
+
+    /* Megaproker section */
+    #Megaproker-Home-Container {
+        padding: 0 clamp(2.5rem, -5.0936rem + 15.82vw, 5.03125rem);
+    }
+
+    /* Ilkomunity section */
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin: 0 40px;
+        gap: 32px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div {
+        width: 192px;
+        height: 160px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div:hover {
+        box-shadow: 7px 7px 0px #000000;
+        transform: translateY(-7px) translateX(-7px);
+    }
+
+    #ilkomunity-homepage .ilkommunity div img {
+        border: 2px solid;
+        border-radius: 122px;
+        width: 77.15px;
+        height: 77.15px;
+
+        margin-top: 18px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+
+        margin-top: 17px;
+    }
+}
+
+@media(max-width: 768px) {
+    /* Change the background of 3 section at home */
+    .homepage-3section-wrapper{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./../../Assets/Background/homepage-bg3section-tablet.svg')
+    }
+
+    .hero-home-slide1 {
+        background-image: url(./../../Assets/Background/bghimal-home-tablet.png);
+        height:554.01px;
+        margin-top: 16.66px;
+    }
+  
+    .hero-home-slide1 h1 {
+        font-size: 42.789px;
+        line-height: 48.044px;
+        letter-spacing: -0.188px;
+        color: #F0E4D4;
+    }
+    
+    .hero-home-slide1 h1:hover {
+        font-size: 52.789px;
+    }
+
+    .hero-home-slide1 h3 {
+        font-weight: 400;
+        font-size: 24.022px;
+        line-height: 30.028px;
+        text-shadow: 1.5px 2.7px 1px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4;
+        
+        margin-top: 0px;
+    }
+
+    .hero-home-slide1 h3:hover {
+        font-size: 26px;
+    }
+
+    .hero-home-slide1 p {
+        font-size: 18.017px;
+        line-height: 24.022px;
+        color: #F0E4D4;
+        text-shadow: 2px 2.5px 0px #040404;
+        -webkit-text-stroke-width: 0px;
+        -webkit-text-stroke-color: #040404;
+        
+        margin-top: 26px;
+    }
+
+    .hero-home-slide1 p:hover {
+        font-size: 20px;
+    }
+
+    .hero-home-logo-container {
+        padding:0px;
+        margin-top: 80px;
+        margin-bottom: 29.5px;
+    }
+
+    .hero-home-logo-connect {
+        width: 300.277px;
+        height: 156.895px;
+    }
+
+    .hero-home-logo-connect:hover {
+        width: 375px;
+        height: 196px;
+    }
+
+    /* Ilkomunity section */
+    #ilkomunity-homepage .header h2 {
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px;
+        margin: 0 40px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../../Assets/Ilkommunity/Background/card-bg-svg.svg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+        transition: 0.3s;
+
+        max-width: 304px;
+        width: 304px;
+        max-height: 253px;
+        height: 253px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div:hover {
+        box-shadow: 10px 10px 0px #000000;
+        transform: translateY(-10px) translateX(-10px);
+    }
+
+    #ilkomunity-homepage .ilkommunity  div img {
+        border: 2px solid;
+        border-radius: 122px;
+        width: 122px;
+        height: 122px;
+
+        margin-top: 35px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div p {
+        font-size: 30px;
+        line-height: 32px;
+        text-shadow: 1.5px 2.7px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+
+        margin-top: 27px;
+    }
+    
+    /* Megaproker section */
+    #Megaproker-Home-Container .Card1 {
+        height: 339.03px;
+    }
+
+    .Megaproker-Home-Card1-bg {
+        background-image: url(./../../Assets/Program%20Kerja/card/home-card1-tablet.png);
+        height: 550px;
+    }
+
+    .Megaproker-Home-Card-info h1 {
+        font-size: 30px;
+        line-height: 36px;
+        color: #f0e4d4;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        /* Positioning */
+        margin-top: 26.53px;
+        margin-bottom: 0px;
+    }
+
+    #Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info {
+        padding-left: 15px;
+        padding-left: clamp(0.625rem, -1.5626rem + 7.292vw, 1.9375rem);
+    }
+
+    #Megaproker-Home-Container .Card2 {
+        background-image: url(./../../Assets/Program%20Kerja/card/home-card2-tablet.png);
+        height: 655.4px;
+        padding-top: 256.82px;
+    }
+
+    .Megaproker-Home-Card1-logo img {
+        margin-left: clamp(0.625rem, -0.4166rem + 3.472vw, 1.25rem);
+        width: 287.69px;
+        height: 151px;
+    }
+
+    .Megaproker-Home-Card2-logo img {
+        object-fit: contain;
+        width: 221px;
+        height: auto;
+    }
+
+    .Megaproker-Home-Card-info p {
+        font-size: 14px;
+        font-size: clamp(0.625rem, 0.38014rem + 1.031vw, 0.875rem);
+        line-height: 20px;
+        width: 85%;
+    }
+
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info {
+        padding-left: 32px;
+    }
+
+    .Megaproker-Home-Card2-logo {
+        margin-top: 30.96px;
+    }
+
+    .Megaproker-Home-Card2-logo {
+        justify-content: flex-end;
+        padding-right: 53.15px;
+    }
+
+    .Megaproker-Home-Card-info button {
+        margin-top: 16px
+    }
+
+    /* Komnews section */
+    #Komnews-Home-container {
+        padding: 0px 40px 5rem 40px;
+    }
+
+    .Komnews-Home-Header h2 {
+        margin-top: 2.5rem;
+    }
+
+    #Komnews-Home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 40px;
+        overflow-x: hidden;
+    }
+
+    .Komnews-Home-Content-Container {
+        display: flex;
+        gap: 1.5rem;
+        padding: 2rem 0 1rem 0;
+        width: 100%;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    
+}
+
+@media (max-width: 640px) {
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 0 40px;
+        gap: 32px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div {
+        width: 192px;
+        height: 160px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div:hover {
+        box-shadow: 7px 7px 0px #000000;
+        transform: translateY(-7px) translateX(-7px);
+    }
+
+    #ilkomunity-homepage .ilkommunity div img {
+        margin-top: 18px;
+        border: 2px solid;
+        border-radius: 122px;
+        width: 77.15px;
+        height: 77.15px;
+    }
+ 
+    #ilkomunity-homepage .ilkommunity div p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+        margin-top: 17px;
+    }
+}
+
+@media(max-width: 480px) {
+    /* Change the background of 3 section at home */
+    .homepage-3section-wrapper{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('./../../Assets/Background/homepage-bg3section-phone.svg')
+    }
+
+    .hero-home-slide1 {
+        background-image: url(./../../Assets/Background/bghimal-home-phone.png);
+        height:366.52px;
+        margin-top: 16.66px;
+    }
+  
+    .hero-home-slide1 h1 {
+        font-size: 37px;
+        line-height: 31.734px;
+        letter-spacing: -0.124px;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+    }
+
+    .hero-home-slide1 h1:hover {
+        font-size: 38.263px;
+    }
+
+    .hero-home-slide1 h3 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19.834px;  
+        text-shadow: 1.5px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4;
+
+        margin-top: 3px;
+    }
+
+    .hero-home-slide1 h3:hover {
+        font-size: 18px;
+    }
+
+    .hero-home-slide1 p {
+        /* font-size: 15px; */
+        /* line-height: 15.867px;
+        color: #F0E4D4; */
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 0.7px;
+        -webkit-text-stroke-color: #040404;
+        
+        margin-top: 18.18px;
+    }
+    
+    .hero-home-slide1 p:hover {
+        font-size: 13.9px;
+    }
+
+    .hero-home-logo-container {
+        padding:0px;
+        margin-top: 53.44px;
+        margin-bottom: 19.58px;
+    }
+
+    .hero-home-logo-connect {
+        width: 198.338px;
+        height: 103.632px;
+    }
+
+    .hero-home-logo-connect:hover {
+        width: 247px;
+        height: 130px;
+    }
+
+    /* Ilkomunity section */
+    #ilkomunity-homepage .header .ilkommunity-header {
+        margin-bottom: 36px;
+    }
+
+    #ilkomunity-homepage .header h2 {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4;
+        /* postitioning */
+    }
+    
+    #ilkomunity-homepage .ilkommunity {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 0 clamp(0.9375rem, -2.1875rem + 15.625vw, 2.5rem);
+        gap: 16px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div {
+        width: 192px;
+        height: 160px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div:hover {
+        box-shadow: 5px 5px 0px #000000;
+        transform: translateY(-5px) translateX(-5px);
+    }
+
+    #ilkomunity-homepage .ilkommunity div img {
+        border: 2px solid;
+        border-radius: 122px;
+        width: 77.15px;
+        height: 77.15px;
+
+        margin-top: 18px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+
+        margin-top: 17px;
+    }
+
+    /* Megaproker section */
+    .Megaproker-Home-Header {
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 28px;
+        text-shadow: 1.5px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4;
+        /* postitioning */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 41px;
+    }
+
+    #Megaproker-Home-Container {
+        padding: 0 clamp(0.9375rem, -2.1875rem + 15.625vw, 2.5rem);
+    }
+
+    .Megaproker-Home-Card {
+        flex-direction: column;
+    }
+
+    #Megaproker-Home-Container .Card1 {
+        height: 544.74px;
+    }
+
+    .Megaproker-Home-Card1-bg {
+        background-image: url(./../../Assets/Program%20Kerja/card/home-card1-phone.png);
+        height: 741px;
+    }
+
+    .Megaproker-Home-Card1-logo {
+        padding-left: 0;
+    }
+
+    .Card2 .Megaproker-Home-Card2-logo {
+        align-items: center;
+        padding-right: 0;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: 49px;
+    }
+
+    .Card2 .Megaproker-Home-Card2-logo img {
+        box-shadow: 3px 4px 0px #000000;
+    }
+
+    #Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info,
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info {
+        padding-left: 49px;
+        padding-right: 49px;
+        flex-direction: column;
+    }
+
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info h1 {
+        margin-top: clamp(1.5625rem, -2.04557rem + 15.152vw, 2.5rem);
+    }
+
+    .Megaproker-Home-Card-info p {
+        font-size: 14px;
+        width: 100%;
+        line-height: 24px;
+        margin-top: 21px;
+    }
+
+    #Megaproker-Home-Container .Card2 {
+        background-image: url(./../../Assets/Program%20Kerja/card/home-card2-phone.png);
+        height: 796.25px;
+        padding-top: 182.25px;
+        flex-direction: column;
+    }
+
+    .Card2 .Megaproker-Home-Card2-logo {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Komnews */
+    #Komnews-Home-container {
+        padding: 5rem clamp(0.9375rem, -2.1875rem + 15.625vw, 2.5rem);
+    }
+
+    .Komnews-Home-Header h2 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+    }
+}
+
+@media(max-width: 380px) {
+    /* Ilkomunity section */
+    #ilkomunity-homepage .ilkommunity div {
+        width: 145.94px;
+        height: 122.37px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div:hover {
+        box-shadow: 5px 5px 0px #000000;
+        transform: translateY(-5px) translateX(-5px);
+    }
+
+    #ilkomunity-homepage .ilkommunity div img {
+        margin-top: 20px;
+        border: 2px solid;
+        border-radius: 122px;
+        width: 57.74px;
+        height: 57.74px;
+    }
+
+    #ilkomunity-homepage .ilkommunity div p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-shadow: 0.2px 1.5px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        color: #FFFFFF;
+        /* margin-top: px; */
+    }
+
+    /* Megaproker section */
+    .Megaproker-Home-Card1-logo img {
+        width: 90%;
+    }
+
+    #Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info h1,
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info h1 {
+        margin-top: 0;
+    }
+
+    .Megaproker-Home-Card2-logo img {
+        width: 170px;
+    }
+
+    .Megaproker-Home-Card-info p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    #Megaproker-Home-Container .Card1 .Megaproker-Home-Card-info,
+    #Megaproker-Home-Container .Card2 .Megaproker-Home-Card-info {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .Card2 .Megaproker-Home-Card2-logo {
+        margin-right: 24px;
+    }
+}
