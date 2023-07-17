@@ -41,13 +41,22 @@ const Page = () => {
   };
 
   const [Data, setData] = useState([]);
+  const [cachedData, setCachedData] = useState([]);
 
-    useEffect(() => {
-      const query = '*[_type == "komnews"]';
+  useEffect(() => {
+    const fetchData = async () => {
+      if (cachedData.length === 0) {
+        const query = '*[_type == "komnews"]';
+        const response = await client.fetch(query);
+        setData(response);
+        setCachedData(response);
+      } else {
+        setData(cachedData);
+      }
+    };
 
-      client.fetch(query)
-        .then((data) => setData(data))
-    }, [])
+    fetchData();
+  }, [cachedData]);
 
   const cards = Data.map(item => {
     return (

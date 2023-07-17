@@ -9,19 +9,27 @@ import { client } from '../../client';
 const Komnews = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [Data, setData] = useState([]);
+  const [cachedData, setCachedData] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "komnews"]';
+    const fetchData = async () => {
+      if (cachedData.length === 0) {
+        const query = '*[_type == "komnews"]';
+        const response = await client.fetch(query);
+        setData(response);
+        setCachedData(response);
+      } else {
+        setData(cachedData);
+      }
+    };
 
-    client.fetch(query)
-      .then((data) => setData(data))
-  }, [])
-
-
+    fetchData();
+  }, [cachedData]);
 
   const cards = Data.map(item => {
     return (
       <News
+        key={item.id}
         title={item.title}
         category={item.category}
         img={item.img}

@@ -10,17 +10,26 @@ import { urlFor, client } from '../../client';
 const Newsdesc = () => {
 
     const [Data, setData] = useState([]);
+    const [cachedData, setCachedData] = useState([]);
 
-    useEffect(() => {
-      const query = '*[_type == "komnews"]';
-
-      client.fetch(query)
-        .then((data) => setData(data))
-    }, [])
+useEffect(() => {
+    const fetchData = async () => {
+        if (cachedData.length === 0) {
+            const query = '*[_type == "komnews"]';
+            const response = await client.fetch(query);
+            setData(response);
+            setCachedData(response);
+        } else {
+        setData(cachedData);
+        }
+    };
+    fetchData();
+}, [cachedData]);
 
     const cards = Data.map(item => {
         return (
             <Card
+                key={item.id}
                 title={item.title}
                 img={item.img}
                 date={item.date}
