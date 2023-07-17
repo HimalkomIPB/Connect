@@ -20,9 +20,9 @@ const MAD = () => {
     };
 
     const slides = [
-        { url: dokum1  },
-        { url: dokum2  },
-        { url: dokum3  }
+        { url: dokum1 },
+        { url: dokum2 },
+        { url: dokum3 }
     ];
 
     return (
@@ -62,16 +62,12 @@ const MAD = () => {
                             showDeskripsi
                                 ? //if true
                                 <div className="MAD-deskripsi-content">
-                                    <p>Mobile Apps Development (MAD) merupakan komunitas pengembangan perangkat lunak berbasis android. Kegiatan komunitas ini berfokus pada pengembangan perangkat lunak berbasis android dari segi perencanaan, desain dan implementasi. Komunitas ini juga bergerak dalam hal-hal terkait project management, pengembangan design antarmuka yang mengacu terhadap aturan google material, percobaan dan pembelajaran berberapa development frameworks, pengenalan Android Studio dan Pengenalan database dan server. Komunitas ini diperuntukkan untuk semua mahasiswa aktif IPB. 
+                                    <p>Mobile Apps Development (MAD) merupakan komunitas pengembangan perangkat lunak berbasis android. Kegiatan komunitas ini berfokus pada pengembangan perangkat lunak berbasis android dari segi perencanaan, desain dan implementasi. Komunitas ini juga bergerak dalam hal-hal terkait project management, pengembangan design antarmuka yang mengacu terhadap aturan google material, percobaan dan pembelajaran berberapa development frameworks, pengenalan Android Studio dan Pengenalan database dan server. Komunitas ini diperuntukkan untuk semua mahasiswa aktif IPB.
                                     </p>
                                 </div>
                                 : //else
-                                < div >
-                                    <div className="MAD-tujuan-container">
-                                        <div className="MAD-tujuan-content">
-                                            <h3>Belajar serta membangun Mobile APP yang berkualitas, menarik, serta dapat menjadi konsumsi khalayak ramai</h3>
-                                        </div>
-                                    </div>
+                                <div className="MAD-tujuan-content">
+                                    <h3>Belajar serta membangun Mobile APP yang berkualitas, menarik, serta dapat menjadi konsumsi khalayak ramai</h3>
                                 </div>
                         }
 
@@ -84,7 +80,7 @@ const MAD = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <ImageSlider slides={slides} />
 
                     <div className="MAD-narahubung-container">

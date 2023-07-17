@@ -73,12 +73,8 @@ const IWDC = () => {
                                 )
                                 : //else
                                 (
-                                    < div >
-                                        <div className="IWDC-tujuan-container">
-                                            <div className="IWDC-tujuan-content">
-                                                <h3>Belajar serta membangun WebApp yang berkualitas, menarik, serta dapat menjadi konsumsi khalayak ramai</h3>
-                                            </div>
-                                        </div>
+                                    <div className="IWDC-tujuan-content">
+                                        <h3>Belajar serta membangun WebApp yang berkualitas, menarik, serta dapat menjadi konsumsi khalayak ramai</h3>
                                     </div>
                                 )
                         }

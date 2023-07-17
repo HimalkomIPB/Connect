@@ -134,9 +134,13 @@
     overflow-x: hidden;
 }
 
-.IWDC-deskripsi-content {
-    width: 1057px;
-    height: 200px;
+.IWDC-deskripsi-content, .IWDC-tujuan-content{
+    max-width: 1057px;
+    width: 90%;
+    height: auto;
+}
+
+.IWDC-deskripsi-content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,15 +165,13 @@
 }
 
 .IWDC-tujuan-content {
-    width: 1055px;
-    height: 104px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #E9AD33;
     border: 4px solid #16052B;
     box-shadow: 7px 7px 0px #000000;
-    margin: 32px 32px 0 32px;
+    margin: 32px 0 0 0;
     padding: 40px 44px 40px 44px;
 }
 
@@ -193,6 +195,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .IWDC-prestasi-content {
@@ -200,7 +203,8 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
+    max-width: 1060px;
+    width: 90%;
     height: 118px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
@@ -254,7 +258,8 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
+    max-width: 1060px;
+    width: 90%;
     height: 174px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
@@ -301,7 +306,7 @@
         height: auto;
     }
 
-    .IWDC-header-wrapper{
+    .IWDC-header-wrapper {
         column-gap: normal;
     }
 
@@ -311,22 +316,25 @@
     }
 
     .IWDC-deskripsi-content {
-        width: 800px;
-        height: 250px;
+        width: 90%;
+        height: auto;
+
     }
 
+
     .IWDC-tujuan-content {
-        width: 800px;
-        height: 100px;
+        width: 90%;
+        height: auto;
     }
 
     .IWDC-prestasi-content {
-        width: 800px;
+        width: 90%;
         height: 100px;
+
     }
 
     .IWDC-narahubung-content {
-        width: 800px;
+        width: 90%;
         height: 190px;
     }
 }
@@ -345,32 +353,37 @@
         width: 670px;
     }
 
-    .IWDC-header{
+    .IWDC-header {
         width: 377px;
     }
 
-    .IWDC-header p{
+    .IWDC-header p {
         font-size: 16px;
         width: auto;
     }
 
+
     .IWDC-deskripsi-content {
-        width: 400px;
-        height: 464px;
+        width: 90%;
+        max-width: 668px;
+        height: auto;
     }
 
     .IWDC-tujuan-content {
-        width: 394px;
-        height: 176px;
+        width: 90%;
+        max-width: 668px;
+        height: 48px;
     }
 
     .IWDC-prestasi-content {
-        width: 400px;
+        width: 90%;
+        max-width: 668px;
         height: 114px;
     }
 
     .IWDC-narahubung-content {
-        width: 400px;
+        width: 90%;
+        max-width: 668px;
         height: 190px;
     }
 }
@@ -388,6 +401,11 @@
         align-items: unset;
     }
 
+    #IWDC-deskripsi, #IWDC-tujuan{
+        font-size: 22px;
+        line-height: 28px;
+        overflow-x: hidden;
+    }
 
     .IWDC-header-wrapper {
         grid-template-columns: none;
@@ -395,27 +413,27 @@
         width: auto;
     }
 
-    .IWDC-header h2{
+    .IWDC-header h2 {
         font-size: 45px;
     }
 
     .IWDC-deskripsi-content {
-        width: 400px;
-        height: 464px;
+        width: 90%;
+        height: auto;
     }
 
     .IWDC-tujuan-content {
-        width: 394px;
-        height: 176px;
+        width: 90%;
+        height: auto;
     }
 
     .IWDC-prestasi-content {
-        width: 400px;
+        width: 90%;
         height: 114px;
     }
 
     .IWDC-narahubung-content {
-        width: 400px;
+        width: 90%;
         height: 190px;
     }
 }

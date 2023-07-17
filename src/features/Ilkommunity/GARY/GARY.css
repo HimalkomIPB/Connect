@@ -50,8 +50,9 @@
 }
 
 #GARY-main-container {
-    background-image: url('../../../Assets/Ilkommunity/IWDC/IWDC-Main-Pattern.svg');
-    background-size: cover;
+    background-image: url('./../../../Assets/Background/pattern-top.svg'), url('./../../../Assets/Background/pattern-bottom.svg');
+    background-size: contain;
+    background-position: top right, bottom left;
     background-repeat: no-repeat;
     padding: 80px 0 0 0;
 }
@@ -132,9 +133,14 @@
     overflow-x: hidden;
 }
 
+.GARY-deskripsi-content, .GARY-tujuan-content{
+    max-width: 1057px;
+    width: 90%;
+    height: auto;
+}
+
+
 .GARY-deskripsi-content {
-    width: 1057px;
-    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,8 +164,6 @@
 }
 
 .GARY-tujuan-content {
-    width: 1055px;
-    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,6 +190,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .GARY-prestasi-content {
@@ -193,7 +198,8 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
+    max-width: 1060px;
+    width: 90%;
     height: fit-content;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
@@ -204,7 +210,6 @@
     padding: 40px 0px 40px 0px;
     color: var(--monochrome-black, #000);
     text-align: center;
-    /* Montserrat/Medium/Title Large */
     font-size: 22px;
     font-family: Montserrat;
     font-weight: 500;
@@ -251,6 +256,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .GARY-narahubung-content {
@@ -259,7 +265,8 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
+    max-width: 1060px;
+    width: 90%;
     height: 174px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
@@ -315,22 +322,22 @@
     }
 
     .GARY-deskripsi-content {
-        width: 800px;
-        height: fit-content;
+        width: 90%;
+        height: auto;
     }
 
     .GARY-tujuan-content {
-        width: 800px;
-        height:fit-content;
+        width: 90%;
+        height:auto;
     }
 
     .GARY-prestasi-content{
-        width: 800px;
-        height: fit-content;
+        width: 90%;
+        height: auto;
     }
 
     .GARY-narahubung-content{
-        width: 800px;
+        width: 90%;
         height: 190px;
     }
     .GARY-Prestasi-List{
@@ -369,22 +376,22 @@
     }
 
     .GARY-deskripsi-content {
-        width: 400px;
-        height: fit-content;
+        width: 90%;
+        height: auto;
     }
 
     .GARY-tujuan-content {
-        width: 394px;
-        height: fit-content;
+        width: 90%;
+        height: auto;
     }
 
     .GARY-prestasi-content{
-        width: 400px;
-        height: fit-content;
+        width: 90%;
+        height: auto;
     }
 
     .GARY-narahubung-content{
-        width: 400px;
+        width: 90%;
         height: 190px;
     }
 
@@ -413,6 +420,11 @@
         align-items: unset;
     }
 
+    #GARY-deskripsi, #GARY-tujuan{
+        font-size: 22px;
+        line-height: 28px;
+        overflow-x: hidden;
+    }
 
     .GARY-header-wrapper {
         grid-template-columns: none;
@@ -425,22 +437,22 @@
     }
 
     .GARY-deskripsi-content {
-        width: 400px;
-        height: 464px;
+        width: 90%;
+        height: auto;
     }
 
     .GARY-tujuan-content {
-        width: 394px;
-        height: 176px;
+        width: 90%;
+        height: auto;
     }
 
     .GARY-prestasi-content {
-        width: 400px;
-        height: 114px;
+        width: 90%;
+        height: auto;
     }
 
     .GARY-narahubung-content {
-        width: 400px;
+        width: 90%;
         height: 190px;
     }
 }

@@ -23,11 +23,11 @@ const Agribot = () => {
     };
 
     const slides = [
-        { url: dokum1},
-        { url: dokum2},
-        { url: dokum3},
-        { url: dokum4},
-        { url: dokum5}
+        { url: dokum1 },
+        { url: dokum2 },
+        { url: dokum3 },
+        { url: dokum4 },
+        { url: dokum5 }
     ];
 
     return (
@@ -38,8 +38,8 @@ const Agribot = () => {
                     <div className="Agribot-header-wrapper">
                         <div className="Agribot-header">
                             <h2>Agribot</h2>
-                            <p>Agribot merupakan komunitas yang mewadahi mahasiswa dalam mengembangkan minatnya yang berfokus pada pengembangan dan penerapan teknologi dalam bidang robotik.<br/>
-                                <br/>
+                            <p>Agribot merupakan komunitas yang mewadahi mahasiswa dalam mengembangkan minatnya yang berfokus pada pengembangan dan penerapan teknologi dalam bidang robotik.<br />
+                                <br />
                                 Setiap Rabu pukul 19:00 di Localhost <br />(FMIPA lantai 4)
                             </p>
                         </div>
@@ -65,20 +65,16 @@ const Agribot = () => {
                             showDeskripsi
                                 ? //if true
                                 <div className="Agribot-deskripsi-content">
-                                    <p>Agribot merupakan komunitas robotik mahasiswa Ilmu Komputer IPB yang telah berdiri sejak tahun 2014. Kegiatan komunitas robotika ini berfokus pada pengembangan sistem tertanam dan juga pada bidang robotika. Komunitas ini juga bergerak dalam hal-hal yang terkait kecerdasan buatan, machine learning, dan pengembangan decision support system. Komunitas ini diperuntukkan untuk semua mahasiswa aktif ilmu komputer IPB beserta mahasiswa lain yang tertarik dengan tujuan komunitas ini. Mulai tahun 2016, 
-                                        sesuai dengan semangat IPB membentuk Unit Kegiatan Mahasiswa Robotika, 
+                                    <p>Agribot merupakan komunitas robotik mahasiswa Ilmu Komputer IPB yang telah berdiri sejak tahun 2014. Kegiatan komunitas robotika ini berfokus pada pengembangan sistem tertanam dan juga pada bidang robotika. Komunitas ini juga bergerak dalam hal-hal yang terkait kecerdasan buatan, machine learning, dan pengembangan decision support system. Komunitas ini diperuntukkan untuk semua mahasiswa aktif ilmu komputer IPB beserta mahasiswa lain yang tertarik dengan tujuan komunitas ini. Mulai tahun 2016,
+                                        sesuai dengan semangat IPB membentuk Unit Kegiatan Mahasiswa Robotika,
                                         komunitas ini mulai menjalin kerja sama dengan mahasiswa dari Departemen Teknik Mesin dan Biosistem serta Departemen Fisika.
                                     </p>
                                 </div>
                                 : //else
-                                < div >
-                                    <div className="Agribot-tujuan-container">
-                                        <div className="Agribot-tujuan-content">
-                                            <li>Mewadahi minat mahasiswa Ilmu Komputer IPB di bidang pengembangan robotik,</li>
-                                            <li>Menghasilkan robot yang memiliki dampak baik terhadap masyarakat dan institusi,</li>
-                                            <li>Memfasilitasi pelatihan robotik bagi Ilmu Komputer dan mahasiswa IPB.</li>
-                                        </div>
-                                    </div>
+                                <div className="Agribot-tujuan-content">
+                                    <li>Mewadahi minat mahasiswa Ilmu Komputer IPB di bidang pengembangan robotik,</li>
+                                    <li>Menghasilkan robot yang memiliki dampak baik terhadap masyarakat dan institusi,</li>
+                                    <li>Memfasilitasi pelatihan robotik bagi Ilmu Komputer dan mahasiswa IPB.</li>
                                 </div>
                         }
 
@@ -101,7 +97,7 @@ const Agribot = () => {
                         </div>
                         <div className="Agribot-narahubung-content">
                             <h3>Ismy Fana Fillah</h3>
-                            <h3>Whatsapp: 082322632462</h3>                            
+                            <h3>Whatsapp: 082322632462</h3>
                         </div>
                     </div>
                 </div>

@@ -133,9 +133,13 @@
     flex-direction: column;
 }
 
+.Agribot-deskripsi-content, .Agribot-tujuan-content{
+    max-width: 1057px;
+    width: 90%;
+    height: auto;
+}
+
 .Agribot-deskripsi-content {
-    width: 1057px;
-    height: 248px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,8 +164,6 @@
 }
 
 .Agribot-tujuan-content {
-    width: 1055px;
-    height: 172px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,6 +200,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .Agribot-prestasi-content {
@@ -262,7 +265,8 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
-    width: 1060px;
+    max-width: 1060px;
+    width: 90%;
     height: 174px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
@@ -319,22 +323,22 @@
     }
 
     .Agribot-deskripsi-content {
-        width: 800px;
+        width: 90%;
         height: 344px;
     }
 
     .Agribot-tujuan-content {
-        width: 800px;
+        width: 90%;
         height: 224px;
     }
 
     .Agribot-prestasi-content{
-        width: 800px;
+        width: 90%;
         height: 174px;
     }
 
     .Agribot-narahubung-content{
-        width: 800px;
+        width: 90%;
         height: 190px;
     }
 }
@@ -364,22 +368,22 @@
     }
 
     .Agribot-deskripsi-content {
-        width: 400px;
-        height: 608px;
+        width: 90%;
+        height: auto;
     }
 
     .Agribot-tujuan-content {
-        width: 394px;
-        height: 272px;
+        width: 90%;
+        height: auto;
     }
 
     .Agribot-prestasi-content{
-        width: 400px;
-        height: 222px;
+        width: 90%;
+        height: auto;
     }
 
     .Agribot-narahubung-content{
-        width: 400px;
+        width: 90%;
         height: 190px;
     }
 
@@ -396,6 +400,12 @@
         align-items: unset;
     }
 
+    #Agribot-deskripsi, #Agribot-tujuan{
+        font-size: 22px;
+        line-height: 28px;
+        overflow-x: hidden;
+    }
+
 
     .Agribot-header-wrapper {
         grid-template-columns: none;
@@ -408,22 +418,22 @@
     }
 
     .Agribot-deskripsi-content {
-        width: 400px;
-        height: 464px;
+        width: 90%;
+        height: auto;
     }
 
     .Agribot-tujuan-content {
-        width: 394px;
-        height: 176px;
+        width: 90%;
+        height: auto;
     }
 
     .Agribot-prestasi-content {
-        width: 400px;
-        height: 114px;
+        width: 90%;
+        height: auto;
     }
 
     .Agribot-narahubung-content {
-        width: 400px;
+        width: 90%;
         height: 190px;
     }
 }
