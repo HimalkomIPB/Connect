@@ -41,22 +41,20 @@ const Page = () => {
   };
 
   const [Data, setData] = useState([]);
-  const [cachedData, setCachedData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      if (cachedData.length === 0) {
+      try {
         const query = '*[_type == "komnews"]';
         const response = await client.fetch(query);
         setData(response);
-        setCachedData(response);
-      } else {
-        setData(cachedData);
+      } catch (error) {
+        console.error('Error fetching data from Sanity:', error);
       }
     };
 
     fetchData();
-  }, [cachedData]);
+  }, []);
 
   const cards = Data.map(item => {
     return (

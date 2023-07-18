@@ -9,21 +9,20 @@ import { urlFor, client } from '../../client';
 const Newsdesc = () => {
 
     const [Data, setData] = useState([]);
-    const [cachedData, setCachedData] = useState([]);
 
-useEffect(() => {
-    const fetchData = async () => {
-        if (cachedData.length === 0) {
-            const query = '*[_type == "komnews"]';
-            const response = await client.fetch(query);
-            setData(response);
-            setCachedData(response);
-        } else {
-        setData(cachedData);
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const query = '*[_type == "komnews"]';
+          const response = await client.fetch(query);
+          setData(response);
+        } catch (error) {
+          console.error('Error fetching data from Sanity:', error);
         }
-    };
-    fetchData();
-}, [cachedData]);
+      };
+  
+      fetchData();
+    }, []);
 
     const cards = Data.map(item => {
         return (
@@ -39,7 +38,6 @@ useEffect(() => {
     })
     const location = useLocation();
     const { berita } = location.state;
-
 return (
     <div>
         <Navbar/>

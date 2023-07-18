@@ -10,7 +10,7 @@ const IGallery = () => {
   const cards = Data.map((item) => {
     return (
       <Card
-        key={item._id}
+        key={item.id}
         title={item.title}
         category={item.category}
         desc={item.desc}

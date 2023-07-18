@@ -8,62 +8,35 @@ import { client } from '../../client';
 
 const Komnews = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [Data, setData] = useState([]);
-  const [cachedData, setCachedData] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
-      if (cachedData.length === 0) {
+      try {
         const query = '*[_type == "komnews"]';
         const response = await client.fetch(query);
         setData(response);
-        setCachedData(response);
-      } else {
-        setData(cachedData);
+      } catch (error) {
+        console.error('Error fetching data from Sanity:', error);
       }
     };
 
     fetchData();
-  }, [cachedData]);
+  }, []);
 
-  const cards = Data.map(item => {
-    return (
+  const handleFilterClick = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const cardElements = data.map((item) => (
+    <div key={item._id} className={selectedCategory === null || item.category === selectedCategory ? '' : 'fade-out'}>
       <News
-        key={item.id}
         title={item.title}
         category={item.category}
         img={item.img}
         date={item.date}
         desc={item.desc}
       />
-    );
-  });
-
-  const [fadeOut, setFadeOut] = useState(false);
-
-  const handleFilterClick = (category) => {
-    setSelectedCategory(category);
-    setFadeOut(true);
-    setTimeout(() => {
-    setFadeOut(false);
-    }, 200);
-  };
-
-  const handleAllClick = () => {
-    setSelectedCategory(null);
-    setFadeOut(true);
-    setTimeout(() => {
-    setFadeOut(false);
-    }, 200);
-  };
-
-  const filteredCards = selectedCategory
-    ? cards.filter((item) => item.props.category === selectedCategory)
-    : cards;
-
-  const cardElements = filteredCards.map((card, index) => (
-    <div key={index} className={fadeOut ? 'fade-out' : ''}>
-      {card}
     </div>
   ));
 
@@ -91,7 +64,7 @@ const Komnews = () => {
           <div className='topics-rec'>
             <h1>Recommended Topic</h1>
             <div className='rec-list'>
-              <button className='recommend' onClick={handleAllClick}>
+              <button className='recommend' onClick={() => handleFilterClick(null)}>
                 <span>All</span>
               </button>
               <button className='recommend' onClick={() => handleFilterClick('Self Improvement')}>
