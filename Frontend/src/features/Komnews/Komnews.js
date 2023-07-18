@@ -24,19 +24,44 @@ const Komnews = () => {
     fetchData();
   }, []);
 
-  const handleFilterClick = (category) => {
-    setSelectedCategory(category);
-  };
-
-  const cardElements = data.map((item) => (
-    <div key={item._id} className={selectedCategory === null || item.category === selectedCategory ? '' : 'fade-out'}>
+  const cards = data.map(item => {
+    return (
       <News
+        key={item.id}
         title={item.title}
         category={item.category}
         img={item.img}
         date={item.date}
         desc={item.desc}
       />
+    );
+  });
+
+  const [fadeOut, setFadeOut] = useState(false);
+
+  const handleFilterClick = (category) => {
+    setSelectedCategory(category);
+    setFadeOut(true);
+    setTimeout(() => {
+    setFadeOut(false);
+    }, 200);
+  };
+
+  const handleAllClick = () => {
+    setSelectedCategory(null);
+    setFadeOut(true);
+    setTimeout(() => {
+    setFadeOut(false);
+    }, 200);
+  };
+
+  const filteredCards = selectedCategory
+    ? cards.filter((item) => item.props.category === selectedCategory)
+    : cards;
+
+  const cardElements = filteredCards.map((card, index) => (
+    <div key={index} className={fadeOut ? 'fade-out' : ''}>
+      {card}
     </div>
   ));
 
@@ -64,7 +89,7 @@ const Komnews = () => {
           <div className='topics-rec'>
             <h1>Recommended Topic</h1>
             <div className='rec-list'>
-              <button className='recommend' onClick={() => handleFilterClick(null)}>
+              <button className='recommend' onClick={handleAllClick}>
                 <span>All</span>
               </button>
               <button className='recommend' onClick={() => handleFilterClick('Self Improvement')}>
