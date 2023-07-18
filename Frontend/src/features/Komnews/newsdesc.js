@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./newsdesc.css"
 import Card from "../../component/Komnews/Card"
-import Data from "../../Data/newsdata"
 import Navbar from "../../component/Navbar/Navbar"
 import Footer from "../../component/Footer/Footer"
 import { useLocation } from 'react-router-dom';

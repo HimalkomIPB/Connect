@@ -23,7 +23,7 @@ const News = (props) => {
           <p>{props.category}</p>
         </div>
       </div>
-      <img src={urlFor(props.img)} className="news_img" alt="gambar" />
+      <img src={urlFor(props.img).url()} className="news_img" alt="gambar" />
     </div>
   );
 }

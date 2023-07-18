@@ -1,28 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
 import "./IGallery.css"
 import Card from "../../component/IGallery/IGallery_card"
-import { client } from '../../client';
+import Data from "../../Data/IGallery_data"
 
 const IGallery = () => {
-  const [Data, setData] = useState([]);
-  const [cachedData, setCachedData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      if (cachedData.length === 0) {
-        const query = '*[_type == "igallery"]';
-        const response = await client.fetch(query);
-        setData(response);
-        setCachedData(response);
-      } else {
-        setData(cachedData);
-      }
-    };
-
-    fetchData();
-  }, [cachedData]);
 
   const cards = Data.map((item) => {
     return (
