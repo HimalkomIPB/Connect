@@ -39,6 +39,7 @@ useEffect(() => {
     })
     const location = useLocation();
     const { berita } = location.state;
+
 return (
     <div>
         <Navbar/>
@@ -51,7 +52,7 @@ return (
                     <h1 className='title-desc'>{berita.title}</h1>
                     <p className='date-desc'>{berita.date}</p>
                     <div className="img-desc">
-                        <img src={urlFor(berita.img)} alt="gambar"/>
+                        <img src={urlFor(berita.img).url()} alt="gambar"/>
                     </div>
                     <p className='text-desc'>{berita.desc}</p>
                 </div>
