@@ -1,10 +1,9 @@
-.profil-divisi_hrd .profil-container {
+#profil-divisi-hrd .profil-container-hrd {
     display: flex;
     flex-direction: row;
     width: auto;
     height: 737px;
-
-    background-image: url("./../../../../Assets/Divisi/HRD/hrd_background.svg");
+    background-image:  url("./../../../../Assets/Divisi/HRD/hrd_teks.png"), url("./../../../../Assets/Divisi/HRD/hrd_background.svg");
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +14,7 @@
     margin-top: 13px;
 }
 
-.logo-container {
+.logo-container-hrd {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,20 +22,20 @@
     flex: 50%;
 }
 
-.info-divisi {
+.info-divisi-hrd {
     flex: 75%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
-.info-divisi h1 {
+.info-divisi-hrd h1 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
-    margin: 254px 0 29px 0;
+    margin: 0 0 29px 0;
     letter-spacing: -2px;
 
     text-shadow: 7px 4px 0px #040404;
@@ -45,11 +44,11 @@
     color: #F0E4D4;
     
 }
-
-.info-divisi p {
+ 
+.info-divisi-hrd p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-align: justify;
@@ -57,41 +56,256 @@
 }
 
 /* Staff Section */
-.staff-divisi {
+#staff-divisi-hrd {
+    background-repeat: no-repeat;
     background-image: url('./../../../../Assets/Background/pattern-top.svg'), url('./../../../../Assets/Background/pattern-bottom.svg');
     background-position: top left, bottom right;
     background-size: contain;
-    background-repeat: no-repeat;
 }
 
 
-.hrd .staff-header h2 {
+.staff-header-hrd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 0 0;
+}
+
+.staff-header-hrd h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    padding-bottom: 14px;
+
+    text-shadow: 7px 4px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+
+
     padding: 0 100px 20px 100px;
     border-bottom: 8px solid  #000000;
 }
 
-.hrd-anggota{
+.anggota-hrd-container{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-    gap: 80px 120px;
     justify-items: center;
+    gap: 80px 120px;
     padding: 76px 106px 0px 106px;
+
 }
 
-.anggota-hrd:first-child {
+.anggota-divisi-hrd img{
+    height: 430.37px;
+} 
+
+.anggota-divisi-hrd:first-child {
     grid-column: span 3;
 }
 
-
 /* Program Section */
-.program-header{
-    padding-top: 160px;
-    
+.program-divisi-hrd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0 40px 0;
 }
-.hrd .program-header h2{
+
+.program-header-hrd h2{
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    padding-bottom: 14px;
+
+    text-shadow: 7px 4px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+}
+
+.program-header-hrd h2{
     padding: 0 16px 20px 16px;
     border-bottom: 8px solid  #000000;
+    margin-bottom: 2.5rem;
+}
+
+@media(max-width: 1024px) {
+    .anggota-hrd-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    .anggota-divisi-hrd:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-hrd:last-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-hrd img{
+        height:448.37px;
+    } 
+
 }
 
 
+@media(max-width: 768px) {
+    #profil-divisi-hrd .profil-container-hrd {
+        height: 549px;
+        background-image: url("./../../../../Assets/Divisi/HRD/hrd_teks_tab.png"), url("./../../../../Assets/Divisi/HRD/hrd_background_tab.svg");    
+        border-top: 4px solid #000000;
+        border-bottom: 4px solid #000000;
+    }
+
+    .logo-container-hrd {
+        flex: 70%;
+    }
+
+    .info-divisi-hrd h1 {
+        font-size: 45px;
+        line-height: 52px;
+        margin: 0 0 29px 0;
+        letter-spacing: -2px;        
+    }
+     
+    .info-divisi-hrd p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        width: 90%;
+    }
+
+
+    .staff-header-hrd h2 {
+        font-size: 45px;
+        padding: 0 50px 4px 50px;
+        border-bottom: 6px solid  #000000;
+    }
+    
+    .anggota-hrd-container{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+        overflow-x: hidden;
+    }
+    
+    .anggota-divisi-hrd:first-child {
+        grid-column: span 3;
+    }
+
+    .anggota-divisi-hrd:last-child {
+        grid-column: span 1;
+    }
+
+    .anggota-divisi-hrd img{
+        height: 240.13px;
+    }
+
+    .program-divisi-hrd{
+        padding: 87px 0 40px 0;
+    }
+
+    .program-header-hrd h2{
+        font-size: 45px;
+        border-bottom: 6px solid  #000000;
+        padding: 0 16px 10px 16px;
+    }
+}
+
+
+@media(max-width: 560px) {
+    .anggota-hrd-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-divisi-hrd:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-hrd:last-child {
+        grid-column: span 2;
+    }
+}
+
+@media(max-width: 480px) {
+    #profil-divisi-hrd .profil-container-hrd {
+        height: 562px;
+        background-image: url("./../../../../Assets/Divisi/HRD/hrd_teks_phone.png"), url("./../../../../Assets/Divisi/HRD/hrd_background_phone.svg");    
+    }
+
+    .logo-container-hrd {
+        display: none;
+    }
+
+    .info-divisi-hrd{
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-divisi-hrd h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 240px 0 9px 0;
+        letter-spacing: -2px;        
+    }
+    
+    .info-divisi-hrd p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .staff-header-hrd h2 {
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 10px 0px 10px;
+
+        border-bottom: 3px solid  #000000;
+    }
+    
+    .anggota-hrd-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+    }
+    
+    .anggota-divisi-hrd:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-hrd:last-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-hrd img{
+        height: 235.88px;
+    }
+
+    
+    .program-divisi-hrd{
+        padding: 80px 0 40px 0;
+    }
+
+    .program-header-hrd h2{
+        border-bottom: 3px solid  #000000;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 4px 0px 4px;
+    }
+}

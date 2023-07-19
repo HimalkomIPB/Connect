@@ -3,17 +3,16 @@
     flex-direction: row;
     width: auto;
     height: 737px;
-    background-image: url("./../../../../Assets/Divisi/Medbrand/desk-background.svg");
+    background-image: url("./../../../../Assets/Divisi/Medbrand/medbrand-teks.png"),url("./../../../../Assets/Divisi/Medbrand/medbrand-background.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-
+    background-position: center;
     border-top: 5px solid #000000;
     border-bottom: 5px solid #000000;
     margin-top: 13px
 }
 
-.logo-container {
+.logo-container-medbrand {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,63 +20,65 @@
     flex: 50%;
 }
 
-.desc-medbrand {
-    flex: 78%;
+
+.info-medbrand {
+    flex: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 70px;
 }
 
-.desc-medbrand h2 {
+.info-medbrand h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
     margin: 0 0 29px 0;
-
     text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
 }
 
-.desc-medbrand p {
+.info-medbrand p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-align: justify;
-    width: 85%;
+    width: 75%;
 }
 
-.staff-header {
+.medbrand-staff-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 70px 0 0 0;
 }
 
-.staff-header h2 {
+.medbrand-staff-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
     padding-bottom: 14px;
-
     text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+    padding: 0 100px 20px 100px;
+    border-bottom: 8px solid #000000;
 }
 
-.staff {
-    background-size: cover;
+.medbrand-staff {
+    background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('./../../../../Assets/Divisi/Edukasi/Pattern.svg')
+    background-image: url('./../../../../Assets/Background/pattern-top.svg'), url('./../../../../Assets/Background/pattern-bottom.svg');
+    background-position: top left, bottom right;
+    
 }
 
 .medbrand-anggota {
@@ -86,45 +87,208 @@
     grid-template-rows: repeat(5, minmax(0, 1fr));
     justify-items: center;
     gap: 80px 120px;
-    padding: 76px 116px 160px 106px;
+    padding: 76px 116px 0 106px;
 }
 
-.anggota-divisi:first-child {
+.anggota-medbrand:first-child {
     grid-column: span 3;
 }
 
-.anggota-divisi:last-child {
+.anggota-medbrand:last-child {
     grid-column: span 3;
 }
 
-.anggota-divisi {
+.anggota-medbrand {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.program-header {
+.medbrand-program-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 160px 0 40px 0;
 }
 
-.program-header h2 {
+.medbrand-program-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
-    padding-bottom: 14px;
-
-
     text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+    padding: 0 16px 20px 16px;
+    border-bottom: 8px solid #000000;
 }
 
 .program-header img {
     width: 572px;
+}
+
+@media(max-width: 1024px) {
+    .medbrand-container {
+        height: 100vh;
+    }
+
+    .info-medbrand h2 {
+        font-size: 42px;
+        text-shadow: 4px 3px 0px #040404;
+    }
+
+    .medbrand-anggota {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-medbrand img {
+        height: 448.37px;
+    }
+
+    .anggota-medbrand:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-medbrand:last-child {
+        grid-column: span 1;
+    }
+}
+
+@media(max-width: 768px) {
+    .medbrand-container {
+        background-image: url("../../../../Assets/Divisi/Medbrand/medbrand-teks-tab.png"), url("../../../../Assets/Divisi/Medbrand/medbrand-background-tab.svg");
+        background-size: cover;
+        height: 549px;
+        border: none;
+    }
+
+    .logo-container-medbrand {
+        flex: 70% 1;
+    }
+
+    .info-medbrand {
+        flex: 75% 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-medbrand h2 {
+        font-size: 45px;
+        line-height: 52px;
+        letter-spacing: -2px;
+    }
+
+    .info-medbrand p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .medbrand-anggota {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+        overflow-x: hidden;
+    }
+
+    .anggota-medbrand img {
+        height: 257px;
+    }
+
+    .anggota-medbrand:first-child {
+        grid-column: span 3;
+    }
+
+    .anggota-medbrand:last-child {
+        grid-column: span 3;
+    }
+
+    .medbrand-program-header {
+        padding: 87px 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .program-header img {
+        width: auto;
+    }
+
+    .medbrand-program-header {
+        padding: 80px 0 40px 0;
+    }
+
+    .medbrand-program-header h2 {
+        border-bottom: 3px solid #000000;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 4px 0px 4px;
+    }
+
+    .medbrand-anggota {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+    }
+
+    .anggota-medbrand:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-medbrand:last-child {
+        grid-column: auto;
+    }
+
+    .anggota-medbrand img {
+        height: 191.734px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .medbrand-container {
+        background-image: url("../../../../Assets/Divisi/Medbrand/medbrand-teks-phone.png"), url("../../../../Assets/Divisi/Medbrand/medbrand-background-phone.svg");
+        background-size: cover;
+        height: 622px;
+        border-top: 5px solid #000000;
+        border-bottom: 5px solid #000000;
+    }
+
+    .logo-container-medbrand {
+        display: none;
+    }
+
+    .info-medbrand {
+        flex: 100% 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-medbrand h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 300px 0 9px 0;
+        letter-spacing: -2px;
+    }
+
+    .info-medbrand p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .medbrand-anggota {
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+    }
+
+    .anggota-medbrand img {
+        height: 235.88px;
+    }
 }

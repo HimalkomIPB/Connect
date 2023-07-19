@@ -3,7 +3,7 @@
     flex-direction: row;
     width: auto;
     height: 737px;
-    background-image: url("./../../../../Assets/Divisi/Entrepreneur/Backgorund-entre.svg");
+    background-image: url("./../../../../Assets/Divisi/Entrepreneur/entre-teks.png"), url("./../../../../Assets/Divisi/Entrepreneur/entre-background.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -13,7 +13,7 @@
     margin-top: 13px
 }
 
-.entre-logo {
+.logo-container-entre {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,14 +21,14 @@
     flex: 50%;
 }
 
-.entre-desc {
+.desc-entre {
     flex: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.entre-desc h2 {
+.desc-entre h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -36,13 +36,17 @@
     line-height: 64px;
     margin: 0 0 29px 0;
 
-    text-shadow: 1.5px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
 }
 
-.entre-desc p{
+.desc-entre h2 br {
+    display: none;
+}
+
+.desc-entre p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -51,14 +55,15 @@
     text-align: justify;
     width: 75%;
 }
-.entre-header {
+
+.entre-staff-header {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 70px 0 0 0;
 }
 
-.entre-header h2 {
+.entre-staff-header h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -66,52 +71,310 @@
     line-height: 64px;
     padding-bottom: 14px;
 
-    text-shadow: 1.5px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+    padding: 0 100px 20px 100px;
+    border-bottom: 8px solid #000000;
 }
 
-/* .entre-header img{
-    padding: 0 0 76px 0;
-} */
-
-.staff {
-    background-size: cover;
+.stafff {
     background-repeat: no-repeat;
-    background-image: url('./../../../../Assets/Divisi/Entrepreneur/Pattern.svg')
+    background-image: url('./../../../../Assets/Background/pattern-top.svg'), url('./../../../../Assets/Background/pattern-bottom.svg');
+    background-position: top left, bottom right;
+    background-size: contain;
 }
 
-.entre-staff{
+.entre-anggota {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(4, minmax(0, 1fr));
     justify-items: center;
     gap: 80px 120px;
-    padding: 76px 116px 160px 106px;
+    padding: 76px 116px 0px 106px;
 }
 
-.anggota-entre:first-child{
+.anggota-divisi-entre:first-child {
     grid-column: span 3;
 }
 
-.anggota-entre:last-child{
+.anggota-divisi-entre:last-child {
     grid-column: span 3;
 }
 
-.anggota-entre {
+
+.program-header-entre {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 160px 0 40px 0;
 }
 
-.anggota-entre h2 {
+.program-header-entre h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
-    font-size: 45px;
-    line-height: 52px;
-    text-align: center;
-    width: 433px;
+    font-size: 57px;
+    line-height: 64px;
+    text-shadow: 7px 4px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+    padding: 0 16px 20px 16px;
+    border-bottom: 8px solid #000000;
+}
 
+.program-header-entre img {
+    width: 572px;
+}
+
+
+.entre-proker-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    cursor: pointer;
+    border-bottom: 2px solid #040404;
+}
+
+.entre-proker-title.active {
+    background-color: #E9AD33;
+}
+
+.entre-proker-title h2 {
+    font-size: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.entre-proker-title:hover {
+    background-color: #E9AD33;
+    transition: .4s;
+}
+
+.entre-proker-desc {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 2px solid #040404;
+    transition: 0.05s;
+}
+
+.entre-proker-desc.show {
+    height: auto;
+    max-height: 99999px;
+    overflow: hidden;
+    transition: 0.3s cubic-bezier(0, 1, 0, 1);
+    padding: 20px 24px;
+}
+
+.entre-proker-desc p {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+@media(max-width: 1024px) {
+    .entre-container {
+        height: 100vh;
+    }
+
+    .desc-entre h2 {
+        font-size: 42px;
+        text-shadow: 4px 3px 0px #040404;
+    }
+
+    .entre-anggota {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-divisi-entre img {
+        height: 448.37px;
+    }
+
+    .anggota-divisi-entre:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-entre:last-child {
+        grid-column: span 2;
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    .entre-container {
+        background-image: url("../../../../Assets/Divisi/Entrepreneur/entre-teks-tab.png"), url("../../../../Assets/Divisi/Entrepreneur/entre-background-tab.svg");
+        height: 549px;
+
+    }
+
+    .logo-container-entre {
+        flex: 70% 1;
+    }
+
+    .desc-entre h2 {
+        font-size: 45px;
+        line-height: 52px;
+        letter-spacing: -2px;
+    }
+
+    .desc-entre p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .entre-staff-header h2 {
+        font-size: 45px;
+        padding: 0 50px 4px 50px;
+        border-bottom: 6px solid #000000;
+    }
+
+    .entre-anggota {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+        overflow-x: hidden;
+    }
+
+    .anggota-divisi-entre:first-child {
+        grid-column: span 3;
+    }
+
+    .anggota-divisi-entre:last-child {
+        grid-column: span 3;
+    }
+
+    .anggota-divisi-entre img {
+        height: 240.13px;
+    }
+
+    .program-header-entre{
+        padding: 87px 0 40px 0;
+    }
+
+    .program-header-entre h2 {
+        font-size: 45px;
+        border-bottom: 6px solid #000000;
+        padding: 0 16px 10px 16px;
+    }
+
+    .desc-entre h2 br {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .entre-container {
+        background-image: url("../../../../Assets/Divisi/Entrepreneur/entre-teks-phone.png"), url("../../../../Assets/Divisi/Entrepreneur/entre-background-phone.svg");
+        height: 522px;
+    }
+
+    .logo-container-entre {
+        display: none;
+    }
+
+    .desc-entre {
+        flex: 100% 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc-entre p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .entre-anggota {
+        gap: 40px 10px;
+    }
+
+
+    .desc-entre h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 200px 0 9px 0;
+        letter-spacing: -2px;
+    }
+
+    .entre-anggota {
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+    }
+
+    .entre-anggota {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+        overflow-x: hidden;
+    }
+
+    .anggota-divisi-entre img {
+        height: 235.88px
+    }
+
+    .anggota-divisi-entre:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-entre:last-child {
+        grid-column: span 2;
+    }
+
+    .program-header-entre {
+        padding: 80px 0 40px 0;
+    }
+
+    .program-header-entre h2 {
+        border-bottom: 3px solid #000000;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 4px 0px 4px;
+    }
+
+    .program-header-entre img {
+        display: none;
+    }
+
+    .entre-staff-header h2 {
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 10px 0px 10px;
+        border-bottom: 3px solid #000000;
+    }
+
+    .entre-staff-header img {
+        display: none;
+    }
+
+    .program-header-entre h2{
+        border-bottom: 3px solid #000000;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 4px 0px 4px;
+    }
+    .desc-entre h2 br {
+        display: none;
+    }
 }

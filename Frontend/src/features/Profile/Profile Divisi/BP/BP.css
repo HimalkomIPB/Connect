@@ -3,7 +3,7 @@
     flex-direction: row;
     width: auto;
     height: 737px;
-    background-image: url("./../../../../Assets/Divisi/BP/BP_background.svg");
+    background-image: url("./../../../../Assets/Divisi/BP/bp-teks.png"), url("./../../../../Assets/Divisi/BP/bp-background.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -37,11 +37,13 @@
     line-height: 64px;
     margin: 0 0 29px 0;
 
-    text-shadow: 1.5px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
 }
+
+
 
 .info-bp p {
     font-family: 'Montserrat';
@@ -68,33 +70,27 @@
     line-height: 64px;
     padding-bottom: 14px;
 
-    text-shadow: 1.5px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+    padding: 0 100px 20px 100px;
+    border-bottom: 8px solid #000000;
 }
 
 .staff {
-    background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./../../../../Assets/Divisi/Edukasi/Pattern.svg')
+    background-image: url('./../../../../Assets/Background/pattern-top.svg'), url('./../../../../Assets/Background/pattern-bottom.svg');
+    background-position: top left, bottom right;
+    background-size: contain;
 }
 
 .BP-anggota {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(5, minmax(0, 1fr));
     justify-items: center;
     gap: 80px 120px;
-    padding: 76px 116px 160px 106px;
-}
-
-.anggota-BP:first-child {
-    grid-column: span 3;
-}
-
-.anggota-BP:last-child {
-    grid-column: 3;
+    padding: 76px 116px 0px 106px;
 }
 
 .anggota-BP {
@@ -102,6 +98,11 @@
     flex-direction: column;
     align-items: center;
 }
+
+.anggota-BP:first-child {
+    grid-column: span 3;
+}
+
 
 .program-header {
     display: flex;
@@ -116,15 +117,198 @@
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
-    padding-bottom: 14px;
-
-
-    text-shadow: 1.5px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+    padding: 0 16px 20px 16px;
+    border-bottom: 8px solid #000000;
 }
 
 .program-header img {
     width: 572px;
+}
+
+.switch1 {
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    .bp-container {
+        height: 100vh;
+    }
+
+    .info-bp h2 {
+        font-size: 42px;
+        text-shadow: 4px 3px 0px #040404;
+        line-height: 49px;
+    }
+
+    .BP-anggota {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-BP img{
+        height: 448.37px;
+    }
+
+    .anggota-BP:first-child {
+        grid-column: span 2;
+    }
+
+    .switch2 {
+        display: none;
+    }
+    .switch1 {
+        display: inline;
+    }
+}
+
+@media(max-width: 768px) {
+    .bp-container {
+        background-image: url("../../../../Assets/Divisi/BP/bp-teks-tab.png"), url("../../../../Assets/Divisi/BP/bp-background-tab.svg");
+        height: 549px;
+    }
+
+    .logo-container {
+        flex: 70% 1;
+    }
+
+    .info-bp h2 {
+        font-size: 45px;
+        line-height: 52px;
+        letter-spacing: -2px;
+    }
+
+    .info-bp p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .staff-header h2 {
+        font-size: 45px;
+        padding: 0 50px 4px 50px;
+        border-bottom: 6px solid #000000;
+    }
+
+    .BP-anggota {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+        overflow-x: hidden;
+    }
+
+    .anggota-BP:first-child {
+        grid-column: span 3;
+    }
+
+    .switch1 {
+        display: none;
+    }
+    .switch2 {
+        display: inline;
+    }
+
+    .anggota-BP img {
+        height: 240.13px;
+    }
+
+    .program-header {
+        padding: 87px 0 40px 0;
+    }
+
+    .program-header h2 {
+        font-size: 45px;
+        border-bottom: 6px solid #000000;
+        padding: 0 16px 10px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bp-container {
+        background-image: url("../../../../Assets/Divisi/BP/bp-teks-phone.png"), url("../../../../Assets/Divisi/BP/bp-background-phone.svg");
+        height: 522px;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .info-bp {
+        flex: 100% 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-bp p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .info-bp h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 200px 0 9px 0;
+        letter-spacing: -2px;
+        text-align: center;
+    }
+
+    .BP-anggota {
+        gap: 40px 10px;
+        padding: 44.23px 42px 0px 42px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        overflow-x: hidden;
+    }
+
+    .anggota-BP:first-child {
+        grid-column: span 2;
+    }
+
+    .switch2 {
+        display: none;
+    }
+    .switch1 {
+        display: inline;
+    }
+
+    .anggota-BP img {
+        height: 235.88px
+    }
+
+    .program-header {
+        padding: 80px 0 40px 0;
+    }
+
+    .program-header h2 {
+        border-bottom: 3px solid #000000;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 4px 0px 4px;
+    }
+
+    .program-header img {
+        display: none;
+    }
+
+    .staff-header h2 {
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 10px 0px 10px;
+        border-bottom: 3px solid #000000;
+    }
+
+    .staff-header img {
+        display: none;
+    }
 }

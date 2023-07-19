@@ -1,19 +1,20 @@
-.eksternal-container {
+#profil-divisi-eksternal .profil-container-eksternal {
     display: flex;
     flex-direction: row;
     width: auto;
     height: 737px;
-    background-image: url("./../../../../Assets/Divisi/Eksternal/Eksternal_background.svg");
+    background-image:  url("./../../../../Assets/Divisi/Eksternal/eksternal_teks.png"), url("./../../../../Assets/Divisi/Eksternal/Eksternal_background.svg");
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 
     border-top: 5px solid #000000;
     border-bottom: 5px solid #000000;
-    margin-top: 13px
+    margin-top: 13px;
 }
 
-.eksternal-logo {
+.logo-container-eksternal {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,27 +22,30 @@
     flex: 50%;
 }
 
-.eksternal-desc {
+.info-divisi-eksternal {
     flex: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.eksternal-desc h2 {
+.info-divisi-eksternal h1 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
     font-size: 57px;
     line-height: 64px;
     margin: 0 0 29px 0;
+    letter-spacing: -2px;
+
     text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+    
 }
-
-.eksternal-desc p{
+ 
+.info-divisi-eksternal p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -50,14 +54,24 @@
     text-align: justify;
     width: 75%;
 }
-.eksternal-header {
+
+/* Staff Section */
+#staff-divisi-eksternal {
+    background-repeat: no-repeat;
+    background-image: url('./../../../../Assets/Background/pattern-top.svg'), url('./../../../../Assets/Background/pattern-bottom.svg');
+    background-position: top left, bottom right;
+    background-size: contain;
+}
+
+
+.staff-header-eksternal{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 70px 0 0 0;
 }
 
-.eksternal-header h2 {
+.staff-header-eksternal h2 {
     font-family: 'Sports World';
     font-style: normal;
     font-weight: 400;
@@ -65,105 +79,233 @@
     line-height: 64px;
     padding-bottom: 14px;
 
-    text-shadow: 1.5px 2.7px 0px #040404;
+    text-shadow: 7px 4px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+
+
+    padding: 0 100px 20px 100px;
+    border-bottom: 8px solid  #000000;
+}
+
+.anggota-eksternal-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center;
+    gap: 80px 120px;
+    padding: 76px 106px 0px 106px;
+
+}
+
+.anggota-divisi-eksternal img{
+    height: 430.37px;
+} 
+
+.anggota-divisi-eksternal:first-child {
+    grid-column: span 3;
+}
+
+/* Program Section */
+.program-divisi-eksternal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0 40px 0;
+}
+
+.program-header-eksternal h2{
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 64px;
+    padding-bottom: 14px;
+
+    text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
 }
 
-.eksternal-header img{
-    padding: 0 0 76px 0;
-}
-
-.eksternal-staff{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-    justify-items: center;
-    gap: 80px 120px;
-    padding: 76px 116px 160px 106px;
-}
-
-.anggota-eksternal:first-child{
-    grid-column: span 3;
-}
-
-.anggota-eksternal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.anggota-eksternal h2 {
-    font-family: 'Sports World';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 45px;
-    line-height: 52px;
-    text-align: center;
-    width: 433px;
+.program-header-eksternal h2{
+    padding: 0 16px 20px 16px;
+    border-bottom: 8px solid  #000000;
+    margin-bottom: 2.5rem;
 }
 
 @media(max-width: 1024px) {
-    .eksternal-container {
-        height: 100vh;
-    }
-
-    .desc-eksternal h2 {
-        font-size: 42px;
-        text-shadow: 4px 3px 0px #040404;
-    }
-
-    .eksternal-staff {
+    .anggota-eksternal-container{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .anggota-eksternal img {
-        height: 380px;
-    }
 
-    .anggota-eksternal:first-child {
+    .anggota-divisi-eksternal:first-child {
         grid-column: span 2;
     }
 
-    .anggota-eksternal:last-child {
+    .anggota-divisi-eksternal:last-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-eksternal img{
+        height:448.37px;
+    } 
+
+}
+
+
+@media(max-width: 768px) {
+    #profil-divisi-eksternal .profil-container-eksternal {
+        height: 549px;
+        background-image: url("./../../../../Assets/Divisi/Eksternal/eksternal_teks_tab.png"), url("./../../../../Assets/Divisi/Eksternal/Eksternal_background_tab.svg");    
+        border-top: 4px solid #000000;
+        border-bottom: 4px solid #000000;
+    }
+
+    .logo-container-eksternal {
+        flex: 70%;
+    }
+
+    .info-divisi-eksternal h1 {
+        font-size: 45px;
+        line-height: 52px;
+        margin: 0 0 29px 0;
+        letter-spacing: -2px;        
+    }
+     
+    .info-divisi-eksternal p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        width: 90%;
+    }
+
+
+    .staff-header-eksternal h2 {
+        font-size: 45px;
+        padding: 0 50px 4px 50px;
+        border-bottom: 6px solid  #000000;
+    }
+    
+    .anggota-eksternal-container{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+        overflow-x: hidden;
+    }
+    
+    .anggota-divisi-eksternal:first-child {
+        grid-column: span 3;
+    }
+
+    .anggota-divisi-eksternal:last-child {
+        grid-column: span 1;
+    }
+
+    .anggota-divisi-eksternal img{
+        height: 240.13px;
+    }
+
+    .program-divisi-eksternal{
+        padding: 87px 0 40px 0;
+    }
+
+    .program-header-eksternal h2{
+        font-size: 45px;
+        border-bottom: 6px solid  #000000;
+        padding: 0 16px 10px 16px;
+    }
+}
+
+
+@media(max-width: 560px) {
+    .anggota-eksternal-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-divisi-eksternal:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-eksternal:last-child {
         grid-column: span 2;
     }
 }
 
-@media(max-width: 768px) {
-
-    .eksternal-container {
-        background-image: url("../../../../Assets/Divisi/Ristek/Ristek Mobile Bg.svg");
-        background-size: cover;
-        height: calc(60rem);
+@media(max-width: 480px) {
+    #profil-divisi-eksternal .profil-container-eksternal {
+        height: 522px;
+        background-image: url("./../../../../Assets/Divisi/Eksternal/eksternal_teks_phone.png"), url("./../../../../Assets/Divisi/Eksternal/Eksternal_background_phone.svg");    
     }
 
-    .eksternal-desc {
-        flex: auto;
+    .logo-container-eksternal {
+        display: none;
+    }
+
+    .info-divisi-eksternal{
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        transform: translateY(10rem);
     }
 
-    .eksternal-logo{
-        display: none;
+    .info-divisi-eksternal h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 200px 0 9px 0;
+        letter-spacing: -2px;        
     }
-
-    .eksternal-desc h2 {
-        display: none;
-    }
-
-    .eksternal-desc p {
-        text-align: center;
+    
+    .info-divisi-eksternal p {
         font-size: 16px;
         line-height: 24px;
+        width: 80%;
+        text-align: center;
     }
 
-    .eksternal-staff {
-        gap: 40px 10px;
+    .staff-header-eksternal h2 {
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 10px 0px 10px;
+
+        border-bottom: 3px solid  #000000;
+    }
+    
+    .anggota-eksternal-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 44.23px 42px 0px 42px;
+        gap: 40px;
+    }
+    
+    .anggota-divisi-eksternal:first-child {
+        grid-column: span 2;
     }
 
-    .anggota-eksternal img {
-        height: calc(300.75px);
+    .anggota-divisi-eksternal:last-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-eksternal img{
+        height: 235.88px;
+    }
+
+    
+    .program-divisi-eksternal{
+        padding: 80px 0 40px 0;
+    }
+
+    .program-header-eksternal h2{
+        border-bottom: 3px solid  #000000;
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 4px 0px 4px;
     }
 }
