@@ -394,6 +394,20 @@ li {
 
 
 @media(max-width: 480px){
+    .mobile-navbar{
+        overflow-x:hidden ;
+        min-height: 450px;
+    }
+
+    .mobile-icon {
+        gap: 0;
+    }
+    
+    .mobile-icon a{
+        padding-right: clamp(0.625rem, -3.125rem + 18.75vw, 2.5rem);
+
+    }
+
     .mobile-navbar, .mobile-icon-container, .cross-active  {
         padding-left: clamp(0.625rem, -3.125rem + 18.75vw, 2.5rem);
         padding-right: clamp(0.625rem, -3.125rem + 18.75vw, 2.5rem);
@@ -430,4 +444,11 @@ li {
         font-size: 16px;
         line-height: 20px;
     }
+
+    .mobile-navbar .dropdown-divisi img {
+        max-height: 28px;
+        max-width: 28px;
+        width: 100%;
+        height: 100%;
+      }
 }
