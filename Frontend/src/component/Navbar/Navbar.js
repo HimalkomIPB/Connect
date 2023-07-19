@@ -185,7 +185,7 @@ const Navbar = () => {
             </li>
             <li className="mobile-navbar-dropdown">
               <p  onClick={toggleDropdown3}>
-              <a href="/Ilkommunity">Komunitas</a>
+              <a href="#">Komunitas</a>
               <img src={isActive3 ? arrow_up : arrow_down} alt="arrow" />
               </p>
               {isActive3 && (
