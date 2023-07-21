@@ -10,7 +10,7 @@ import icon5 from '../../Assets/Riset/Riset-Icon5.svg';
 import icon6 from '../../Assets/Riset/Riset-Icon6.svg';
 import icon7 from '../../Assets/Riset/Riset-Icon7.svg';
 import icon8 from '../../Assets/Riset/Riset-Icon8.svg';
-
+import HeaderIcon from '../../Assets/Riset/Hero-Icon.svg';
 
 const Riset = () => {
     return (
@@ -22,8 +22,11 @@ const Riset = () => {
                     <div className="Riset-Header-Wrapper">
                         <div className="Riset-Header">
                             <h2>Riset Ilkomerz</h2>
-                            <p> <b>Riset Ilkomerz </b>merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.</p>
+                            <p> <span className='bold'>Riset Ilkomerz </span>merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.</p>
                         </div>
+                        {/* <div className="Riset-Icon">
+                            <img src={HeaderIcon} alt="Riset icon" />
+                        </div> */}
                     </div>
                 </div>
             </section>

@@ -11,7 +11,7 @@
     border-bottom: 4px solid #111827;
     height: 737px ;
     margin: 12px 0 0 0;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .Riset-Header-Wrapper {
@@ -20,6 +20,7 @@
     align-items: center;
     column-gap: 78px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
 }
 
 .Riset-Header-Wrapper {
@@ -50,7 +51,8 @@
     font-size: 16px;
     line-height: 24px;
     text-align: justify;
-    width: 532px;
+    /* max-width: 532px; */
+    width: 40%;
 }
 
 .Riset-Header b {
@@ -141,8 +143,9 @@
     }
 
     .Riset-Header p{
-        width: 450px;
+        max-width: 400px;
         font-size: 14px;
+        width: 100%;
     }
 
     .Riset-Icon img{
@@ -157,6 +160,14 @@
 
 @media(max-width: 768px){
     .Riset-Header-Container {
+    background-image: url('./../../Assets/Riset/Riset-Header-Icon.svg'), url('./../../Assets/Riset/Riset-Header-Bg.svg');
+    background-position:  center left 50px, center;
+    }
+
+
+
+
+    .Riset-Header-Container {
         height: 414px;
     }
 
@@ -169,6 +180,11 @@
         padding-bottom: 4.94rem;
     }
 
+    .Riset-Header{
+        max-width: 391px;
+        width: 100%;
+    }
+
     .Riset-Header h2{
         font-size: 24px;
         line-height: 32px;
@@ -178,7 +194,7 @@
     .Riset-Header p{
         font-size: 16px;
         line-height: 24px;
-        width: 300px;
+        width: 100%;
         padding-top: 8px;
     }
 
@@ -228,6 +244,10 @@
 
 @media(max-width: 480px){
     .Riset-Header-Container {
+        background-position: center center;
+    }
+    
+    .Riset-Header-Container {
         background-image: url('./../../Assets/Riset/Riset-Background-Phone.svg');
         display: flex;
         flex-direction: column;
@@ -240,15 +260,17 @@
     
     
     .Riset-Header-Wrapper {
-        display: flex;
-        flex-direction: column;
-        padding-left: 0%;
         margin-top:240px ;
+        padding: 0 clamp(0.625rem, -3.625rem + 21.25vw, 2.75rem);
     }
-
+    
     .Riset-Header{
         text-align: center;
+        align-items: center;
+        width: 100%;
     }
+
+
 
     .Riset-Header h2 {
         font-size: 24px;
@@ -257,17 +279,18 @@
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #040404;
         color: #F0E4D4;
+        width: auto;
     }
     
     .Riset-Header p {
         text-align: center;
-        margin: 0 auto;
+        justify-content: center;
         padding: 8px 0 0 0;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         font-size: clamp(0.875rem, 0.4rem + 2vw, 1rem);
-        width: 80%;
+        max-width: 100%;
     }
 
     .Riset-Main-Container {
@@ -277,6 +300,7 @@
 
     #Riset-Main-Column {
         padding-right: clamp(0.625rem, -2.125rem + 13.75vw, 2rem);
+        padding-left: clamp(0.625rem, -2.125rem + 13.75vw, 2rem);
     }
 
     #Riset-Main-Column{
