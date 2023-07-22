@@ -4,7 +4,7 @@ import Footer from "../../component/Footer/Footer";
 import "./IGallery.css"
 import Card from "../../component/IGallery/IGallery_card"
 import Data from "../../Data/IGallery_data"
-
+import { motion } from 'framer-motion';
 const IGallery = () => {
 
   const cards = Data.map((item) => {
@@ -24,22 +24,13 @@ const IGallery = () => {
   console.log(Data);
 
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [fadeOut, setFadeOut] = useState(false);
 
   const handleFilterClick = (category) => {
     setSelectedCategory(category);
-    setFadeOut(true);
-    setTimeout(() => {
-      setFadeOut(false);
-    }, 200);
   };
 
   const handleAllClick = () => {
     setSelectedCategory(null);
-    setFadeOut(true);
-    setTimeout(() => {
-      setFadeOut(false);
-    }, 200);
   };
 
   const filteredCards = selectedCategory
@@ -47,7 +38,7 @@ const IGallery = () => {
     : cards;
 
   const cardElements = filteredCards.map((card, index) => (
-    <div key={index} className={fadeOut ? 'fade-out' : ''}>
+    <div key={index}>
       {card}
     </div>
   ));
@@ -55,17 +46,25 @@ const IGallery = () => {
   return (
     <div>
       <Navbar />
-      <div id="IG-header-container">
+      <div
+        id="IG-header-container"
+      >
         <div className="IG-header-wrapper">
-          <div className="IG-header">
-            <h2>I-GALLERY</h2>
-            <p>
-              I-Gallery adalah platform yang berisi kumpulan projek-projek yang telah dibuat oleh mahasiswa ilmu komputer. I-Gallery menampilkan projek dari setiap mata kuliah berprojek. Tujuan dari I-Gallery adalah untuk menunjukan projek yang telah dibuat oleh mahasiswa ilmu komputer.
-            </p>
-          </div>
+          <motion.div
+            whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="IG-header"
+          >
+              <h2>I-GALLERY</h2>
+              <p>
+                I-Gallery adalah platform yang berisi kumpulan projek-projek yang telah dibuat oleh mahasiswa ilmu komputer. I-Gallery menampilkan projek dari setiap mata kuliah berprojek. Tujuan dari I-Gallery adalah untuk menunjukan projek yang telah dibuat oleh mahasiswa ilmu komputer.
+              </p>
+          </motion.div>
         </div>
       </div>
-      <div className='IG-main'>
+      <div
+        className="IG-main"
+      >
         <h1>DAFTAR MATKUL</h1>
         <div className='IG-main-button'>
           <button className='IG-list' onClick={handleAllClick}>
@@ -90,9 +89,13 @@ const IGallery = () => {
             <span>Pengolahan Citra Digital</span>
           </button>
         </div>
-        <div className='IG-main-content'>
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+          className='IG-main-content'
+        >
           {cardElements}
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </div>
