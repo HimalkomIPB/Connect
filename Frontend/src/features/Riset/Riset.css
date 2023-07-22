@@ -1,12 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/sports-world');
 
 .Riset-Header-Container {
-    background-image: url('./../../Assets/Riset/Riset-Header-Icon.svg'), url('./../../Assets/Riset/Riset-Header-Bg.svg');
+    background-image:  url('./../../Assets/Riset/Riset-Header-Bg.svg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
-    /* justify-content: center; */
     border-top: 4px solid #111827;
     border-bottom: 4px solid #111827;
     height: 737px ;
@@ -15,21 +14,31 @@
 }
 
 .Riset-Header-Wrapper {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    column-gap: 78px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 100%;
-}
-
-.Riset-Header-Wrapper {
     display: flex;
     align-items: center;
-    padding-left: 5%;
+    width: 100%;
+    /* padding-left: 5%; */
+    /* background-color: aqua; */
 }
 
 
+.Riset-Header{
+    /* background-color: red; */
+    flex: 60%;
+    padding-left: clamp(2.5625rem, -5.43766rem + 16.667vw, 9.5625rem);
+}
+
+.Riset-Icon{
+    /* background-color: rebeccapurple; */
+    /* padding-left: auto;  */
+    flex: 40%;
+    padding-right: clamp(1.875rem, -6.91092rem + 18.304vw, 9.5625rem);
+}
+
+.Riset-Icon img{
+    max-width: 523px;
+    width: 100%;
+}
 
 .Riset-Header h2 {
     font-family: 'Sports World';
@@ -51,8 +60,8 @@
     font-size: 16px;
     line-height: 24px;
     text-align: justify;
-    /* max-width: 532px; */
-    width: 40%;
+    max-width: 532px;
+    width: 100%;
 }
 
 .Riset-Header b {
@@ -137,7 +146,7 @@
     } */
 
     .Riset-Header h2{
-        width: 500px;
+        /* width: 500px; */
         font-size: 36px;
         text-shadow: 3px 4px 0px #040404;
     }
@@ -146,6 +155,12 @@
         max-width: 400px;
         font-size: 14px;
         width: 100%;
+    }
+
+    .Riset-Icon{
+        padding-right: clamp(0.625rem, -5.12376rem + 11.961vw, 2.53125rem);
+        padding-right: clamp(0.625rem, -3.14454rem + 7.843vw, 1.875rem);
+        padding-right: clamp(0.625rem, -2.20204rem + 5.882vw, 1.5625rem);
     }
 
     .Riset-Icon img{
@@ -159,13 +174,6 @@
 }
 
 @media(max-width: 768px){
-    .Riset-Header-Container {
-    background-image: url('./../../Assets/Riset/Riset-Header-Icon.svg'), url('./../../Assets/Riset/Riset-Header-Bg.svg');
-    background-position:  center left 50px, center;
-    }
-
-
-
 
     .Riset-Header-Container {
         height: 414px;
@@ -181,8 +189,19 @@
     }
 
     .Riset-Header{
-        max-width: 391px;
+        /* max-width: 391px; */
+        max-width: auto;
         width: 100%;
+    }
+
+    .Riset-Icon{
+        padding-right: clamp(0.625rem, -2.552rem + 10.59vw, 2.53125rem);
+    }
+
+    .Riset-Icon img{
+        max-width: 300px;
+        width: 100%;
+        height: 200px;
     }
 
     .Riset-Header h2{
@@ -243,6 +262,10 @@
 }
 
 @media(max-width: 480px){
+    .Riset-Icon{
+        display: none;
+    }
+
     .Riset-Header-Container {
         background-position: center center;
     }
@@ -268,6 +291,7 @@
         text-align: center;
         align-items: center;
         width: 100%;
+        padding-left: 0;
     }
 
 

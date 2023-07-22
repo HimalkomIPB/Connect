@@ -24,9 +24,9 @@ const Riset = () => {
                             <h2>Riset Ilkomerz</h2>
                             <p> <span className='bold'>Riset Ilkomerz </span>merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.</p>
                         </div>
-                        {/* <div className="Riset-Icon">
+                        <div className="Riset-Icon">
                             <img src={HeaderIcon} alt="Riset icon" />
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </section>
