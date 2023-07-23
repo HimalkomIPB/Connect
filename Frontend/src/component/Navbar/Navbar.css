@@ -89,6 +89,7 @@ li {
     background-color: #E49800;
     padding: 10px;
     border-bottom: 4px solid #111827;
+    z-index: 99;
 }
 
 .divisi-dropdown li {
