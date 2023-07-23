@@ -352,6 +352,14 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1023px){
+    #GARY-header-container {
+        width: 100%;
+        max-width: 1024px;
+        height: 500px;
+    }
+}
+
 @media(max-width: 768px) {
     #GARY-header-container {
         background-image: url("../../../Assets/Ilkommunity/GARY/GARY_Header_Background_Tab.svg");
@@ -363,11 +371,13 @@
     }
 
     .GARY-header-wrapper {
-        width: 670px;
+        width: 100%;
+        max-width: 670px;
     }
 
     .GARY-header{
-        width: 377px;
+        width: 100%;
+        max-width: 377px;
     }
 
     .GARY-header p{
@@ -407,6 +417,22 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 767px){
+    #GARY-header-container {
+        width: 100%;
+        max-width: 768px;
+        height: 410px;
+    }
+
+    .GARY-header-wrapper{
+        grid-template-columns: none;
+    }
+
+    .GARY-header p{
+        width: 80%;
+    }
+}
+
 @media(max-width: 480px) {
     #GARY-header-container {
         background-image: url("../../../Assets/Ilkommunity/GARY/GARY_Header_Background_Mobile.svg");
@@ -428,12 +454,17 @@
 
     .GARY-header-wrapper {
         grid-template-columns: none;
-        transform: translateY(16.5rem);
-        width: auto;
+        width: auto;   
+        align-items: end;
+        padding-bottom: 2rem;
     }
 
     .GARY-header h2{
         font-size: 45px;
+    }
+
+    .GARY-header p {
+        width: 80%;
     }
 
     .GARY-deskripsi-content {
@@ -454,5 +485,18 @@
     .GARY-narahubung-content {
         width: 90%;
         height: 190px;
+    }
+
+    #GARY-deskripsi.gary-active {
+        font-size: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+    }
+    #GARY-tujuan.gary-active {
+        font-size: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
     }
 }
