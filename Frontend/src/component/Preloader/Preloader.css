@@ -32,6 +32,7 @@
 /* Media Query for Phones */
 @media (max-width: 767px) {
     .preloader .texts-container {
-        font-size: 15px;
+        font-size: 13px;
+        gap: 7px;
     }
 }
