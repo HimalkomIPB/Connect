@@ -113,7 +113,6 @@ const ProfileHimalkom = () => {
             <div className="divisi-header">
               <p>DIVISI</p>
               <h2>HIMALKOM</h2>
-              <img src={line} alt="line" />
             </div>
 
             <div className="divisi-card">

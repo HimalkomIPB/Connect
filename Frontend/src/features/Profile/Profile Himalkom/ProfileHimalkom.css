@@ -102,6 +102,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 4.56rem 0 0 3.38rem;
+  gap: 4.38rem;
 }
 
 .Himalkom-intro-content p {
@@ -170,7 +171,8 @@
 }
 
 .tujuan-himalkom-wrapper p {
-  width: 925px;
+  width: 100%;
+  max-width: 925px;
   color: #170F00;
   text-align: right;
   font-family: Montserrat;
@@ -194,6 +196,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(3, minmax(0, 1fr));
   justify-items: center;
+  width: 100%;
   padding: 0 79px 120px 87px;
   row-gap: 50px;
   column-gap: 26px;
@@ -224,7 +227,8 @@
   text-shadow: 3px 2px 0px #040404;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #040404;
-  padding-bottom: 14px;
+  padding: 0 8px 14px 8px;
+  border-bottom: 12px solid #040404;
 }
 
 .divisi-background {
@@ -239,8 +243,8 @@
 }
 
 .divisi img {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .divisi:hover {
@@ -268,7 +272,7 @@
   line-height: 44px;
   color: #e49800;
   text-shadow: 3px 2px 0px #040404;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #040404;
 }
 
@@ -316,8 +320,11 @@
 
 .c-image {
   align-items: center;
+  width: 100%;
+  max-width: max-content;
   margin-top: 170px;
   margin-bottom: 25px;
+  padding: 0 1rem 0 1rem;
 }
 
 .filop-kiri {
@@ -341,7 +348,8 @@
   background: #F7C5A1;
   padding: 25px;
   border-radius: 24px;
-  width: 290px;
+  width: 100%;
+  max-width: 290px;
   margin-bottom: 50px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 3ms;
@@ -354,7 +362,8 @@
   background: #F7C5A1;
   border-radius: 24px;
   padding: 25px;
-  width: 232px;
+  width: 100%;
+  max-width: 232px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -522,11 +531,28 @@
   color: #170f00;
 }
 
+@media (min-width:769px) and (max-width: 1024px) {
+  .Himalkom-intro-content{
+    gap: 2.38rem;
+  }
+
+  .Himalkom-intro-wrapper{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .tujuan-himalkom-wrapper {
+    padding: 0 2.5rem 0 0;
+    max-width: 542px;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   .profil-himalkom-hero {
     background-image: url('../../../Assets/Profil Himalkom/profil-himalkom-hero-tab.svg');
     background-size: cover;
+    background-position: center center;
     height: 554.011px;
   }
 
@@ -539,7 +565,14 @@
   }
 
   .Himalkom-intro-content p {
-    width: 405px;
+    width: 100%;
+    padding-right: 7px;
+    font-size: 16px;
+    max-width: 405px;
+  }
+
+  .Himalkom-intro-content b{
+    font-size: 20px;
   }
 
   .Himalkom-intro-content img {
@@ -554,7 +587,8 @@
 
   .tujuan-himalkom-wrapper {
     padding: 0 2.5rem 0 0;
-    width: 542px;
+    width: 100%;
+    max-width: 542px;
   }
 
   .tujuan-himalkom-wrapper h2 {
@@ -593,7 +627,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 620px) {
   .profil-himalkom-hero {
     background-image: url('../../../Assets/Profil Himalkom/profil-himalkom-hero-mobile.svg');
     background-size: cover;
@@ -620,6 +654,9 @@
 
   }
 
+  .c-image{
+    width: 80%;
+  }
 
   .profil-himalkom-img img {
     width: 238.006px;
@@ -653,6 +690,114 @@
   .punchline h2 {
     font-size: 24px;
     text-shadow: 1px 2px 0px #040404;
+  }
+
+  .filop {
+    background-image: url('../../../Assets/Profil Himalkom/filosofi-himalkom-tab-bg.svg');
+    background-size: contain;
+    background-position: top;
+    background-color: #F7C5A1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 6.69rem 0;
+    height: auto;
+  }
+
+  .filop-tengah {
+    grid-column: unset;
+  }
+
+
+  .filop-kiri {
+    padding-top: 2.13rem;
+  }
+
+  .filop-kanan {
+    padding-top: 4.86rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .profil-himalkom-hero {
+    background-image: url('../../../Assets/Profil Himalkom/profil-himalkom-hero-mobile.svg');
+    background-size: cover;
+    height: 365.934px;
+  }
+
+  .divisi-header h2 {
+    font-size: 48px;
+    text-shadow: 3px 2px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+  }
+
+
+  .profil-himalkom-hero h1 {
+    font-size: 28.263px;
+    text-shadow: 2px 3px 0px #040404;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #040404;
+  }
+
+  .profil-himalkom-hero h3 {
+    font-size: 22px;
+    text-shadow: 2px 3px 0px #040404;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #040404;
+  }
+
+  .profil-himalkom-hero p {
+    font-size: 11.9px;
+    text-shadow: 2px 3px 0px #040404;
+
+  }
+
+  .c-image{
+    width: 80%;
+  }
+
+  .profil-himalkom-img img {
+    width: 100%;
+    max-width: 238.006px;
+  }
+
+
+  .Himalkom-intro-header h1{
+    font-size: 45px;
+    text-shadow: 4px 5px 0px #040404;
+  }
+
+  .Himalkom-intro-content{
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2.38rem;
+  }
+
+  .Himalkom-intro-content b{
+    font-size: 20px;
+  }
+
+  .tujuan-himalkom-container{
+    background-image: url('../../../Assets/Profil Himalkom/Tujuan-Himalkom-Mobile.svg');
+  }
+
+  .tujuan-himalkom-wrapper{
+    padding-right: 1rem;
+  }
+
+  .tujuan-himalkom-wrapper h2{
+    font-size: 45px;
+    padding-bottom: 1rem;
+  }
+
+  .tujuan-himalkom-wrapper p{
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .punchline h2 {
+    font-size: 20px;
   }
 
   .filop {
