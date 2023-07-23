@@ -71,7 +71,6 @@ const Page = () => {
   return (
     <div id="homepage" className="background">
       <Navbar />
-
       {/* Main Page */}
       <section id="hero-home-container">
         <div className={`hero-home-slide1 ${activeSlide === 0 ? 'active-slide' : ''}`}>

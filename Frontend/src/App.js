@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Page from './features/Homepage/Page'
+import Page from './features/Homepage/Page';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProfileHimalkom from './features/Profile/Profile Himalkom/ProfileHimalkom';
-import Megaproker from './features/Megaproker/Megaproker'
-import Komnews from './features/Komnews/Komnews'
-import Ilkommunity from './features/Ilkommunity/Ilkommunity'
+import Megaproker from './features/Megaproker/Megaproker';
+import Komnews from './features/Komnews/Komnews';
+import Ilkommunity from './features/Ilkommunity/Ilkommunity';
 import BP from './features/Profile/Profile Divisi/BP/BP';
-import BPH from './features/Profile/Profile Divisi/BPH/BPH'
+import BPH from './features/Profile/Profile Divisi/BPH/BPH';
 import Edukasi from './features/Profile/Profile Divisi/Edukasi/Edukasi';
 import Eksternal from './features/Profile/Profile Divisi/Eksternal/Eksternal';
 import HRD from './features/Profile/Profile Divisi/HRD/HRD';
@@ -25,25 +25,31 @@ import CP from './features/Ilkommunity/CP/CP';
 import AgriUX from './features/Ilkommunity/AgriUX/UX'; 
 import GARY from './features/Ilkommunity/GARY/GARY'; 
 import IGallery from './features/IGallery/IGallery';
-import Newsdesc from './features/Komnews/newsdesc'
+import Newsdesc from './features/Komnews/newsdesc';
+import PreLoader from './component/Preloader/Preloader';
 
-
-
-
+const Home = () => {
+  return (
+    <>
+      <PreLoader />
+      <Page />
+    </>
+  );
+};
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route path='/' element={<Page />} />
+          <Route path='/' element={<Home />} />
           {/* <Route path='/Placeholder' element={<Placeholder />} /> */}
           <Route path='/Newsdesc' element={<Newsdesc />} />
           <Route path='/ProfilHimalkom' element={<ProfileHimalkom />} />
           <Route path='/Komnews' element={<Komnews />} />
           <Route path='/Megaproker' element={<Megaproker />} />
           <Route path='/Ilkommunity' element={<Ilkommunity />} />
-          <Route path='/I-Gallery' element = {<IGallery />}/>
+          <Route path='/I-Gallery' element={<IGallery />}/>
             <Route path='/Ilkommunity-IWDC' element={<IWDC />} />
             <Route path='/Ilkommunity-CSI' element={<Csi />} />
             <Route path='/Ilkommunity-MAD' element={<MAD />} />
@@ -62,7 +68,7 @@ function App() {
               <Route path='/Riset-Teknologi' element={<Ristek />} />
               <Route path='/Entrepreneur' element={<Entrepreneur />} />
           <Route path='/Riset-Himalkom' element={<Riset />} />
-          </Routes>
+        </Routes>
       </div>
     </Router>
   );
