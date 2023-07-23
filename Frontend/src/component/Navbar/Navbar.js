@@ -52,7 +52,7 @@ const Navbar = () => {
           </li>
           <div className="profil-dropdown">
             <li>
-              <a href="/ProfilHimalkom">Profil</a>
+              Profil
             </li>
             <div className="sub-menu-1">
               <li>
