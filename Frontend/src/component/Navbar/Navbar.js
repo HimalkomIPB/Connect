@@ -37,7 +37,7 @@ const Navbar = () => {
     <div>
       <div className={`navbar ${Active ? "darken" : ""}`}>
         <div className="navbar-heading">
-          <img src={himalkom} alt="himalkom" />
+          <a href="/"> <img src={himalkom} alt="himalkom" /></a>
         </div>
         {/* Mobile Nav */}
         <div className="navbar-state" onClick={activeState}>

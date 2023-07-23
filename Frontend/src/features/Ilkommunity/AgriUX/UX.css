@@ -333,6 +333,14 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1023px){
+    #UX-header-container {
+        width: 100%;
+        max-width: 1024px;
+        height: 500px;
+    }
+}
+
 @media only screen and (max-width:768px) {
     #UX-header-container {
         background-image: url('../../../Assets/Ilkommunity/UX/UX-Header-Background-Tab.svg');
@@ -344,11 +352,13 @@
     }
 
     .UX-header-wrapper {
-        width: 670px;
+        width: 100%;
+        max-width: 670px;
     }
 
     .UX-header{
-        width: 377px;
+        width: 100%;
+        max-width: 377px;
     }
 
     .UX-header p {
@@ -390,6 +400,22 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 767px){
+    #UX-header-container {
+        width: 100%;
+        max-width: 768px;
+        height: 410px;
+    }
+
+    .UX-header-wrapper{
+        grid-template-columns: none;
+    }
+
+    .UX-header p{
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 480px) {
     #UX-header-container {
         background-image: url("../../../Assets/Ilkommunity/UX/UX-Header-Background-Mobile.svg");
@@ -411,12 +437,17 @@
 
     .UX-header-wrapper {
         grid-template-columns: none;
-        transform: translateY(16.5rem);
-        width: auto;
+        width: auto;   
+        align-items: end;
+        padding-bottom: 2.7rem;
     }
 
     .UX-header h2 {
         font-size: 45px;
+    }
+
+    .UX-header p{
+        width: 80%;
     }
 
     .UX-deskripsi-content {
@@ -437,5 +468,18 @@
     .UX-narahubung-content {
         width: 90%;
         height: 190px;
+    }
+
+    #UX-deskripsi.UX-active {
+        font-size: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+    }
+    #UX-tujuan.UX-active {
+        font-size: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
     }
 }

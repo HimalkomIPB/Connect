@@ -58,14 +58,6 @@
     padding: 80px 0 0 0;
 }
 
-.IWDC-content-deskripsi-tujuan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 80px;
-}
-
 .IWDC-content-deskripsi-tujuan #IWDC-deskripsi {
     font-family: 'Changa One';
     font-style: normal;
@@ -125,6 +117,12 @@
     color: #6B7280;
     cursor: pointer;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
 }
 
 .IWDC-content-container {
@@ -339,6 +337,14 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1023px){
+    #IWDC-header-container {
+        width: 100%;
+        max-width: 1024px;
+        height: 500px;
+    }
+}
+
 @media(max-width: 768px) {
     #IWDC-header-container {
         background-image: url("../../../Assets/Ilkommunity/IWDC/IWDC-Header-Background-Tab.svg");
@@ -350,11 +356,13 @@
     }
 
     .IWDC-header-wrapper {
-        width: 670px;
+        width: 100%;
+        max-width: 670px;
     }
 
     .IWDC-header {
-        width: 377px;
+        width: 100%;
+        max-width: 377px;
     }
 
     .IWDC-header p {
@@ -388,6 +396,22 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 767px){
+    #IWDC-header-container {
+        width: 100%;
+        max-width: 768px;
+        height: 410px;
+    }
+
+    .IWDC-header-wrapper{
+        grid-template-columns: none;
+    }
+
+    .IWDC-header p{
+        width: 80%;
+    }
+}
+
 @media(max-width: 480px) {
     #IWDC-header-container {
         background-image: url("../../../Assets/Ilkommunity/IWDC/IWDC-Header-Background-Mobile.svg");
@@ -401,16 +425,19 @@
         align-items: unset;
     }
 
-    #IWDC-deskripsi, #IWDC-tujuan{
+    #IWDC-tujuan{
         font-size: 22px;
-        line-height: 28px;
-        overflow-x: hidden;
+    }
+
+    .IWDC-content-deskripsi-tujuan {
+        gap: 40px;
     }
 
     .IWDC-header-wrapper {
         grid-template-columns: none;
-        transform: translateY(16.5rem);
-        width: auto;
+        width: auto;   
+        align-items: end;
+        padding-bottom: 2.7rem;
     }
 
     .IWDC-header h2 {
@@ -435,5 +462,18 @@
     .IWDC-narahubung-content {
         width: 90%;
         height: 190px;
+    }
+
+    #IWDC-deskripsi.iwdc-active {
+        font-size: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+    }
+    #IWDC-tujuan.iwdc-active {
+        font-size: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
     }
 }

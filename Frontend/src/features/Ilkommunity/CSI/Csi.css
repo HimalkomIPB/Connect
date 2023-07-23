@@ -335,6 +335,14 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1023px){
+    #CSI-header-container {
+        width: 100%;
+        max-width: 1024px;
+        height: 500px;
+    }
+}
+
 @media(max-width: 768px) {
     #CSI-header-container {
         background-image: url("../../../Assets/Ilkommunity/CSI/CSI-Header-Background-Tab.svg");
@@ -349,11 +357,13 @@
 
 
     .CSI-header-wrapper {
-        width: 670px;
+        width: 100%;
+        max-width: 670px;
     }
 
     .CSI-header {
-        width: 377px;
+        width: 100%;
+        max-width: 377px;
     }
 
     .CSI-header p {
@@ -386,6 +396,23 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 767px){
+    #CSI-header-container {
+        width: 100%;
+        max-width: 768px;
+        height: 410px;
+    }
+
+    .CSI-header-wrapper{
+        grid-template-columns: none;
+    }
+
+    .CSI-header p{
+        width: 80%;
+    }
+}
+
+
 @media screen and (max-width: 480px) {
     #CSI-header-container {
         background-image: url("../../../Assets/Ilkommunity/CSI/bg-mobile-csi.svg");
@@ -409,8 +436,9 @@
 
     .CSI-header-wrapper {
         grid-template-columns: none;
-        transform: translateY(14rem);
-        width: auto;
+        width: auto;   
+        align-items: end;
+        padding-bottom: 1rem;
     }
 
     .CSI-header h2 {
@@ -434,5 +462,18 @@
 
     .CSI-narahubung-content {
         width: 90%;
+    }
+
+    #CSI-deskripsi.CSI-active {
+        font-size: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+    }
+    #CSI-tujuan.CSI-active {
+        font-size: 28px;
+        text-shadow: 2px 2px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
     }
 }
