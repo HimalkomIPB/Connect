@@ -8,9 +8,9 @@ const IGallery_card = (props) => {
     }
   return (
     <motion.div
-      whileInView={{opacity: 1}}
-      whileHover={{scale: 1.05}}
-      transition={{duration: 0.25, type: 'tween'}}
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      whileHover={{ scale: [null, 1.12, 1.09] }}
+      transition={{duration: 0.5}}
       className='IG-content'
     >
       <img className="IG-content-img" src={require('../../Assets/IGallery/' + props.img + '.svg')} alt="gambar" />

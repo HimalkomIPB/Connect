@@ -5,6 +5,7 @@ import "./IGallery.css"
 import Card from "../../component/IGallery/IGallery_card"
 import Data from "../../Data/IGallery_data"
 import { motion } from 'framer-motion';
+
 const IGallery = () => {
 
   const cards = Data.map((item) => {
@@ -55,10 +56,10 @@ const IGallery = () => {
             transition={{ duration: 0.5 }}
             className="IG-header"
           >
-              <h2>I-GALLERY</h2>
-              <p>
-                I-Gallery adalah platform yang berisi kumpulan projek-projek yang telah dibuat oleh mahasiswa ilmu komputer. I-Gallery menampilkan projek dari setiap mata kuliah berprojek. Tujuan dari I-Gallery adalah untuk menunjukan projek yang telah dibuat oleh mahasiswa ilmu komputer.
-              </p>
+            <h2>I-GALLERY</h2>
+            <p>
+              I-Gallery adalah platform yang berisi kumpulan projek-projek yang telah dibuat oleh mahasiswa ilmu komputer. I-Gallery menampilkan projek dari setiap mata kuliah berprojek. Tujuan dari I-Gallery adalah untuk menunjukan projek yang telah dibuat oleh mahasiswa ilmu komputer.
+            </p>
           </motion.div>
         </div>
       </div>
@@ -67,35 +68,68 @@ const IGallery = () => {
       >
         <h1>DAFTAR MATKUL</h1>
         <div className='IG-main-button'>
-          <button className='IG-list' onClick={handleAllClick}>
+          <motion.button
+            whileHover={{ scale: [null, 1.09, 1.06] }}
+            transition={{ duration: 0.4 }}
+            className='IG-list'
+            onClick={handleAllClick}
+          >
             <span>Semua</span>
-          </button>
-          <button className='IG-list' onClick={() => handleFilterClick('Basis Data')}>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: [null, 1.09, 1.06] }}
+            transition={{ duration: 0.4 }}
+            className='IG-list'
+            onClick={() => handleFilterClick('Basis Data')}
+          >
             <span>Basis Data</span>
-          </button>
-          <button className='IG-list' onClick={() => handleFilterClick('Rekayasa Perangkat Lunak')}>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: [null, 1.09, 1.06] }}
+            transition={{ duration: 0.4 }}
+            className='IG-list'
+            onClick={() => handleFilterClick('Rekayasa Perangkat Lunak')}
+          >
             <span>Rekayasa Perangkat Lunak</span>
-          </button>
-          <button className='IG-list' onClick={() => handleFilterClick('Grafika Komputer')}>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: [null, 1.09, 1.06] }}
+            transition={{ duration: 0.4 }}
+            className='IG-list'
+            onClick={() => handleFilterClick('Grafika Komputer')}
+          >
             <span>Grafika Komputer</span>
-          </button>
-          <button className='IG-list' onClick={() => handleFilterClick('Analisis Desain Sistem')}>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: [null, 1.09, 1.06] }}
+            transition={{ duration: 0.4 }}
+            className='IG-list'
+            onClick={() => handleFilterClick('Analisis Desain Sistem')}
+          >
             <span>Analisis Desain Sistem</span>
-          </button>
-          <button className='IG-list' onClick={() => handleFilterClick('Desain Pengalaman Pengguna')}>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: [null, 1.09, 1.06] }}
+            transition={{ duration: 0.4 }}
+            className='IG-list'
+            onClick={() => handleFilterClick('Desain Pengalaman Pengguna')}
+          >
             <span>Desain Pengalaman Pengguna</span>
-          </button>
-          <button className='IG-list' onClick={() => handleFilterClick('Pengolahan Citra Digital')}>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: [null, 1.09, 1.06] }}
+            transition={{ duration: 0.4 }}
+            className='IG-list'
+            onClick={() => handleFilterClick('Pengolahan Citra Digital')}
+          >
             <span>Pengolahan Citra Digital</span>
-          </button>
+          </motion.button>
         </div>
-        <motion.div
-          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
+        <div
           className='IG-main-content'
         >
           {cardElements}
-        </motion.div>
+        </div>
       </div>
       <Footer />
     </div>
