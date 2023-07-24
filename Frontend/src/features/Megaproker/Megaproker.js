@@ -3,10 +3,14 @@ import "./Megaproker.css";
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
 
-
-
 import logo1 from "../../Assets/Program Kerja/logo/IT_Today.svg";
 import logo2 from "../../Assets/Program Kerja/logo/cpsc.svg";
+
+import ittoday1 from "../../Assets/Megaproker/ittoday/dokum1.jpg";
+import ittoday2 from "../../Assets/Megaproker/ittoday/dokum2.JPG";
+import ittoday3 from "../../Assets/Megaproker/ittoday/dokum3.png";
+import ittoday4 from "../../Assets/Megaproker/ittoday/dokum4.png";
+
 
 import dokumimg from "../../Assets/Program Kerja/dokum/dokum.svg";
 import btn_arrow from "../../Assets/Program Kerja/button/right-arrow.svg";
@@ -43,25 +47,27 @@ const Megaproker = () => {
             <div className="Megaproker-Proker-Card-Content-bg" />
             <h3 className="rangkaian-acara">Rangkaian Acara</h3>
 
-            <div className="carousel">
-              <div className="box">
-                <img alt="dokum-img" src={dokumimg} />
+
+            <div className="carousel-container">
+              <div className="carousel">
+                <div className="box">
+                  <img className="dokum-img-1" alt="dokum-img" src={ittoday1} />
+                </div>
+                <div className="box">
+                  <img alt="dokum-img" src={ittoday2} />
+                </div>
+                <div className="box">
+                  <img alt="dokum-img" src={ittoday3} />
+                </div>
               </div>
-              <div className="box">
-                <img alt="dokum-img" src={dokumimg} />
-              </div>
-              <div className="box">
-                <img alt="dokum-img" src={dokumimg} />
-              </div>
-              
             </div>
 
             <h3 className="dokumentasi-vid-title">Dokumentasi Video</h3>
 
             <div className="dokumentasi-video">
               <div className="box">
-                <a href="/Megaproker">
-                  <img alt="dokum-img" src={dokumimg} className="video" />
+                <a href="https://www.youtube.com/live/hASJJNsKFMA?feature=share">
+                  <img alt="dokum-img" src={ittoday4} className="video" />
                 </a>
               </div>
             </div>
@@ -91,15 +97,17 @@ const Megaproker = () => {
             <div className="Megaproker-Proker-Card-Content-bg" />
             <h3 className="rangkaian-acara">Rangkaian Acara</h3>
 
-            <div className="carousel">
-              <div className="box">
-                <img alt="dokum-img" src={dokumimg} />
-              </div>
-              <div className="box">
-                <img alt="dokum-img" src={dokumimg} />
-              </div>
-              <div className="box">
-                <img alt="dokum-img" src={dokumimg} />
+            <div className="carousel-container">
+              <div className="carousel">
+                <div className="box">
+                  <img  alt="dokum-img" src={dokumimg} />
+                </div>
+                <div className="box">
+                  <img alt="dokum-img" src={dokumimg} />
+                </div>
+                <div className="box">
+                  <img alt="dokum-img" src={dokumimg} />
+                </div>
               </div>
             </div>
 
@@ -112,6 +120,7 @@ const Megaproker = () => {
                 </a>
               </div>
             </div>
+            
 
             <button>
               <span className="bold">Selengkapnya</span> <img alt="arrow-btn" src={btn_arrow} />
