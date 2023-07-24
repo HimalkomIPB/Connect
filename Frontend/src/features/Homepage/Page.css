@@ -808,6 +808,7 @@
         align-items: center;
         justify-content: center;
         padding: 5rem 40px;
+        padding-top: 0;
         overflow-x: hidden;
     }
 
@@ -1086,7 +1087,7 @@
     }
 }
 
-@media(max-width: 380px) {
+@media(max-width: 430px) {
     /* Ilkomunity section */
     #ilkomunity-homepage .ilkommunity div {
         width: 145.94px;

@@ -12,25 +12,13 @@ import daming from '../../Assets/Ilkommunity/Daming 200 x 200.png'
 import iwdc from '../../Assets/Ilkommunity/IWDC 200 x 200.png'
 import gary from '../../Assets/Ilkommunity/Gary 200 x 200.png'
 import mad from '../../Assets/Ilkommunity/MAD 200 x 200.png'
-import ittoday from '../../Assets/Logo IT Today.png'
-import riset from '../../Assets/Logo Riset.png'
 import Card from "../../component/Komnews/Card"
-
-import bgproker1 from './../../Assets/Background/cardproker1.svg'
-import bgproker2 from './../../Assets/Background/cardproker2.svg'
-
-import komnews_card_bg from '../../Assets/Background/Komnews-Home-Card.svg'
-
-import radio_btn_active from './../../Assets/Slider/radio-btn-active.svg'
-import radio_btn from './../../Assets/Slider/radio-btn.svg'
-
-import kahim from './../../Assets/Slider/home-slide2-kahim.png'
-import wakahim from './../../Assets/Slider/home-slide2-wakahim.png'
-
 import logo1 from '../../Assets/Program Kerja/logo/IT_Today.svg'
 import logo2 from '../../Assets/Program Kerja/logo/cpsc.svg'
 
 import btn_arrow from '../../Assets/Program Kerja/button/right-arrow.svg'
+
+
 
 const Page = () => {
   const [activeSlide, setActiveSlide] = useState(0); // State for the active slide index

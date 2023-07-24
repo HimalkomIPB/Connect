@@ -21,10 +21,10 @@ const Footer = () => {
         </div>
 
         <div className="Footer-social">
-          <a href="#"><img src={facebook} alt="Facebook" /></a>
-          <a href="#"><img src={instagram} alt="Instagram" /></a>
-          <a href="#"><img src={twitter} alt="Twitter" /></a>
-          <a href="#"><img src={youtube} alt="Youtube" /></a>
+          <a href="https://www.facebook.com/himalkom/?locale=id_ID"><img src={facebook} alt="Facebook" /></a>
+          <a href="https://www.instagram.com/himalkomipb/"><img src={instagram} alt="Instagram" /></a>
+          <a href="https://twitter.com/HimalkomIPB"><img src={twitter} alt="Twitter" /></a>
+          <a href="https://www.youtube.com/@himalkomipb4653"><img src={youtube} alt="Youtube" /></a>
         </div>
 
         <div className="Footer-divider">
