@@ -56,8 +56,8 @@ const Megaproker = () => {
                 <div className="box">
                   <img alt="dokum-img" src={ittoday2} />
                 </div>
-                <div className="box">
-                  <img alt="dokum-img" src={ittoday3} />
+                <div className="box dokum-img-3">
+                  <img className="dokum-img-3" alt="dokum-img" src={ittoday3} />
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@ const Megaproker = () => {
                 <div className="box">
                   <img alt="dokum-img" src={dokumimg} />
                 </div>
-                <div className="box">
+                <div className="box dokum-img-3">
                   <img alt="dokum-img" src={dokumimg} />
                 </div>
               </div>
