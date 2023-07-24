@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import './App.css';
 import Page from './features/Homepage/Page';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import ProfileHimalkom from './features/Profile/Profile Himalkom/ProfileHimalkom';
 import Megaproker from './features/Megaproker/Megaproker';
 import Komnews from './features/Komnews/Komnews';
@@ -26,12 +26,25 @@ import AgriUX from './features/Ilkommunity/AgriUX/UX';
 import GARY from './features/Ilkommunity/GARY/GARY'; 
 import IGallery from './features/IGallery/IGallery';
 import Newsdesc from './features/Komnews/newsdesc';
-import PreLoader from './component/Preloader/Preloader';
+import PreLoader from './component/Preloader/Preloader'
 
 const Home = () => {
+  const [showPreloader, setShowPreloader] = useState(false);
+
+  useEffect(() => {
+    // Check if the homepage has been visited before using sessionStorage
+    const hasVisitedHomepage = sessionStorage.getItem('hasVisitedHomepage');
+    if (!hasVisitedHomepage) {
+      // Show the preloader if the homepage is visited for the first time
+      setShowPreloader(true);
+      // Set the flag in sessionStorage to indicate that the homepage has been visited
+      sessionStorage.setItem('hasVisitedHomepage', 'true');
+    }
+  }, []);
+
   return (
     <>
-      <PreLoader />
+      {showPreloader && <PreLoader />}
       <Page />
     </>
   );
