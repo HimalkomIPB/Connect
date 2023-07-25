@@ -1,5 +1,7 @@
 import React from "react";
 import "./Megaproker.css";
+import { motion } from 'framer-motion';
+
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from "../../component/Footer/Footer";
 
@@ -12,6 +14,11 @@ import ittoday3 from "../../Assets/Megaproker/ittoday/dokum3.png";
 import ittoday4 from "../../Assets/Megaproker/ittoday/dokum4.png";
 
 
+import cpsc1 from "../../Assets/Megaproker/cpsc/dokum1.png";
+import cpsc2 from "../../Assets/Megaproker/cpsc/dokum2.png";
+import cpsc3 from "../../Assets/Megaproker/cpsc/dokum3.png";
+
+
 import dokumimg from "../../Assets/Program Kerja/dokum/dokum.svg";
 import btn_arrow from "../../Assets/Program Kerja/button/right-arrow.svg";
 
@@ -22,16 +29,27 @@ const Megaproker = () => {
       {/* hero */}
       <section>
         <div className="megaproker-header">
+        <motion.div
+            whileInView={{ y: [20, 10, 0], opacity: [0, 0, 1] }}
+            transition={{ duration: 0.5 }}
+          >
           <h1>
             MEGAPROKER HIMALKOM  IPB 2023/2024
           </h1>
+        </motion.div>
         </div>
       </section>
 
       {/* Main */}
 
+      
       <section id="Megaproker-Page-Card-Container">
-        <div className="Megaproker-Proker-Card Proker-Card1">
+
+        <motion.div 
+        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+        transition={{duration: 0.5}}
+        className="Megaproker-Proker-Card Proker-Card1">
+
           <div className="Megaproker-Proker-Card-Header">
             <div className="Megaproker-Proker-Card-Header-bg" />
             <div className="Megaproker-Card1-logo">
@@ -76,9 +94,13 @@ const Megaproker = () => {
               <span className="bold">Selengkapnya</span> <img alt="arrow-btn" src={btn_arrow} />
             </button>
           </div>
-        </div>
+        </motion.div>
+      
 
-        <div className="Megaproker-Proker-Card Proker-Card2">
+        <motion.div 
+        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+        transition={{duration: 0.5}}
+        className="Megaproker-Proker-Card Proker-Card2">
           <div className="Megaproker-Proker-Card-Header">
             <div className="Megaproker-Proker-Card-Header-bg" />
             <div className="Megaproker-Card2-logo">
@@ -100,13 +122,13 @@ const Megaproker = () => {
             <div className="carousel-container">
               <div className="carousel">
                 <div className="box">
-                  <img  alt="dokum-img" src={dokumimg} />
+                  <img  alt="dokum-img" src={cpsc1} />
                 </div>
                 <div className="box">
-                  <img alt="dokum-img" src={dokumimg} />
+                  <img alt="dokum-img" src={cpsc2} />
                 </div>
                 <div className="box dokum-img-3">
-                  <img alt="dokum-img" src={dokumimg} />
+                  <img alt="dokum-img" src={cpsc3} />
                 </div>
               </div>
             </div>
@@ -126,13 +148,16 @@ const Megaproker = () => {
               <span className="bold">Selengkapnya</span> <img alt="arrow-btn" src={btn_arrow} />
             </button>
           </div>
-        </div>
+        </motion.div>
       
-      <div  id="button-etc">
+      <motion.div 
+        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+        transition={{duration: 0.5}}
+        id="button-etc">
         <button>
           <span className="bold">Proker Lainya</span>
         </button>
-      </div>
+      </motion.div>
 
       </section>
 

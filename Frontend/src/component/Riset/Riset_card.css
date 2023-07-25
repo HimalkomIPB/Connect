@@ -1,0 +1,85 @@
+
+.Riset-card{
+    max-width:389px;
+    width: 100%;
+}
+
+.Riset-card img {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 5px solid black;
+    box-shadow: 2px 3px 0px #040404;
+}
+
+.Riset-card h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    width:100%;
+    padding: 20px 0 12px 0;
+}
+
+.Riset-card p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 7px;
+}
+
+.Riset-card a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+@media(max-width: 768px){
+    .Riset-card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width:211px;
+        width: 100%;
+    }
+
+    .Riset-card img {
+        border: 2px solid black;
+        box-shadow: none;
+    }
+
+    .Riset-card h3 {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    
+    .Riset-card p {
+        font-size: 12px;
+        line-height: 9.769px;
+        padding-bottom: 8px;
+        font-weight: 400;
+    }
+
+    .Riset-card a {
+        line-height: 20px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 9.769px; 
+        letter-spacing: 0.049px;
+    }
+}
+
+
+@media(max-width: 480px){
+
+    .Riset-card{
+        max-width:190px;
+    }
+}
