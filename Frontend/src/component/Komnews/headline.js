@@ -3,6 +3,7 @@ import gambar from "./../../Assets/Komnews/Headline/image.png";
 import data from "../../Data/newsdata"
 import "./Headline.css"
 import { useNavigate } from 'react-router-dom';
+import {motion} from "framer-motion"
 
 
 const Headline = () => {
@@ -14,7 +15,11 @@ const Headline = () => {
     navigate('/Newsdesc', { state: { berita: topic } });
   };
   return (
-    <div className='Headline'>
+    <motion.div 
+      whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+      transition={{duration: 0.35}}
+      className='Headline'
+    >
         <div className='title-head'>
           <h1>TODAY HEADLINE</h1>
         </div>
@@ -28,7 +33,7 @@ const Headline = () => {
             <img src={require('../../Assets/Komnews/Topic/' + topic.img)} alt="gambar" className="headline_img"/>
           </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -14,7 +14,11 @@
     border-top: solid 4px ;
 }
 
-.hero_news > h1 {
+.motion_news {
+    text-align: center;
+}
+
+.motion_news > h1 {
     font-family: 'Sports World';
     font-style: normal;
     letter-spacing: -2px;
@@ -26,7 +30,7 @@
     color: #F0E4D4;
 }
 
-.hero_news > p {
+.motion_news > p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: lighter;

@@ -5,7 +5,7 @@ import Footer from "../../component/Footer/Footer";
 import News from "../../component/Komnews/news";
 import Headline from "../../component/Komnews/headline";
 import { client } from '../../client';
-
+import { motion } from "framer-motion"
 const Komnews = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [data, setData] = useState([]);
@@ -71,8 +71,14 @@ const Komnews = () => {
       {/* Hero */}
       <section>
         <div className='hero_news'>
-          <h1>KOMNEWS</h1>
-          <p><span className='komnews-bold'>KOMNEWS</span> Merupakan tempat untuk membaca berita seputar Ilmu Komputer</p>
+          <motion.div
+            whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}}
+            className="motion_news"
+          >
+            <h1>KOMNEWS</h1>
+            <p><span className='komnews-bold'>KOMNEWS</span> Merupakan tempat untuk membaca berita seputar Ilmu Komputer</p>
+          </motion.div>
         </div>
       </section>
       {/* Headline */}
@@ -81,7 +87,11 @@ const Komnews = () => {
       </section>
       {/* Topics */}
       <section>
-        <div className='topics'>
+        <motion.div 
+          whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+          transition={{duration: 0.35}}
+          className='topics'
+        >
           <div className='topics-list'>
             {/* Topic */}
             {cardElements}
@@ -118,7 +128,7 @@ const Komnews = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
       <Footer/>
     </div>

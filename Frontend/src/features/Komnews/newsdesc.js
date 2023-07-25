@@ -5,6 +5,7 @@ import Navbar from "../../component/Navbar/Navbar"
 import Footer from "../../component/Footer/Footer"
 import { useLocation } from 'react-router-dom';
 import { urlFor, client } from '../../client';
+import {motion} from "framer-motion"
 
 const Newsdesc = () => {
 
@@ -56,9 +57,13 @@ return (
                 </div>
                 <div className='desc-footer'>
                     <h1>TERKAIT</h1>
-                    <div className='desc-card'>
+                    <motion.div 
+                        whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className='desc-card'
+                    >
                         {cards}
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>

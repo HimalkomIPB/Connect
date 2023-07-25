@@ -52,8 +52,8 @@ const IGallery = () => {
       >
         <div className="IG-header-wrapper">
           <motion.div
-            whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-            transition={{ duration: 0.5 }}
+            whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}}
             className="IG-header"
           >
             <h2>I-GALLERY</h2>
@@ -66,7 +66,11 @@ const IGallery = () => {
       <div
         className="IG-main"
       >
-        <h1>DAFTAR MATKUL</h1>
+        <motion.div
+          whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+          transition={{duration: 0.35}}
+        >
+        <h1 className='IG-h1'>DAFTAR MATKUL</h1>
         <div className='IG-main-button'>
           <motion.button
             whileHover={{ scale: [null, 1.09, 1.06] }}
@@ -125,6 +129,7 @@ const IGallery = () => {
             <span>Pengolahan Citra Digital</span>
           </motion.button>
         </div>
+        </motion.div>
         <div
           className='IG-main-content'
         >

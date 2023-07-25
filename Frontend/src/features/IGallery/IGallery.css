@@ -60,7 +60,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.IG-main > h1{
+.IG-h1{
     font-family: 'Sports World';
     font-style: normal;
     font-size: 45px;
@@ -163,7 +163,7 @@
         font-size: 14px;
         line-height: 20px;
     }
-    .IG-main > h1{
+    .IG-h1{
         font-size: 36px;
         line-height: 44px;
         text-shadow: 3px 4px 0px #040404;

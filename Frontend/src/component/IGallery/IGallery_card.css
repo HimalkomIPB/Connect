@@ -75,6 +75,7 @@
     box-shadow: 1.5px 1.5px 0px #000000;
     margin-top: 10px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .IG-button:active {

@@ -64,8 +64,8 @@ const Page = () => {
         <div className={`hero-home-slide1 ${activeSlide === 0 ? 'active-slide' : ''}`}>
           
           <motion.div
-            whileInView={{ y: [20, 0, 0], opacity: [0, 0, 1] }}
-            transition={{ duration: 0.5 }}
+            whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}}
             className="hero-home-content"
           >
           <div className="hero-home-logo-container">
@@ -94,7 +94,11 @@ const Page = () => {
 
       {/* Ilkommunity */}
       <div className='homepage-3section-wrapper'>
-          <section id="ilkomunity-homepage">
+          <motion.div 
+            whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}}
+            id="ilkomunity-homepage"
+          >
             <div className="header">
               <h2>ILKOMMUNITY</h2>
             </div>
@@ -168,7 +172,7 @@ const Page = () => {
                 </div>
               </a>
             </div>
-          </section>
+          </motion.div>
 
           {/* Megaproker */}
           <section id="Megaproker-Home-Container">
@@ -178,8 +182,8 @@ const Page = () => {
               </div>
               
               <motion.div 
-                whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
-                transition={{duration: 0.5}}
+                whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+                transition={{duration: 0.35}}
                 className="Megaproker-Home-Card Card1"
               >
                   <div className="Megaproker-Home-Card1-bg"/>
@@ -194,8 +198,8 @@ const Page = () => {
               </motion.div>
 
               <motion.div 
-                whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
-                transition={{duration: 0.5}}
+                whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+                transition={{duration: 0.35}}
                 className="Megaproker-Home-Card Card2"
               >
                   <div className="Megaproker-Home-Card2-logo">
@@ -210,7 +214,11 @@ const Page = () => {
           </section>
 
           {/* Komnews */}
-          <section id="Komnews-Home-container">
+          <motion.div
+            whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}}
+            id="Komnews-Home-container"
+          >
             <div className="Komnews-Home-Header">
               <h2>KOMNEWS</h2>
             </div>
@@ -218,7 +226,7 @@ const Page = () => {
             <div className="Komnews-Home-Content-Container">
               {cards}
             </div>
-          </section>
+          </motion.div>
 
       </div>
 
