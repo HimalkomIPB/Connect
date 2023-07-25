@@ -10,6 +10,13 @@
     position: relative;
 }
 
+.hero-home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .hero-home-slide1 h1 {
     font-family: "Sports World";
     font-style: normal;
@@ -272,7 +279,6 @@
     flex-direction: column;
     align-items: center;
     padding: 0 30px;
-    transition: 0.3s;
 
     width: 304px;
     height: 253px;

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { client } from '../../client';
 import './Page.css'
 import connect from '../../Assets/Connect/Logo Connect.png'
@@ -22,7 +23,6 @@ import btn_arrow from '../../Assets/Program Kerja/button/right-arrow.svg'
 
 const Page = () => {
   const [activeSlide, setActiveSlide] = useState(0); // State for the active slide index
-  const [renderDiv, setRenderDiv] = useState(true); // State for rendering content
 
   const handleClick = (index) => {
     setActiveSlide(index);
@@ -63,6 +63,11 @@ const Page = () => {
       <section id="hero-home-container">
         <div className={`hero-home-slide1 ${activeSlide === 0 ? 'active-slide' : ''}`}>
           
+          <motion.div
+            whileInView={{ y: [20, 0, 0], opacity: [0, 0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="hero-home-content"
+          >
           <div className="hero-home-logo-container">
             <img src={connect} alt="connect" className="hero-home-logo-connect"/>
           </div>
@@ -70,15 +75,7 @@ const Page = () => {
           <h1>CONNECT</h1>
           <h3>Together We Connect Each Other</h3>
           <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
-          
-          {/* <div className="hero-home-slider">
-            <button onClick={() => handleClick(0)} className={`slider-btn ${activeSlide === 0 ? 'active-btn' : ''}`}>
-              <img src={radio_btn_active} alt="slider-btn btn-active"></img>
-            </button>
-            <button onClick={() => handleClick(1)} className={`slider-btn ${activeSlide === 1 ? 'active-btn' : ''}`}>
-              <img src={radio_btn} alt="slider-btn"></img>
-            </button>
-          </div> */}
+          </motion.div>
         </div>
         <div className={`hero-home-slide2 ${activeSlide === 1 ? 'active-slide' : ''}`}>
           <div className="hero-home-logo-container">
@@ -91,14 +88,6 @@ const Page = () => {
           <h1>CONNECT</h1>
           <h3>Together We Connect Each Other</h3>
           
-          {/* <div className="hero-home-slider slider2">
-            <button onClick={() => handleClick(0)} className={`slider-btn ${activeSlide === 1 ? 'active-btn' : ''}`}>
-              <img src={radio_btn} alt="slider-btn"></img>
-            </button>
-            <button onClick={() => handleClick(1)} className={`slider-btn ${activeSlide === 0 ? 'active-btn' : ''}`}>
-              <img src={radio_btn_active} alt="slider-btn btn-active"></img>
-            </button>
-          </div> */}
 
         </div>
       </section>
@@ -117,43 +106,63 @@ const Page = () => {
                 </div>
               </a>
               <a href='/Ilkommunity-CSI' className='fade-in'>
-                <div className="ilkommunity-csi">
+                <div 
+                
+                className="ilkommunity-csi"
+                >
                   <img src={CSI} alt="CSI" />
                   <p>CSI</p>
                 </div>
               </a>
               <a href="Ilkommunity-Agribot" className='fade-in'>
-                <div className="ilkommunity-agribot">
+                <div 
+                  
+                  className="ilkommunity-agribot"
+                >
                   <img src={agribot} alt="Agribot" />
                   <p>AGRIBOT</p>
                 </div>
               </a>
               <a href="/Ilkommunity-CP" className='fade-in'>
-                <div className="ilkommunity-cp">
+                <div 
+                 
+                  className="ilkommunity-cp"
+                >
                   <img src={CP} alt="CP" />
                   <p>CP</p>
                 </div>
               </a>
               <a href="/Ilkommunity-DAMING" className='fade-in'>
-                <div className="ilkommunity-daming">
+                <div 
+                 
+                  className="ilkommunity-daming"
+                >
                   <img src={daming} alt="Daming" />
                   <p>DAMING</p>
                 </div>
               </a>
               <a href="/Ilkommunity-IWDC" className='fade-in'>
-                <div className="ilkommunity-iwdc">
+                <div 
+                  
+                  className="ilkommunity-iwdc"
+                >
                   <img src={iwdc} alt="IWDC" />
                   <p>IWDC</p>
                 </div>
               </a>
               <a href="/Ilkommunity-GARY" className='fade-in'>
-                <div className="ilkommunity-gary">
+                <div 
+                 
+                  className="ilkommunity-gary"
+                >
                   <img src={gary} alt="GARY" />
                   <p>GARY</p>
                 </div>
               </a>
               <a href="/Ilkommunity-MAD" className='fade-in'>
-                <div className="ilkommunity-mad">
+                <div 
+                  className="ilkommunity-mad"
+                >
                   <img src={mad} alt="MAD" />
                   <p>MAD</p>
                 </div>
@@ -168,7 +177,11 @@ const Page = () => {
                 <h3>MEGAPROKER</h3>
               </div>
               
-              <div className="Megaproker-Home-Card Card1">
+              <motion.div 
+                whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                transition={{duration: 0.5}}
+                className="Megaproker-Home-Card Card1"
+              >
                   <div className="Megaproker-Home-Card1-bg"/>
                   <div className="Megaproker-Home-Card1-logo">
                     <img src={logo1} alt="ittoday"/>
@@ -178,9 +191,13 @@ const Page = () => {
                     <p><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.</p>
                     <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
                   </div>
-              </div>
+              </motion.div>
 
-              <div className="Megaproker-Home-Card Card2">
+              <motion.div 
+                whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                transition={{duration: 0.5}}
+                className="Megaproker-Home-Card Card2"
+              >
                   <div className="Megaproker-Home-Card2-logo">
                     <img src={logo2} alt="cpsc"/>
                   </div>
@@ -189,7 +206,7 @@ const Page = () => {
                     <p><span className="bold">Computer Problem Solving Competition (CPSC)</span> merupakan ajang perlombaan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Ilmu Komputer (Himalkom) IPB dan merupakan rangkaian dari acara Pesta Sains Nasional (PSN) FMIPA IPB</p>
                     <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
                   </div>
-              </div>
+              </motion.div>
           </section>
 
           {/* Komnews */}
