@@ -92,17 +92,27 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+          <div className="komunitas-dropdown">
+              <li>Komunitas</li>
+              <div className="sub-menu-3">
+                <li><a href="/Ilkommunity-AgriUX">AGRIUX</a></li>
+                <li><a href="/Ilkommunity-CSI">CSI</a></li>
+                <li><a href="/Ilkommunity-agribot">AGRIBOT</a></li>
+                <li><a href="/Ilkommunity-CP">CP</a></li>
+                <li><a href="/Ilkommunity-Daming">DAMING</a></li>
+                <li><a href="/Ilkommunity-IWDC">IWDC</a></li>
+                <li><a href="/Ilkommunity-GARY">GARY</a></li>
+                <li><a href="/Ilkommunity-MAD">MAD</a></li>
+              </div>
+          </div>
+          <li>
+            <a href="/I-Gallery">IGallery</a>
+          </li>
           <li>
             <a href="/Komnews">Komnews</a>
           </li>
           <li>
-            <a href="/I-Gallery">Galeri</a>
-          </li>
-          <li>
             <a href="/Megaproker">Megaproker</a>
-          </li>
-          <li>
-            <a href="/Ilkommunity">Komunitas</a>
           </li>
           <li>
             <a href="/Riset-Himalkom">Riset</a>
@@ -110,6 +120,8 @@ const Navbar = () => {
         </div>
         <div className={`background-overlay ${Active ? "active" : "closed"}`}></div>
       </div>
+
+      {/* mobile nav area */}
       {Active == true ? (
         <section className="mobile-navbar-container">
           <div className={Active ? "cross-active" : "navbar-cross"}>
@@ -120,85 +132,85 @@ const Navbar = () => {
             <li>
               <a href="/">Home</a>
             </li>
-              <li className="mobile-navbar-dropdown">
-                <p onClick={toggleDropdown}>
-                  <a href="#">Profil</a>
-                  <img src={isActive ? arrow_up : arrow_down} alt="arrow" />
-                </p>
-                {isActive && (
-                  <ul  className={`dropdown-menu ${isActive ? 'active' : 'inactive'}`}>
-                    <li>
-                      <a href="/ProfilHimalkom">Himalkom</a>
-                    </li>
+            <li className="mobile-navbar-dropdown">
+              <p onClick={toggleDropdown}>
+                <a href="#">Profil</a>
+                <img src={isActive ? arrow_up : arrow_down} alt="arrow" />
+              </p>
+              {isActive && (
+                <ul className={`dropdown-menu ${isActive ? 'active' : 'inactive'}`}>
+                  <li>
+                    <a href="/ProfilHimalkom">Himalkom</a>
+                  </li>
 
-                    <li className="dropdown-divisi">
-                      <p onClick={toggleDropdown2}>
-                        <a href="#">Divisi</a>
-                        <img
-                          src={isActive2 ? arrow_up : arrow_down}
-                          alt="arrow"
-                        />
-                      </p>
-                      {isActive2 && (
-                        <ul id="dropdown-menu-divisi" className={`dropdown-menu-divisi ${isActive2 ? 'active' : 'inactive'}`}>
-                          <li>
-                            <a href="/Badan-Pengawas">BP</a>
-                          </li>
-                          <li>
-                            <a href="/BPH">BPH</a>
-                          </li>
-                          <li>
-                            <a href="/Edukasi">Edukasi</a>
-                          </li>
-                          <li>
-                            <a href="/Eksternal">Eksternal</a>
-                          </li>
-                          <li>
-                            <a href="/HRD">HRD</a>
-                          </li>
-                          <li>
-                            <a href="/Internal">Internal</a>
-                          </li>
-                          <li>
-                            <a href="/Media-Branding">Media dan Branding</a>
-                          </li>
-                          <li>
-                            <a href="/Riset-Teknologi">Riset dan Teknologi</a>
-                          </li>
-                          <li>
-                            <a href="/Entrepreneur">Entrepreneur</a>
-                          </li>
-                        </ul>
-                      )}
-                    </li>
-                  </ul>
-                )}
-              </li>
+                  <li className="dropdown-divisi">
+                    <p onClick={toggleDropdown2}>
+                      <a href="#">Divisi</a>
+                      <img
+                        src={isActive2 ? arrow_up : arrow_down}
+                        alt="arrow"
+                      />
+                    </p>
+                    {isActive2 && (
+                      <ul id="dropdown-menu-divisi" className={`dropdown-menu-divisi ${isActive2 ? 'active' : 'inactive'}`}>
+                        <li>
+                          <a href="/Badan-Pengawas">BP</a>
+                        </li>
+                        <li>
+                          <a href="/BPH">BPH</a>
+                        </li>
+                        <li>
+                          <a href="/Edukasi">Edukasi</a>
+                        </li>
+                        <li>
+                          <a href="/Eksternal">Eksternal</a>
+                        </li>
+                        <li>
+                          <a href="/HRD">HRD</a>
+                        </li>
+                        <li>
+                          <a href="/Internal">Internal</a>
+                        </li>
+                        <li>
+                          <a href="/Media-Branding">Media dan Branding</a>
+                        </li>
+                        <li>
+                          <a href="/Riset-Teknologi">Riset dan Teknologi</a>
+                        </li>
+                        <li>
+                          <a href="/Entrepreneur">Entrepreneur</a>
+                        </li>
+                      </ul>
+                    )}
+                  </li>
+                </ul>
+              )}
+            </li>
             <li>
               <a href="/Komnews">Komnews</a>
             </li>
             <li>
-              <a href="/I-Gallery">Galeri</a>
+              <a href="/I-Gallery">IGallery</a>
             </li>
             <li>
               <a href="/Megaproker">Megaproker</a>
             </li>
             <li className="mobile-navbar-dropdown">
-              <p  onClick={toggleDropdown3}>
-              <a href="#">Komunitas</a>
-              <img src={isActive3 ? arrow_up : arrow_down} alt="arrow" />
+              <p onClick={toggleDropdown3}>
+                <a href="#">Komunitas</a>
+                <img src={isActive3 ? arrow_up : arrow_down} alt="arrow"/>
               </p>
               {isActive3 && (
                 <ul className={`dropdown-menu dropdown-menu-komun ${isActive3 ? 'active' : 'inactive'}`}>
-                    {/* List of each community */}
-                    <li><a href="/Ilkommunity-AgriUX">AGRIUX</a></li>
-                    <li><a href="/Ilkommunity-CSI">CSI</a></li>
-                    <li><a href="/Ilkommunity-agribot">AGRIBOT</a></li>
-                    <li><a href="/Ilkommunity-CP">CP</a></li>
-                    <li><a href="/Ilkommunity-Daming">DAMING</a></li>
-                    <li><a href="/Ilkommunity-IWDC">IWDC</a></li>
-                    <li><a href="/Ilkommunity-GARY">GARY</a></li>
-                    <li><a href="/Ilkommunity-MAD">MAD</a></li>                    
+                  {/* List of each community */}
+                  <li><a href="/Ilkommunity-AgriUX">AGRIUX</a></li>
+                  <li><a href="/Ilkommunity-CSI">CSI</a></li>
+                  <li><a href="/Ilkommunity-agribot">AGRIBOT</a></li>
+                  <li><a href="/Ilkommunity-CP">CP</a></li>
+                  <li><a href="/Ilkommunity-Daming">DAMING</a></li>
+                  <li><a href="/Ilkommunity-IWDC">IWDC</a></li>
+                  <li><a href="/Ilkommunity-GARY">GARY</a></li>
+                  <li><a href="/Ilkommunity-MAD">MAD</a></li>
                 </ul>
               )}
             </li>
@@ -208,16 +220,16 @@ const Navbar = () => {
           </div>
           <div className="mobile-icon-container">
             <div className="mobile-icon">
-              <a href="#">
+              <a href="https://www.facebook.com/himalkom/?locale=id_ID">
                 <img src={nav_facebook} />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/himalkomipb/">
                 <img src={nav_instagram} />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/HimalkomIPB">
                 <img src={nav_twitter} />
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com/@himalkomipb4653">
                 <img src={nav_youtube} />
               </a>
             </div>
