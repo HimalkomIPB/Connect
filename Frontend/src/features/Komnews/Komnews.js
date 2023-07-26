@@ -5,10 +5,12 @@ import Footer from "../../component/Footer/Footer";
 import News from "../../component/Komnews/news";
 import Headline from "../../component/Komnews/headline";
 import { client } from '../../client';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
 const Komnews = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [data, setData] = useState([]);
+  const [headlineData, setHeadlineData] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,6 +18,7 @@ const Komnews = () => {
         const query = '*[_type == "komnews"]';
         const response = await client.fetch(query);
         setData(response);
+        setHeadlineData(response[0]);
       } catch (error) {
         console.error('Error fetching data from Sanity:', error);
       }
@@ -43,7 +46,7 @@ const Komnews = () => {
     setSelectedCategory(category);
     setFadeOut(true);
     setTimeout(() => {
-    setFadeOut(false);
+      setFadeOut(false);
     }, 200);
   };
 
@@ -51,7 +54,7 @@ const Komnews = () => {
     setSelectedCategory(null);
     setFadeOut(true);
     setTimeout(() => {
-    setFadeOut(false);
+      setFadeOut(false);
     }, 200);
   };
 
@@ -67,13 +70,13 @@ const Komnews = () => {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       {/* Hero */}
       <section>
         <div className='hero_news'>
           <motion.div
             whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
-            transition={{duration: 0.35}}
+            transition={{ duration: 0.35 }}
             className="motion_news"
           >
             <h1>KOMNEWS</h1>
@@ -83,13 +86,22 @@ const Komnews = () => {
       </section>
       {/* Headline */}
       <section>
-        <Headline/>
+        {Object.keys(headlineData).length > 0 && (
+          <Headline
+            key={headlineData.id}
+            title={headlineData.title}
+            category={headlineData.category}
+            img={headlineData.img}
+            date={headlineData.date}
+            desc={headlineData.desc}
+          />
+        )}
       </section>
       {/* Topics */}
       <section>
-        <motion.div 
+        <motion.div
           whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
-          transition={{duration: 0.35}}
+          transition={{ duration: 0.35 }}
           className='topics'
         >
           <div className='topics-list'>
@@ -130,7 +142,7 @@ const Komnews = () => {
           </div>
         </motion.div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

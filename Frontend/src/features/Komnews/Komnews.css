@@ -194,7 +194,7 @@
 }
 
 @media (max-width:480px) {
-    .hero_news > p {
+    .motion_news > p {
         max-width: 400px;
     }
     .recommend{

@@ -1,18 +1,19 @@
 import React from 'react'
-import gambar from "./../../Assets/Komnews/Headline/image.png";
-import data from "../../Data/newsdata"
 import "./Headline.css"
 import { useNavigate } from 'react-router-dom';
 import {motion} from "framer-motion"
+import { urlFor } from '../../client';
 
-
-const Headline = () => {
-  const topic = data[0]
+const Headline = (props) => {
 
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate('/Newsdesc', { state: { berita: topic } });
+    navigate('/Newsdesc', { state: { berita: props } });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
   return (
     <motion.div 
@@ -25,12 +26,12 @@ const Headline = () => {
         </div>
         <div className='headline'>
           <div className='desc-news'>
-            <h1>{topic.title}</h1>
-            <p>{topic.thumbnail}</p>
+            <h1>{props.title}</h1>
+            <p>{props.desc}</p>
             <a className='button_headline' onClick={handleCardClick} ><span className='bold'>Read More {'>'}</span></a>
           </div>
           <div className='image'>
-            <img src={require('../../Assets/Komnews/Topic/' + topic.img)} alt="gambar" className="headline_img"/>
+            <img src={urlFor(props.img).url()} alt="gambar" className="headline_img"/>
           </div>
         </div>
     </motion.div>
