@@ -64,7 +64,7 @@ const Page = () => {
         <div className={`hero-home-slide1 ${activeSlide === 0 ? 'active-slide' : ''}`}>
           
           <motion.div
-            whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+            whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
             transition={{duration: 0.35}}
             className="hero-home-content"
           >
@@ -95,7 +95,7 @@ const Page = () => {
       {/* Ilkommunity */}
       <div className='homepage-3section-wrapper'>
           <motion.div 
-            whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+            whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
             transition={{duration: 0.35}}
             id="ilkomunity-homepage"
           >
@@ -182,7 +182,7 @@ const Page = () => {
               </div>
               
               <motion.div 
-                whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+                whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
                 transition={{duration: 0.35}}
                 className="Megaproker-Home-Card Card1"
               >
@@ -198,7 +198,7 @@ const Page = () => {
               </motion.div>
 
               <motion.div 
-                whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+                whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
                 transition={{duration: 0.35}}
                 className="Megaproker-Home-Card Card2"
               >
@@ -215,7 +215,7 @@ const Page = () => {
 
           {/* Komnews */}
           <motion.div
-            whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+            whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
             transition={{duration: 0.35}}
             id="Komnews-Home-container"
           >

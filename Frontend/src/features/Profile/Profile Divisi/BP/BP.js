@@ -58,14 +58,14 @@ const BP = () => {
                 </div>
                 <div className="BP-anggota">
                     <motion.div 
-                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BP"
                     >
                         <img src={anggota1} alt="Adelia Novta K.P" />
                     </motion.div>
                     <motion.div 
-                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BP"
                     >

@@ -8,7 +8,7 @@ const IGallery_card = (props) => {
     }
   return (
     <motion.div
-      whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+      whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
       whileHover={{ scale: [null, 1.05, 1.05] }}
       transition={{duration: 0.5}}
       className='IG-content'

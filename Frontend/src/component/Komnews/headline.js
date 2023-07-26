@@ -16,7 +16,7 @@ const Headline = () => {
   };
   return (
     <motion.div 
-      whileInView={{ y: [80, 40, 0], opacity: [0, 0, 1] }}
+      whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
       transition={{duration: 0.35}}
       className='Headline'
     >
