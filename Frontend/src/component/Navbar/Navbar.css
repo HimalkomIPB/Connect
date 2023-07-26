@@ -79,18 +79,20 @@ li {
 
 .sub-menu-1 {
     display: none;
-    width: 330px;
-    height: 110px;
+    width: 100%;
+    max-width: 330px;
+    height: max-content;
 }
 
 .profil-dropdown:hover .sub-menu-1 {
     display: block;
     position: absolute;
     background-color: #E49800;
-    padding: 10px;
+    padding: 20px 0 10px 10px;
     border-bottom: 4px solid #111827;
     z-index: 99;
 }
+
 
 .divisi-dropdown li {
     text-decoration: none;
@@ -101,10 +103,18 @@ li {
 
 .sub-menu-1 li {
     padding: 0 0 22px 28px;
+    height: 60px;
 }
 
 .sub-menu-2 {
     display: none;
+}
+
+.sub-menu-3 {
+    display: none;
+    width: 100%;
+    max-width: 200px;
+    height: max-content;
 }
 
 .divisi-dropdown:hover .sub-menu-2 {
@@ -113,23 +123,40 @@ li {
     background-color: #E49800;
     padding: 10px;
     border-bottom: 4px solid #111827;
-    width: 320px;
-    height: 404px;
+    width: 100%;
+    max-width: 320px;
+    height: max-content;
+    transform: translate(320px, -60px);
+}
+
+.komunitas-dropdown:hover .sub-menu-3 {
+    display: block;
+    position: absolute;
+    background-color: #E49800;
+    padding: 20px 0 10px 10px;
+    border-bottom: 4px solid #111827;
+    z-index: 99;
 }
 
 .sub-menu-2 li {
     padding: 0 0 22px 28px;
 }
 
+.sub-menu-3 li {
+    padding: 0 0 22px 28px;
+    height: 60px;
+}
+
+
 .mobile-navbar-container {
     display: none;
 }
 
-.background-overlay{
+.background-overlay {
     display: none;
 }
 
-  
+
 
 @media only screen and (max-width: 1024px) {
     .navbar-list li a {
@@ -139,7 +166,7 @@ li {
 
 
 @media(max-width: 992px) {
-    .navbar-heading{
+    .navbar-heading {
         margin-left: 40px;
     }
 
@@ -151,7 +178,7 @@ li {
         display: none;
     }
 
-    .burger{
+    .burger {
         display: block;
     }
 
@@ -195,6 +222,14 @@ li {
         display: flex;
         padding: 0 0 1rem 0;
         list-style: none;
+        font-family: Changa One;
+        font-weight: 350;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+        letter-spacing: 0.1px;
     }
 
     .mobile-navbar li a {
@@ -209,12 +244,8 @@ li {
     }
 
     .mobile-navbar li a:hover {
-        text-decoration: none;
-        font-family: 'Changa One';
+        font-size: 2.5rem;
         font-style: italic;
-        font-weight: 350;
-        font-size: 28px;
-        line-height: 36px;
         color: #F0E4D4;
         text-shadow: 2.5px 1.5px 0px #040404;
         -webkit-text-stroke-width: 1px;
@@ -242,39 +273,44 @@ li {
         letter-spacing: 0.00625rem;
     }
 
-    .mobile-navbar-dropdown{
+    .mobile-navbar-dropdown {
         display: flex;
         flex-direction: column;
     }
 
-    .mobile-navbar-dropdown p{
+    .mobile-navbar-dropdown p {
         display: flex;
         justify-content: space-between;
-    } 
+    }
 
-    .mobile-navbar .dropdown-divisi p{
+    .mobile-navbar-dropdown img{
+        width: 32px;
+    }
+
+    .mobile-navbar .dropdown-divisi p {
         display: flex;
 
         flex-direction: row;
         width: 100%;
     }
 
-    .mobile-navbar .dropdown-menu .dropdown-divisi a, .mobile-navbar .dropdown-menu li a{
+    .mobile-navbar .dropdown-menu .dropdown-divisi a,
+    .mobile-navbar .dropdown-menu li a {
         font-family: Changa One;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
-        line-height: 32px; 
+        line-height: 32px;
         align-self: center;
     }
 
-    .dropdown-menusub-divisi{
+    .dropdown-menusub-divisi {
         display: flex;
         flex-direction: row;
         background-color: pink;
     }
 
-    .mobile-navbar .dropdown-menu{
+    .mobile-navbar .dropdown-menu {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -283,30 +319,28 @@ li {
         align-self: flex-end;
     }
 
-    .mobile-navbar .dropdown-divisi{
-        width:100%;
+    .mobile-navbar .dropdown-divisi {
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 8px;
     }
 
-    .mobile-navbar .dropdown-menu li{
-       padding: 0;
+    .mobile-navbar .dropdown-menu li {
+        padding: 0;
     }
 
-    .mobile-navbar .dropdown-menu a{
+    .mobile-navbar .dropdown-menu a {
         font-size: 14px;
         line-height: 20px;
     }
 
-    .mobile-navbar .dropdown-divisi img{
-        height: 40px;
-        width: 40px;
+    .mobile-navbar .dropdown-divisi img {
+        width: 32px;
     }
 
     .mobile-navbar .dropdown-menu li a:hover {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 2rem;
         color: #F0E4D4;
         text-shadow: 2.5px 1.5px 0px #040404;
         -webkit-text-stroke-width: 1px;
@@ -314,40 +348,36 @@ li {
         transition: 0.3s;
     }
 
-    .mobile-navbar #dropdown-menu-divisi{
+    .mobile-navbar #dropdown-menu-divisi {
         display: flex;
         flex-direction: column;
         align-self: flex-end;
         width: 100%;
-        padding: 15px 0px 24px 28px;
-        border-bottom: 4px solid var(--gray-10, #111827);
+        padding: 20px 0px 0 28px;
+        gap: 12px;
     }
 
-    .mobile-navbar #dropdown-menu-divisi li{
-        margin-bottom: 8px;
-    }
-
-    .mobile-navbar #dropdown-menu-divisi  a{
+    .mobile-navbar #dropdown-menu-divisi a {
         font-size: 22px;
         line-height: 28px
     }
 
-    
-    .mobile-navbar .dropdown-menu-komun li{
+
+    .mobile-navbar .dropdown-menu-komun li {
         margin-bottom: 8px;
     }
 
-    .mobile-navbar .dropdown-menu-komun li a{
+    .mobile-navbar .dropdown-menu-komun li a {
         font-size: 22px;
         font-weight: 400;
-        line-height: 28px; 
+        line-height: 28px;
     }
 
     .background-overlay.closed {
         display: none;
-        
+
     }
-      
+
     .background-overlay.active {
         display: block;
         opacity: 1;
@@ -358,58 +388,50 @@ li {
         width: 100%;
         height: 100%;
         overflow-x: hidden;
-        background-color: rgba(0, 0, 0, 0.5); 
+        background-color: rgba(0, 0, 0, 0.5);
         pointer-events: none;
         z-index: 20;
         transition: opacity 0.3s ease;
     }
-    
-    .dropdown-menu, .dropdown-menu-komun, .dropdown-menu-divisi {
+
+    .dropdown-menu,
+    .dropdown-menu-komun,
+    .dropdown-menu-divisi {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease-in-out;
-      }
-      
-    .dropdown-menu, .dropdown-menu-komun.active, .dropdown-menu-divisi.active {
+    }
+
+    .dropdown-menu,
+    .dropdown-menu-komun.active,
+    .dropdown-menu-divisi.active {
         opacity: 1;
         visibility: visible;
         animation: fadeIn 0.5s ease-in-out;
     }
-      
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-          visibility: hidden;
-        }
-        100% {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-  
-  
-      
 
-    
+
 }
 
 
-@media(max-width: 480px){
-    .mobile-navbar{
-        overflow-x:hidden ;
+@media(max-width: 480px) {
+    .mobile-navbar {
+        overflow-x: hidden;
         min-height: 450px;
     }
 
     .mobile-icon {
         gap: 0;
     }
-    
-    .mobile-icon a{
+
+    .mobile-icon a {
         padding-right: clamp(0.625rem, -3.125rem + 18.75vw, 2.5rem);
 
     }
 
-    .mobile-navbar, .mobile-icon-container, .cross-active  {
+    .mobile-navbar,
+    .mobile-icon-container,
+    .cross-active {
         padding-left: clamp(0.625rem, -3.125rem + 18.75vw, 2.5rem);
         padding-right: clamp(0.625rem, -3.125rem + 18.75vw, 2.5rem);
     }
@@ -426,18 +448,19 @@ li {
     }
 
     .mobile-navbar-container {
-        max-width: 397px ;
+        max-width: 397px;
     }
 
 
-    .mobile-navbar li a{
+    .mobile-navbar li a {
         font-size: 20px;
         line-height: 28px;
     }
 
 
-    .mobile-navbar .dropdown-menu .dropdown-divisi a, .mobile-navbar .dropdown-menu li a {
-        font-size:18px;
+    .mobile-navbar .dropdown-menu .dropdown-divisi a,
+    .mobile-navbar .dropdown-menu li a {
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -451,5 +474,17 @@ li {
         max-width: 28px;
         width: 100%;
         height: 100%;
-      }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
