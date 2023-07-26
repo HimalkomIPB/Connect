@@ -13,6 +13,8 @@ import anggota8 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Cill
 import anggota9 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Maria.png'
 import anggota10 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Tita.png'
 import Accordion from './../../../../component/Accordion/Accordion';
+import { motion } from 'framer-motion';
+
 
 const Eksternal = () => {
     const proker_eksternal = [
@@ -50,46 +52,75 @@ const Eksternal = () => {
                 </div>
 
                 <div className="anggota-eksternal-container">
-                    <div className="anggota-divisi-eksternal">
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}   
+                        className="anggota-divisi-eksternal">
                         <img src={anggota1} alt="Christy Octaviani H" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-eksternal">
                         <img src={anggota2} alt="Made Althaaf" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-eksternal">
                         <img src={anggota3} alt="Antonio" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-eksternal">
                         <img src={anggota4} alt="Eva Fitriyaningsih" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-eksternal">
                         <img src={anggota5} alt="Jesselyn Gowin" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-eksternal">
                         <img src={anggota6} alt="Jihan Febriharvianti" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-eksternal">
                         <img src={anggota7} alt="Ilham Hakim S" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div 
+                        className="anggota-divisi-eksternal">
                         <img src={anggota8} alt="Priscilla Nur Elia P.G" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div 
+                        className="anggota-divisi-eksternal">
                         <img src={anggota9} alt="Tan Maria Putri" />
-                    </div>
-                    <div className="anggota-divisi-eksternal">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-eksternal">
                         <img src={anggota10} alt="Tita Madriyanti" />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Program Kerja */}
-                <div className="program-divisi-eksternal">
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}  
+                    className="program-divisi-eksternal">
                     <div className="program-header-eksternal">
                         <h2>PROGRAM KERJA</h2>
                     </div>
 
                     <Accordion proker_divisi={proker_eksternal} />
-                </div>
+                </motion.div>
 
             </section>
 

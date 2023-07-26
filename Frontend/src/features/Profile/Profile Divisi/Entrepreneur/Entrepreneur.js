@@ -11,6 +11,9 @@ import anggota6 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff6-na
 import anggota7 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff7-iza.png'
 import anggota8 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff8-ian.png'
 import Accordion from '../../../../component/Accordion/Accordion'
+import { motion } from 'framer-motion'; 
+
+
 
 const Entrepreneur = () => {
     const proker_entre = [
@@ -43,40 +46,67 @@ const Entrepreneur = () => {
                     <h2>STAFF</h2>
                 </div>
                 <div className="entre-anggota">
-                    <div className="anggota-divisi-entre">
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-divisi-entre">
                         <img src={anggota1} alt="M Irfan Satriya D" />
-                    </div>
-                    <div className="anggota-divisi-entre">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-divisi-entre">
                         <img src={anggota2} alt="Fatha Ariya P" />
-                    </div>
-                    <div className="anggota-divisi-entre">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-divisi-entre">
                         <img src={anggota3} alt="Dwinanda Rizkiansyah" />
-                    </div>
-                    <div className="anggota-divisi-entre">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-divisi-entre">
                         <img src={anggota4} alt="Raka Irzan Alfian" />
-                    </div>
-                    <div className="anggota-divisi-entre">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-divisi-entre">
                         <img src={anggota5} alt="Ifdha'Ul Fitri" />
-                    </div>
-                    <div className="anggota-divisi-entre">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-divisi-entre">
                         <img src={anggota6} alt="M Almal Nafy" />
-                    </div>
-                    <div className="anggota-divisi-entre">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-divisi-entre">
                         <img src={anggota7} alt="Nismara Mayzalia" />
-                    </div>
-                    <div className="anggota-divisi-entre">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-divisi-entre">
                         <img src={anggota8} alt="Stanislaus Brillant K.W" />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Program Kerja */}
-                <div className="entre-program">
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="entre-program">
                     <div className="program-header-entre">
                         <h2>PROGRAM KERJA</h2>
                     </div>
 
                     <Accordion proker_divisi={proker_entre} />
-                </div>
+                </motion.div>
             </section>
             <Footer />
         </div>

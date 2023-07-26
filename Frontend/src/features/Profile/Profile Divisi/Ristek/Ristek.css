@@ -83,6 +83,7 @@
 }
 
 .ristek-anggota {
+    overflow: hidden ;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-items: center;
@@ -175,7 +176,7 @@
     line-height: 24px;
 }
 
-@media(max-width: 1024px) {
+@media(max-width:1280px) {
     .ristek-container {
         height: 100vh;
     }
@@ -264,6 +265,20 @@
     }
 }
 
+@media(max-width: 640px) {
+    .ristek-anggota{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-divisi-ristek:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-divisi-ristek:last-child {
+        grid-column: span 2;
+    }
+}
+
 @media screen and (max-width: 480px) {
 
     .ristek-container {
@@ -290,6 +305,9 @@
     }
 
     .ristek-anggota {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 44.23px  clamp(0.75rem, -3rem + 18.75vw, 2.625rem);
+        padding-bottom:0;
         gap: 40px 10px;
     }
 
@@ -301,20 +319,10 @@
         letter-spacing: -2px;
     }
 
-    .ristek-anggota {
-        padding: 44.23px 42px 0px 42px;
-        gap: 40px;
-    }
-
-    .ristek-anggota {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        padding: 44.23px 42px 0px 42px;
-        gap: 40px;
-        overflow-x: hidden;
-    }
-
     .anggota-divisi-ristek img {
-        height: 235.88px
+        max-height: 235.88px;
+        height: 100%;
+        width: 100%;
     }
 
     .anggota-divisi-ristek:first-child {
@@ -365,5 +373,12 @@
         line-height: 28px;
         font-size: 22px;
         padding: 0 4px 0px 4px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .anggota-divisi-ristek:first-child img, .anggota-divisi-ristek:last-child img{
+        padding: 0 80px;
     }
 }

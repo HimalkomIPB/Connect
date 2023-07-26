@@ -14,6 +14,8 @@ import anggota9 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Zahran
 import anggota10 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Raisya.png'
 import anggota11 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Syifa.png'
 import Accordion from "../../../../component/Accordion/Accordion";
+import { motion } from 'framer-motion';
+
 
 const proker_edukasi = [
     {
@@ -73,48 +75,96 @@ const Edukasi = () => {
                     <h2>STAFF</h2>
                 </div>
                 <div className="edukasi-anggota">
-                    <div className="anggota-edukasi">
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota1} alt="Faiz Byputra" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota2} alt="Andika Risky Sururi" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota3} alt="Dhianita Shafa" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota4} alt="Ester Bina br Damanik" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota5} alt="Farhan Nurohman" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota6} alt="Halida Fiadnin" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota7} alt="M Giyas Wisnu" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota8} alt="Khansa Nabila" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota9} alt="Muhammad Zahran" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota10} alt="Raisya Shinta Siregar" />
-                    </div>
-                    <div className="anggota-edukasi">
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="anggota-edukasi"
+                    >
                         <img src={anggota11} alt="Syifa Adawiyah" />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Program Kerja */}
-                <div className="edukasi-program">
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                    className="edukasi-program"
+                >
                     <div className="edukasi-program-header">
                         <h2>PROGRAM KERJA</h2>
                     </div>
                     <Accordion proker_divisi={proker_edukasi} />
-                </div>
+                </motion.div>
             </section>
 
 

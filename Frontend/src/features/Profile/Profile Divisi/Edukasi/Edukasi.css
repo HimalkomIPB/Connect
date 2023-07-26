@@ -65,10 +65,12 @@
     font-size: 57px;
     line-height: 64px;
     padding-bottom: 14px;
+
     text-shadow: 7px 4px 0px #040404;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     color: #F0E4D4;
+
     padding: 0 100px 20px 100px;
     border-bottom: 8px solid #000000;
 }
@@ -82,6 +84,7 @@
 }
 
 .edukasi-anggota {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(5, minmax(0, 1fr));
@@ -129,7 +132,7 @@
     width: 572px;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1280px) {
     .edukasi-container {
         height: 100vh;
     }
@@ -186,6 +189,12 @@
         width: 90%;
     }
 
+    .edukasi-staff-header h2 {
+        font-size: 45px;
+        padding: 0 50px 4px 50px;
+        border-bottom: 6px solid  #000000;
+    }
+
     .edukasi-anggota {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         padding: 44.23px 42px 0px 42px;
@@ -206,7 +215,13 @@
     }
 
     .edukasi-program-header {
-        padding: 87px 0 40px 0;
+        padding: 80px 0 40px 0;
+    }
+
+    .edukasi-program-header h2 {
+        font-size: 45px;
+        border-bottom: 6px solid  #000000;
+        padding: 0 16px 10px 16px;
     }
 }
 
@@ -247,6 +262,20 @@
     }
 }
 
+@media(max-width: 600px) {
+    .edukasi-anggota {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .anggota-edukasi:first-child {
+        grid-column: span 2;
+    }
+
+    .anggota-edukasi:last-child {
+        grid-column: span 1;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .edukasi-container {
         background-image: url("../../../../Assets/Divisi/Edukasi/edukasi-mobile-header.png"), url("../../../../Assets/Divisi/Edukasi/Edukasi-mobile-bg.svg");
@@ -281,11 +310,31 @@
     }
 
     .edukasi-anggota {
-        padding: 44.23px 42px 0px 42px;
-        gap: 40px;
+        padding: 44.23px clamp(0.75rem, -3rem + 18.75vw, 2.625rem);
+        padding-bottom: 0;
+        gap: 40px 10px;
     }
 
     .anggota-edukasi img {
-        height: 235.88px;
+        max-height: 235.88px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .edukasi-staff-header h2 {
+        text-shadow: 3px 2px 0px #040404;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #040404;
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 10px 0px 10px;
+
+        border-bottom: 3px solid  #000000;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .anggota-edukasi:first-child img{
+        padding: 0 80px;
     }
 }

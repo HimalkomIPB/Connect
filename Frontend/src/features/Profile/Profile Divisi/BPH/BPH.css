@@ -86,10 +86,11 @@
 }
 
 .BPH-anggota {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-items: center;
-    gap: 80px 120px;
+    gap: 80px 60px;
     padding: 76px 116px 0px 106px;
 }
 
@@ -97,6 +98,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.anggota-BPH img {
+    height: 448.37px;
 }
 
 .program-header {
@@ -124,7 +129,7 @@
     width: 572px;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1280px) {
     .bph-container {
         height: 100vh;
     }
@@ -134,6 +139,7 @@
         text-shadow: 4px 3px 0px #040404;
         line-height: 49px;
     }
+
 
 }
 
@@ -176,7 +182,7 @@
         height: 240.13px;
     }
 
-    .program-header {
+    .BPH-program .program-header {
         padding: 87px 0 40px 0;
     }
 
@@ -221,15 +227,18 @@
 
     .BPH-anggota {
         gap: 40px 10px;
-        padding: 44.23px 42px 0px 42px;
+        padding: 44.23px clamp(0.75rem, -3rem + 18.75vw, 2.625rem);
+        padding-bottom: 0;
     }
 
     .anggota-BPH img {
-        height: 235.88px
+        max-height: 235.88px;
+        height: 100%;
+        width: 100%;
     }
 
-    .program-header {
-        padding: 80px 0 40px 0;
+    .BPH-program .program-header {
+        padding: 40px 0 40px 0;
     }
 
     .program-header h2 {

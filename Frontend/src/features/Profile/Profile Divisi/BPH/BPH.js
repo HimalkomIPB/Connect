@@ -9,6 +9,8 @@ import anggota4 from './../../../../Assets/Divisi/BPH/Anggota/Afiqah.png'
 import anggota5 from './../../../../Assets/Divisi/BPH/Anggota/Lutfiah.png'
 import anggota6 from './../../../../Assets/Divisi/BPH/Anggota/Nechita.png'
 import Accordion from '../../../../component/Accordion/Accordion';
+import { motion } from 'framer-motion';
+
 
 const BPH = () => {
     const proker_bph = [
@@ -41,34 +43,62 @@ const BPH = () => {
                     <h2>STAFF</h2>
                 </div>
                 <div className="BPH-anggota">
-                    <div className="anggota-BPH">
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-BPH"
+                    >
                         <img src={anggota1} alt="kahim Joachim Patrick" />
-                    </div>
-                    <div className="anggota-BPH">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BPH"
+                    >
                         <img src={anggota2} alt="Wakahim Ahmad Ardra" />
-                    </div>
-                    <div className="anggota-BPH">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BPH"
+                    >
                         <img src={anggota3} alt="Afiqah" />
-                    </div>
-                    <div className="anggota-BPH">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BPH"
+                    >
                         <img src={anggota4} alt="Nechita" />
-                    </div>
-                    <div className="anggota-BPH">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BPH"
+                    >
                         <img src={anggota5} alt="Amelia" />
-                    </div>
-                    <div className="anggota-BPH">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BPH"
+                    >
                         <img src={anggota6} alt="Lutfiah" />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Program Kerja */}
-                <div className="BPH-program">
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}
+                    className="BPH-program"
+                >    
                     <div className="program-header">
                         <h2>PROGRAM KERJA</h2>
                     </div>
 
                     <Accordion proker_divisi={proker_bph} />
-                </div>
+                </motion.div>
             </section>
             <Footer />
         </div>
