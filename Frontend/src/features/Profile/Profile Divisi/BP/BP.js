@@ -13,6 +13,8 @@ import anggota8 from './../../../../Assets/Divisi/BP/Anggota/Ikhlas.png'
 import anggota9 from './../../../../Assets/Divisi/BP/Anggota/Isti.png'
 import Accordion from '../../../../component/Accordion/Accordion';
 
+import { motion } from 'framer-motion';
+
 const BP = () => {
     const proker_bp = [
         {title: 'Fungsi Legislatif', description: 'Amandemen AD/ART : Penjaringan aspirasi & Peninjauan oleh BP, Menyelenggarakan Musyawarah Kerja (1/3), Menyelenggarakan PEMIRA, dan Pencerdasan Legislasi'},
@@ -41,46 +43,83 @@ const BP = () => {
                     <h2>STAFF</h2>
                 </div>
                 <div className="BP-anggota">
-                    <div className="anggota-BP">
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BP"
+                    >
                         <img src={anggota1} alt="Adelia Novta K.P" />
-                    </div>
-                    <div className="anggota-BP">
-                        <img src={anggota2} alt="Aditya Mahendra" />
-                    </div>
-                    <div className="anggota-BP">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BP"
+                    >
                         <img src={anggota3} alt="Aini Nur Afifah" />
-                    </div>
-                    <div className="anggota-BP">
-                        <img src={anggota4} alt="M Arvie Reyhan" />
-                    </div>
-                    <div className="anggota-BP">
-                        <img src={anggota5} alt="M Dzaki Fahreza" />
-                    </div>
-                    <div className="anggota-BP">
-                        <img src={anggota6} alt="Dzikri Ananda" />
-                    </div>
-                    <div className="anggota-BP">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BP"
+                    >
                         <img src={anggota7} alt="Helga Melina P. F" />
-                    </div>
-                    <div className="anggota-BP">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BP"
+                    >
+                        <img src={anggota9} alt="Isti Adilia H" />
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BP"
+                    >
+                        <img src={anggota6} alt="Dzikri Ananda" />
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BP"
+                    >
+                        <img src={anggota2} alt="Aditya Mahendra" />
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="anggota-BP"
+                    >
+                        <img src={anggota5} alt="M Dzaki Fahreza" />
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="anggota-BP"
+                    >
+                        <img src={anggota4} alt="M Arvie Reyhan" />
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}    
+                        className="anggota-BP"
+                    >
                         <img src={anggota8} alt="Muhammad Ikhlas" />
-                    </div>
-                    <div className="anggota-BP">
-                        <img className="switch1" src={anggota9} alt="Isti Adilia H" />
-                    </div>
-                    <div className="anggota-BP">
-                        <img className="switch2" src={anggota9} alt="Isti Adilia H" />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Program Kerja */}
-                <div className="BP-program">
+                <motion.div 
+                    whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}   
+                    className="BP-program"
+                >
                     <div className="program-header">
                         <h2>PROGRAM KERJA</h2>
                     </div>
 
                     <Accordion proker_divisi={proker_bp} />
-                </div>
+                </motion.div>
             </section>
             <Footer />
         </div>

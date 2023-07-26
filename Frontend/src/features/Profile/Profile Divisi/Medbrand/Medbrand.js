@@ -14,9 +14,10 @@ import anggota9 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-faiq.
 import anggota10 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-bima.png'
 import anggota11 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-medina.png'
 import Accordion from "../../../../component/Accordion/Accordion";
+import { motion } from "framer-motion";
 
 const Medbrand = () => {
-    const proker_medbrand = [
+const proker_medbrand = [
         {title: 'Upgrading', description: 'Mengadakan kegiatan workshop online tentang design, branding dan video editing untuk meningkatkan skill individu mengenai fundamental desain, video editing, dan branding'},
         {title: 'Center of Publication (COP)', description: 'Menerima request desain dari berbagai divisi Himalkom untuk dikerjakan sesuai prosedur yang ada.'},
         {title: 'Syntax', description: 'Membuat majalah tahunan yang berisi informasi seputar Himalkom IPB.'},
@@ -50,49 +51,97 @@ const Medbrand = () => {
                 <h2>STAFF</h2>
             </div>
             <div className="medbrand-anggota">
-                <div className="anggota-medbrand">
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota1} alt="M Naufal Daffa Salim" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota2} alt="Dzakiriza Dira Fridman" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota3} alt="Previa Putri Aulia" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota4} alt="Safira Kirei Nisa" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota5} alt="M Khalil Adha" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota6} alt="Daffa Noviansyah" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota7} alt="Andhika Rafi Lazuardi" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota8} alt="M Fahmi Ihsan" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota9} alt="Naufal Faiq R" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota10} alt="Tan Bima Wiragama" />
-                </div>
-                <div className="anggota-medbrand">
+                </motion.div>
+                <motion.div
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                    className="anggota-medbrand"
+                >
                     <img src={anggota11} alt="Medina Fitri M" />
-                </div>
+                </motion.div>
             </div>
 
             {/* Program Kerja */}
-            <div className="medbrand-program">
+            <motion.div
+                whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}     
+                className="medbrand-program"
+            >
                 <div className="medbrand-program-header">
                     <h2>PROGRAM KERJA</h2>
                 </div>
 
                 <Accordion proker_divisi={proker_medbrand} />
-            </div>
+            </motion.div>
         </section>
 
 

@@ -12,7 +12,7 @@ import anggota7 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-khalid.
 import anggota8 from './../../../../Assets/Divisi/Ristek/Anggota/anggota-irfan.png'
 import { useState } from "react";
 import Accordion from "../../../../component/Accordion/Accordion";
-
+import { motion } from "framer-motion";
 
 
 
@@ -62,41 +62,77 @@ const Ristek = () => {
                 <h2>STAFF</h2>
             </div>
             <div className="ristek-anggota">
-                <div className="anggota-divisi-ristek">
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="anggota-divisi-ristek"
+                >
                     <img src={anggota1} alt="Ariq Rizki Fadhillah L" />
-                </div>
-                <div className="anggota-divisi-ristek">
+                </motion.div>
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="anggota-divisi-ristek"
+                >
                     <img src={anggota2} alt="Giras Arya Ichsani" />
-                </div>
-                <div className="anggota-divisi-ristek">
+                </motion.div>
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="anggota-divisi-ristek"
+                >
                     <img src={anggota3} alt="Ayyas Mumtaz Y" />
-                </div>
-                <div className="anggota-divisi-ristek">
+                </motion.div>
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="anggota-divisi-ristek"
+                >
                     <img src={anggota4} alt="Althaf Nadawir T" />
-                </div>
-                <div className="anggota-divisi-ristek">
+                </motion.div>
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="anggota-divisi-ristek"
+                >
                     <img src={anggota5} alt="M Mumtaz Sakho" />
-                </div>
-                <div className="anggota-divisi-ristek">
+                </motion.div>
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="anggota-divisi-ristek"
+                >
                     <img src={anggota6} alt="Rifqi Fauzan A" />
-                </div>
-                <div className="anggota-divisi-ristek">
+                </motion.div>
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="anggota-divisi-ristek"
+                >
                     <img src={anggota7} alt="Khalid Zia Rabbani" />
-                </div>
-                <div className="anggota-divisi-ristek">
+                </motion.div>
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}    
+                    className="anggota-divisi-ristek"
+                >
                     <img src={anggota8} alt="M Irfan Abdillah" />
-                </div>
+                </motion.div>
             </div>
 
             {/* Program Kerja */}
-            <div className="ristek-program">
-                <div className="program-header-ristek">
+            <motion.div 
+                whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                transition={{duration: 0.35}}    
+                className="ristek-program"
+            >
+               <div className="program-header-ristek">
                     <h2>PROGRAM KERJA</h2>
                 </div>
                 
                 <Accordion proker_divisi={proker_ristek} />
 
-            </div>
+            </motion.div>
         </section>
         <Footer />
     </div>);

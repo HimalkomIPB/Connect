@@ -134,7 +134,7 @@
     margin-bottom: 2.5rem;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 1280px) {
     .anggota-hrd-container{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -219,7 +219,7 @@
 }
 
 
-@media(max-width: 560px) {
+@media(max-width: 640px) {
     .anggota-hrd-container{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -278,8 +278,9 @@
     
     .anggota-hrd-container{
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        padding: 44.23px 42px 0px 42px;
-        gap: 40px;
+        padding: 44.23px  clamp(0.75rem, -3rem + 18.75vw, 2.625rem);
+        padding-bottom: 0;
+        gap: 40px 10px;
     }
     
     .anggota-divisi-hrd:first-child {
@@ -291,7 +292,9 @@
     }
 
     .anggota-divisi-hrd img{
-        height: 235.88px;
+        max-height: 235.88px;
+        height: 100%;
+        width: 100%;
     }
 
     
@@ -307,5 +310,12 @@
         line-height: 28px;
         font-size: 22px;
         padding: 0 4px 0px 4px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .anggota-divisi-hrd:first-child img, .anggota-divisi-hrd:last-child img{
+        padding: 0 80px;
     }
 }

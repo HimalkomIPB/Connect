@@ -13,6 +13,7 @@ import anggota8 from './../../../../Assets/Divisi/Internal/Anggota/anggota_adi.p
 import anggota9 from './../../../../Assets/Divisi/Internal/Anggota/anggota_kevin.png'
 import anggota10 from './../../../../Assets/Divisi/Internal/Anggota/anggota_novia.png'
 import Accordion from './../../../../component/Accordion/Accordion';
+import { motion } from "framer-motion";
 
 const internal = () => {
     const proker_internal = [
@@ -51,47 +52,91 @@ const internal = () => {
           </div>
 
           <div className="anggota-internal-container">
-            <div className="anggota-divisi-internal">
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota1} alt="AHMAD BINTANG ARIF" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota2} alt="BELLA AGAMA" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota3} alt="CHEISHA AMANDA" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota4} alt="DZAKIYYAH HASBI" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota5} alt="ILLINIA MALIKA PUTRI" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota6} alt="ISMY FANA FILLAH" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota7} alt="MIRZA HAFIZ MUHAMMAD" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota8} alt="M ADI SATRIA FERDIANSAH" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota9} alt="M KEVIN ARIOBIMO" />
-            </div>
-            <div className="anggota-divisi-internal">
+            </motion.div>
+            <motion.div 
+              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}    
+              className="anggota-divisi-internal"
+            >
               <img src={anggota10} alt="NOVIA DWI LESTARI" />
-            </div>
+            </motion.div>
           </div>
 
           {/* Program Kerja */}
-          <div className="program-divisi-internal">
+          <motion.div 
+            whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}}    
+            className="program-divisi-internal"
+          >
             <div className="program-header-internal ">
               <h2>PROGRAM KERJA</h2>
             </div>
 
             <Accordion proker_divisi={proker_internal} />
             
-          </div>
+          </motion.div>
         </section>
 
         <Footer />

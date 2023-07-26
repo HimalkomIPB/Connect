@@ -13,7 +13,7 @@ import anggota8 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Ariq.png'
 import anggota9 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Rifqy.png'
 import anggota10 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Zhafran.png'
 import Accordion from './../../../../component/Accordion/Accordion';
-
+import { motion } from 'framer-motion';
 
 
 const HRD = () => {
@@ -51,46 +51,90 @@ const HRD = () => {
                 </div>
                 
                 <div className="anggota-hrd-container">
-                    <div className="anggota-divisi-hrd">
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota1} alt="Bares Manggala S" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota2} alt="" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota3} alt="" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota4} alt="" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota5} alt="" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota6} alt="" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota7} alt="" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota8} alt="" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota9} alt="" />
-                    </div>
-                    <div className="anggota-divisi-hrd">
+                    </motion.div>
+                    <motion.div 
+                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="anggota-divisi-hrd"
+                    >
                         <img src={anggota10} alt="" />
-                    </div>
+                    </motion.div>
                 </div>
 
                  {/* Program Kerja */}
-                <div className="program-divisi-hrd">
+                <motion.div 
+                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
+                    transition={{duration: 0.35}}  
+                    className="program-divisi-hrd"
+                >
                         <div className="program-header-hrd">
                             <h2>PROGRAM KERJA</h2>
                         </div>
 
                         <Accordion proker_divisi={proker_hrd} />
-                </div>
+                </motion.div>
 
             </section>
             
