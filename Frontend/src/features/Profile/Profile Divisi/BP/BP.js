@@ -20,7 +20,18 @@ const BP = () => {
         {title: 'Fungsi Legislatif', description: 'Amandemen AD/ART : Penjaringan aspirasi & Peninjauan oleh BP, Menyelenggarakan Musyawarah Kerja (1/3), Menyelenggarakan PEMIRA, dan Pencerdasan Legislasi'},
         {title: 'Fungsi Pengawasan', description: 'Laporan bulanan, Performance Assessment (Mid-Term Evaluation) : Instrumen penilaian : Penilaian P2P, Penilaian BP, dan Survei Kinerja Himalkom, Rapat Kerja, Awal Tahun (Ex- Ante Evaluation), Akhir Tahun (Ex-Post Evaluation)'},
     ]
-
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 1.2,
+            ease: 'easeInOut',
+          },
+        },
+      };
     return (
         <div>
             <Navbar />
@@ -31,10 +42,13 @@ const BP = () => {
                             <br />
                         </div>
 
-                        <div className="info-bp">
+                        <motion.div className="info-bp"
+                        variants={fadeInVariants}
+                        initial="hidden"
+                        animate="visible">
                             <h2>BADAN PENGAWAS</h2>
                             <p>Badan Pengawas (BP), merupakan badan yang bertugas dalam mengawasi pelaksanaan rencana kerja dan anggaran secara independen, mengawasi tugas dan wewenang kinerja BPH dan seluruh divisi Himalkom selama satu periode kepengurusan.</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </section>
             {/* Staff Divisi */}

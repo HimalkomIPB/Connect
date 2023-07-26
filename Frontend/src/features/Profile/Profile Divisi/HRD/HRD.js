@@ -26,7 +26,18 @@ const HRD = () => {
         {title: 'Ilkomerz Speak Up!', description: 'Kegiatan seminar/webinar/workshop sebagai bentuk pengembangan soft skill Ilkomerz dalam bidang public speaking atau leadership.'},
         {title: 'Magang Himalkom', description: 'Rekrutmen Ilkomerz angkatan 59 yang ingin ikut mencoba merasakan berperan bersama di dalam Himalkom. Program kerja ini sekaligus berfungsi sebagai media persiapan kepengurusan HIMALKOM IPB periode selanjutnya.'},
     ]
-
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 1.2,
+            ease: 'easeInOut',
+          },
+        },
+      };
     return (
         <div>
             <Navbar />
@@ -36,10 +47,13 @@ const HRD = () => {
                 <div className="profil-container-hrd">
                     <div className="logo-container-hrd"/>
 
-                    <div  className="info-divisi-hrd">
+                    <motion.div  className="info-divisi-hrd"
+                    variants={fadeInVariants}
+                    initial="hidden"
+                    animate="visible">
                         <h1>HRD</h1>
                         <p>HRD merupakan badan yang bertugas untuk mengembangkan kualitas mahasiswa dalam Himalkom dengan melakukan kegiatan pelatihan yang berhubungan dengan pengembangan kemampuan, potensi, dan keterampilan mahasiswa melalui serangkaian program kerja yang diusung oleh divisi ini.</p>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 

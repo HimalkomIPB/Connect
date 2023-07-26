@@ -27,7 +27,18 @@ const Eksternal = () => {
         {title: 'LPK Tepi Sawah', description: 'Program kerja berupa pengabdian Ilkomerz mengajar anak-anak di LPK Tepi Sawah. IG : @sahabattepisawah'},
         {title: 'Partnership & Event Collaborative', description: 'Menerima dan mengelola segala macam bentuk penawaran kerja sama.'},
     ]
-
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 1.2,
+            ease: 'easeInOut',
+          },
+        },
+      };
     return (
         <div>
             <Navbar />
@@ -38,10 +49,13 @@ const Eksternal = () => {
                     
                     <div className="logo-container-eksternal"/>
 
-                    <div className="info-divisi-eksternal">
+                    <motion.div className="info-divisi-eksternal"
+                    variants={fadeInVariants}
+                    initial="hidden"
+                    animate="visible">
                         <h1>EKSTERNAL</h1>
                         <p>Eksternal merupakan badan yang bertugas  untuk menjalin hubungan baik dengan pihak kampus meliputi alumni, perguruan tinggi lain,  ORMAWA kampus, serta  lingkungan luar kampus.</p>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 

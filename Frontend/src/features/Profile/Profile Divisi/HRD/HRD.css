@@ -235,7 +235,7 @@
 
 @media(max-width: 480px) {
     #profil-divisi-hrd .profil-container-hrd {
-        height: 562px;
+        height: 522px;
         background-image: url("./../../../../Assets/Divisi/HRD/hrd_teks_phone.png"), url("./../../../../Assets/Divisi/HRD/hrd_background_phone.svg");    
     }
 
@@ -254,14 +254,13 @@
     .info-divisi-hrd h1 {
         font-size: 32px;
         line-height: 40px;
-        margin: 240px 0 9px 0;
+        margin: 200px 0 9px 0;
         letter-spacing: -2px;        
     }
     
     .info-divisi-hrd p {
-        font-size: 16px;
-        line-height: 24px;
-        width: 80%;
+        font-size: clamp(0.625rem, -0.125rem + 3.75vw, 1rem);
+        line-height: 22px;
         text-align: center;
     }
 

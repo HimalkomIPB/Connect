@@ -47,7 +47,18 @@ const proker_edukasi = [
         description: "Pojok literasi di Ilmu Komputer IPB"
     }
 ]
-
+const fadeInVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1.2,
+        ease: 'easeInOut',
+      },
+    },
+  };
 
 const Edukasi = () => {
     return (
@@ -61,10 +72,13 @@ const Edukasi = () => {
                         <br />
                     </div>
 
-                    <div className="info-edukasi">
+                    <motion.div className="info-edukasi"
+                    variants={fadeInVariants}
+                    initial="hidden"
+                    animate="visible">
                         <h2>EDUKASI</h2>
                         <p>Edukasi merupakan badan yang menyediakan sarana dan prasarana mahasiswa di dalam kegiatan akademik dan mengembangkan kompetensi mahasiswa.</p>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 

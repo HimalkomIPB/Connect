@@ -26,7 +26,18 @@ const internal = () => {
         {title: 'Staff of the Month', description: 'Apresiasi bagi staff yang memiliki kerja terbaik di divisinya masing-masing.'},
         {title: 'Ilkomerz Wisudaan', description: 'Bentuk apresiasi sekaligus perayaan dari Ilkomerz aktif untuk merayakan kelulusan Ilkomerz. Program kerja ini akan bekerja sama dengan Divisi Eksternal.'},
     ]
-
+    const fadeInVariants = {
+      hidden: {
+        opacity: 0,
+      },
+      visible: {
+        opacity: 1,
+        transition: {
+          duration: 1.2,
+          ease: 'easeInOut',
+        },
+      },
+    };
     return (
       <div>
         <Navbar />
@@ -37,10 +48,13 @@ const internal = () => {
 
                     <div className="logo-container-internal"/>
 
-                    <div  className="info-divisi-internal">
+                    <motion.div  className="info-divisi-internal"
+                    variants={fadeInVariants}
+                    initial="hidden"
+                    animate="visible">
                         <h1>Internal</h1>
                         <p>Divisi Internal merupakan divisi yang bertugas dan bertanggung jawab dalam meningkatkan internalisasi baik antar pengurus HIMALKOM maupun dengan Ilkomerz secara langsung.</p>
-                    </div>
+                    </motion.div>
 
                 </div>
             </section>

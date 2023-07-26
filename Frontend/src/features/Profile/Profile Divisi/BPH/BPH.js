@@ -18,7 +18,18 @@ const BPH = () => {
         {title: 'CPSC IPB', description: 'Kompetisi yang diselenggarakan oleh BEM fmipa IPB sebagai bentuk dari rangkaian acara Pesta Sains Nasional kompetisi ini menggunakan pendekatan berpikir komputasional untuk memecahkan masalah sederhana bagi siswa SMA/sederajat se-Indonesia.'},
         {title: 'Ilkomerz Night', description: 'Ilkomerz Night merupakan program kerja HIMALKOM IPB sebagai bentuk apresiasi kepada mahasiswa ilmu komputer sekaligus farewell party untuk Ilkomerz 56 dan pengurus HIMALKOM IPB kabinet yang bertugas serta dihadiri oleh dosen Ilmu Komputer dan seluruh Ilkomerz dari semua angkatan.'},
     ]
-
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 1.2,
+            ease: 'easeInOut',
+          },
+        },
+      };
     return (
         <div>
             <Navbar />
@@ -29,11 +40,14 @@ const BPH = () => {
                             <br />
                         </div>
 
-                        <div className="info-bph">
+                        <motion.div className="info-bph"
+                        variants={fadeInVariants}
+                        initial="hidden"
+                        animate="visible">
                             <h2>BADAN PENGURUS<br/>
                             HARIAN</h2>
                             <p>Badan Pengurus Harian (BPH), merupakan salah satu badan yang melakukan fungsi kontrol, koordinasi, pengembangan dan peningkatan sistem manajemen administrasi dan keuangan serta komunikasi dalam membangun hubungan internal dan eksternal Himalkom. </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </section>
 

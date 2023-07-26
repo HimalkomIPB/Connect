@@ -38,6 +38,18 @@ const Ristek = () => {
         setSelected(i)
     }
 
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 1.2,
+            ease: 'easeInOut',
+          },
+        },
+      };
     return (<div>
         <Navbar />
 
@@ -48,10 +60,13 @@ const Ristek = () => {
                     <br />
                 </div>
 
-                <div className="desc-ristek">
+                <motion.div className="desc-ristek"
+                variants={fadeInVariants}
+                initial="hidden"
+                animate="visible">
                     <h2>RISET DAN TEKNOLOGI</h2>
                     <p>Ristek merupakan badan yang bertugas untuk melaksanakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi mahasiswa untuk membangun Himalkom, serta melakukan pengembangan pada website Himalkom.</p>
-                </div>
+                </motion.div>
             </div>
         </section>
 

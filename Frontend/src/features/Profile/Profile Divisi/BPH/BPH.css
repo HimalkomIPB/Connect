@@ -3,7 +3,7 @@
     flex-direction: row;
     width: auto;
     height: 737px;
-    background-image: url("./../../../../Assets/Divisi/BPH/bph-teks.png"), url("./../../../../Assets/Divisi/BPH/BPH_background.svg");
+    background-image: url("./../../../../Assets/Divisi/BPH/bph-teks.png"), url("./../../../../Assets/Divisi/BPH/bph_background.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -213,8 +213,8 @@
 
     .info-bph p {
         text-align: center;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: clamp(0.625rem, -0.125rem + 3.75vw, 1rem);
+        line-height: 22px;
     }
 
     .info-bph h2 {

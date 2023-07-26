@@ -21,7 +21,18 @@ const Entrepreneur = () => {
         {title: 'Kompreneurs IPB', description: 'Program kerja yang berfokus kepada edukasi entrepreneurship. Selain edukasi, program kerja ini memiliki misi untuk membangkitkan jiwa kewirausahaan masyarakat ilkomerz.'},
         {title: 'BY-I', description: 'Bisnis marketing dari divisi entrepreneur himalkom dimana kita melakukan promosi/marketing dari sebuah produk yang ada di online shop dan mendapatkan keuntungan berupa komisi.'},
     ]
-
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 1.2,
+            ease: 'easeInOut',
+          },
+        },
+      };
     return (
         <div>
             <Navbar />
@@ -32,11 +43,14 @@ const Entrepreneur = () => {
                         <br />
                     </div>
 
-                    <div className="desc-entre">
+                    <motion.div className="desc-entre"
+                    variants={fadeInVariants}
+                    initial="hidden"
+                    animate="visible">
                         <h2>ENTRE<br/>
                         PRENEUR</h2>
                         <p>Divisi Entrepreneur merupakan divisi yang mengelola dana usaha guna meningkatkan pemasukan untuk menunjang kegiatan-kegiatan yang diadakan oleh HIMALKOM dari segi keuangan.</p>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 

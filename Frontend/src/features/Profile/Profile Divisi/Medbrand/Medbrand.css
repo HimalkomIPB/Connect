@@ -274,7 +274,7 @@
     .medbrand-container {
         background-image: url("../../../../Assets/Divisi/Medbrand/medbrand-teks-phone.png"), url("../../../../Assets/Divisi/Medbrand/medbrand-background-phone.svg");
         background-size: cover;
-        height: 622px;
+        height: 522px;
         border-top: 5px solid #000000;
         border-bottom: 5px solid #000000;
     }
@@ -294,14 +294,13 @@
     .info-medbrand h2 {
         font-size: 32px;
         line-height: 40px;
-        margin: 300px 0 9px 0;
+        margin: 240px 0 9px 0;
         letter-spacing: -2px;
     }
 
     .info-medbrand p {
-        font-size: 16px;
-        line-height: 24px;
-        width: 80%;
+        font-size: clamp(0.625rem, -0.125rem + 3.75vw, 1rem);
+        line-height: 22px;
         text-align: center;
     }
 

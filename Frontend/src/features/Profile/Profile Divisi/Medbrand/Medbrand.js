@@ -26,7 +26,18 @@ const proker_medbrand = [
         {title: 'Skotteride', description: 'Publikasi berupa maskot, filter, dan guide pada media instagram.'},
         {title: 'Recap Proker', description: 'Recap kegiatan setiap divisi dalam rentang waktu 3-4 bulan. Setelah recap, akan ada post proker apa saja yang akan datang dalam kurun waktu 3-4 bulan ke depan.'},
     ]
-
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 1.2,
+            ease: 'easeInOut',
+          },
+        },
+      };
     return (<div>
         <Navbar />
 
@@ -37,10 +48,13 @@ const proker_medbrand = [
                     <br />
                 </div>
                 
-                <div className="info-medbrand">
+                <motion.div className="info-medbrand"
+                variants={fadeInVariants}
+                initial="hidden"
+                animate="visible">
                     <h2>MEDIA DAN BRANDING</h2>
                     <p>Mebrand merupakan badan yang bertugas untuk membuat, mengelola, dan mengoptimalkan media informasi Himalkom sebagai pusat informasi, mendokumentasikan kegiatan yang diselenggarakan oleh Himalkom, dan menjalin kerja sama dengan media partner untuk meningkatkan branding Himalkom.</p>
-                </div>
+                </motion.div>
             </div>
         </section>
 
