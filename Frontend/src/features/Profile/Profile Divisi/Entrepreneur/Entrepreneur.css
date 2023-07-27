@@ -309,8 +309,8 @@
 
     .desc-entre p {
         text-align: center;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: clamp(0.875rem, 0.625rem + 1.25vw, 1rem);
+        line-height: 22px;
     }
 
     .desc-entre h2 {
@@ -333,6 +333,7 @@
         max-height: 235.88px;
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 
     .anggota-divisi-entre:first-child {

@@ -260,9 +260,8 @@
     }
     
     .info-divisi-internal p {
-        font-size: 16px;
-        line-height: 24px;
-        width: 80%;
+        font-size: clamp(0.875rem, 0.625rem + 1.25vw, 1rem);
+        line-height: 22px;
         text-align: center;
     }
 

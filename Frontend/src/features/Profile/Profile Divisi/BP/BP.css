@@ -264,7 +264,7 @@
 
     .info-bp p {
         text-align: center;
-        font-size: clamp(0.625rem, -0.125rem + 3.75vw, 1rem);
+        font-size: clamp(0.875rem, 0.625rem + 1.25vw, 1rem);
         line-height: 22px;
     }
 
@@ -304,6 +304,7 @@
         max-height: 235.88px;
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 
     .BP-program .program-header {

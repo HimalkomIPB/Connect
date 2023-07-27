@@ -6,7 +6,7 @@ import anggota1 from './../../../../Assets/Divisi/Internal/Anggota/kadiv_abin.pn
 import anggota2 from './../../../../Assets/Divisi/Internal/Anggota/anggota_bella.png'
 import anggota3 from './../../../../Assets/Divisi/Internal/Anggota/anggota_cheisa.png'
 import anggota4 from './../../../../Assets/Divisi/Internal/Anggota/anggota_dzakkiyah.png'
-import anggota5 from './../../../../Assets/Divisi/Internal/Anggota/anggota_ilinia.png'
+import anggota5 from './../../../../Assets/Divisi/Internal/Anggota/anggota_ilinia2.png'
 import anggota6 from './../../../../Assets/Divisi/Internal/Anggota/anggota_ismy.png'
 import anggota7 from './../../../../Assets/Divisi/Internal/Anggota/anggota_mirza.png'
 import anggota8 from './../../../../Assets/Divisi/Internal/Anggota/anggota_adi.png'

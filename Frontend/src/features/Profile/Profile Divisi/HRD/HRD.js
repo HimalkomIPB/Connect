@@ -3,7 +3,7 @@ import Navbar from "../../../../component/Navbar/Navbar";
 import Footer from "../../../../component/Footer/Footer";
 import "./HRD.css";
 import anggota1 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Bares.png'
-import anggota2 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Naufal.png'
+import anggota2 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Naufal2.png'
 import anggota3 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Aul.png'
 import anggota4 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Dinda.png'
 import anggota5 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Faiz.png'

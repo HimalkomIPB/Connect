@@ -296,6 +296,7 @@
         line-height: 40px;
         margin: 240px 0 9px 0;
         letter-spacing: -2px;
+        text-align: center;
     }
 
     .info-medbrand p {
@@ -326,5 +327,6 @@
         max-height: 235.88px;
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 }
