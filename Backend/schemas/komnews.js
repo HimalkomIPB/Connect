@@ -22,7 +22,7 @@ export default {
             name: "img",
             title: "Image",
             type: "image",
-            options:{
+            options: {
                 hotspot: true
             }
         },
@@ -35,5 +35,21 @@ export default {
             }
         },
 
+    ],
+    orderings: [
+        {
+            title: 'Date Ascending',
+            name: 'dateAsc',
+            by: [
+                { field: 'date', direction: 'asc' }
+            ]
+        },
+        {
+            title: 'Date Descending',
+            name: 'dateDesc',
+            by: [
+                { field: 'date', direction: 'desc' }
+            ]
+        }
     ]
 }

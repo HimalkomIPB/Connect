@@ -14,7 +14,7 @@ const Newsdesc = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const query = '*[_type == "komnews"]';
+                const query = '*[_type == "komnews"] | order(date desc)';
                 const response = await client.fetch(query);
                 setData(response);
             } catch (error) {
