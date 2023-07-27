@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import himalkom from "../../Assets/Himalkom/Logo HIMALKOM.svg";
 import NavCross from "../../Assets/Navbar Icon/nav-Close.svg";
 import nav_facebook from "../../Assets/Navbar Icon/nav_facebook.svg";
@@ -11,18 +11,20 @@ import "./Navbar.css";
 import arrow_up from "./../../Assets/Profil Himalkom/arrow-up.svg";
 import arrow_down from "./../../Assets/Profil Himalkom/arrow-down.svg";
 
+import { motion } from 'framer-motion';
+
 const Navbar = () => {
   const [Active, setActive] = useState(false);
   const activeState = () => {
     setActive(!Active);
   };
 
-  const [isActive, setIsActive] = useState(false);
+  const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsActive(!isActive);
+  const toggleDropdown1 = () => {
+    setIsActive1(!isActive1);
   };
 
   const toggleDropdown2 = () => {
@@ -123,7 +125,14 @@ const Navbar = () => {
 
       {/* mobile nav area */}
       {Active == true ? (
-        <section className="mobile-navbar-container">
+        <motion.div 
+          initial={{ x: "100%" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.35 }}
+          exit={{ x: "100%" }}
+
+          className="mobile-navbar-container"
+        >
           <div className={Active ? "cross-active" : "navbar-cross"}>
             <img src={himalkom} alt="himalkom" />
             <img id="navcross" src={NavCross} onClick={activeState} />
@@ -133,12 +142,12 @@ const Navbar = () => {
               <a href="/">Home</a>
             </li>
             <li className="mobile-navbar-dropdown">
-              <p onClick={toggleDropdown}>
+              <p onClick={toggleDropdown1}>
                 <a href="#">Profil</a>
-                <img src={isActive ? arrow_up : arrow_down} alt="arrow" />
+                <img src={isActive1 ? arrow_up : arrow_down} alt="arrow" />
               </p>
-              {isActive && (
-                <ul className={`dropdown-menu ${isActive ? 'active' : 'inactive'}`}>
+              {isActive1 && (
+                <ul className={`dropdown-menu ${isActive1 ? 'active' : 'inactive'}`}>
                   <li>
                     <a href="/ProfilHimalkom">Himalkom</a>
                   </li>
@@ -237,7 +246,7 @@ const Navbar = () => {
               <h2>Copyright © Himalkom 2022.</h2>
             </div>
           </div>
-        </section>
+        </motion.div>
       ) : (
         <div className={Active ? "" : ""}></div>
       )}
