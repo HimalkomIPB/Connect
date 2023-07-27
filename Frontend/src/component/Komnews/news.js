@@ -26,7 +26,7 @@ const News = React.memo((props) => {
           <p>{props.category}</p>
         </div>
       </div>
-      <img src={urlFor(props.img).url()} className="news_img" alt="gambar" loading="lazy"/>
+      <img src={require('../../Assets/Komnews/Topic/' + props.img )} className="news_img" alt="gambar" loading="lazy"/>
     </div>
   );
 });

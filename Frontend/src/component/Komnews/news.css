@@ -147,6 +147,7 @@
     .news_img{
         width: 90px;
         height: 75px;
+        margin-left: 5px;
     }
     .topic-desc > h1 {
         font-size: 12px;

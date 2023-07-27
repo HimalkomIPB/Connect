@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { client } from '../../client';
+import Data from "../../Data/newsdata"
 import './Page.css'
 import connect from '../../Assets/Connect/Logo Connect.png'
 import Navbar from '../../component/Navbar/Navbar'
@@ -29,21 +29,24 @@ const Page = () => {
     setActiveSlide(index);
   };
 
-  const [Data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const query = '*[_type == "komnews" ] | order(date desc)';
-        const response = await client.fetch(query);
-        setData(response);
-      } catch (error) {
-        console.error('Error fetching data from Sanity:', error);
-      }
-    };
 
-    fetchData();
-  }, []);
+  //Buat kalo pake SANITY
+  // const [Data, setData] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const query = '*[_type == "komnews" ] | order(date desc)';
+  //       const response = await client.fetch(query);
+  //       setData(response);
+  //     } catch (error) {
+  //       console.error('Error fetching data from Sanity:', error);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
 
   const cards = Data.map(item => {
     return (
@@ -56,7 +59,7 @@ const Page = () => {
             category={item.category}
         />
     )
-  })
+  }).reverse();
 
   const navigate = useNavigate();
 

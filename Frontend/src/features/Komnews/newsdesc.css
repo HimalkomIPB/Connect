@@ -118,7 +118,11 @@
 .desc-card::-webkit-scrollbar {
     display: none;
 }
-
+@media (max-width: 1300px) {
+    .img-desc img{
+        width: 900px;
+    }
+}
 @media (max-width: 808px) {
     .form-desc{
         padding: 40px;

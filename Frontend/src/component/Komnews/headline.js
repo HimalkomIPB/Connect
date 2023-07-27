@@ -2,7 +2,6 @@ import React from 'react'
 import "./Headline.css"
 import { useNavigate } from 'react-router-dom';
 import {motion} from "framer-motion"
-import { urlFor } from '../../client';
 import DOMPurify from 'dompurify';
 
 const Headline = React.memo((props) => {
@@ -35,7 +34,7 @@ const Headline = React.memo((props) => {
             <a className='button_headline' onClick={handleCardClick} ><span className='bold'>Read More {'>'}</span></a>
           </div>
           <div className='image'>
-            <img src={urlFor(props.img).url()} alt="gambar" className="headline_img" loading="lazy"/>
+            <img src={require('../../Assets/Komnews/Topic/' + props.img )} alt="gambar" className="headline_img" loading="lazy"/>
           </div>
         </div>
     </motion.div>
