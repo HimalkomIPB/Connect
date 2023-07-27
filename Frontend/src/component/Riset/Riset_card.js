@@ -12,10 +12,12 @@ const Riset_card = (props) => {
         transition={{duration: 0.5}}
         className='Riset-card'
     >
-        <img src={require('../../Assets/Riset/' + props.img + '.svg')} alt="Riset-Icon"/>
+        <div className="image-container">
+            <img src={require('../../Assets/Riset/' + props.img + '.png')} alt="Riset-Icon"/>
+        </div>
         <h3 className='Judul-Riset'>{props.title}</h3> 
         <p className='Riset-Created'>{props.date}</p> 
-        <p><a href="#">Baca Selengkapnya</a></p>
+        <p><a href="#" onClick={redirectToLink}>Baca Selengkapnya</a></p>
     </motion.div>
     )
 };

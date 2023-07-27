@@ -4,9 +4,19 @@
     width: 100%;
 }
 
+.Riset-card .image-container{
+    height: auto;
+    width: 100%;
+
+}
+
 .Riset-card img {
     width: 100%;
-    height: auto;
+    /* height: 100%; */
+    max-height: 493px;
+    height: 100%;
+    object-fit: cover;
+
     background-color: white;
     border: 5px solid black;
     box-shadow: 2px 3px 0px #040404;
@@ -53,6 +63,8 @@
     .Riset-card img {
         border: 2px solid black;
         box-shadow: none;
+        object-fit: cover;
+
     }
 
     .Riset-card h3 {

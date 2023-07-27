@@ -10,7 +10,6 @@ import Data from "../../Data/Riset_data"
 import Card from "../../component/Riset/Riset_card"
 
 
-
 const Riset = () => {
 
     const cards = Data.map((item) => {
@@ -20,6 +19,7 @@ const Riset = () => {
             title={item.title}
             date={item.date}
             img={item.img}
+            link={item.link}
           />
         );
       });
