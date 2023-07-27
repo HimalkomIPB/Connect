@@ -17,7 +17,7 @@ import ittoday4 from "../../Assets/Megaproker/ittoday/dokum4.png";
 import cpsc1 from "../../Assets/Megaproker/cpsc/dokum1.png";
 import cpsc2 from "../../Assets/Megaproker/cpsc/dokum2.png";
 import cpsc3 from "../../Assets/Megaproker/cpsc/dokum3.png";
-
+import cpsc4 from "../../Assets/Megaproker/cpsc/dokum4.png";
 
 import dokumimg from "../../Assets/Program Kerja/dokum/dokum.svg";
 import btn_arrow from "../../Assets/Program Kerja/button/right-arrow.svg";
@@ -35,6 +35,14 @@ const Megaproker = () => {
       },
     },
   };
+
+  const redirectToLinkITOD = () => {
+    window.open("https://www.youtube.com/live/hASJJNsKFMA?feature=share", '_blank');
+  }
+
+  const redirectToLinkCPSC = () => {
+    window.open("https://youtu.be/3FyNe8JBQOI", '_blank');
+  }
 
   return (
     <div>
@@ -105,7 +113,7 @@ const Megaproker = () => {
               </div>
             </div>
 
-            <button>
+            <button onClick={redirectToLinkITOD}>
               <span className="bold">Selengkapnya</span> <img alt="arrow-btn" src={btn_arrow} />
             </button>
           </div>
@@ -153,13 +161,13 @@ const Megaproker = () => {
             <div className="dokumentasi-video">
               <div className="box">
                 <a href="/Megaproker">
-                  <img alt="dokum-img" src={dokumimg} className="video" />
+                  <img alt="dokum-img" src={cpsc4} className="video" />
                 </a>
               </div>
             </div>
             
 
-            <button>
+            <button onClick={redirectToLinkCPSC}>
               <span className="bold">Selengkapnya</span> <img alt="arrow-btn" src={btn_arrow} />
             </button>
           </div>
