@@ -3,6 +3,7 @@ import "./Headline.css"
 import { useNavigate } from 'react-router-dom';
 import {motion} from "framer-motion"
 import { urlFor } from '../../client';
+import DOMPurify from 'dompurify';
 
 const Headline = (props) => {
 
@@ -15,6 +16,9 @@ const Headline = (props) => {
       behavior: 'smooth'
     });
   };
+
+  const sanitizedDesc = DOMPurify.sanitize(props.desc);
+
   return (
     <motion.div 
       whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
@@ -27,7 +31,7 @@ const Headline = (props) => {
         <div className='headline'>
           <div className='desc-news'>
             <h1>{props.title}</h1>
-            <p>{props.desc}</p>
+            <p dangerouslySetInnerHTML={{ __html: sanitizedDesc }}></p>
             <a className='button_headline' onClick={handleCardClick} ><span className='bold'>Read More {'>'}</span></a>
           </div>
           <div className='image'>
