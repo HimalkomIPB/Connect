@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import arrowleft from "./../../../src/Assets/Slider/Arrow - Left Circle.svg";
 import arrowright from "./../../../src/Assets/Slider/Arrow - Right Circle.svg";
 
@@ -46,7 +47,11 @@ const ImageSlider = ({ slides }) => {
         }
     };
     return (
-      <div id="image-slider" className="Dokumentasi-container">
+      <motion.div
+        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+        transition={{duration: 0.35}}   
+        id="image-slider" className="Dokumentasi-container"
+      >
         
         <div className="Dokumentasi-header">
           <h2>DOKUMENTASI</h2>
@@ -102,7 +107,7 @@ const ImageSlider = ({ slides }) => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     );
 }
 

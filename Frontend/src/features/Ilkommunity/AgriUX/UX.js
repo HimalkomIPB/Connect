@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import {motion} from 'framer-motion'
 import './UX.css'
 import Navbar from '../../../component/Navbar/Navbar'
 import Footer from '../../../component/Footer/Footer'
@@ -15,6 +16,19 @@ import dokum7 from "../../../Assets/Ilkommunity/UX/UX-dokum7.png"
 
 const UX = () => {
     const [showDeskripsi, setShowDeskripsi] = useState(true);
+
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 0.5, 
+            ease: 'easeOut', 
+          },
+        },
+    };
 
     const handleDeskripsiClick = () => {
         setShowDeskripsi(true);
@@ -40,7 +54,11 @@ const UX = () => {
             <section>
                 <div id="UX-header-container">
                     <div className="UX-header-wrapper">
-                        <div className="UX-header">
+                        <motion.div
+                            whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}} 
+                            className="UX-header"
+                        >
                             <h2>AGRIUX</h2>
                             <p>AgriUX IPB adalah komunitas yang bergerak pada bidang UI/UX design
                                 <br />
@@ -48,13 +66,17 @@ const UX = () => {
                                 Setiap Rabu pukul 19:00
                                 di RKU 2.01 (FMIPA lantai 2)
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
             <section>
                 <div id="UX-main-container">
-                    <div className="UX-content-container">
+                    <motion.div
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="UX-content-container"
+                    >
                         <div className="UX-content-deskripsi-tujuan">
                             <h2 id='UX-deskripsi'
                                 onClick={handleDeskripsiClick}
@@ -86,7 +108,11 @@ const UX = () => {
                                 </div>
                         }
 
-                        <div className="UX-prestasi-container">
+                        <motion.div
+                            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}} 
+                            className="UX-prestasi-container"
+                        >
                             <div className="UX-prestasi-header">
                                 <h2>PRESTASI</h2>
                             </div>
@@ -99,12 +125,16 @@ const UX = () => {
                                 <li>Juara 2 International Prototype Design Competition - Proto A Thon</li>
 
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     <ImageSlider slides={slides} />
 
-                    <div className="UX-narahubung-container">
+                    <motion.div
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="UX-narahubung-container"
+                    >
                         <div className="UX-narahubung-header">
                             <h2>NARAHUBUNG</h2>
                         </div>
@@ -114,7 +144,7 @@ const UX = () => {
                             <h3>Whatsapp: 089513348202</h3>
                             <h3>IG: @agriux</h3>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section >
             <Footer />

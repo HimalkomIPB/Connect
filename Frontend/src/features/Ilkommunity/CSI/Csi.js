@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {motion} from 'framer-motion'
 import "./Csi.css";
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 import Navbar from "../../../component/Navbar/Navbar";
@@ -34,20 +35,28 @@ const CSI = () => {
             <section>
                 <div id="CSI-header-container">
                     <div className="CSI-header-wrapper">
-                        <div className="CSI-header">
+                        <motion.div 
+                            whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}}
+                            className="CSI-header"
+                        >
                             <h2>CSI</h2>
                             <p>Cyber Security IPB (CSI) adalah komunitas yang bergerak pada bidang keamanan siber dan berfokus pada kompetisi Capture the Flag (CTF) baik di tingkat nasional maupun internasional.<br />
                                 <br />
                                 Setiap Jumat pukul 17:00 di gedung Gedung Pusat Komputer (GPK)
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
 
             <section>
                 <div id="CSI-main-container">
-                    <div className="CSI-content-container">
+                    <motion.div 
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="CSI-content-container"
+                    >
                         <div className="CSI-content-deskripsi-tujuan">
                             <h2 id='CSI-deskripsi'
                                 onClick={handleDeskripsiClick}
@@ -75,7 +84,11 @@ const CSI = () => {
                                 </div>
                         }
 
-                        <div className="CSI-prestasi-container">
+                        <motion.div 
+                            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}}
+                            className="CSI-prestasi-container"
+                        >
                             <div className="CSI-prestasi-header">
                                 <h2>PRESTASI</h2>
                             </div>
@@ -88,12 +101,16 @@ const CSI = () => {
                                 <li>Juara 3 National Cyber Week 2022</li>
                                 <li>Juara 3 CTF Hology 5.0</li>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     <ImageSlider slides={slides} />
 
-                    <div className="CSI-narahubung-container">
+                    <motion.div 
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="CSI-narahubung-container"
+                    >
                         <div className="CSI-narahubung-header">
                             <h2>NARAHUBUNG</h2>
                         </div>
@@ -101,7 +118,7 @@ const CSI = () => {
                             <h3>Irfan Alamsyah</h3>
                             <h3>Whatsapp: 089604283143</h3>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 

@@ -50,7 +50,7 @@ export default [
             link:"https://drive.google.com/file/d/1pF4NsuxAfcjo3nL0vcSy5xi8TCnBq5su/view?usp=sharing"
         },
         {
-            id:7,
+            id:8,
             title:"Penglaman Ilkomerz Menggunakan Website Himalkom",
             date:"22/09/22",
             img:"pengalaman-website-himalkom",
@@ -58,7 +58,7 @@ export default [
 
         },
         {
-            id:8,
+            id:9,
             title:"Ketertarikan Ilkomerz untuk Membangun Startup",
             date:"22/02/22",
             img:"ketertarikan-membangun-startup",

@@ -57,6 +57,10 @@
     padding: 80px 0 0 0;
 }
 
+.GARY-content-container{
+    overflow: hidden;
+}
+
 .GARY-content-deskripsi-tujuan {
     display: flex;
     justify-content: center;
@@ -195,6 +199,7 @@
 
 .GARY-prestasi-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
@@ -204,20 +209,11 @@
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
     background-color: #FFFFFF;
+    padding: 45px 45px 45px 45px;
 }
 
-.GARY-Prestasi-List{
-    padding: 40px 0px 40px 0px;
-    color: var(--monochrome-black, #000);
-    text-align: center;
-    font-size: 22px;
-    font-family: Montserrat;
-    font-weight: 500;
-    line-height: 28px;
-    list-style-type: none;
-}
 
-.GARY-prestasi-content h3 {
+.GARY-prestasi-content li {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
