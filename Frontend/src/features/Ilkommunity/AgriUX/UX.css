@@ -152,6 +152,8 @@
     box-shadow: 7px 7px 0px #000000;
     margin: 32px 0 0 0;
     padding: 40px 44px 40px 44px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -312,18 +314,18 @@
 
     .UX-header p {
         font-size: large;
-        width: 401px;
+        width: auto;
     }
 
     .UX-deskripsi-content {
         width: 90%;
-        height: 250px;
+        height:auto;
     }
 
 
     .UX-tujuan-content {
         width: 90%;
-        height: 100px;
+        height: auto;
     }
 
     .UX-prestasi-content {
@@ -379,7 +381,7 @@
     .UX-tujuan-content {
         width: 90%;
         max-width: 668px;
-        height: 48px;
+        height: auto;
     }
 
 

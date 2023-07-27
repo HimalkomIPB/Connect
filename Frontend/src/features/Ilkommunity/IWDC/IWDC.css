@@ -384,7 +384,7 @@
     .IWDC-tujuan-content {
         width: 90%;
         max-width: 668px;
-        height: 48px;
+        height: auto;
     }
 
     .IWDC-prestasi-content {
