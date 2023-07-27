@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import "./Card.css";
 import { urlFor } from '../../client';
 
-const Card = (props) => {
+const Card = React.memo((props) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -17,7 +17,7 @@ const Card = (props) => {
   return (
     <div className="Komnews-Home-Content-Card" onClick={handleCardClick}>
       <div className="Komnews-Home-Content">
-        <img src={urlFor(props.img).url()} alt="gambar" className='newscard_img' />
+        <img src={urlFor(props.img).url()} alt="gambar" className='newscard_img' loading="lazy" />
         <h1>{props.title}</h1>
         <div className='card_date'>
           <p>{props.date}</p>
@@ -25,7 +25,6 @@ const Card = (props) => {
       </div>
     </div>
   );
-}
+});
 
 export default Card;
-

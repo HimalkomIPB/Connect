@@ -4,7 +4,7 @@ import "./news.css";
 import { urlFor } from '../../client';
 import DOMPurify from 'dompurify';
 
-const News = (props) => {
+const News = React.memo((props) => {
   const navigate = useNavigate();
   const handleNewsClick = () => {
     navigate('/Newsdesc', { state: { berita: props } });
@@ -26,9 +26,9 @@ const News = (props) => {
           <p>{props.category}</p>
         </div>
       </div>
-      <img src={urlFor(props.img).url()} className="news_img" alt="gambar" />
+      <img src={urlFor(props.img).url()} className="news_img" alt="gambar" loading="lazy"/>
     </div>
   );
-}
+});
 
 export default News;

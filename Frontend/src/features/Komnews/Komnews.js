@@ -114,29 +114,26 @@ const Komnews = () => {
               <button className='recommend' onClick={handleAllClick}>
                 <span>All</span>
               </button>
-              <button className='recommend' onClick={() => handleFilterClick('Self Improvement')}>
-                <span>Self Improvement</span>
+              <button className='recommend' onClick={() => handleFilterClick('Campus Life')}>
+                <span>Campus Life</span>
               </button>
-              <button className='recommend' onClick={() => handleFilterClick('Social')}>
-                <span>Social</span>
+              <button className='recommend' onClick={() => handleFilterClick('Awards')}>
+                <span>Awards</span>
               </button>
-              <button className='recommend' onClick={() => handleFilterClick('Kehidupan Mahasiswa')}>
-                <span>Kehidupan Mahasiswa</span>
+              <button className='recommend' onClick={() => handleFilterClick('Education')}>
+                <span>Education</span>
               </button>
               <button className='recommend' onClick={() => handleFilterClick('Technology')}>
                 <span>Technology</span>
               </button>
-              <button className='recommend' onClick={() => handleFilterClick('Data Science')}>
-                <span>Data Science</span>
+              <button className='recommend' onClick={() => handleFilterClick('Collaboration')}>
+                <span>Collaboration</span>
               </button>
-              <button className='recommend' onClick={() => handleFilterClick('AI')}>
-                <span>AI</span>
+              <button className='recommend' onClick={() => handleFilterClick('Inovation')}>
+                <span>Inovation</span>
               </button>
-              <button className='recommend' onClick={() => handleFilterClick('Data Mining')}>
-                <span>Data Mining</span>
-              </button>
-              <button className='recommend' onClick={() => handleFilterClick('Machine Learning')}>
-                <span>Machine Learning</span>
+              <button className='recommend' onClick={() => handleFilterClick('Event')}>
+                <span>Event</span>
               </button>
             </div>
           </div>
