@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { client } from '../../client';
 import './Page.css'
 import connect from '../../Assets/Connect/Logo Connect.png'
@@ -56,6 +57,18 @@ const Page = () => {
         />
     )
   })
+
+  const navigate = useNavigate();
+
+  const handleProkerClick = () => {
+    navigate('/Megaproker');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+
   return (
     <div id="homepage" className="background">
       <Navbar />
@@ -193,7 +206,7 @@ const Page = () => {
                   <div className="Megaproker-Home-Card-info">
                     <h1>IT TODAY</h1>
                     <p><span className='bold'>IT Today</span> merupakan serangkaian acara nasional yang bertemakan teknologi informasi dalam dunia Agriculture. Kegiatan ini terdiri atas HackToday (Capture the Flag), UXToday (UI/UX Design), Poster Competition, Workshop. Festival, dan National Seminar mengenai teknologi informasi terkini.</p>
-                    <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
+                    <button onClick={handleProkerClick}><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
                   </div>
               </motion.div>
 
@@ -208,7 +221,7 @@ const Page = () => {
                   <div className="Megaproker-Home-Card-info">
                     <h1>CPSC</h1>
                     <p><span className="bold">Computer Problem Solving Competition (CPSC)</span> merupakan ajang perlombaan tahunan yang diselenggarakan oleh Himpunan Mahasiswa Ilmu Komputer (Himalkom) IPB dan merupakan rangkaian dari acara Pesta Sains Nasional (PSN) FMIPA IPB</p>
-                    <button><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
+                    <button onClick={handleProkerClick}><span className="bold">Selengkapnya</span> <img src={btn_arrow}/></button>
                   </div>
               </motion.div>
           </section>
