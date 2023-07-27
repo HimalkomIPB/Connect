@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CP.css";
+import {motion} from 'framer-motion'
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 import Navbar from "../../../component/Navbar/Navbar";
 import Footer from "../../../component/Footer/Footer";
@@ -35,20 +36,28 @@ const CP = () => {
       <section>
         <div id="CP-header-container">
           <div className="CP-header-wrapper">
-            <div className="CP-header">
+            <motion.div 
+              whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}
+              className="CP-header"
+            >
               <h2>CP</h2>
               <p>Competitive Programming IPB adalah komunitas yang bergerak pada perlombaan pemrograman kompetitif yang merupakan kompetisi menyelesaikan suatu masalah secara algoritmik.<br />
                 <br />
                 Setiap Senin pukul 18:45 di Localhost (FMIPA lantai 4)
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       <section>
         <div id="CP-main-container">
-          <div className="CP-content-container">
+          <motion.div
+            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}} 
+            className="CP-content-container"
+          >
             <div className="CP-content-deskripsi-tujuan">
               <h2 id='CP-deskripsi'
                 onClick={handleDeskripsiClick}
@@ -74,7 +83,11 @@ const CP = () => {
                 </div>
             }
 
-            <div className="CP-prestasi-container">
+            <motion.div
+              whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}} 
+              className="CP-prestasi-container"
+            >
               <div className="CP-prestasi-header">
                 <h2>PRESTASI</h2>
               </div>
@@ -85,12 +98,16 @@ const CP = () => {
                 <li>CP Finalis Gemastik</li>
                 <li>Divisi I</li>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           <ImageSlider slides={slides} />
 
-          <div className="CP-narahubung-container">
+          <motion.div 
+            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}}
+            className="CP-narahubung-container"
+          >
             <div className="CP-narahubung-header">
               <h2>NARAHUBUNG</h2>
             </div>
@@ -98,7 +115,7 @@ const CP = () => {
               <h3>Muhammad Zahran</h3>
               <h3>Whatsapp: 081370497856</h3>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section >
 

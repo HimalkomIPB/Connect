@@ -58,6 +58,10 @@
     padding: 80px 0 0 0;
 }
 
+.IWDC-content-container{
+    overflow: hidden;
+}
+
 .IWDC-content-deskripsi-tujuan #IWDC-deskripsi {
     font-family: 'Changa One';
     font-style: normal;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import {motion} from 'framer-motion'
 import './IWDC.css'
 import Navbar from '../../../component/Navbar/Navbar';
 import Footer from '../../../component/Footer/Footer'
@@ -37,19 +38,27 @@ const IWDC = () => {
             <section>
                 <div id="IWDC-header-container">
                     <div className="IWDC-header-wrapper">
-                        <div className="IWDC-header">
+                        <motion.div 
+                            whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}}
+                            className="IWDC-header"
+                        >
                             <h2>IWDC</h2>
                             <p>IWDC adalah komunitas yang berorientasi pada web development. <br />
                                 <br />
                                 Setiap Kamis pukul 19:30 ruangan menyesuaikan
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
             <section>
                 <div id="IWDC-main-container">
-                    <div className="IWDC-content-container">
+                    <motion.div
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="IWDC-content-container"
+                    >
                         <div className="IWDC-content-deskripsi-tujuan">
                             <h2 id='IWDC-deskripsi'
                                 onClick={handleDeskripsiClick}
@@ -79,19 +88,27 @@ const IWDC = () => {
                                 )
                         }
 
-                        <div className="IWDC-prestasi-container">
+                        <motion.div 
+                            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}}
+                            className="IWDC-prestasi-container"
+                        >
                             <div className="IWDC-prestasi-header">
                                 <h2>PRESTASI</h2>
                             </div>
                             <div className="IWDC-prestasi-content">
                                 <h3>Coming Soon!</h3>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     <ImageSlider slides={slides} />
 
-                    <div className="IWDC-narahubung-container">
+                    <motion.div 
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="IWDC-narahubung-container"
+                    >
                         <div className="IWDC-narahubung-header">
                             <h2>NARAHUBUNG</h2>
                         </div>
@@ -100,7 +117,7 @@ const IWDC = () => {
                             <h3>Whatsapp: 085155288590</h3>
                             <h3>IG: @iwdc_ipb</h3>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section >
             <Footer />

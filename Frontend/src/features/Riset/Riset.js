@@ -11,6 +11,18 @@ import Card from "../../component/Riset/Riset_card"
 
 
 const Riset = () => {
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 1.2,
+            ease: 'easeInOut',
+          },
+        },
+      };
 
     const cards = Data.map((item) => {
         return (
@@ -32,16 +44,18 @@ const Riset = () => {
                 <div className="Riset-Header-Container">
                     <div className="Riset-Header-Wrapper">
                         <motion.div 
-                            whileInView={{ y: [20, 10, 0], opacity: [0, 0, 1] }}
-                            transition={{ duration: 0.5 }}
+                            variants={fadeInVariants}
+                            initial="hidden"
+                            animate="visible"
                             className="Riset-Header"
                         >
                             <h2>Riset Ilkomerz</h2>
                             <p> <span className='bold'>Riset Ilkomerz </span>merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.</p>
                         </motion.div>
                         <motion.div 
-                            whileInView={{ y: [20, 10, 0], opacity: [0, 0, 1] }}
-                            transition={{ duration: 0.5 }}
+                           variants={fadeInVariants}
+                           initial="hidden"
+                           animate="visible"
                             className="Riset-Icon"
                         >
                             <img src={HeaderIcon} alt="Riset icon" />

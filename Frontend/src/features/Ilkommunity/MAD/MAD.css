@@ -200,25 +200,26 @@
 
 .MAD-prestasi-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid #000000;
     max-width: 1060px;
     width: 90%;
-    height: 118px;
+    padding: 45px;
     border: 3px solid #16052B;
     box-shadow: 3px 4px 0px #000000;
     background-color: #FFFFFF;
 }
 
-.MAD-prestasi-content h3 {
+.MAD-prestasi-content  li{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 28px;
     text-align: center;
-    color: #000000;
+    color: #010101;
 }
 
 .MAD-prestasi-header {
@@ -329,7 +330,7 @@
 
     .MAD-prestasi-content{
         width: 90%;
-        height: 100px;
+        height: auto;
     }
 
     .MAD-narahubung-content{

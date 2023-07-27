@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import {motion} from 'framer-motion'
 import './MAD.css'
 import Navbar from '../../../component/Navbar/Navbar';
 import Footer from '../../../component/Footer/Footer'
@@ -31,7 +32,11 @@ const MAD = () => {
             <section>
                 <div id="MAD-header-container">
                     <div className="MAD-header-wrapper">
-                        <div className="MAD-header">
+                        <motion.div 
+                            whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}}
+                            className="MAD-header"
+                        >
                             <h2>MAD</h2>
                             <p>Mobile Apps Develoment (MAD) adalah komunitas berorientasi pada mobile app development. <br />
                                 <br />
@@ -39,13 +44,17 @@ const MAD = () => {
                                 </br>
                                 di Localhost (FMIPA lantai 4)
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
             <section>
                 <div id="MAD-main-container">
-                    <div className="MAD-content-container">
+                    <motion.div 
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                        className="MAD-content-container"
+                    >
                         <div className="MAD-content-deskripsi-tujuan">
                             <h2 id='MAD-deskripsi'
                                 onClick={handleDeskripsiClick}
@@ -71,19 +80,28 @@ const MAD = () => {
                                 </div>
                         }
 
-                        <div className="MAD-prestasi-container">
+                        <motion.div 
+                            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}
+                            className="MAD-prestasi-container"
+                        >
                             <div className="MAD-prestasi-header">
                                 <h2>PRESTASI</h2>
                             </div>
                             <div className="MAD-prestasi-content">
-                                <h3>Coming Soon!</h3>
+                                <li>Juara 1 Cabang Pengembangan Perangkat Lunak GEMASTIK X</li>
+                                <li>Juara 1 KPU Apps Challenge Jawa Barat 2018</li>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     <ImageSlider slides={slides} />
 
-                    <div className="MAD-narahubung-container">
+                    <motion.div
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="MAD-narahubung-container"
+                    >
                         <div className="MAD-narahubung-header">
                             <h2>NARAHUBUNG</h2>
                         </div>
@@ -91,7 +109,7 @@ const MAD = () => {
                             <h3>Muhammad Ikhlash</h3>
                             <h3>Whatsapp: 081328173266</h3>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section >
             <Footer />

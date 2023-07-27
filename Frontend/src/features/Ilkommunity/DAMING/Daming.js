@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {motion} from 'framer-motion'
 import "./Daming.css";
 import Navbar from "../../../component/Navbar/Navbar";
 import Footer from "../../../component/Footer/Footer";
@@ -40,7 +41,11 @@ const DAMING = () => {
       <section>
         <div id="DAMING-header-container">
           <div className="DAMING-header-wrapper">
-            <div className="DAMING-header">
+            <motion.div 
+              whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}}
+              className="DAMING-header"
+            >
               <h2>DAMING</h2>
               <p>
                 {" "}
@@ -48,14 +53,18 @@ const DAMING = () => {
                 <br />
                 Setiap Rabu pukul 19:00 <br />di Localhost (FMIPA lantai 4)
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
       <section>
         <div id="DAMING-main-container">
-          <div className="DAMING-content-container">
+          <motion.div 
+            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}}
+            className="DAMING-content-container"
+          >
             <div className="DAMING-content-deskripsi-tujuan">
               <h2
                 id="DAMING-deskripsi"
@@ -100,7 +109,11 @@ const DAMING = () => {
               </div>
             )}
 
-            <div className="DAMING-prestasi-container">
+            <motion.div
+              whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+              transition={{duration: 0.35}} 
+              className="DAMING-prestasi-container"
+            >
               <div className="DAMING-prestasi-header">
                 <h2>PRESTASI</h2>
               </div>
@@ -109,12 +122,16 @@ const DAMING = () => {
                   <li>Finalis Joints Data Competition 2023 </li>
                   <li>Juara 3 Gammafest - Data Science Competition 2023</li>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           <ImageSlider slides={slides} />
 
-          <div className="DAMING-narahubung-container">
+          <motion.div
+            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+            transition={{duration: 0.35}} 
+            className="DAMING-narahubung-container"
+          >
             <div className="DAMING-narahubung-header">
               <h2>NARAHUBUNG</h2>
             </div>
@@ -122,7 +139,7 @@ const DAMING = () => {
               <h3>Andika Riski Sururi</h3>
               <h3>Whatsapp: 085694503296</h3>
             </div>
-          </div>
+          </motion.div>
           
         </div>
       </section>

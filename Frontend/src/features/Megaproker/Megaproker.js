@@ -23,6 +23,19 @@ import dokumimg from "../../Assets/Program Kerja/dokum/dokum.svg";
 import btn_arrow from "../../Assets/Program Kerja/button/right-arrow.svg";
 
 const Megaproker = () => {
+  const fadeInVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
   return (
     <div>
       <Navbar />
@@ -30,8 +43,10 @@ const Megaproker = () => {
       <section>
         <div className="megaproker-header">
         <motion.div
-            whileInView={{ y: [20, 10, 0], opacity: [0, 0, 1] }}
-            transition={{ duration: 0.5 }}
+             variants={fadeInVariants}
+             initial="hidden"
+             animate="visible"
+             className="Riset-Header"
           >
           <h1>
             MEGAPROKER HIMALKOM  IPB 2023/2024
@@ -154,9 +169,9 @@ const Megaproker = () => {
         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
         transition={{duration: 0.5}}
         id="button-etc">
-        <button>
+        {/* <button>
           <span className="bold">Proker Lainya</span>
-        </button>
+        </button> */}
       </motion.div>
 
       </section>

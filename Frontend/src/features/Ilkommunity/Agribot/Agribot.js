@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import {motion} from 'framer-motion'
 import './Agribot.css'
 import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 import Navbar from '../../../component/Navbar/Navbar'
@@ -11,8 +12,23 @@ import dokum4 from '../../../Assets/Ilkommunity/Agribot/Agribot-Dokum4.png'
 import dokum5 from '../../../Assets/Ilkommunity/Agribot/Agribot-Dokum5.png'
 
 
+
 const Agribot = () => {
     const [showDeskripsi, setShowDeskripsi] = useState(true);
+
+    const fadeInVariants = {
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            duration: 0.5, 
+            ease: 'easeOut', 
+          },
+        },
+      };
+      
 
     const handleDeskripsiClick = () => {
         setShowDeskripsi(true);
@@ -36,19 +52,27 @@ const Agribot = () => {
             <section>
                 <div id="Agribot-header-container">
                     <div className="Agribot-header-wrapper">
-                        <div className="Agribot-header">
+                        <motion.div 
+                            whileInView={{ y: [50, 25, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}}
+                            className="Agribot-header"
+                        >
                             <h2>Agribot</h2>
                             <p>Agribot merupakan komunitas yang mewadahi mahasiswa dalam mengembangkan minatnya yang berfokus pada pengembangan dan penerapan teknologi dalam bidang robotik.<br />
                                 <br />
                                 Setiap Rabu pukul 19:00 di Localhost <br />(FMIPA lantai 4)
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
             <section>
                 <div id="Agribot-main-container">
-                    <div className="Agribot-content-container">
+                    <motion.div
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}}  
+                        className="Agribot-content-container"
+                    >
                         <div className="Agribot-content-deskripsi-tujuan">
                             <h2 id='Agribot-deskripsi'
                                 onClick={handleDeskripsiClick}
@@ -78,7 +102,11 @@ const Agribot = () => {
                                 </div>
                         }
 
-                        <div className="Agribot-prestasi-container">
+                        <motion.div
+                            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                            transition={{duration: 0.35}}  
+                            className="Agribot-prestasi-container"
+                        >
                             <div className="Agribot-prestasi-header">
                                 <h2>PRESTASI</h2>
                             </div>
@@ -86,12 +114,16 @@ const Agribot = () => {
                                 <li>Best Team - IoT Motor Creation 2019</li>
                                 <li>Juara 2 - IoT Aplication Competition Inter University 2016</li>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     <ImageSlider slides={slides} />
 
-                    <div className="Agribot-narahubung-container">
+                    <motion.div
+                        whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                        transition={{duration: 0.35}} 
+                        className="Agribot-narahubung-container"
+                    >
                         <div className="Agribot-narahubung-header">
                             <h2>NARAHUBUNG</h2>
                         </div>
@@ -99,7 +131,7 @@ const Agribot = () => {
                             <h3>Ismy Fana Fillah</h3>
                             <h3>Whatsapp: 082322632462</h3>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
             <Footer />
