@@ -18,6 +18,28 @@
     /* margin: 0 343px 54px 354px; */
     width: 100%;
     overflow-x: hidden;
+    padding-left:5% ;
+    padding-right:5% ;
+}
+
+.Footer-Logos img{
+    width: 100%;
+    height: 100%;
+}
+
+.Footer-Logos .himalkom {
+    max-width: 96px;
+    max-height: 96px;
+}
+
+.Footer-Logos .ipb {
+    max-width:  366.806px;
+    max-height: 96px;
+}
+
+.Footer-Logos .connect {
+    max-width: 160px;
+    max-height:83.6px;
 }
 
 .Footer-social {
@@ -60,10 +82,7 @@
         padding-right:5% ;
     }
 
-    .Footer-Logos img{
-        width: 100%;
-        height: 100%;
-    }
+
 
     .Footer-Logos .himalkom {
         max-width: 80px;
