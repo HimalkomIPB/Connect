@@ -86,18 +86,16 @@ import Data from "../../Data/newsdata"
 
 
 const Newsdesc = () => {
-    const cards = Data.map(item => {
-        return (
-            <Card
-                key={item.id}
-                title={item.title}
-                img={item.img}
-                date={item.date}
-                desc={item.desc}
-                category={item.category}
-            />
-        )
-    }).reverse();
+    const cards = Data.slice(-5).reverse().map(item => (
+        <Card
+          key={item.id}
+          title={item.title}
+          img={item.img}
+          date={item.date}
+          desc={item.desc}
+          category={item.category}
+        />
+      ));
 
     const location = useLocation();
     const { berita } = location.state;

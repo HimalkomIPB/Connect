@@ -48,23 +48,30 @@ const Page = () => {
   //   fetchData();
   // }, []);
 
-  const cards = Data.map(item => {
-    return (
-        <Card
-            key={item.id}
-            title={item.title}
-            img={item.img}
-            date={item.date}
-            desc={item.desc}
-            category={item.category}
-        />
-    )
-  }).reverse();
+  const cards = Data.slice(-5).reverse().map(item => (
+    <Card
+      key={item.id}
+      title={item.title}
+      img={item.img}
+      date={item.date}
+      desc={item.desc}
+      category={item.category}
+    />
+  ));
+  
 
   const navigate = useNavigate();
 
   const handleProkerClick = () => {
     navigate('/Megaproker');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  const handleKomnewsClick = () => {
+    navigate('/Komnews');
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
@@ -241,6 +248,7 @@ const Page = () => {
 
             <div className="Komnews-Home-Content-Container">
               {cards}
+              <button onClick={handleKomnewsClick}  className="card_more"><h1>More</h1></button>
             </div>
           </motion.div>
 

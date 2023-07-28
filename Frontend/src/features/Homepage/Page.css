@@ -542,6 +542,43 @@
     /* Firefox */
 }
 
+.card_more{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    padding: 8px 20px 8px 20px;
+    width: 190px;
+    height: auto;
+    margin-right: 20px;
+    background-color: #EFC166;
+    border: 2px solid var(--gray-10, #000000);
+    box-shadow: 2px 3px 1px #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../Assets/Background/Komnews-Home-Card.svg");
+    cursor: pointer;
+}
+
+.card_more h1{
+    font-family: Changa One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: 1px 1px 0px #040404;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #040404;
+    color: #f0ebe4;
+
+}
+
+.card_more:active {
+    transform: translateY(2px);
+    transform: translateX(3px);
+    box-shadow: 1px 1px 0px #000000;
+}
+
 
 
 @media(max-width: 1200px) {
