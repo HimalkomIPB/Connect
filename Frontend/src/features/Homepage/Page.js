@@ -248,7 +248,7 @@ const Page = () => {
 
             <div className="Komnews-Home-Content-Container">
               {cards}
-              <button onClick={handleKomnewsClick}  className="card_more"><h1>More</h1></button>
+              <button onClick={handleKomnewsClick}  className="card_more"><h1>{`>`}</h1></button>
             </div>
           </motion.div>
 

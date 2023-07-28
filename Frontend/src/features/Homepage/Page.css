@@ -551,7 +551,7 @@
     margin-right: 20px;
     background-color: #EFC166;
     border: 2px solid var(--gray-10, #000000);
-    box-shadow: 2px 3px 1px #000000;
+    box-shadow: 2.5px 3.5px 2px #000000;
     color: white;
     display: flex;
     align-items: center;
@@ -564,7 +564,7 @@
     font-family: Changa One;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 38px;
     line-height: 22px;
     text-shadow: 1px 1px 0px #040404;
     -webkit-text-stroke-width: 1px;
