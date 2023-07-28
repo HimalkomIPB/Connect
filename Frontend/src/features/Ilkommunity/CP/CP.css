@@ -475,6 +475,11 @@
         height: auto;
     }
 
+    .CP-prestasi-content li{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
     .CP-narahubung-content {
         width: 90%;
         height: 190px;

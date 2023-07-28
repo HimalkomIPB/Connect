@@ -397,6 +397,11 @@
         height: auto;
     }
 
+    .Agribot-prestasi-content li{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
     .Agribot-narahubung-content{
         width: 90%;
         height: 190px;
