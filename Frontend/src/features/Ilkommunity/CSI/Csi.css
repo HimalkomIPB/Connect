@@ -469,6 +469,11 @@
         height: auto;
     }
 
+    .CSI-prestasi-content li{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
     .CSI-narahubung-content {
         width: 90%;
     }

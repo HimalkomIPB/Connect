@@ -132,6 +132,7 @@
     align-items: center;
     flex-direction: column;
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 .MAD-deskripsi-content, .MAD-tujuan-content{
@@ -392,8 +393,9 @@
     }
 
     .MAD-narahubung-content{
-        width: 400px;
-        height: 190px;
+        min-height: 190px;
+        width: 90%;
+        height: 100%;
     }
 }
 
@@ -455,12 +457,19 @@
 
     .MAD-prestasi-content {
         width: 90%;
-        height: 114px;
+        min-height: 114px;
+        height: 100%;
+    }
+
+    .MAD-prestasi-content li{
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .MAD-narahubung-content {
         width: 90%;
-        height: 190px;
+        min-height: 190px;
+        height: 100%;
     }
 
     #MAD-deskripsi.mad-active {
