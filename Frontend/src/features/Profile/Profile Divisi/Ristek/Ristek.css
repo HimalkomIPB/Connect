@@ -313,10 +313,11 @@
 
 
     .desc-ristek h2 {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 40px;
         margin: 200px 0 9px 0;
         letter-spacing: -2px;
+        text-align: center;
     }
 
     .anggota-divisi-ristek img {
@@ -381,5 +382,9 @@
 @media screen and (max-width: 380px) {
     .anggota-divisi-ristek:first-child img, .anggota-divisi-ristek:last-child img{
         padding: 0 80px;
+    }
+
+    .desc-ristek p {
+        line-height: 18px;
     }
 }
