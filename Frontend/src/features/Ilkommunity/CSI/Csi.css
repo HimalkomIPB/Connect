@@ -449,6 +449,11 @@
         font-size: 45px;
     }
 
+    .CSI-header p {
+        font-size: 14px;
+        max-width: 330px;
+    }
+
     .CSI-deskripsi-content {
         width: 90%;
         height: auto;
