@@ -78,7 +78,7 @@ export default [
         id:9,
         title:"MyLaundry",
         category:"Rekayasa Perangkat Lunak",
-        desc:`Intended for students who want to focus more on learning pronunciation and intonation.`,
+        desc:`MyLaundry merupakan sebuah projek tugas akhir yang bertujuan untuk membantu pengguna dalam mengelola cucian mereka dengan lebih mudah dan efisien.`,
         created:"Kotop, Surya, Jihan KOM 58",
         img:"MyLaundry",
         link:"https://github.com/Abrumz/MyLaundry"
