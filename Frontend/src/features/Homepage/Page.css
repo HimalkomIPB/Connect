@@ -545,13 +545,12 @@
 .card_more{
     box-sizing: border-box;
     font-family: 'Montserrat';
-    padding: 8px 20px 8px 20px;
+    padding: 4px 20px 4px 20px;
     width: 190px;
     height: auto;
     margin-right: 20px;
     background-color: #EFC166;
     border: 2px solid var(--gray-10, #000000);
-    box-shadow: 2.5px 3.5px 2px #000000;
     color: white;
     display: flex;
     align-items: center;
@@ -564,19 +563,12 @@
     font-family: Changa One;
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;
+    font-size: 45px;
     line-height: 22px;
-    text-shadow: 1px 1px 0px #040404;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #040404;
     color: #f0ebe4;
 
-}
-
-.card_more:active {
-    transform: translateY(2px);
-    transform: translateX(3px);
-    box-shadow: 1px 1px 0px #000000;
 }
 
 

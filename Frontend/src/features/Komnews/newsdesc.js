@@ -114,7 +114,7 @@ const Newsdesc = () => {
                     <h1 className='title-desc'>{berita.title}</h1>
                     <p className='date-desc'>{berita.date}</p>
                     <div className="img-desc">
-                        <img src={require('../../Assets/Komnews/Topic/' + berita.img )} alt="gambar" />
+                        <img src={require('../../Assets/Komnews/Topic/' + berita.img )} alt="gambar" loading='lazy'/>
                     </div>
                     {/* Render the sanitized HTML content */}
                     <p className='text-desc' dangerouslySetInnerHTML={{ __html: sanitizedDesc }}></p>
