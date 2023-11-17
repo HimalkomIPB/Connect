@@ -135,4 +135,16 @@ export default [
         img:"Touch_Screen_Device_IPB_Museum2",
         link:"https://www.figma.com/proto/CRWzK3JbvW9DXTIhcGzhY4/Redesign-Layar-Touchscreen?type=design&node-id=100-3372&scaling=scale-down&page-id=1%3A19&starting-point-node-id=100%3A3511&mode=design"
     },
+    {
+        id:1,
+        title:"Arcanon",
+        category:"Rekayasa Perangkat Lunak",
+        desc:`The development of the Arcanon software is
+        expected to improve mental health, facilitate positive
+        social interactions, and enhance the overall quality of 
+        life for individuals and society as a whole.`,
+        created:"Ipan, Ismy, Zefan KOM 58",
+        img:"Arcanon",
+        link:"https://github.com/irfanalmsyah/arcanon"
+    }
 ]

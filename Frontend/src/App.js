@@ -62,7 +62,7 @@ function App() {
           <Route path='/Komnews' element={<Komnews />} />
           <Route path='/Megaproker' element={<Megaproker />} />
           <Route path='/Ilkommunity' element={<Ilkommunity />} />
-          <Route path='/I-Gallery' element={<IGallery />}/>
+          <Route path='/Galeri' element={<IGallery />}/>
             <Route path='/Ilkommunity-IWDC' element={<IWDC />} />
             <Route path='/Ilkommunity-CSI' element={<Csi />} />
             <Route path='/Ilkommunity-MAD' element={<MAD />} />

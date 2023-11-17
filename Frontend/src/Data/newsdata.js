@@ -79,4 +79,117 @@ export default [
         img:"pi.webp",
         date:"2023-07-15"
     },
+    {
+        id: 11,
+        title: " IT Today 2023: Memuliakan Inovasi dan Bakat Terbaik dalam Dunia Teknologi",
+        desc:`<div>
+      <p>
+        Himpunan Mahasiswa Ilmu Komputer (HIMALKOM) IPB dan Departemen Ilmu Komputer IPB telah menutup rangkaian acara meganya, IT Today 2023, yang telah menjadi wahana bagi kecerdasan dan kreativitas sejak debutnya pada tahun 2003. Acara tahunan ini menawarkan berbagai kegiatan yang memikat para penggemar teknologi, pakar keamanan siber, desainer UX, dan pengembang game.
+      </p>
+
+      <section>
+        <h4>Keberhasilan Kompetisi</h4>
+        <h4><b> Hack Today: Tunjukkan Kemampuan Keamanan Siber Anda </b></h4>
+        <p>Hack Today, sebuah kompetisi keamanan siber yang mendebarkan dengan format Capture The Flag (gaya Jeopardy), merupakan fokus utama IT Today. Ini menantang peserta untuk menyelesaikan kasus keamanan siber kompleks dalam berbagai kategori, dengan tujuan mengamankan "bendera" untuk setiap kasus yang diselesaikan. Dibuka untuk siswa SMA dan mahasiswa universitas di seluruh Indonesia, Hack Today membutuhkan tim beranggotakan 1-3 orang dari institusi yang sama untuk berpartisipasi. Biaya pendaftaran adalah sebagai berikut:</p>
+
+        <ul>
+            <li>Batch 1 (1-30 Juni): Rp60.000</li>
+            <li>Batch 2 (1-31 Juli): Rp75.000</li>
+        </ul>
+    
+        <p>Jangan lewatkan tanggal penting ini:</p>
+        <ul>
+            <li>Warm-Up (19 Agustus)</li>
+            <li>Babak Eliminasi (26 Agustus)</li>
+            <li>Pengumuman Finalis (9 September)</li>
+            <li>Final & Malam Penghargaan (23 September)</li>
+        </ul>
+    
+        <p>Pusat Hadiah:</p>
+        <ul>
+            <li>Juara 1: Rp5.000.000 + Sertifikat</li>
+            <li>Juara 2: Rp3.000.000 + Sertifikat</li>
+            <li>Juara 3: Rp1.500.000 + Sertifikat</li>
+            <li>Penghargaan Khusus: Rp500.000 + Sertifikat</li>
+        </ul>
+    
+        <p>Acaranya telah usai dan sejumlah pemenang telah muncul, seperti "That Time I Got Reincarnated as a Hacktoday Player" dari BINUS University meraih posisi pertama, dan lainnya sebagai berikut:</p>
+    
+        <ul>
+            <li>1st Winner: That Time I Got Reincarnated as a Hacktoday Player | BINUS University</li>
+            <li>2nd Winner: Ketinggalan Batch 1 | Telkom University</li>
+            <li>3rd Winner: Solid3x | Universitas Indonesia</li>
+            <li>Honorable Mention: sehad | Universitas Indonesia</li>
+        </ul>
+        
+        
+      </section>
+
+      <section>
+        <h4><b>UX Today: Solusi Inovatif untuk Pengalaman Pengguna</b></h4>
+            <p>UXToday, kompetisi tingkat nasional untuk pengalaman pengguna, berpusat pada kepuasan pengguna, kenyamanan, dan efisiensi. Terbuka untuk semua mahasiswa di Indonesia, peserta UXToday akan bersaing dengan menyediakan solusi inovatif atau ide yang mengatasi masalah dunia nyata di dalam negeri, sesuai dengan subtema tertentu.</p>
+
+        <p>Biaya pendaftaran adalah sebagai berikut:</p>
+        <ul>
+            <li>Batch 1 (1-30 Juni): Rp60.000</li>
+            <li>Batch 2 (1-31 Juli): Rp90.000</li>
+        </ul>
+    
+        <p>Ini adalah tanggal penting yang perlu diingat:</p>
+        <ul>
+            <li>Pengiriman Proposal (19-26 Agustus)</li>
+            <li>Pengumuman Finalis (9 September)</li>
+            <li>Final & Malam Penghargaan (23 September)</li>
+        </ul>
+    
+        <p>Pusat Hadiah:</p>
+        <ul>
+            <li>Juara 1: Rp5.000.000 + Sertifikat</li>
+            <li>Juara 2: Rp3.000.000 + Sertifikat</li>
+            <li>Juara 3: Rp1.500.000 + Sertifikat</li>
+            <li>Inovasi Terbaik: Rp500.000 + Sertifikat</li>
+        </ul>
+    
+        <p>Kompetisi ini telah memunculkan nama-nama terkemuka seperti "Eclipse" dari BINUS University sebagai juara pertama, serta lainnya sebagai berikut:</p>
+    
+        <ul>
+            <li>1st Winner: Eclipse | BINUS University</li>
+            <li>2nd Winner: The Powerpuff Bears | BINUS University</li>
+            <li>3rd Winner: Trial n Error | BINUS University</li>
+            <li>Best Innovation: Surface555 | Universitas Jember</li>
+        </ul>
+            
+      </section>
+
+      <section>
+      <h4><b>Game Today: Membangkitkan Kreativitas dalam Pengembangan Game</b></h4>
+         <p>GameToday, platform utama untuk menumbuhkan kreativitas, keterampilan, dan minat dalam pengembangan game, memberdayakan peserta untuk merancang, mengembangkan, dan menerbitkan game berdasarkan subtema yang telah ditentukan. Kompetisi ini eksklusif untuk mahasiswa sarjana dan diploma di seluruh Indonesia dan diselenggarakan secara daring. Biaya pendaftaran adalah sebagai berikut:</p>
+
+        <ul>
+            <li>Batch 1 (1-30 Juni): Rp60.000</li>
+            <li>Batch 2 (1-31 Juli): Rp75.000</li>
+        </ul>
+    
+        <p>Tandai kalender Anda dengan tanggal-tanggal penting berikut:</p>
+        <ul>
+            <li>Pengumuman Tema (1 Agustus)</li>
+            <li>Batas Waktu untuk Executive Summary (ES) (13 Agustus)</li>
+            <li>Batas Waktu Pengiriman Game & Video Trailer (31 Agustus)</li>
+            <li>Pengumuman Finalis (16 September)</li>
+            <li>Final & Malam Penghargaan (23 September)</li>
+        </ul>
+    
+        <p>Game Today yang bisa memperlihatkan karya-karya game anak bangsa yang gemilang telah menghasilkan para pemenang-pemenang yang berhasil menoreh keberhasilan mereka di IT Today ini seperti Ronda Malam dari Universitas Pertahanan RI sebagai juara pertama dan lainnya sebagai berikut:</p>
+    
+        <ul>
+            <li>1st Winner: Ronda Malam | Universitas Pertahanan RI</li>
+            <li>2nd Winner: Suseh Studios | BINUS University</li>
+            <li>3rd Winner: Roti Bakar | Universitas Gadjah Mada</li>
+        </ul>
+    
+      </div>`,
+        category:"Event",
+        img:"ITOD.webp",
+        date:"09-10-2023"
+    },
 ]
