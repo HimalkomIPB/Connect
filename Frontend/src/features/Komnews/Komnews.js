@@ -43,7 +43,6 @@ import data from "../../Data/newsdata"
 //     );
 //   });
 
-
 //   const [fadeOut, setFadeOut] = useState(false);
 
 //   const handleFilterClick = (category) => {
