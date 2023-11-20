@@ -80,22 +80,6 @@ export default [
         date:"2023-07-15"
     },
     {
-        id: 11,
-        title: "Menyusuri Jejak Inovasi: Saung Desain Menggali Potensi Karir Melalui Perpaduan UI/UX Design dan Kecerdasan Buatan",
-        desc:`<p>Pada 21 Oktober 2023 di Auditorium Andi Hakim Nasution IPB, Saung Desain kembali hadir untuk kalian semua yang penasaran tentang materi UI/UX tapi bingung harus mulai dari mana. Program yang dinaungi oleh komunitas AgriUX ini membawakan tema “Unlocking the Secrets of UI/UX Design: Synergizing UI/UX Design and AI for Innovative Career Paths”. Acara dimulai dengan sambutan dari ketua pelaksana yang kemudian dilanjutkan dengan sambutan Pembina komunitas AgriUX. </p>    
-        Kegiatan Saung Desain ini dibagi menjadi 2 sesi, yaitu sesi seminar di pagi hari yang dibawakan oleh 2 orang pembicara, yaitu: </p>
-        <p>- Rivandi Anjas selaku Product Designer di Gopay.</p>
-        <p>- Utari Ambarwati selaku Principal Product Design di Tokopedia</p> 
-        <p>Kemudian sesi pagi ditutup dengan penyerahan sertifikat kepada kedua pembicara oleh perwakilan dari IPB dan dilanjutkan sesi talkshow di siang hari yang dibawakan oleh 1 orang pembicara dan seorang moderator, yaitu: </p>
-        <p>- Muhammad Farhad Rivandi Anjas selaku Vice President of Digital Product Development di PT Bank Raya Indonesia </p>
-        <p>- Imam Mulhaq selaku UI & UX Designer di MNC E-Commerce, sebagai moderator. </p>
-        <p>Rivandi Anjas menjadi pembicara utama pada sesi pertama, mengangkat topik keberadaan kecerdasan buatan (AI) sebagai alat pendukung penting dalam UI/UX. Meskipun demikian, perannya tetap tidak dapat menggantikan peran manusia. Keberhasilan dalam menyelesaikan masalah dan menghasilkan solusi yang memenuhi kebutuhan manusia masih terkait erat dengan kemampuan manusia dalam merasakan empati. Meskipun kecerdasan buatan dapat menyediakan alat dan analisis, kehadiran manusia tetap esensial untuk memahami dan merespons dengan empati terhadap pengguna. Ini menjadikan interaksi antar manusia tidak dapat digantikan oleh kecerdasan buatan. Kemudian, sesi pertama dilanjutkan dengan presentasi dari Utari Ambarwati, yang membahas mengenai dampak negatif terhadap bisnis akibat frustrasi pengguna terhadap layanan yang rumit, antrean yang panjang, iklan berlebihan, dan sebagainya. Tanpa melakukan riset, ada risiko pengembangan produk yang tidak dibutuhkan atau tidak mampu bersaing di pasar. Desainer Produk berfokus secara taktis dengan pekerjaan yang bersifat singkat, sementara Peneliti fokus pada aspek dasar dan visi masa depan perusahaan melalui proyek yang memakan waktu berbulan-bulan. Disarankan untuk menggunakan data kuantitatif dan kualitatif sebagai landasan dalam proses ini. </p>
-        <p>Pada sesi berikutnya, Muhammad Farhad Rivandi memaparkan evolusi teknologi yang tak terhindarkan, khususnya kemajuan berkelanjutan Artificial Intelligence. Walaupun teknologi ini terus berkembang, Rivandi menekankan pentingnya penerapannya yang harus didasarkan pada tujuan yang positif dan sesuai dengan prinsip-prinsip etika yang berlaku. </p>`,
-        category:"Event",
-        img:"saungdesain23.webp",
-        date:"2023-10-21"
-    },
-    {
         id: 12,
         title: " IT Today 2023: Memuliakan Inovasi dan Bakat Terbaik dalam Dunia Teknologi",
         desc:`<div>
@@ -207,5 +191,21 @@ export default [
         category:"Event",
         img:"ITOD.webp",
         date:"09-10-2023"
+    },
+    {
+        id: 12,
+        title: "Menyusuri Jejak Inovasi: Saung Desain Menggali Potensi Karir Melalui Perpaduan UI/UX Design dan Kecerdasan Buatan",
+        desc:`<p>Pada 21 Oktober 2023 di Auditorium Andi Hakim Nasution IPB, Saung Desain kembali hadir untuk kalian semua yang penasaran tentang materi UI/UX tapi bingung harus mulai dari mana. Program yang dinaungi oleh komunitas AgriUX ini membawakan tema “Unlocking the Secrets of UI/UX Design: Synergizing UI/UX Design and AI for Innovative Career Paths”. Acara dimulai dengan sambutan dari ketua pelaksana yang kemudian dilanjutkan dengan sambutan Pembina komunitas AgriUX. </p>    
+        Kegiatan Saung Desain ini dibagi menjadi 2 sesi, yaitu sesi seminar di pagi hari yang dibawakan oleh 2 orang pembicara, yaitu: </p>
+        <p>- Rivandi Anjas selaku Product Designer di Gopay.</p>
+        <p>- Utari Ambarwati selaku Principal Product Design di Tokopedia</p> 
+        <p>Kemudian sesi pagi ditutup dengan penyerahan sertifikat kepada kedua pembicara oleh perwakilan dari IPB dan dilanjutkan sesi talkshow di siang hari yang dibawakan oleh 1 orang pembicara dan seorang moderator, yaitu: </p>
+        <p>- Muhammad Farhad Rivandi Anjas selaku Vice President of Digital Product Development di PT Bank Raya Indonesia </p>
+        <p>- Imam Mulhaq selaku UI & UX Designer di MNC E-Commerce, sebagai moderator. </p>
+        <p>Rivandi Anjas menjadi pembicara utama pada sesi pertama, mengangkat topik keberadaan kecerdasan buatan (AI) sebagai alat pendukung penting dalam UI/UX. Meskipun demikian, perannya tetap tidak dapat menggantikan peran manusia. Keberhasilan dalam menyelesaikan masalah dan menghasilkan solusi yang memenuhi kebutuhan manusia masih terkait erat dengan kemampuan manusia dalam merasakan empati. Meskipun kecerdasan buatan dapat menyediakan alat dan analisis, kehadiran manusia tetap esensial untuk memahami dan merespons dengan empati terhadap pengguna. Ini menjadikan interaksi antar manusia tidak dapat digantikan oleh kecerdasan buatan. Kemudian, sesi pertama dilanjutkan dengan presentasi dari Utari Ambarwati, yang membahas mengenai dampak negatif terhadap bisnis akibat frustrasi pengguna terhadap layanan yang rumit, antrean yang panjang, iklan berlebihan, dan sebagainya. Tanpa melakukan riset, ada risiko pengembangan produk yang tidak dibutuhkan atau tidak mampu bersaing di pasar. Desainer Produk berfokus secara taktis dengan pekerjaan yang bersifat singkat, sementara Peneliti fokus pada aspek dasar dan visi masa depan perusahaan melalui proyek yang memakan waktu berbulan-bulan. Disarankan untuk menggunakan data kuantitatif dan kualitatif sebagai landasan dalam proses ini. </p>
+        <p>Pada sesi berikutnya, Muhammad Farhad Rivandi memaparkan evolusi teknologi yang tak terhindarkan, khususnya kemajuan berkelanjutan Artificial Intelligence. Walaupun teknologi ini terus berkembang, Rivandi menekankan pentingnya penerapannya yang harus didasarkan pada tujuan yang positif dan sesuai dengan prinsip-prinsip etika yang berlaku. </p>`,
+        category:"Event",
+        img:"saungdesain23.webp",
+        date:"2023-10-21"
     },
 ]
