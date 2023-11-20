@@ -81,10 +81,139 @@ export default [
     },
     {
         id: 11,
+        title: " IT Today 2023: Memuliakan Inovasi dan Bakat Terbaik dalam Dunia Teknologi",
+        desc:`<div>
+      <p>
+        Himpunan Mahasiswa Ilmu Komputer (HIMALKOM) IPB dan Departemen Ilmu Komputer IPB telah menutup rangkaian acara meganya, IT Today 2023, yang telah menjadi wahana bagi kecerdasan dan kreativitas sejak debutnya pada tahun 2003. Acara tahunan ini menawarkan berbagai kegiatan yang memikat para penggemar teknologi, pakar keamanan siber, desainer UX, dan pengembang game.
+      </p>
+
+      <section>
+        <h4>Keberhasilan Kompetisi</h4>
+        <h4><b> Hack Today: Tunjukkan Kemampuan Keamanan Siber Anda </b></h4>
+        <p>Hack Today, sebuah kompetisi keamanan siber yang mendebarkan dengan format Capture The Flag (gaya Jeopardy), merupakan fokus utama IT Today. Ini menantang peserta untuk menyelesaikan kasus keamanan siber kompleks dalam berbagai kategori, dengan tujuan mengamankan "bendera" untuk setiap kasus yang diselesaikan. Dibuka untuk siswa SMA dan mahasiswa universitas di seluruh Indonesia, Hack Today membutuhkan tim beranggotakan 1-3 orang dari institusi yang sama untuk berpartisipasi. Biaya pendaftaran adalah sebagai berikut:</p>
+
+        <ul>
+            <li>Batch 1 (1-30 Juni): Rp60.000</li>
+            <li>Batch 2 (1-31 Juli): Rp75.000</li>
+        </ul>
+    
+        <p>Jangan lewatkan tanggal penting ini:</p>
+        <ul>
+            <li>Warm-Up (19 Agustus)</li>
+            <li>Babak Eliminasi (26 Agustus)</li>
+            <li>Pengumuman Finalis (9 September)</li>
+            <li>Final & Malam Penghargaan (23 September)</li>
+        </ul>
+    
+        <p>Pusat Hadiah:</p>
+        <ul>
+            <li>Juara 1: Rp5.000.000 + Sertifikat</li>
+            <li>Juara 2: Rp3.000.000 + Sertifikat</li>
+            <li>Juara 3: Rp1.500.000 + Sertifikat</li>
+            <li>Penghargaan Khusus: Rp500.000 + Sertifikat</li>
+        </ul>
+    
+        <p>Acaranya telah usai dan sejumlah pemenang telah muncul, seperti "That Time I Got Reincarnated as a Hacktoday Player" dari BINUS University meraih posisi pertama, dan lainnya sebagai berikut:</p>
+    
+        <ul>
+            <li>1st Winner: That Time I Got Reincarnated as a Hacktoday Player | BINUS University</li>
+            <li>2nd Winner: Ketinggalan Batch 1 | Telkom University</li>
+            <li>3rd Winner: Solid3x | Universitas Indonesia</li>
+            <li>Honorable Mention: sehad | Universitas Indonesia</li>
+        </ul>
+        
+        
+      </section>
+
+      <section>
+        <h4><b>UX Today: Solusi Inovatif untuk Pengalaman Pengguna</b></h4>
+            <p>UXToday, kompetisi tingkat nasional untuk pengalaman pengguna, berpusat pada kepuasan pengguna, kenyamanan, dan efisiensi. Terbuka untuk semua mahasiswa di Indonesia, peserta UXToday akan bersaing dengan menyediakan solusi inovatif atau ide yang mengatasi masalah dunia nyata di dalam negeri, sesuai dengan subtema tertentu.</p>
+
+        <p>Biaya pendaftaran adalah sebagai berikut:</p>
+        <ul>
+            <li>Batch 1 (1-30 Juni): Rp60.000</li>
+            <li>Batch 2 (1-31 Juli): Rp90.000</li>
+        </ul>
+    
+        <p>Ini adalah tanggal penting yang perlu diingat:</p>
+        <ul>
+            <li>Pengiriman Proposal (19-26 Agustus)</li>
+            <li>Pengumuman Finalis (9 September)</li>
+            <li>Final & Malam Penghargaan (23 September)</li>
+        </ul>
+    
+        <p>Pusat Hadiah:</p>
+        <ul>
+            <li>Juara 1: Rp5.000.000 + Sertifikat</li>
+            <li>Juara 2: Rp3.000.000 + Sertifikat</li>
+            <li>Juara 3: Rp1.500.000 + Sertifikat</li>
+            <li>Inovasi Terbaik: Rp500.000 + Sertifikat</li>
+        </ul>
+    
+        <p>Kompetisi ini telah memunculkan nama-nama terkemuka seperti "Eclipse" dari BINUS University sebagai juara pertama, serta lainnya sebagai berikut:</p>
+    
+        <ul>
+            <li>1st Winner: Eclipse | BINUS University</li>
+            <li>2nd Winner: The Powerpuff Bears | BINUS University</li>
+            <li>3rd Winner: Trial n Error | BINUS University</li>
+            <li>Best Innovation: Surface555 | Universitas Jember</li>
+        </ul>
+            
+      </section>
+
+      <section>
+      <h4><b>Game Today: Membangkitkan Kreativitas dalam Pengembangan Game</b></h4>
+         <p>GameToday, platform utama untuk menumbuhkan kreativitas, keterampilan, dan minat dalam pengembangan game, memberdayakan peserta untuk merancang, mengembangkan, dan menerbitkan game berdasarkan subtema yang telah ditentukan. Kompetisi ini eksklusif untuk mahasiswa sarjana dan diploma di seluruh Indonesia dan diselenggarakan secara daring. Biaya pendaftaran adalah sebagai berikut:</p>
+
+        <ul>
+            <li>Batch 1 (1-30 Juni): Rp60.000</li>
+            <li>Batch 2 (1-31 Juli): Rp75.000</li>
+        </ul>
+    
+        <p>Tandai kalender Anda dengan tanggal-tanggal penting berikut:</p>
+        <ul>
+            <li>Pengumuman Tema (1 Agustus)</li>
+            <li>Batas Waktu untuk Executive Summary (ES) (13 Agustus)</li>
+            <li>Batas Waktu Pengiriman Game & Video Trailer (31 Agustus)</li>
+            <li>Pengumuman Finalis (16 September)</li>
+            <li>Final & Malam Penghargaan (23 September)</li>
+        </ul>
+    
+        <p>Game Today yang bisa memperlihatkan karya-karya game anak bangsa yang gemilang telah menghasilkan para pemenang-pemenang yang berhasil menoreh keberhasilan mereka di IT Today ini seperti Ronda Malam dari Universitas Pertahanan RI sebagai juara pertama dan lainnya sebagai berikut:</p>
+    
+        <ul>
+            <li>1st Winner: Ronda Malam | Universitas Pertahanan RI</li>
+            <li>2nd Winner: Suseh Studios | BINUS University</li>
+            <li>3rd Winner: Roti Bakar | Universitas Gadjah Mada</li>
+        </ul>
+    
+      </div>`,
+        category:"Event",
+        img:"ITOD.webp",
+        date:"09-10-2023"
+    },
+    {
+        id: 12,
         title: "Navigating Your Future: Building Career Pathways and Connecting with Opportunities",
         desc:`<p>   Divisi external Himalkom menyelenggarakan kegiatan bernama ICC (Ilkomerz Campus Connect). ICC merupakan serangkaian kegiatan Career Fest. Mulai dari kalangan mahasiswa hingga masyarakat umum dapat mengikuti ICC 2023. Dalam konteks ini, akan dibahas topik seperti perencanaan karir, pengembangan jalur karir, koneksi dengan peluang pekerjaan, pembangunan keterampilan yang relevan, dan strategi untuk mencapai tujuan karir. Kegiatan ICC 2023 berlangsung pada tanggal 22-23 Oktober 2023 dengan tema “Navigating Your Future: Building Career Pathways and Connecting with Opportunities” dan dilaksanakan secara Online. ICC 2023 dibagi menjadi 2 rangkaian kegiatan, Expo yang dilaksanakan pada tanggal 22 Oktober 2023 dan Webinar Series yang dilaksanakan pada tanggal 23 Oktober 2023. </p> <p> Pada tanggal 22 Oktober 2023 dilaksanakan EXPO. Expo ICC 2023 ini terdiri dari kegiatan company session, talkshow bersama Habibul Fuadi Hanif, dan kegiatan menarik lainnya. </p> <p> Kegiatan Webinar Series yang dilaksanakan tanggal 23 Oktober 2023 terbagi menjadi 2 rangkaian kegiatan yaitu “The Future of Work: Embracing Digital Transformation” bersama Losania Vernanda. Pada sesi ini dijelaskan transformasi digital berdasarkan dari pengalaman pembicara. </p> <p> Sesi kedua dari kegiatan Webinar Series adalah “Building Your Personal Brand in the Digital Era: How to Stand Out Online” yang diisi oleh Diella Amanda. Pada sesi ini dibahas apa itu Personal Branding dan beberapa persepsi yang salah mengenai personal branding, kemudian pentingnya personal branding di kalangan manapun apalagi mahasiswa, dan juga apa saja yang bisa kita lakukan untuk melakukan personal branding melalui social media. </p> <p> Kegiatan ICC (Ilkomerz Campus Connect) 2023 ini bertujuan untuk menghasilkan individu yang unggul salah satunya di departemen Ilmu Komputer IPB University supaya siap di dunia pekerjaan, memfasilitasi pencarian pekerjaan, memberikan informasi beasiswa, meningkatkan kesadaran tentang karir di bidang teknologi informasi, serta membangun hubungan sinergis di kalangan dunia usaha. </p> <p> Adapun di sela-sela kegiatan pada hari kedua, terdapat ice breaking/games dari ICC, dimana bukan hanya menghilangkan rasa bosan, tetapi juga bisa memenangkan hadiah. Pertanyaan-pertanyaannya pun tidak jauh dengan materi yang sudah disampaikan, maupun yang akan dilaksanakan pada sesi kedua. </p>`,
         category:"Event",
         img:"ICC.webp",
         date:"2023-10-23"
+    },
+    {
+        id: 13,
+        title: "Menyusuri Jejak Inovasi: Saung Desain Menggali Potensi Karir Melalui Perpaduan UI/UX Design dan Kecerdasan Buatan",
+        desc:`<p>Pada 21 Oktober 2023 di Auditorium Andi Hakim Nasution IPB, Saung Desain kembali hadir untuk kalian semua yang penasaran tentang materi UI/UX tapi bingung harus mulai dari mana. Program yang dinaungi oleh komunitas AgriUX ini membawakan tema “Unlocking the Secrets of UI/UX Design: Synergizing UI/UX Design and AI for Innovative Career Paths”. Acara dimulai dengan sambutan dari ketua pelaksana yang kemudian dilanjutkan dengan sambutan Pembina komunitas AgriUX. </p>    
+        Kegiatan Saung Desain ini dibagi menjadi 2 sesi, yaitu sesi seminar di pagi hari yang dibawakan oleh 2 orang pembicara, yaitu: </p>
+        <p>- Rivandi Anjas selaku Product Designer di Gopay.</p>
+        <p>- Utari Ambarwati selaku Principal Product Design di Tokopedia</p> 
+        <p>Kemudian sesi pagi ditutup dengan penyerahan sertifikat kepada kedua pembicara oleh perwakilan dari IPB dan dilanjutkan sesi talkshow di siang hari yang dibawakan oleh 1 orang pembicara dan seorang moderator, yaitu: </p>
+        <p>- Muhammad Farhad Rivandi Anjas selaku Vice President of Digital Product Development di PT Bank Raya Indonesia </p>
+        <p>- Imam Mulhaq selaku UI & UX Designer di MNC E-Commerce, sebagai moderator. </p>
+        <p>Rivandi Anjas menjadi pembicara utama pada sesi pertama, mengangkat topik keberadaan kecerdasan buatan (AI) sebagai alat pendukung penting dalam UI/UX. Meskipun demikian, perannya tetap tidak dapat menggantikan peran manusia. Keberhasilan dalam menyelesaikan masalah dan menghasilkan solusi yang memenuhi kebutuhan manusia masih terkait erat dengan kemampuan manusia dalam merasakan empati. Meskipun kecerdasan buatan dapat menyediakan alat dan analisis, kehadiran manusia tetap esensial untuk memahami dan merespons dengan empati terhadap pengguna. Ini menjadikan interaksi antar manusia tidak dapat digantikan oleh kecerdasan buatan. Kemudian, sesi pertama dilanjutkan dengan presentasi dari Utari Ambarwati, yang membahas mengenai dampak negatif terhadap bisnis akibat frustrasi pengguna terhadap layanan yang rumit, antrean yang panjang, iklan berlebihan, dan sebagainya. Tanpa melakukan riset, ada risiko pengembangan produk yang tidak dibutuhkan atau tidak mampu bersaing di pasar. Desainer Produk berfokus secara taktis dengan pekerjaan yang bersifat singkat, sementara Peneliti fokus pada aspek dasar dan visi masa depan perusahaan melalui proyek yang memakan waktu berbulan-bulan. Disarankan untuk menggunakan data kuantitatif dan kualitatif sebagai landasan dalam proses ini. </p>
+        <p>Pada sesi berikutnya, Muhammad Farhad Rivandi memaparkan evolusi teknologi yang tak terhindarkan, khususnya kemajuan berkelanjutan Artificial Intelligence. Walaupun teknologi ini terus berkembang, Rivandi menekankan pentingnya penerapannya yang harus didasarkan pada tujuan yang positif dan sesuai dengan prinsip-prinsip etika yang berlaku. </p>`,
+        category:"Event",
+        img:"saungdesain23.webp",
+        date:"2023-10-21"
     }
 ]
