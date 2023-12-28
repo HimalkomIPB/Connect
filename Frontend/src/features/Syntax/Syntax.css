@@ -1,0 +1,258 @@
+@import url('https://fonts.cdnfonts.com/css/sports-world');
+
+.Syntax-Header-Container {
+    background-image: url('./../../Assets/Riset/Riset-Header-Bg.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    border-top: 4px solid #111827;
+    border-bottom: 4px solid #111827;
+    height: 737px;
+    margin: 12px 0 0 0;
+    overflow-x: hidden;
+}
+
+.Syntax-Header-Wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Syntax-Header {
+    flex: 60%;
+    padding-left: clamp(2.5625rem, -5.43766rem + 16.667vw, 9.5625rem);
+}
+
+.Syntax-Icon {
+    flex: 40%;
+    padding-right: clamp(1.875rem, -6.91092rem + 18.304vw, 9.5625rem);
+}
+
+.Syntax-Icon img {
+    max-width: 523px;
+    width: 100%;
+}
+
+.Syntax-Header h2 {
+    font-family: 'Sports World';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    text-shadow: 4px 5px 0px #040404;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #040404;
+    color: #F0E4D4;
+}
+
+.Syntax-Header p {
+    padding: 22px 0 0 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    max-width: 532px;
+    width: 100%;
+}
+
+.Syntax-Header b {
+    font-weight: 700;
+}
+
+.Syntax-Main-Container {
+    background-image: url('./../../Assets/Background/pattern-top.svg'), url('./../../Assets/Background/pattern-bottom.svg');
+    background-position: top right, bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 5.25rem;
+    padding-bottom: 5rem;
+}
+
+#Syntax-Main-Column {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    row-gap: 60px;
+    column-gap: 57px;
+    padding: 0 clamp(2.375rem, -5.68756rem + 16.797vw, 5.0625rem);
+}
+
+.Syntax-Main-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1601px) {
+    .Syntax-Header {
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .Syntax-Header {
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Syntax-Header {
+        padding-left: clamp(2.5625rem, -5.43766rem + 16.667vw, 9.5625rem);
+    }
+
+    .Syntax-Header h2 {
+        font-size: 36px;
+        text-shadow: 3px 4px 0px #040404;
+    }
+
+    .Syntax-Header p {
+        max-width: 400px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .Syntax-Icon {
+        padding-right: clamp(0.625rem, -5.12376rem + 11.961vw, 2.53125rem);
+        padding-right: clamp(0.625rem, -3.14454rem + 7.843vw, 1.875rem);
+        padding-right: clamp(0.625rem, -2.20204rem + 5.882vw, 1.5625rem);
+    }
+
+    .Syntax-Icon img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #Syntax-Main-Column {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .Syntax-Header-Container {
+        height: 414px;
+    }
+
+    .Syntax-Header-Wrapper {
+        column-gap: 24px;
+    }
+
+    .Syntax-Main-Container {
+        padding-top: 4.38rem;
+        padding-bottom: 4.94rem;
+    }
+
+    .Syntax-Header {
+        max-width: 391px;
+        width: 100%;
+    }
+
+    .Syntax-Icon {
+        padding-right: clamp(0.625rem, -2.552rem + 10.59vw, 2.53125rem);
+    }
+
+    .Syntax-Icon img {
+        max-width: 300px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .Syntax-Header h2 {
+        font-size: 24px;
+        line-height: 32px;
+        text-shadow: 3px 2px 0px #040404;
+    }
+
+    .Syntax-Header p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    #Syntax-Main-Column {
+        padding: 0 32px 0 32px;
+    }
+
+    #Syntax-Main-Column {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: 40px;
+        column-gap: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Syntax-Icon {
+        display: none;
+    }
+
+    .Syntax-Header-Container {
+        background-position: center center;
+    }
+
+    .Syntax-Header-Container {
+        background-image: url('./../../Assets/Riset/Riset-Background-Phone.svg');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 4px solid #111827;
+        border-bottom: 4px solid #111827;
+        margin: 12px 0 0 0;
+        height: 426px;
+    }
+
+    .Syntax-Header-Wrapper {
+        margin-top: 240px;
+        padding: 0 clamp(0.625rem, -3.625rem + 21.25vw, 2.75rem);
+    }
+
+    .Syntax-Header {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .Syntax-Header h2 {
+        font-size: 24px;
+        line-height: 32px;
+        text-shadow: 4px 5px 0px #040404;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #040404;
+        color: #F0E4D4;
+        width: auto;
+    }
+
+    .Syntax-Header p {
+        text-align: center;
+        justify-content: center;
+        padding: 8px 0 0 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        font-size: clamp(0.875rem, 0.4rem + 2vw, 1rem);
+        max-width: 100%;
+    }
+
+    .Syntax-Main-Container {
+        padding-top: 2.5rem;
+        padding-bottom: 4.91rem;
+    }
+
+    #Syntax-Main-Column {
+        padding-right: clamp(0.625rem, -2.125rem + 13.75vw, 2rem);
+        padding-left: clamp(0.625rem, -2.125rem + 13.75vw, 2rem);
+    }
+
+    #Syntax-Main-Column {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 24px;
+        column-gap: 20px;
+    }
+}
