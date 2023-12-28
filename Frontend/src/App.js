@@ -27,6 +27,7 @@ import GARY from './features/Ilkommunity/GARY/GARY';
 import IGallery from './features/IGallery/IGallery';
 import Newsdesc from './features/Komnews/newsdesc';
 import PreLoader from './component/Preloader/Preloader'
+import Syntax from './features/Syntax/Syntax'
 
 const Home = () => {
   const [showPreloader, setShowPreloader] = useState(false);
@@ -63,6 +64,7 @@ function App() {
           <Route path='/Megaproker' element={<Megaproker />} />
           <Route path='/Ilkommunity' element={<Ilkommunity />} />
           <Route path='/I-Gallery' element={<IGallery />}/>
+          <Route path='/Syntax' element={<Syntax />}/>
             <Route path='/Ilkommunity-IWDC' element={<IWDC />} />
             <Route path='/Ilkommunity-CSI' element={<Csi />} />
             <Route path='/Ilkommunity-MAD' element={<MAD />} />

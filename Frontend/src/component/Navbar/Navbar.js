@@ -119,6 +119,9 @@ const Navbar = () => {
           <li>
             <a href="/Riset-Himalkom">Riset</a>
           </li>
+          <li>
+            <a href="/Syntax">Syntax</a>
+          </li>
         </div>
         <div className={`background-overlay ${Active ? "active" : "closed"}`}></div>
       </div>
@@ -225,6 +228,9 @@ const Navbar = () => {
             </li>
             <li>
               <a href="/Riset-Himalkom">Riset</a>
+            </li>
+            <li>
+              <a href="/Syntax">Syntax</a>
             </li>
           </div>
           <div className="mobile-icon-container">
