@@ -13,7 +13,7 @@ const Syntax_card = (props) => {
         className='Syntax-card'
     >
         <div className="image-container">
-            <img src={require('../../Assets/Riset/' + props.img + '.png')} alt="Syntax-Icon"/>
+            <img src={require('../../Assets/Syntax/' + props.img + '.png')} alt="Syntax-Icon"/>
         </div>
         <h3 className='Judul-Syntax'>{props.title}</h3> 
         <p className='Syntax-Created'>{props.date}</p> 
