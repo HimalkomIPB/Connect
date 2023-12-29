@@ -50,7 +50,7 @@ const Syntax = () => {
                         className="Syntax-Header"
                     >
                         <h2>Syntax</h2>
-                        <p> <span className='bold'>Syntax </span>merupakan kegiatan riset yang ditujukan untuk menjaring minat, pendapat, dan aspirasi ilkomerz untuk membangun Himalkom berdasarkan kebutuhan ilkomerz.</p>
+                        <p> <span className='bold'>Syntax </span>merupakan majalah tahunan yang dibuat oleh HImalkom IPB untuk memberikan informasi mengenai kaleidoskop program kerja yang telah terlaksana serta informasi lainnya dalam ruang lingkup departemen Ilmu Komputer IPB.</p>
                     </motion.div>
                     <motion.div 
                        variants={fadeInVariants}
