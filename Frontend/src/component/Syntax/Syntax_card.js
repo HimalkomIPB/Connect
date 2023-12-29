@@ -9,15 +9,18 @@ const Syntax_card = (props) => {
     return (
     <motion.div 
         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
+        whileHover={{ scale: [null, 1.05, 1.05] }}
         transition={{duration: 0.5}}
         className='Syntax-card'
     >
-        <div className="image-container">
-            <img src={require('../../Assets/Syntax/' + props.img + '.png')} alt="Syntax-Icon"/>
-        </div>
+        <img 
+            className="image-container"
+            onClick={redirectToLink}
+            src={require('../../Assets/Syntax/' + props.img + '.png')} 
+            alt="Syntax-Icon"
+        />
         <h3 className='Judul-Syntax'>{props.title}</h3> 
         <p className='Syntax-Created'>{props.date}</p> 
-        <p><a href="#" onClick={redirectToLink}>Baca Selengkapnya</a></p>
     </motion.div>
     )
 };

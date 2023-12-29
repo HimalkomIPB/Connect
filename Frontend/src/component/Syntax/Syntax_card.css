@@ -1,55 +1,42 @@
 .Syntax-card {
     max-width: 389px;
-    width: 100%;
+    text-align: center;
 }
 
-.Syntax-card .image-container {
-    height: auto;
-    width: 100%;
-}
 
 .Syntax-card img {
     width: 100%;
     max-height: 493px;
     height: 100%;
     object-fit: cover;
-    background-color: white;
-    border: 5px solid black;
-    box-shadow: 2px 3px 0px #040404;
+    border: 2.5px solid black;
+    cursor: pointer;
 }
 
 .Syntax-card h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     width: 100%;
-    padding: 20px 0 12px 0;
+    padding: 20px 0 5px 0;
 }
 
 .Syntax-card p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     padding-bottom: 7px;
 }
 
-.Syntax-card a {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-}
 
 @media (max-width: 768px) {
     .Syntax-card {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         max-width: 211px;
         width: 100%;
     }
@@ -61,22 +48,16 @@
     }
 
     .Syntax-card h3 {
-        font-size: 14px;
+        font-size: 15px;
         line-height: 15px;
     }
 
     .Syntax-card p {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 9.769px;
         padding-bottom: 8px;
         font-weight: 400;
-    }
 
-    .Syntax-card a {
-        line-height: 20px;
-        font-size: 10px;
-        font-weight: 500;
-        letter-spacing: 0.049px;
     }
 }
 
