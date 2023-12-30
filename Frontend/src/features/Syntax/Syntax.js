@@ -34,7 +34,7 @@ const Syntax = () => {
             link={item.link}
           />
         );
-      });
+      }).reverse();
     
     return (
         <div>
