@@ -2,14 +2,14 @@ import React from 'react'
 import Footer from '../../../../component/Footer/Footer'
 import Navbar from '../../../../component/Navbar/Navbar'
 import './Entrepreneur.css'
-import anggota1 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff1-irfan.png'
-import anggota2 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff2-fatha.png'
-import anggota3 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff3-nanda.png'
-import anggota4 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff4-raka.png'
-import anggota5 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff5-IFDHA.png'
-import anggota6 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff6-nafy.png'
-import anggota7 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff7-iza.png'
-import anggota8 from './../../../../Assets/Divisi/Entrepreneur/Anggota/staff8-ian.png'
+import anggota1 from './../../../../Assets/Divisi/Entrepreneur/Anggota/Tiffany Anastasia J.png'
+import anggota2 from './../../../../Assets/Divisi/Entrepreneur/Anggota/Muhammad Hafidz R.png'
+import anggota3 from './../../../../Assets/Divisi/Entrepreneur/Anggota/Rusydi Balfas.png'
+import anggota4 from './../../../../Assets/Divisi/Entrepreneur/Anggota/Muhammad Bagir S.png'
+import anggota5 from './../../../../Assets/Divisi/Entrepreneur/Anggota/Qonita Khairunisa.png'
+import anggota6 from './../../../../Assets/Divisi/Entrepreneur/Anggota/Fadhil Mumtaz.png'
+import anggota7 from './../../../../Assets/Divisi/Entrepreneur/Anggota/Nabiel Muaafi R.png'
+import anggota8 from './../../../../Assets/Divisi/Entrepreneur/Anggota/Sazkia Ananda Z.png'
 import Accordion from '../../../../component/Accordion/Accordion'
 import { motion } from 'framer-motion'; 
 
@@ -64,49 +64,49 @@ const Entrepreneur = () => {
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-divisi-entre">
-                        <img src={anggota1} alt="M Irfan Satriya D" />
+                        <img src={anggota1} alt="Tiffany Anastasia J" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-divisi-entre">
-                        <img src={anggota2} alt="Fatha Ariya P" />
+                        <img src={anggota2} alt="Muhammad Hafidz R" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-divisi-entre">
-                        <img src={anggota3} alt="Dwinanda Rizkiansyah" />
+                        <img src={anggota3} alt="Rusydi Balfas" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-divisi-entre">
-                        <img src={anggota4} alt="Raka Irzan Alfian" />
+                        <img src={anggota4} alt="Muhammad Bagir S" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-divisi-entre">
-                        <img src={anggota5} alt="Ifdha'Ul Fitri" />
+                        <img src={anggota5} alt="Qonita Khairunisa." />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-divisi-entre">
-                        <img src={anggota6} alt="M Almal Nafy" />
+                        <img src={anggota6} alt="Fadhil Mumtaz" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-divisi-entre">
-                        <img src={anggota7} alt="Nismara Mayzalia" />
+                        <img src={anggota7} alt="Nabiel Muaafi R" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-divisi-entre">
-                        <img src={anggota8} alt="Stanislaus Brillant K.W" />
+                        <img src={anggota8} alt="Sazkia Ananda Z" />
                     </motion.div>
                 </div>
 

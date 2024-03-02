@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import Data from "../../Data/newsdata"
 import './Page.css'
 import connect from '../../Assets/Connect/Logo Connect.png'
+import synapse from '../../Assets/Connect/Title Synapse.png'
+import logosynapse from '../../Assets/Connect/Logo Synapse.svg'
 import Navbar from '../../component/Navbar/Navbar'
 import Footer from '../../component/Footer/Footer';
 import agriux from '../../Assets/Ilkommunity/Agriux 200 x 200.png'
@@ -91,25 +93,33 @@ const Page = () => {
             transition={{duration: 0.35}}
             className="hero-home-content"
           >
-          <div className="hero-home-logo-container">
-            <img src={connect} alt="connect" className="hero-home-logo-connect"/>
-          </div>
+          <div className="outer-container">
+            <div className="middle-container">
+              <div className="hero-home-logo-container">
+                <img src={logosynapse} alt="synapse" className="hero-home-logo-connect"/>
+              </div>
 
-          <h1>CONNECT</h1>
-          <h3>Together We Connect Each Other</h3>
-          <p>Himpunan Mahasiswa Ilmu Komputer 2022/2023</p>
+              <div className='inner-container'>
+                <div className="hero-home-title-container">
+                  <img src={synapse} alt="synapse-title" className="hero-home-title-connect"/>
+                </div>
+                <h3>Synergy, Networking, and Collaboration</h3>
+              </div>
+            </div>
+            <p>Himpunan Mahasiswa Ilmu Komputer 2023/2024</p>
+          </div>
           </motion.div>
         </div>
         <div className={`hero-home-slide2 ${activeSlide === 1 ? 'active-slide' : ''}`}>
           <div className="hero-home-logo-container">
-            <img src={connect} alt="connect" className="hero-home-logo-connect"/>
+            <img src={logosynapse} alt="synapse" className="hero-home-logo-connect"/>
           </div>
 
           <div className='hero-slide2-container1'></div>
           <div className='hero-slide2-container2'></div>
-         
-          <h1>CONNECT</h1>
-          <h3>Together We Connect Each Other</h3>
+        
+          <h1>SYNAPSE</h1>
+          <h3>Synergy, Networking, and Collaboration</h3>
           
 
         </div>

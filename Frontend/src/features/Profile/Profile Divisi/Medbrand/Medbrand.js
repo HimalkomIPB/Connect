@@ -2,17 +2,16 @@ import React from "react";
 import Navbar from "../../../../component/Navbar/Navbar";
 import Footer from "../../../../component/Footer/Footer";
 import './Medbrand.css'
-import anggota1 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-salim.png'
-import anggota2 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-dzaki.png'
-import anggota3 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-previa.png'
-import anggota4 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-safira.png'
-import anggota5 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-khalil.png'
-import anggota6 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-daffa.png'
-import anggota7 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-dika.png'
-import anggota8 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-fahmi.png'
-import anggota9 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-faiq.png'
-import anggota10 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-bima.png'
-import anggota11 from './../../../../Assets/Divisi/Medbrand/Anggota/anggota-medina.png'
+import anggota1 from './../../../../Assets/Divisi/Medbrand/Anggota/M Eljalalludin Rummi.png'
+import anggota2 from './../../../../Assets/Divisi/Medbrand/Anggota/M Raihan Zhafran H.png'
+import anggota3 from './../../../../Assets/Divisi/Medbrand/Anggota/Maysa Fazila L.png'
+import anggota4 from './../../../../Assets/Divisi/Medbrand/Anggota/Harits Helmi N.png'
+import anggota5 from './../../../../Assets/Divisi/Medbrand/Anggota/Qurrotul Aini.png'
+import anggota6 from './../../../../Assets/Divisi/Medbrand/Anggota/Dicky Anugrah.png'
+import anggota7 from './../../../../Assets/Divisi/Medbrand/Anggota/Dwiamalina Qurratuain N.png'
+import anggota8 from './../../../../Assets/Divisi/Medbrand/Anggota/Hamdan Arif D.png'
+import anggota9 from './../../../../Assets/Divisi/Medbrand/Anggota/Ahmad Qaulan S.png'
+import anggota10 from './../../../../Assets/Divisi/Medbrand/Anggota/Wisnu Al Hussaeni.png'
 import Accordion from "../../../../component/Accordion/Accordion";
 import { motion } from "framer-motion";
 
@@ -134,13 +133,6 @@ const proker_medbrand = [
                     className="anggota-medbrand"
                 >
                     <img src={anggota10} alt="Tan Bima Wiragama" />
-                </motion.div>
-                <motion.div
-                    whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-                    transition={{duration: 0.35}}     
-                    className="anggota-medbrand"
-                >
-                    <img src={anggota11} alt="Medina Fitri M" />
                 </motion.div>
             </div>
 

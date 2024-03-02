@@ -13,9 +13,11 @@ import HRD from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-HRD.png";
 import Medbrand from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Medbrand.png";
 import Ristek from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Ristek.png";
 import Internal from "../../../Assets/Profil Himalkom/Aset Divisi/Divisi-Internal.png";
-import Infinity from "../../../Assets/Profil Himalkom/Aset Filosopi/DUA C LOGO.png";
-import dua_titik from "../../../Assets/Profil Himalkom/Aset Filosopi/DUA LINGKARAN.png";
+import kolaborasi from "../../../Assets/Profil Himalkom/Aset Filosopi/Kolaborasi.png";
+import invoasi from "../../../Assets/Profil Himalkom/Aset Filosopi/Inovasi.png";
 import logoHimalkom from "../../../Assets/Profil Himalkom/LOGO HIMALKOM.svg";
+import titleSynapse from "../../../Assets/Profil Himalkom/Title Synapse.svg";
+import logoSynapse from "../../../Assets/Profil Himalkom/Logo Synapse.svg";
 import {motion} from "framer-motion"
 const ProfileHimalkom = () => {
   return (
@@ -24,25 +26,33 @@ const ProfileHimalkom = () => {
         <div
           className="profil-himalkom-hero"
         >
-          <motion.div 
+          <div className="outer-container">
+            <div className="middle-container">
+              <motion.div 
+                whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                transition={{duration: 0.35}}
+                className="profil-himalkom-img"
+              >
+                <img src={logoSynapse} alt="connect" className="hero-image" />
+              </motion.div>
+              <div className="inner-container">
+                <motion.h1
+                  whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                  transition={{duration: 0.35}} 
+                >
+                  <img src={titleSynapse} alt="connect" className="hero-title" />
+                </motion.h1>
+                <motion.h3
+                  whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
+                  transition={{duration: 0.35}}
+                >Synergy, Networking, and Collaboration</motion.h3>
+              </div>
+            </div>
+            <motion.p
             whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
             transition={{duration: 0.35}}
-            className="profil-himalkom-img"
-          >
-            <img src={connect} alt="connect" className="hero-image" />
-          </motion.div>
-          <motion.h1
-            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
-            transition={{duration: 0.35}} 
-          >CONNECT</motion.h1>
-          <motion.h3
-            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
-            transition={{duration: 0.35}}
-          >Together We Connect Each Other</motion.h3>
-          <motion.p
-            whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
-            transition={{duration: 0.35}}
-          >Himpunan Mahasiswa Ilmu Komputer 2022/2023</motion.p>
+            >Himpunan Mahasiswa Ilmu Komputer 2022/2023</motion.p>
+          </div>
         </div>
 
       {/* Apa itu HIMALKOM */}
@@ -90,14 +100,14 @@ const ProfileHimalkom = () => {
           transition={{duration: 0.35}} 
         >
           <div className="atas">
-            <img src={Infinity} alt="infinity" className="log-1" />
-            <h1 className="title">DUA C</h1>
+            <img src={kolaborasi} alt="infinity" className="log-1" />
+            <h1 className="title">KOLABORASI DAN KOMUNIKASI</h1>
             <p className="desc">
-              Melambangkan inisial kabinet saat ini yaitu C (Connect)
+              Melambangkan inisial kabinet saat ini yaitu S (Synapse)
             </p>
           </div>
           <div className="bawah">
-            <h1 className="title">INFINITY</h1>
+            <h1 className="title">LETTER S</h1>
             <p className="desc">
               Melambangkan ketidakterbataasan dalam menjalin kerjasama
             </p>
@@ -109,9 +119,9 @@ const ProfileHimalkom = () => {
           transition={{duration: 0.35}} 
         >
           <h3>FILOSOFI LOGO</h3>
-          <h1>CONNECT</h1>
-          <img src={connect} alt="connect" className="c-image" />
-          <h1>CONNECT</h1>
+          <img src={titleSynapse} alt="synapse" className="logo-image" />
+          <img src={logoSynapse} alt="connect" className="c-image" />
+          <h1>SYNAPSE</h1>
         </motion.div>
         <motion.div 
           className="filop-kanan"
@@ -119,18 +129,16 @@ const ProfileHimalkom = () => {
           transition={{duration: 0.35}} 
         >
           <div className="atas">
-            <img src={dua_titik} alt="dua titik" className="log-2" />
+            <img src={invoasi} alt="dua titik" className="log-2" />
             <h1 className="title">
-              DUA
-              <br />
-              LINGKARAN
+            INOVASI
             </h1>
             <p className="desc">
               Menggambarkan dua insan yang saling terhubung
             </p>
           </div>
           <div className="bawah">
-            <h1 className="title">PUZZLE</h1>
+            <h1 className="title">LINGKARAN</h1>
             <p className="desc">
               Setiap divisi harus saling melengkapi antara satu sama lain
             </p>
@@ -143,7 +151,7 @@ const ProfileHimalkom = () => {
         whileInView={{ y: [40, 10, 0], opacity: [0, 0, 1] }}
         transition={{duration: 0.35}} 
       >
-        <h2>“TOGETHER WE CONNECT EACH OTHER”</h2>
+        <h2>“SYNERGY, NETWORKING, AND COLLABORATION”</h2>
       </motion.div>
 
       {/* Divisi Himalkom*/}

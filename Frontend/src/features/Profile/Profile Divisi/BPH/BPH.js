@@ -2,12 +2,12 @@ import React from 'react'
 import Navbar from '../../../../component/Navbar/Navbar'
 import Footer from "../../../../component/Footer/Footer";
 import './BPH.css'
-import anggota1 from './../../../../Assets/Divisi/BPH/Anggota/Joachim.png'
-import anggota2 from './../../../../Assets/Divisi/BPH/Anggota/Ardra.png'
-import anggota3 from './../../../../Assets/Divisi/BPH/Anggota/Amelia.png'
-import anggota4 from './../../../../Assets/Divisi/BPH/Anggota/Afiqah.png'
-import anggota5 from './../../../../Assets/Divisi/BPH/Anggota/Lutfiah.png'
-import anggota6 from './../../../../Assets/Divisi/BPH/Anggota/Nechita.png'
+import anggota1 from './../../../../Assets/Divisi/BPH/Anggota/Synapse_Adzik.png'
+import anggota2 from './../../../../Assets/Divisi/BPH/Anggota/Synapse_Zahran.png'
+import anggota3 from './../../../../Assets/Divisi/BPH/Anggota/Synapse_Khansa.png'
+import anggota4 from './../../../../Assets/Divisi/BPH/Anggota/Synapse_Halida.png'
+import anggota5 from './../../../../Assets/Divisi/BPH/Anggota/Synapse_Cindy.png'
+import anggota6 from './../../../../Assets/Divisi/BPH/Anggota/Synapse_Viby.png'
 import Accordion from '../../../../component/Accordion/Accordion';
 import { motion } from 'framer-motion';
 
@@ -62,42 +62,42 @@ const BPH = () => {
                         transition={{duration: 0.35}}    
                         className="anggota-BPH"
                     >
-                        <img src={anggota1} alt="kahim Joachim Patrick" />
+                        <img src={anggota1} alt="Muhammad Aulia D" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BPH"
                     >
-                        <img src={anggota2} alt="Wakahim Ahmad Ardra" />
+                        <img src={anggota2} alt="Muhammad Zahran" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BPH"
                     >
-                        <img src={anggota3} alt="Afiqah" />
+                        <img src={anggota3} alt="Khansa Fitri Z" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BPH"
                     >
-                        <img src={anggota4} alt="Nechita" />
+                        <img src={anggota4} alt="Halida Fiadnin" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BPH"
                     >
-                        <img src={anggota5} alt="Amelia" />
+                        <img src={anggota5} alt="Cindy Anatasya S" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BPH"
                     >
-                        <img src={anggota6} alt="Lutfiah" />
+                        <img src={anggota6} alt="Viby Ladyscha Y" />
                     </motion.div>
                 </div>
 

@@ -2,17 +2,17 @@ import React from "react";
 import Navbar from "../../../../component/Navbar/Navbar";
 import Footer from "../../../../component/Footer/Footer";
 import './Edukasi.css'
-import anggota1 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Faiz.png'
-import anggota2 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Andika.png'
-import anggota3 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Shafa.png'
-import anggota4 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Ester.png'
-import anggota5 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Farhan.png'
-import anggota6 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Halida.png'
-import anggota7 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Giyas.png'
-import anggota8 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Khansa.png'
-import anggota9 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Zahran.png'
-import anggota10 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Raisya.png'
-import anggota11 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Syifa.png'
+import anggota1 from './../../../../Assets/Divisi/Edukasi/Anggota/Muhammad Zaky GA.png'
+import anggota2 from './../../../../Assets/Divisi/Edukasi/Anggota/Vergiawan Zhaki R.png'
+import anggota3 from './../../../../Assets/Divisi/Edukasi/Anggota/M Shidqi Abhinaya.png'
+import anggota4 from './../../../../Assets/Divisi/Edukasi/Anggota/Luqman M Hakim.png'
+import anggota5 from './../../../../Assets/Divisi/Edukasi/Anggota/Jesika Oktaviani.png'
+import anggota6 from './../../../../Assets/Divisi/Edukasi/Anggota/Anisa Hayatullah.png'
+import anggota7 from './../../../../Assets/Divisi/Edukasi/Anggota/Ahmad Nur Rohim.png'
+import anggota8 from './../../../../Assets/Divisi/Edukasi/Anggota/Ahmad Subhan D.png'
+//import anggota9 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Zahran.png'
+//import anggota10 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Raisya.png'
+//import anggota11 from './../../../../Assets/Divisi/Edukasi/Anggota/Anggota-Syifa.png'
 import Accordion from "../../../../component/Accordion/Accordion";
 import { motion } from 'framer-motion';
 
@@ -94,77 +94,56 @@ const Edukasi = () => {
                         transition={{duration: 0.35}} 
                         className="anggota-edukasi"
                     >
-                        <img src={anggota1} alt="Faiz Byputra" />
+                        <img src={anggota1} alt="Muhammad Zaky GA" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}} 
                         className="anggota-edukasi"
                     >
-                        <img src={anggota2} alt="Andika Risky Sururi" />
+                        <img src={anggota2} alt="Vergiawan Zhaki R" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}} 
                         className="anggota-edukasi"
                     >
-                        <img src={anggota3} alt="Dhianita Shafa" />
+                        <img src={anggota3} alt="M Shidqi Abhinaya" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}} 
                         className="anggota-edukasi"
                     >
-                        <img src={anggota4} alt="Ester Bina br Damanik" />
+                        <img src={anggota4} alt="Luqman M Hakim" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-edukasi"
                     >
-                        <img src={anggota5} alt="Farhan Nurohman" />
+                        <img src={anggota5} alt="Jesika Oktaviani" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-edukasi"
                     >
-                        <img src={anggota6} alt="Halida Fiadnin" />
+                        <img src={anggota6} alt="Anisa Hayatullah" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}} 
                         className="anggota-edukasi"
                     >
-                        <img src={anggota7} alt="M Giyas Wisnu" />
+                        <img src={anggota7} alt="Ahmad Nur Rohim" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}} 
                         className="anggota-edukasi"
                     >
-                        <img src={anggota8} alt="Khansa Nabila" />
-                    </motion.div>
-                    <motion.div
-                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-                        transition={{duration: 0.35}}  
-                        className="anggota-edukasi"
-                    >
-                        <img src={anggota9} alt="Muhammad Zahran" />
-                    </motion.div>
-                    <motion.div
-                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-                        transition={{duration: 0.35}}  
-                        className="anggota-edukasi"
-                    >
-                        <img src={anggota10} alt="Raisya Shinta Siregar" />
-                    </motion.div>
-                    <motion.div
-                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-                        transition={{duration: 0.35}} 
-                        className="anggota-edukasi"
-                    >
-                        <img src={anggota11} alt="Syifa Adawiyah" />
+                        <img src={anggota8} alt="Ahmad Subhan D" />
                     </motion.div>
                 </div>
 

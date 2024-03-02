@@ -10,9 +10,9 @@ const PreLoader = () => {
   return (
     <div className="preloader">
       <div className="texts-container">
-        <span><h2>"Together</h2></span>
-        <span><h2>We Connect</h2></span>
-        <span><h2>Each Other"</h2></span>
+        <span><h2>"Synergy,</h2></span>
+        <span><h2>Networking,</h2></span>
+        <span><h2>and Collaboration"</h2></span>
       </div>
     </div>
   );

@@ -10,7 +10,16 @@
   height: 738px;
   margin-top: 0.75rem;
 }
-
+/* Changes */
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+.outer-container {
+  display: flex;
+  flex-direction: column;
+}
+/* --------------------------- */
 .profil-himalkom-hero h1 {
   color: #F0E4D4;
   font-family: Sports World;
@@ -30,7 +39,7 @@
   text-align: center;
   /* Changa One/Italic/Headline Large */
   font-family: Changa One;
-  font-size: 32px;
+  font-size: 24px;
   font-style: italic;
   font-weight: 400;
   line-height: 40px;
@@ -318,11 +327,16 @@
   margin-top: 29px;
 }
 
+.logo-image {
+  width: 15rem;
+  margin-top: 20px;
+}
+
 .c-image {
   align-items: center;
   width: 100%;
   max-width: max-content;
-  margin-top: 170px;
+  margin-top: 100px;
   margin-bottom: 25px;
   padding: 0 1rem 0 1rem;
 }
@@ -350,9 +364,18 @@
   border-radius: 24px;
   width: 100%;
   max-width: 290px;
+  min-width: 230px;
+  min-height: 320px;
   margin-bottom: 50px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 3ms;
+  h1 {
+    font-size: 30px;
+  }
+  img {
+    margin: 0;
+    width: 120px;
+  }
 }
 
 .bawah {
@@ -364,7 +387,10 @@
   padding: 25px;
   width: 100%;
   max-width: 232px;
+  min-width: 195px;
+  min-height: 232px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  justify-content: center;
 }
 
 .log-1 {
@@ -545,6 +571,30 @@
     padding: 0 2.5rem 0 0;
     max-width: 542px;
   }
+  /* Changes */
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: 24px;
+    }
+  }
+  .profil-himalkom-img img {
+    width: 180px;
+  }
+  .inner-container {
+    img {
+      width: 330px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+  /* --------------------------- */
 }
 
 @media screen and (max-width: 768px) {
@@ -625,6 +675,31 @@
   .divisi-card {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+
+    /* Changes */
+    .inner-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .outer-container {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 24px;
+      }
+    }
+    .profil-himalkom-img img {
+      width: 180px;
+    }
+    .inner-container {
+      img {
+        width: 330px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+    /* --------------------------- */
 }
 
 @media screen and (min-width: 481px) and (max-width: 620px) {
@@ -705,6 +780,9 @@
 
   .filop-tengah {
     grid-column: unset;
+    .logo-image {
+      width: 150px;
+    }
   }
 
 
@@ -715,6 +793,60 @@
   .filop-kanan {
     padding-top: 4.86rem;
   }
+    /* Changes */
+    .inner-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .outer-container {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 14px;
+        padding: 0;
+      }
+    }
+    .middle-container {
+      gap: 0;
+      height: 120px;
+    }
+    .profil-himalkom-img img {
+      width: 120px;
+    }
+    .inner-container {
+      img {
+        width: 190px;
+      }
+      h1 {
+        height: 60px;
+      }
+      h3 {
+        font-size: 12px;
+      }
+    }
+  
+    .atas, .bawah {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #F7C5A1;
+      padding: 25px;
+      border-radius: 24px;
+      width: 100%;
+      max-width: 290px;
+      min-width: 230px;
+      min-height: 320px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      transition: 3ms;
+      h1 {
+        font-size: 30px;
+      }
+      img {
+        margin: 0;
+        width: 120px;
+      }
+    }
+    /* --------------------------- */
 }
 
 
@@ -820,4 +952,36 @@
   .filop-kanan {
     padding-top: 4.86rem;
   }
+  /* Changes */
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    p {
+      font-size: 14px;
+      padding: 0;
+    }
+  }
+  .middle-container {
+    gap: 0;
+    height: 120px;
+  }
+  .profil-himalkom-img img {
+    width: 120px;
+  }
+  .inner-container {
+    img {
+      width: 190px;
+    }
+    h1 {
+      height: 60px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+  }
+  /* --------------------------- */
 }

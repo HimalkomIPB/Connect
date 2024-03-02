@@ -2,16 +2,13 @@ import React from "react";
 import Navbar from "../../../../component/Navbar/Navbar";
 import Footer from "../../../../component/Footer/Footer";
 import "./Internal.css";
-import anggota1 from './../../../../Assets/Divisi/Internal/Anggota/kadiv_abin.png'
-import anggota2 from './../../../../Assets/Divisi/Internal/Anggota/anggota_bella.png'
-import anggota3 from './../../../../Assets/Divisi/Internal/Anggota/anggota_cheisa.png'
-import anggota4 from './../../../../Assets/Divisi/Internal/Anggota/anggota_dzakkiyah.png'
-import anggota5 from './../../../../Assets/Divisi/Internal/Anggota/anggota_ilinia2.png'
-import anggota6 from './../../../../Assets/Divisi/Internal/Anggota/anggota_ismy.png'
-import anggota7 from './../../../../Assets/Divisi/Internal/Anggota/anggota_mirza.png'
-import anggota8 from './../../../../Assets/Divisi/Internal/Anggota/anggota_adi.png'
-import anggota9 from './../../../../Assets/Divisi/Internal/Anggota/anggota_kevin.png'
-import anggota10 from './../../../../Assets/Divisi/Internal/Anggota/anggota_novia.png'
+import anggota1 from './../../../../Assets/Divisi/Internal/Anggota/Justin Kristaldi Jafar.png'
+import anggota2 from './../../../../Assets/Divisi/Internal/Anggota/Yuuka Salsabila S.png'
+import anggota3 from './../../../../Assets/Divisi/Internal/Anggota/Ainil Mardhatilah.png'
+import anggota4 from './../../../../Assets/Divisi/Internal/Anggota/Nisrina Indra PZ.png'
+import anggota5 from './../../../../Assets/Divisi/Internal/Anggota/Roshan Zakaria.png'
+import anggota6 from './../../../../Assets/Divisi/Internal/Anggota/Syifa Izzatul R.png'
+import anggota7 from './../../../../Assets/Divisi/Internal/Anggota/M Irsyad Fadhillah.png'
 import Accordion from './../../../../component/Accordion/Accordion';
 import { motion } from "framer-motion";
 
@@ -71,70 +68,49 @@ const internal = () => {
               transition={{duration: 0.35}}    
               className="anggota-divisi-internal"
             >
-              <img src={anggota1} alt="AHMAD BINTANG ARIF" />
+              <img src={anggota1} alt="Justin Kristaldi Jafar" />
             </motion.div>
             <motion.div 
               whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
               transition={{duration: 0.35}}    
               className="anggota-divisi-internal"
             >
-              <img src={anggota2} alt="BELLA AGAMA" />
+              <img src={anggota2} alt="Yuuka Salsabila S" />
             </motion.div>
             <motion.div 
               whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
               transition={{duration: 0.35}}    
               className="anggota-divisi-internal"
             >
-              <img src={anggota3} alt="CHEISHA AMANDA" />
+              <img src={anggota3} alt="Ainil Mardhatilah" />
             </motion.div>
             <motion.div 
               whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
               transition={{duration: 0.35}}    
               className="anggota-divisi-internal"
             >
-              <img src={anggota4} alt="DZAKIYYAH HASBI" />
+              <img src={anggota4} alt="Nisrina Indra Putri Z" />
             </motion.div>
             <motion.div 
               whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
               transition={{duration: 0.35}}    
               className="anggota-divisi-internal"
             >
-              <img src={anggota5} alt="ILLINIA MALIKA PUTRI" />
+              <img src={anggota5} alt="Roshan Zakaria" />
             </motion.div>
             <motion.div 
               whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
               transition={{duration: 0.35}}    
               className="anggota-divisi-internal"
             >
-              <img src={anggota6} alt="ISMY FANA FILLAH" />
+              <img src={anggota6} alt="Syifa Izzatul R" />
             </motion.div>
             <motion.div 
               whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
               transition={{duration: 0.35}}    
               className="anggota-divisi-internal"
             >
-              <img src={anggota7} alt="MIRZA HAFIZ MUHAMMAD" />
-            </motion.div>
-            <motion.div 
-              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-              transition={{duration: 0.35}}    
-              className="anggota-divisi-internal"
-            >
-              <img src={anggota8} alt="M ADI SATRIA FERDIANSAH" />
-            </motion.div>
-            <motion.div 
-              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-              transition={{duration: 0.35}}    
-              className="anggota-divisi-internal"
-            >
-              <img src={anggota9} alt="M KEVIN ARIOBIMO" />
-            </motion.div>
-            <motion.div 
-              whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-              transition={{duration: 0.35}}    
-              className="anggota-divisi-internal"
-            >
-              <img src={anggota10} alt="NOVIA DWI LESTARI" />
+              <img src={anggota7} alt="M Irsyad Fadhillah" />
             </motion.div>
           </div>
 

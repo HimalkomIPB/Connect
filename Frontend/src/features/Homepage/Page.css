@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 
 
@@ -29,11 +30,6 @@
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #040404;
     transition: 0.2s;
-}
-
-.hero-home-slide1 h1:hover {
-    font-weight: 480;
-    font-size: 96px;
 }
 
 .hero-home-slide1 h3 {
@@ -55,10 +51,6 @@
     margin-top: 7px;
 }
 
-.hero-home-slide1 h3:hover {
-    font-size: 34px;
-}
-
 .hero-home-slide1 p {
     /* Font family */
     font-family: 'Changa One';
@@ -77,32 +69,55 @@
     transition: 0.2s;
     margin-top: 20px;
 }
-
-.hero-home-slide1 p:hover {
-    font-weight: 520;
-    font-size: 31px;
-}
-
 .hero-home-logo-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 40.5px 40px;
-    margin-top: 80px;
+    transition: 1.5s;
+}
+.hero-home-logo-container:hover {
+    transform: scale(1.05);
+    transform: rotate(720deg);
+}
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    h3 {
+        color: #FFF;
+        text-align: center;
+        font-family: "Changa One";
+        font-size: 22.4px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 28px; /* 125% */
+    }
+}
+.outer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
+.hero-home-title-connect {
+    width: 413.525px; 
+    height: auto; 
+}
 
 .hero-home-logo-connect {
-    width: 400px;
-    height: 200px;
+    width: 251.509px;
+    height: 251.509px;
+    flex-shrink: 0;    
     transition: 0.2s;
+    filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25)); 
 }
 
-.hero-home-logo-connect:hover {
-    width: 440px;
-    height: 220px;
-}
+
 
 .hero-home-slider {
     position: absolute;
@@ -115,6 +130,13 @@
 .hero-home-slider button img {
     width: 12px;
     height: auto;
+}
+
+.middle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Slide 2 */
@@ -198,16 +220,6 @@
 
 
 /* Animation on text */
-.hero-home-slide2 h1:hover {
-    font-weight: 480;
-    font-size: 96px;
-}
-
-.hero-home-slide2 h3:hover {
-    font-weight: 440;
-    font-size: 34px;
-}
-
 .hero-home-slide1 {
     display: none;
 }
@@ -632,6 +644,28 @@
 
         margin-top: 17px;
     }
+
+    /* Changes */
+    .hero-home-content {
+        width: 550px;
+    }
+    .hero-home-title-connect {
+        width: 300px;
+    }
+    .inner-container h3 {
+        font-size: 17px;
+    }
+    .outer-container p {
+        font-size: 20px;
+    }
+    .hero-home-logo-container {
+        margin: 0;
+        width: 156px;
+    }
+    .hero-home-logo-connect {
+        width: 160px;
+        height: auto;
+    }
 }
 
 @media(max-width: 768px) {
@@ -647,7 +681,7 @@
         height:554.01px;
         margin-top: 16.66px;
     }
-  
+
     .hero-home-slide1 h1 {
         font-size: 42.789px;
         line-height: 48.044px;
@@ -704,6 +738,20 @@
     .hero-home-logo-connect:hover {
         width: 375px;
         height: 196px;
+    }
+    /* Changes */
+    .hero-home-content {
+        width: 550px;
+    }
+    .hero-home-title-connect {
+        width: 300px;
+    }
+    .inner-container h3 {
+        font-size: 16px;
+    }
+    .hero-home-logo-container {
+        margin: 0;
+        width: 156px;
     }
 
     /* Ilkomunity section */
@@ -1180,5 +1228,25 @@
 
     .Card2 .Megaproker-Home-Card2-logo {
         margin-right: 24px;
+    }
+    /* Changes */
+    .hero-home-content {
+        width: 550px;
+    }
+    .hero-home-title-connect {
+        width: 200px;
+    }
+    .inner-container h3 {
+        font-size: 11px;
+    }
+    .hero-home-logo-container {
+        margin: 0;
+        width: 110px;
+    }
+    .outer-container p {
+        font-size: 14px;
+    }
+    .hero-home-content {
+        width: 430px;
     }
 }
