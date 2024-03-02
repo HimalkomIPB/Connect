@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.css'
 import himalkom from '../../Assets/Footer/himalkom 96x96.svg'
 import logo from '../../Assets/Footer/IPB University 366px.svg'
-import connect from '../../Assets/Footer/Logo Connect 160x83.svg'
+import synapse from '../../Assets/Footer/Logo Synapse 100x100.svg'
 import facebook from '../../Assets/Footer/facebook 24x24.svg'
 import instagram from '../../Assets/Footer/instagram 24x24.svg'
 import twitter from '../../Assets/Footer/twitter 24x24.svg'
@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="Footer">
         <div className="Footer-Logos">
           <img src={himalkom} alt="Himalkom" className='himalkom' />
-          <img src={connect} alt="Connect" className='connect' />
+          <img src={synapse} alt="Connect" className='connect' />
           <img src={logo} alt="IPB University" className='ipb' />
         </div>
 

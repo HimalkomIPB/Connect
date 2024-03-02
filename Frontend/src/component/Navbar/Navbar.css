@@ -55,9 +55,7 @@ li {
 
 .navbar-list li:hover a {
     font-family: 'Changa One';
-    font-style: italic;
     font-weight: 350;
-    font-size: 28px;
     line-height: 36px;
     color: #F0E4D4;
     text-shadow: 2.5px 1.5px 0px #040404;
@@ -67,9 +65,7 @@ li {
 
 .navbar-list li:hover {
     font-family: 'Changa One';
-    font-style: italic;
     font-weight: 350;
-    font-size: 28px;
     line-height: 36px;
     color: #F0E4D4;
     text-shadow: 2.5px 1.5px 0px #040404;

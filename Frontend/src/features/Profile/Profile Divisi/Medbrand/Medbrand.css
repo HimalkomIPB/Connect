@@ -96,7 +96,7 @@
 }
 
 .anggota-medbrand:last-child {
-    grid-column: span 3;
+    grid-column: span 1;
 }
 
 .anggota-medbrand {

@@ -2,15 +2,14 @@ import React from 'react'
 import Navbar from '../../../../component/Navbar/Navbar'
 import Footer from "../../../../component/Footer/Footer";
 import './BP.css'
-import anggota1 from './../../../../Assets/Divisi/BP/Anggota/Adelia.png'
-import anggota2 from './../../../../Assets/Divisi/BP/Anggota/Aditya.png'
-import anggota3 from './../../../../Assets/Divisi/BP/Anggota/Aini.png'
-import anggota4 from './../../../../Assets/Divisi/BP/Anggota/Arvie.png'
-import anggota5 from './../../../../Assets/Divisi/BP/Anggota/Dzaki.png'
-import anggota6 from './../../../../Assets/Divisi/BP/Anggota/Dzikri.png'
-import anggota7 from './../../../../Assets/Divisi/BP/Anggota/Helga.png'
-import anggota8 from './../../../../Assets/Divisi/BP/Anggota/Ikhlas.png'
-import anggota9 from './../../../../Assets/Divisi/BP/Anggota/Isti.png'
+import anggota1 from './../../../../Assets/Divisi/BP/Anggota/Synapse_Aditiya_Kadiv.png'
+import anggota2 from './../../../../Assets/Divisi/BP/Anggota/Synapse_Irfan.png'
+import anggota3 from './../../../../Assets/Divisi/BP/Anggota/Synapse_Rio.png'
+import anggota4 from './../../../../Assets/Divisi/BP/Anggota/Synapse_Ikhlas.png'
+import anggota5 from './../../../../Assets/Divisi/BP/Anggota/Synapse_Meena.png'
+import anggota6 from './../../../../Assets/Divisi/BP/Anggota/Synapse_Giyas.png'
+import anggota7 from './../../../../Assets/Divisi/BP/Anggota/Synapse_Putra.png'
+import anggota8 from './../../../../Assets/Divisi/BP/Anggota/Synapse_Firoos.png'
 import Accordion from '../../../../component/Accordion/Accordion';
 
 import { motion } from 'framer-motion';
@@ -62,63 +61,56 @@ const BP = () => {
                         transition={{duration: 0.35}}
                         className="anggota-BP"
                     >
-                        <img src={anggota1} alt="Adelia Novta K.P" />
+                        <img src={anggota1} alt="Aditiya Mahendra" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BP"
                     >
-                        <img src={anggota3} alt="Aini Nur Afifah" />
+                        <img src={anggota3} alt="Rio Alvein H" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BP"
                     >
-                        <img src={anggota7} alt="Helga Melina P. F" />
+                        <img src={anggota7} alt="Darmawan Setya P" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BP"
                     >
-                        <img src={anggota9} alt="Isti Adilia H" />
+                        <img src={anggota6} alt="M Giyas Wisnu R" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BP"
                     >
-                        <img src={anggota6} alt="Dzikri Ananda" />
+                        <img src={anggota2} alt="M Irfan Satriya D" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}
                         className="anggota-BP"
                     >
-                        <img src={anggota2} alt="Aditya Mahendra" />
-                    </motion.div>
-                    <motion.div 
-                        whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
-                        transition={{duration: 0.35}}
-                        className="anggota-BP"
-                    >
-                        <img src={anggota5} alt="M Dzaki Fahreza" />
+                        <img src={anggota5} alt="M Quwwamul Haq" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}} 
                         className="anggota-BP"
                     >
-                        <img src={anggota4} alt="M Arvie Reyhan" />
+                        <img src={anggota4} alt="Muhammad Ikhlas" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [30, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}    
                         className="anggota-BP"
                     >
-                        <img src={anggota8} alt="Muhammad Ikhlas" />
+                        <img src={anggota8} alt="Zaima Firoos Likan" />
                     </motion.div>
                 </div>
 

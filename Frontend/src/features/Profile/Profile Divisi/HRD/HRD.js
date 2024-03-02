@@ -2,16 +2,16 @@ import React from "react";
 import Navbar from "../../../../component/Navbar/Navbar";
 import Footer from "../../../../component/Footer/Footer";
 import "./HRD.css";
-import anggota1 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Bares.png'
-import anggota2 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Naufal2.png'
-import anggota3 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Aul.png'
-import anggota4 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Dinda.png'
-import anggota5 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Faiz.png'
-import anggota6 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Malikus.png'
-import anggota7 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Surya.png'
-import anggota8 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Ariq.png'
-import anggota9 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Rifqy.png'
-import anggota10 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Zhafran.png'
+import anggota1 from './../../../../Assets/Divisi/HRD/Anggota/Habid Fabri A.png'
+import anggota2 from './../../../../Assets/Divisi/HRD/Anggota/M Fathur Rahman I.png'
+import anggota3 from './../../../../Assets/Divisi/HRD/Anggota/Maulana Ahmad B.png'
+import anggota4 from './../../../../Assets/Divisi/HRD/Anggota/Rizkia Deviyanti.png'
+import anggota5 from './../../../../Assets/Divisi/HRD/Anggota/Sindi Aprilianti.png'
+import anggota6 from './../../../../Assets/Divisi/HRD/Anggota/Tubagus Raihan R.png'
+import anggota7 from './../../../../Assets/Divisi/HRD/Anggota/Adittiya Purwansyah.png'
+import anggota8 from './../../../../Assets/Divisi/HRD/Anggota/Aszriel Teddy M.png'
+import anggota9 from './../../../../Assets/Divisi/HRD/Anggota/Fikri Aulia R.png'
+//import anggota10 from './../../../../Assets/Divisi/HRD/Anggota/Anggota-Zhafran.png'
 import Accordion from './../../../../component/Accordion/Accordion';
 import { motion } from 'framer-motion';
 
@@ -70,70 +70,63 @@ const HRD = () => {
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota1} alt="Bares Manggala S" />
+                        <img src={anggota1} alt="Habid Fabri A." />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota2} alt="" />
+                        <img src={anggota2} alt="M Fathur Rahman I" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota3} alt="" />
+                        <img src={anggota3} alt="Maulana Ahmad B" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota4} alt="" />
+                        <img src={anggota4} alt="Rizkia Deviyanti" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota5} alt="" />
+                        <img src={anggota5} alt="Sindi Aprilianti" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota6} alt="" />
+                        <img src={anggota6} alt="Tubagus Raihan" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota7} alt="" />
+                        <img src={anggota7} alt="Adittiya Purwansyah" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota8} alt="" />
+                        <img src={anggota8} alt="Aszriel Teddy M" />
                     </motion.div>
                     <motion.div 
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-hrd"
                     >
-                        <img src={anggota9} alt="" />
-                    </motion.div>
-                    <motion.div 
-                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-                        transition={{duration: 0.35}}  
-                        className="anggota-divisi-hrd"
-                    >
-                        <img src={anggota10} alt="" />
+                        <img src={anggota9} alt="Fikri Aulia R" />
                     </motion.div>
                 </div>
 

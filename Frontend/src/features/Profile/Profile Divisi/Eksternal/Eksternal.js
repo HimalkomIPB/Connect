@@ -2,16 +2,14 @@ import React from 'react'
 import Footer from '../../../../component/Footer/Footer'
 import Navbar from '../../../../component/Navbar/Navbar'
 import './Eksternal.css'
-import anggota1 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Octa.png'
-import anggota2 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Made2.png'
-import anggota3 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Antonio2.png'
-import anggota4 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Eva.png'
-import anggota5 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Jesslyn.png'
-import anggota6 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Jihan.png'
-import anggota7 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Ilham.png'
-import anggota8 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Cilla.png'
-import anggota9 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Maria.png'
-import anggota10 from './../../../../Assets/Divisi/Eksternal/Anggota/Anggota-Tita.png'
+import anggota1 from './../../../../Assets/Divisi/Eksternal/Anggota/Synapse_Ghani_Kadiv.png'
+import anggota2 from './../../../../Assets/Divisi/Eksternal/Anggota/Synapse_Ferdi.png'
+import anggota3 from './../../../../Assets/Divisi/Eksternal/Anggota/Synapse_Sri.png'
+import anggota4 from './../../../../Assets/Divisi/Eksternal/Anggota/Synapse_Agal.png'
+import anggota5 from './../../../../Assets/Divisi/Eksternal/Anggota/Synapse_Aleeka.png'
+import anggota6 from './../../../../Assets/Divisi/Eksternal/Anggota/Synapse_Nurul.png'
+import anggota7 from './../../../../Assets/Divisi/Eksternal/Anggota/Synapse_Aisha.png'
+import anggota8 from './../../../../Assets/Divisi/Eksternal/Anggota/Synapse_Faya.png'
 import Accordion from './../../../../component/Accordion/Accordion';
 import { motion } from 'framer-motion';
 
@@ -29,16 +27,16 @@ const Eksternal = () => {
     ]
     const fadeInVariants = {
         hidden: {
-          opacity: 0,
+            opacity: 0,
         },
         visible: {
-          opacity: 1,
-          transition: {
-            duration: 1.2,
-            ease: 'easeInOut',
-          },
+            opacity: 1,
+            transition: {
+                duration: 1.2,
+                ease: 'easeInOut',
+            },
         },
-      };
+    };
     return (
         <div>
             <Navbar />
@@ -70,57 +68,47 @@ const Eksternal = () => {
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}   
                         className="anggota-divisi-eksternal">
-                        <img src={anggota1} alt="Christy Octaviani H" />
+                        <img src={anggota1} alt="M Raihan Alghani L" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-eksternal">
-                        <img src={anggota2} alt="Made Althaaf" />
+                        <img src={anggota2} alt="Ferdinand Dandyaksa U" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-eksternal">
-                        <img src={anggota3} alt="Antonio" />
+                        <img src={anggota3} alt="Sri Arini Ismayasari" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-eksternal">
-                        <img src={anggota4} alt="Eva Fitriyaningsih" />
+                        <img src={anggota4} alt="M Agal Lulanika" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-eksternal">
-                        <img src={anggota5} alt="Jesselyn Gowin" />
+                        <img src={anggota5} alt="Aleeka Kiana N. S" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-eksternal">
-                        <img src={anggota6} alt="Jihan Febriharvianti" />
+                        <img src={anggota6} alt="Nurul Fadillah" />
                     </motion.div>
                     <motion.div
                         whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
                         transition={{duration: 0.35}}  
                         className="anggota-divisi-eksternal">
-                        <img src={anggota7} alt="Ilham Hakim S" />
+                        <img src={anggota7} alt="Aisha Fitria S" />
                     </motion.div>
                     <motion.div 
                         className="anggota-divisi-eksternal">
-                        <img src={anggota8} alt="Priscilla Nur Elia P.G" />
-                    </motion.div>
-                    <motion.div 
-                        className="anggota-divisi-eksternal">
-                        <img src={anggota9} alt="Tan Maria Putri" />
-                    </motion.div>
-                    <motion.div
-                        whileInView={{ y: [80, 10, 0], opacity: [0, 0, 1] }}
-                        transition={{duration: 0.35}}  
-                        className="anggota-divisi-eksternal">
-                        <img src={anggota10} alt="Tita Madriyanti" />
+                        <img src={anggota8} alt="Shafaya Sasikirana" />
                     </motion.div>
                 </div>
 
