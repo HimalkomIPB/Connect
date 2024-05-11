@@ -8,6 +8,9 @@ import ImageSlider from "../../../component/ImageSlider/ImageSlider";
 import dokum1 from '../../../Assets/Ilkommunity/MAD/MAD-dokum1.png'
 import dokum2 from '../../../Assets/Ilkommunity/MAD/MAD-dokum2.png'
 import dokum3 from '../../../Assets/Ilkommunity/MAD/MAD-dokum3.png'
+import dokum4 from '../../../Assets/Ilkommunity/MAD/MAD-dokum4.png'
+import dokum5 from '../../../Assets/Ilkommunity/MAD/MAD-dokum5.png'
+import dokum6 from '../../../Assets/Ilkommunity/MAD/MAD-dokum6.png'
 
 const MAD = () => {
     const [showDeskripsi, setShowDeskripsi] = useState(true);
@@ -23,7 +26,10 @@ const MAD = () => {
     const slides = [
         { url: dokum1 },
         { url: dokum2 },
-        { url: dokum3 }
+        { url: dokum3 },
+        { url: dokum4 },
+        { url: dokum5 },
+        { url: dokum6 },
     ];
 
     return (
@@ -106,8 +112,8 @@ const MAD = () => {
                             <h2>NARAHUBUNG</h2>
                         </div>
                         <div className="MAD-narahubung-content">
-                            <h3>Muhammad Ikhlash</h3>
-                            <h3>Whatsapp: 081328173266</h3>
+                            <h3>Muhammad Haris Sabil</h3>
+                            <h3>Whatsapp: 085260033398</h3>
                         </div>
                     </motion.div>
                 </div>

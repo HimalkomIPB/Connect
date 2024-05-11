@@ -12,7 +12,9 @@ import dokum4 from "../../../Assets/Ilkommunity/UX/UX-dokum4.png"
 import dokum5 from "../../../Assets/Ilkommunity/UX/UX-dokum5.png"
 import dokum6 from "../../../Assets/Ilkommunity/UX/UX-dokum6.png"
 import dokum7 from "../../../Assets/Ilkommunity/UX/UX-dokum7.png"
-
+import dokum8 from "../../../Assets/Ilkommunity/UX/UX-dokum8.png"
+import dokum9 from "../../../Assets/Ilkommunity/UX/UX-dokum9.png"
+import dokum10 from "../../../Assets/Ilkommunity/UX/UX-dokum10.png"
 
 const UX = () => {
     const [showDeskripsi, setShowDeskripsi] = useState(true);
@@ -45,7 +47,10 @@ const UX = () => {
         { url: dokum4 },
         { url: dokum5 },
         { url: dokum6 },
-        { url: dokum7 }
+        { url: dokum7 },
+        { url: dokum8 },
+        { url: dokum9 },
+        { url: dokum10 },
     ];
 
     return (
@@ -139,9 +144,8 @@ const UX = () => {
                             <h2>NARAHUBUNG</h2>
                         </div>
                         <div className="UX-narahubung-content">
-                            <h3>Raka</h3>
-                            <h3>Line: irzan24</h3>
-                            <h3>Whatsapp: 089513348202</h3>
+                            <h3>Muhammad Raihan Zhafran Halawa</h3>
+                            <h3>Whatsapp: 082260302171</h3>
                             <h3>IG: @agriux</h3>
                         </div>
                     </motion.div>
