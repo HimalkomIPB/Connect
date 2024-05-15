@@ -10,7 +10,7 @@ import dokum2 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum2.png'
 import dokum3 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum3.png'
 import dokum4 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum4.png'
 import dokum5 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum5.png'
-
+import dokum6 from '../../../Assets/Ilkommunity/IWDC/iwdc-dokum6.png'
 
 const IWDC = () => {
     const [showDeskripsi, setShowDeskripsi] = useState(true);
@@ -30,6 +30,7 @@ const IWDC = () => {
         { url: dokum3 },
         { url: dokum4 },
         { url: dokum5 },
+        { url: dokum6 },
     ];
 
     return (
@@ -113,8 +114,8 @@ const IWDC = () => {
                             <h2>NARAHUBUNG</h2>
                         </div>
                         <div className="IWDC-narahubung-content">
-                            <h3>Aam</h3>
-                            <h3>Whatsapp: 085155288590</h3>
+                            <h3>Wisnu Al Hussaeni</h3>
+                            <h3>Whatsapp: 08811795084</h3>
                             <h3>IG: @iwdc_ipb</h3>
                         </div>
                     </motion.div>

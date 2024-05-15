@@ -9,7 +9,8 @@ import dokum2 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum2.png'
 import dokum3 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum3.png'
 import dokum4 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum4.png'
 import dokum5 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum5.png'
-
+import dokum6 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum6.png'
+import dokum7 from '../../../Assets/Ilkommunity/CSI/CSI-Dokum7.png'
 
 const CSI = () => {
     const [showDeskripsi, setShowDeskripsi] = useState(true);
@@ -26,8 +27,10 @@ const CSI = () => {
         { url: dokum1 },
         { url: dokum2 },
         { url: dokum3 },
+        { url: dokum4 },
         { url: dokum5 },
-        { url: dokum4 }
+        { url: dokum6 },
+        { url: dokum7 },
     ];
     return (
         <div>
@@ -115,8 +118,8 @@ const CSI = () => {
                             <h2>NARAHUBUNG</h2>
                         </div>
                         <div className="CSI-narahubung-content">
-                            <h3>Irfan Alamsyah</h3>
-                            <h3>Whatsapp: 089604283143</h3>
+                            <h3>Numero Uno Aroefy</h3>
+                            <h3>Whatsapp: 082380845064</h3>
                         </div>
                     </motion.div>
                 </div>

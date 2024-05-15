@@ -12,7 +12,7 @@ import foto1 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/1.svg'
 import foto2 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/2.svg'
 import foto3 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/3.svg'
 import foto4 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/4.svg'
-
+import foto5 from './../../../Assets/Ilkommunity/DAMING/dokumentasi/5.png'
 
 const DAMING = () => {
   const [showDeskripsi, setShowDeskripsi] = useState(true);
@@ -31,8 +31,8 @@ const DAMING = () => {
     { url: foto1 },
     { url: foto2 },
     { url: foto3 },
-    { url: foto4 }
-
+    { url: foto4 },
+    { url: foto5 },
   ];
 
   return (

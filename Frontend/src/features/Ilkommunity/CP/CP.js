@@ -9,7 +9,7 @@ import dokum2 from '../../../Assets/Ilkommunity/CP/CP-Dokum2.png'
 import dokum3 from '../../../Assets/Ilkommunity/CP/CP-Dokum3.png'
 import dokum4 from '../../../Assets/Ilkommunity/CP/CP-Dokum4.png'
 import dokum5 from '../../../Assets/Ilkommunity/CP/CP-Dokum5.png'
-
+import dokum6 from '../../../Assets/Ilkommunity/CP/CP-Dokum6.png'
 
 const CP = () => {
   const [showDeskripsi, setShowDeskripsi] = useState(true);
@@ -29,6 +29,7 @@ const CP = () => {
     { url: dokum3 },
     { url: dokum4 },
     { url: dokum5 },
+    { url: dokum6 },
   ];
   return (
     <div>
@@ -112,8 +113,8 @@ const CP = () => {
               <h2>NARAHUBUNG</h2>
             </div>
             <div className="CP-narahubung-content">
-              <h3>Muhammad Zahran</h3>
-              <h3>Whatsapp: 081370497856</h3>
+              <h3>Ariyudo Pertama</h3>
+              <h3>Whatsapp: 087736466423</h3>
             </div>
           </motion.div>
         </div>
